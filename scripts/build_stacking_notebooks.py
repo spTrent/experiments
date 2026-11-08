@@ -1,0 +1,109 @@
+import ast
+import hashlib
+import json
+import pprint
+import textwrap
+from pathlib import Path
+
+BASE = Path(__file__).resolve().parents[1]
+SOURCE = BASE / 'scripts' / 'stacking'
+
+def template(name):
+    return (SOURCE/name).read_text()
+
+def route_backend():
+    notebook = json.loads((BASE/'ridge_by_route_horizon.ipynb').read_text())
+    source = ''.join(notebook['cells'][9]['source'])
+    names = {'to_host','synchronize','linalg_guard','totals_to_metrics','DeviceBatch'}
+    return '\n\n'.join(ast.get_source_segment(source,node) for node in ast.parse(source).body if getattr(node,'name','') in names)
+
+def frozen():
+    result = {}
+    for directory in sorted((BASE/'artifacts').glob('*/model_params')):
+        params = json.loads((directory/'selection_frozen.json').read_text())
+        for h in range(1,9):
+            best = json.loads((directory/f'best_h{h}.json').read_text())
+            if best!=params[str(h)] or best['horizon']!=h or best['residual']!=directory.parent.name.endswith('_residual'):
+                raise ValueError(f'Несовпадение параметров {directory}, h{h}')
+        result[directory.parent.name] = params
+    if len(result)!=10:
+        raise ValueError('Ожидается 10 семейств конфигураций')
+    return result
+
+def code(source):
+    return dict(cell_type='code',metadata={},source=source.strip().splitlines(True),execution_count=None,outputs=[])
+
+def markdown(source):
+    return dict(cell_type='markdown',metadata={},source=source.strip().splitlines(True))
+
+def build():
+    output_dir = BASE/'stacking'
+    output_dir.mkdir(exist_ok=True)
+    features = (BASE/'scripts/five_starts_features.py').read_text()
+    panel = features.split('dates = times[')[0]
+    features = features[features.index('target = values[TARGET]'):features.index('def write_horizon')]
+    route = route_backend()
+    config = frozen()
+    sources = [template('runtime.py'),panel,features,template('bases.py'),route,
+               template('routes.py'),template('worker.py'),template('meta.py')]
+    execute = """if MODE not in ('oof','assemble','evaluate','submit') or ROLE not in ('worker','collect'):
+    raise ValueError('Проверьте MODE и ROLE')
+if MODE=='assemble' or ROLE=='collect':
+    if PART!=1 or MODE=='oof':
+        raise ValueError('Сборку выполняет первая часть в assemble/evaluate/submit')
+    {'assemble':assemble,'evaluate':evaluate,'submit':submit}[MODE]()
+else:
+    run_worker()
+"""
+    digest = hashlib.sha256((''.join(sources)+execute+json.dumps(config,sort_keys=True)).encode()).hexdigest()
+    for part,horizons in enumerate([(1,8),(2,7),(3,6),(4,5)],1):
+        subset = {k:{str(h):v[str(h)] for h in horizons} for k,v in config.items()}
+        setup = f"""from time import monotonic
+SESSION_START = monotonic()
+SESSION_HOURS = 11.0
+PROFILE = 'full'
+ROUTE_ALPHA = 100.0
+ENGINE = []
+PART = {part}
+HORIZONS = {horizons}
+MODE = 'oof'
+ROLE = 'worker'
+OOF_WEEKS = (1, 2, 3, 4)
+INPUT_DIR = '/kaggle/input'
+OUTPUT_DIR = '/kaggle/working'
+CODE_ID = '{digest}'
+PARAMS = {pprint.pformat(subset,width=100)}
+"""
+        intro = f"""# Стекинг, часть {part} · h{horizons[0]} и h{horizons[1]}
+
+Включите NVIDIA GPU и подключите исходные train/test parquet. В GPU-окружении нужны CuPy, cuML, XGBoost, LightGBM, CatBoost, sklearn и PyArrow. Для сравнения метамоделей нужны также SciPy и PyTorch. Запустите Save & Run All. Для всех четырёх частей выберите одинаковый PROFILE: full включает три режима train, fast — только пять стартов. Маршрутные Ridge используют фиксированный ROUTE_ALPHA=100 на стандартизованных признаках. Подбора alpha нет. SESSION_HOURS=11 ограничивает время вычислений одной сессии. При остановке сохраните output и подключите все ранее завершённые части с тем же профилем. При расширении fast до full подключите fast-выходы: завершённые five_starts будут использованы повторно. Результаты сохраняются в каталоге stack с идентификатором входов и кода. Для продолжения подключите сохранённые выходы целиком как Kaggle inputs. Если нужен короткий первый запуск, задайте `OOF_WEEKS=(1,)`, сохраните результат, подключите его в следующей сессии и верните все четыре недели.
+
+1. Во всех четырёх частях выполните `MODE='oof'`, `ROLE='worker'`.
+2. В части 1 подключите четыре результата, выберите `MODE='assemble'` и выполните Save & Run All. Получите OOF, результаты сравнения и winner.json. Для победителя среди исходных ансамблей сравниваются поправки 50% и 100% по каждой базовой колонке и по итоговому прогнозу. При проверке очередной недели множители используют только прошлые отложенные прогнозы.
+3. Во всех четырёх частях подключите победителя и свои OOF-выходы, выполните `MODE='evaluate'`, `ROLE='worker'`. В части 1 подключите все четыре результата оценки и вывод assemble, выполните `MODE='evaluate'`, `ROLE='collect'`.
+4. Во всех четырёх частях подключите отчёт оценки, победителя и свои OOF-выходы, выполните `MODE='submit'`, `ROLE='worker'`. В части 1 подключите четыре результата этого этапа и выходы assemble и evaluate/collect, установите `MODE='submit'`, `ROLE='collect'`. В каталоге stack появится submission.csv для full или submission_fast.csv для fast.
+
+Четверть train определяется по датам текущего фолда. Все оценки используют старт 10:30. Независимая оценка test сохраняется до финального переобучения. Время и метрика конкурса выводятся по ходу запуска.
+"""
+        cells = [markdown(intro),code(setup),code(sources[0]),code('initialize()'),
+                 code(panel),code("target = values[TARGET]\nif MODE != 'assemble' and ROLE != 'collect':\n"+textwrap.indent(features,'    ')),code(sources[3]),code('from contextlib import nullcontext\n'+route),
+                 code(sources[5]),code(sources[6])]
+        if part==1:
+            cells.append(code(sources[7]))
+        cells.append(code(execute))
+        for cell in cells[2:]:
+            source = ''.join(cell['source'])
+            delimiter = "'" * 3
+            if delimiter in source:
+                raise ValueError('Конфликт разделителя в исходнике')
+            cell.update(code(f"ENGINE.append(r{delimiter}\n{source}\n{delimiter})"))
+        cells.append(code(template('session.py')))
+        for i,cell in enumerate(cells):
+            cell['id'] = f'stack-{i:02}'
+            if cell['cell_type']=='code':
+                compile(''.join(cell['source']),f'part{part}-cell{i}','exec')
+        notebook = dict(nbformat=4,nbformat_minor=5,metadata=dict(kernelspec=dict(name='python3',language='python',display_name='Python 3')),cells=cells)
+        (output_dir/f'stacking_part_{part}.ipynb').write_text(json.dumps(notebook,ensure_ascii=False,indent=1)+'\n')
+
+if __name__=='__main__':
+    build()

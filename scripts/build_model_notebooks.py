@@ -118,3 +118,7 @@ Optuna использует три недельных окна с 30 авгус�
                 cells.extend([nbformat.v4.new_markdown_cell('## ' + title), nbformat.v4.new_code_cell(source[offsets[i]:offsets[i+1]].strip())])
         notebook = nbformat.v4.new_notebook(cells=cells, metadata={'kernelspec': {'display_name': 'Python 3', 'language': 'python', 'name': 'python3'}, 'language_info': {'name': 'python'}})
         nbformat.write(notebook, ROOT / f'{name}.ipynb')
+
+from build_random_forest_notebooks import build as build_random_forest
+
+build_random_forest()

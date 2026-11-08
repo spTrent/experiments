@@ -8,6 +8,8 @@ wheels/
 .venv
 
 artifacts/
+models/ridges/
+ridge_by_route_horizon.zip
 .DS_Store
 .mplconfig/
 

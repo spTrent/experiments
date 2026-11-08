@@ -155,7 +155,7 @@ with tempfile.TemporaryDirectory() as temporary:
             ordered = data.sort_values('ds', kind='mergesort')
             return pd.DataFrame({'ds': ordered.ds.to_numpy(), 'yhat': ordered.x0.to_numpy()})
     modules = {}
-    for name, attr in [('xgboost', 'XGBRegressor'), ('catboost', 'CatBoostRegressor'), ('lightgbm', 'LGBMRegressor'), ('prophet', 'Prophet')]:
+    for name, attr in [('xgboost', 'XGBRegressor'), ('catboost', 'CatBoostRegressor'), ('lightgbm', 'LGBMRegressor'), ('prophet', 'Prophet'), ('cuml.ensemble', 'RandomForestRegressor')]:
         module = ModuleType(name)
         setattr(module, attr, MockProphet if name == 'prophet' else MockEstimator)
         modules[name] = module
@@ -164,7 +164,7 @@ with tempfile.TemporaryDirectory() as temporary:
     serializer = ModuleType('prophet.serialize')
     serializer.model_to_json = lambda model: json.dumps(model.options)
     modules['prophet.serialize'] = serializer
-    base.update(Ridge=MockEstimator, RandomForestRegressor=MockEstimator)
+    base.update(Ridge=MockEstimator)
     train = pd.DataFrame({'route_id': [2, 7, 29, 2, 7, 29], 'value': [1., 2., np.nan, 4., 5., 6.],
                           'cutoff': pd.to_datetime(['2025-01-01 10:30'] * 3 + ['2025-01-02 10:30'] * 3),
                           'timestamp': pd.to_datetime(['2025-01-01 11:00'] * 3 + ['2025-01-02 11:00'] * 3),

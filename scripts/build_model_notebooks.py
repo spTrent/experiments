@@ -17,7 +17,7 @@ import pyarrow.parquet as pq
 from IPython.display import display
 ALGORITHM = {algorithm!r}
 RESIDUAL = {residual}
-DEVICE = 'cuda' if ALGORITHM in ('xgb', 'catboost') else 'cpu'
+DEVICE = 'cuda' if ALGORITHM in ('xgb', 'catboost', 'random_forest') else 'cpu'
 N_TRIALS = 20
 N_JOBS = min(4, os.cpu_count() or 1)
 SEED = 42
@@ -30,6 +30,16 @@ required_modules += [{{'xgb': 'xgboost', 'catboost': 'catboost', 'lightgbm': 'li
 missing = [name for name in required_modules if importlib.util.find_spec(name) is None]
 if missing:
     raise ImportError(f'Установите недостающие пакеты до расчёта признаков: {{sorted(set(missing))}}')
+if ALGORITHM == 'random_forest':
+    if DEVICE != 'cuda':
+        raise ValueError('Для RF выберите DEVICE=cuda')
+    try:
+        import cupy as cp
+        from cuml.ensemble import RandomForestRegressor
+        cp.zeros(1, dtype=cp.float32)
+        cp.cuda.get_current_stream().synchronize()
+    except (ImportError, OSError, RuntimeError) as exc:
+        raise RuntimeError('Включите GPU в Kaggle и установите cuML и CuPy для CUDA этой сессии.') from exc
 if N_TRIALS < 1 or PREDICTION_BATCH < 1:
     raise ValueError('Число trials и размер блока должны быть положительными')
 DATA = Path('data')
@@ -93,6 +103,8 @@ Optuna использует три недельных окна с 30 авгус�
 
 Запускайте один ноутбук за раз. N_TRIALS — число конфигураций на горизонт; каждая проверяется на трёх окнах. DEVICE = 'cpu' включает CPU для бустингов. Заполнение пропусков и масштабирование обучаются только на train текущего fit. Справочник маршрутов общий и не использует таргет. Корреляционные колонки в базовых parquet оставлены NaN и заполняются только после выбора границы обучения. Артефакты: artifacts/<алгоритм>_<direct или residual>_stack/{{features, importance, models, postprocessing, docs, model_params}}. Лучшие параметры каждого горизонта: model_params/best_hN.json. Инструкция: docs/model_experiments.md.
 '''
+        if algorithm == 'random_forest':
+            intro += '\nВ Kaggle выберите NVIDIA GPU. Для обучения нужен RAPIDS cuML и совместимый CuPy. Если их нет, используйте [инструкцию установки RAPIDS](https://docs.rapids.ai/install/) для версии CUDA в сессии и перезапустите ядро. Первая ячейка проверяет CUDA до расчёта признаков.\n'
         if algorithm == 'lightgbm':
             intro += '\nLightGBM использует нативные категории route_id, пропуски остаются NaN. По умолчанию DEVICE=cpu; gpu требует OpenCL-сборки, cuda требует CUDA-сборки LightGBM. Остановка по MAE на val, subsample_freq=1 включает подбираемое семплирование строк.\n'
         if algorithm in ('random_forest', 'ridge', 'prophet'):

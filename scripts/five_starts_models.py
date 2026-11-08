@@ -9,7 +9,6 @@ from sklearn.pipeline import Pipeline
 from sklearn.preprocessing import StandardScaler
 from sklearn.impute import SimpleImputer
 from sklearn.linear_model import Ridge
-from sklearn.ensemble import RandomForestRegressor
 
 
 def offset(frame):
@@ -35,6 +34,8 @@ def transformed_frame(frame, columns):
         result = result.drop(columns='route_id')
         for i, name in enumerate(route_bit_columns()):
             result[name] = ((codes >> i) & 1).astype(np.float32)
+    if ALGORITHM == 'random_forest':
+        result = result.astype(np.float32, copy=False)
     return result
 
 
@@ -145,7 +146,12 @@ def fit_model(frame, columns, params, early=None, trees=None):
         model.fit(transformed_frame(frame, columns), y, cat_features=['route_id'], **kwargs)
         return dict(model=model, columns=columns, trees=int(model.tree_count_))
     if ALGORITHM in ('ridge', 'random_forest'):
-        estimator = Ridge(solver='lsqr', tol=1e-5, **params) if ALGORITHM == 'ridge' else RandomForestRegressor(n_jobs=N_JOBS, random_state=SEED, **params)
+        if ALGORITHM == 'random_forest':
+            from cuml.ensemble import RandomForestRegressor
+            estimator = RandomForestRegressor(random_state=SEED, n_streams=1, output_type='numpy', **params)
+            y = y.astype(np.float32)
+        else:
+            estimator = Ridge(solver='lsqr', tol=1e-5, **params)
         model = Pipeline([('preprocess', preprocessing(columns, ALGORITHM == 'ridge')), ('model', estimator)])
         model.fit(transformed_frame(frame, columns), y)
         return dict(model=model, columns=columns, trees=None)
@@ -247,6 +253,9 @@ for name in ('numpy', 'pandas', 'pyarrow', 'scikit-learn', 'xgboost', 'catboost'
         versions[name] = importlib.metadata.version(name)
     except importlib.metadata.PackageNotFoundError:
         pass
+if ALGORITHM == 'random_forest':
+    import cuml
+    versions['cuml'] = cuml.__version__
 manifest = dict(algorithm=ALGORITHM, residual=RESIDUAL, seed=SEED, device=DEVICE, n_trials=N_TRIALS,
                 python=platform.python_version(), platform=platform.platform(), versions=versions,
                 feature_pipeline=FEATURE_PIPELINE_VERSION, starts=TRAIN_MINUTES,
@@ -398,7 +407,23 @@ for h in range(1, 9):
         if ALGORITHM == 'random_forest':
             names = model.named_steps['preprocess'].get_feature_names_out()
             model = model.named_steps['model']
-        importance_values = pd.Series(model.feature_importances_, index=names, name=f'h{h}').sort_values(ascending=False)
+        if ALGORITHM == 'random_forest' and not hasattr(model, 'feature_importances_'):
+            sample = history.sample(n=min(PREDICTION_BATCH, len(history)), random_state=SEED)
+            matrix = bundle['model'].named_steps['preprocess'].transform(transformed_frame(sample, columns))
+            target = model_target(sample)
+            base_mae = np.abs(target - model.predict(matrix)).mean()
+            order = np.random.default_rng(SEED).permutation(len(sample))
+            values = []
+            for j in range(matrix.shape[1]):
+                original = matrix[:, j].copy()
+                matrix[:, j] = original[order]
+                values.append(np.abs(target - model.predict(matrix)).mean() - base_mae)
+                matrix[:, j] = original
+            importance_kind = 'permutation_increase_in_scaled_mae'
+        else:
+            values = model.feature_importances_
+            importance_kind = 'native_feature_importance'
+        importance_values = pd.Series(values, index=names, name=f'h{h}').sort_values(ascending=False)
         importance_values.to_csv(IMPORTANCE_DIR / f'importance_h{h}.csv')
         importance_parts.append(importance_values)
     if ALGORITHM == 'ridge':
@@ -424,7 +449,7 @@ if len(predictions) != len(test) or not np.isfinite(submission.y_pred).all() or 
 submission.to_csv(DOCS_DIR / 'submission.csv', index=False)
 importance_table = pd.concat(importance_parts, axis=1).rename_axis('feature')
 importance_table['mean_all_8'] = importance_table.fillna(0).sum(axis=1) / 8
-importance_table['importance_kind'] = 'absolute_coefficient' if ALGORITHM in ('ridge', 'prophet') else 'native_feature_importance'
+importance_table['importance_kind'] = 'absolute_coefficient' if ALGORITHM in ('ridge', 'prophet') else importance_kind
 importance_table = importance_table.sort_values('mean_all_8', ascending=False)
 importance_table.to_csv(DOCS_DIR / 'feature_importance.csv')
 export_results()

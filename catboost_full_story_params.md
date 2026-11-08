@@ -1,0 +1,8 @@
+h1: ({'depth': 6, 'l2_leaf_reg': 3, 'bootstrap_type': 'Bayesian', 'bagging_temperature': 1}, 4000)
+h2: ({'depth': 10, 'l2_leaf_reg': 3, 'bootstrap_type': 'Bayesian', 'bagging_temperature': 1}, 3988)
+h3: ({'depth': 8, 'l2_leaf_reg': 3, 'bootstrap_type': 'Bayesian', 'bagging_temperature': 1}, 3992)
+h4: ({'depth': 6, 'l2_leaf_reg': 3, 'bootstrap_type': 'Bayesian', 'bagging_temperature': 1}, 4000)
+h5: ({'depth': 10, 'l2_leaf_reg': 3, 'bootstrap_type': 'Bayesian', 'bagging_temperature': 1}, 3050)
+h6: ({'depth': 6, 'l2_leaf_reg': 3, 'bootstrap_type': 'Bayesian', 'bagging_temperature': 1}, 3991)
+h7: ({'depth': 6, 'l2_leaf_reg': 0, 'bootstrap_type': 'No'}, 3999)
+h8: ({'depth': 6, 'l2_leaf_reg': 3, 'bootstrap_type': 'Bayesian', 'bagging_temperature': 1}, 3999)

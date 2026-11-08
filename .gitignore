@@ -17,3 +17,4 @@ artifacts/
 .venv
 AGENTS.md
 .python-version
+.venv-experiments/

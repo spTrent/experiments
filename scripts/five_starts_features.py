@@ -25,14 +25,17 @@ del history
 if not all((np.isfinite(array).all() for array in values.values())):
     raise ValueError('В числовых рядах есть бесконечные значения')
 dates = times[(times.hour == 10) & (times.minute == 30) & (times + 8 * STEP <= end)]
-if len(dates) <= 28:
-    raise ValueError('Недостаточно дат для временного разбиения')
-if len(dates) < 63:
-    raise ValueError('Недостаточно истории для трёх недель подбора')
+selection_end = pd.Timestamp('2025-09-20')
+if len(dates) < 14 or dates[-14].normalize() < selection_end or times[-1] < selection_end:
+    raise ValueError('Недостаточно истории для отдельного test после подбора')
 holdout_start = dates[-14]
+selection_dates = dates[dates + 8 * STEP < selection_end]
+if len(selection_dates) <= 28:
+    raise ValueError('До 20 сентября недостаточно истории для train и трёх недель подбора')
 folds = []
-for start in (len(dates)-35, len(dates)-28, len(dates)-21):
-    folds.append(dict(train=dates[:start-7], val=dates[start-7:start], tuning=dates[start:start+7], test=dates[-14:]))
+for start in range(len(selection_dates) - 21, len(selection_dates), 7):
+    folds.append(dict(train=selection_dates[:start-7], val=selection_dates[start-7:start],
+                      tuning=selection_dates[start:start+7], test=dates[-14:]))
 split_dates = folds[-1]
 tune_start = split_dates['tuning'][0]
 LAG_VALIDATION_FIT_BEFORE = split_dates['val'][0].normalize()
@@ -323,7 +326,7 @@ FEATURE_GROUPS = {'calendar': ['dayofweek', 'is_weekend', 'weekday_sin', 'weekda
 del values, means, level24, extra_signals, positions, recent, usual
 FEATURE_GROUPS['network'] = [name for name in feature_names if name.startswith('network_')]
 FEATURE_GROUPS['residual_correlation_lag'] = [name for name in feature_names if name.startswith('residual_')]
-(DOCS_DIR / 'feature_pipeline.json').write_text(json.dumps({'version': FEATURE_PIPELINE_VERSION, 'window_offsets_steps': list(WINDOW_OFFSETS), 'training_origins_minutes': TRAIN_MINUTES, 'evaluation_origin': '10:30', 'correlation_storage': 'NaN placeholders; fit on stage train before model use', 'validation_lag_fit_before': str(LAG_VALIDATION_FIT_BEFORE), 'all_folds': [{key: [str(period.min()), str(period.max())] for key, period in fold.items()} for fold in folds], 'splits': {key: [str(period.min()), str(period.max())] for key, period in split_dates.items()}, 'feature_groups': FEATURE_GROUPS}, ensure_ascii=False, indent=2))
+(DOCS_DIR / 'feature_pipeline.json').write_text(json.dumps({'version': FEATURE_PIPELINE_VERSION, 'window_offsets_steps': list(WINDOW_OFFSETS), 'training_origins_minutes': TRAIN_MINUTES, 'evaluation_origin': '10:30', 'correlation_storage': 'NaN placeholders; fit on stage train before model use', 'validation_lag_fit_before': str(LAG_VALIDATION_FIT_BEFORE), 'selection_end_exclusive': str(selection_end), 'all_folds': [{key: [str(period.min()), str(period.max())] for key, period in fold.items()} for fold in folds], 'splits': {key: [str(period.min()), str(period.max())] for key, period in split_dates.items()}, 'feature_groups': FEATURE_GROUPS}, ensure_ascii=False, indent=2))
 
 
 def mean_daily_score(frame, prediction):

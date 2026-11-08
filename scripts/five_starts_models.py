@@ -250,7 +250,7 @@ for name in ('numpy', 'pandas', 'pyarrow', 'scikit-learn', 'xgboost', 'catboost'
 manifest = dict(algorithm=ALGORITHM, residual=RESIDUAL, seed=SEED, device=DEVICE, n_trials=N_TRIALS,
                 python=platform.python_version(), platform=platform.platform(), versions=versions,
                 feature_pipeline=FEATURE_PIPELINE_VERSION, starts=TRAIN_MINUTES,
-                holdout_start=str(holdout_start), search_objective='mean of three tuning WAPE + absolute relative bias scores',
+                holdout_start=str(holdout_start), selection_end_exclusive=str(selection_end), search_objective='mean of three tuning WAPE + absolute relative bias scores',
                 test_note='Независимая оценка test получена до переобучения на всей истории. Период test ранее использовался в проекте; это не новый слепой holdout.')
 (DOCS_DIR / 'manifest.json').write_text(json.dumps(manifest, ensure_ascii=False, indent=2))
 lag_tables = [fit_lags(f['val'][0].normalize()) for f in folds]
@@ -260,8 +260,8 @@ for i, table in enumerate(lag_tables):
 
 
 def select_horizon(h):
-    history = pd.read_parquet(OUT / f'history_h{h}.parquet')
-    history = history.loc[np.isfinite(history.profile28) & (history.timestamp < holdout_start.normalize())].copy()
+    history = pd.read_parquet(OUT / f'history_h{h}.parquet', filters=[('timestamp', '<', selection_end)])
+    history = history.loc[np.isfinite(history.profile28)].copy()
     columns = model_columns(history)
     def objective(trial):
         params = suggest_params(trial)
@@ -272,7 +272,7 @@ def select_horizon(h):
             tuning = history.loc[history.cutoff.isin(fold['tuning'])].copy()
             if len(train) == 0 or len(early) == 0 or len(tuning) == 0:
                 raise ValueError('Пустая временная выборка')
-            if train.timestamp.max() >= early.cutoff.min().normalize() or early.timestamp.max() >= tuning.cutoff.min().normalize() or tuning.timestamp.max() >= holdout_start.normalize():
+            if train.timestamp.max() >= early.cutoff.min().normalize() or early.timestamp.max() >= tuning.cutoff.min().normalize() or tuning.timestamp.max() >= selection_end:
                 raise ValueError('Пересекаются временные периоды train/val/tuning/test')
             train = add_correlation_features(train, h, lag_table)
             early = add_correlation_features(early, h, lag_table)
@@ -283,7 +283,7 @@ def select_horizon(h):
             part = prediction_part(tuning, tuning_prediction, h, 'tuning')
             part['fold'] = i + 1
             part['fit_labels_before'] = fold['val'][0].normalize()
-            part['selection_labels_through'] = folds[-1]['tuning'][-1] + 8 * STEP
+            part['selection_labels_through'] = folds[-1]['tuning'][-1] + h * STEP
             part['model_info_through'] = part['selection_labels_through']
             part['is_unbiased_oof'] = False
             tuning_parts.append(part)
@@ -309,6 +309,7 @@ def select_horizon(h):
     study.trials_dataframe().to_csv(DOCS_DIR / f'trials_h{h}.csv', index=False)
     counts = study.best_trial.user_attrs['tree_counts']
     selected = dict(algorithm=ALGORITHM, residual=RESIDUAL, horizon=h, params=study.best_params, trees=int(np.median(counts)) if counts else None,
+                    selection_end_exclusive=str(selection_end), selection_labels_through=str(folds[-1]['tuning'][-1] + h * STEP),
                     trial=study.best_trial.number, tuning_score=study.best_value,
                     fold_scores=study.best_trial.user_attrs['fold_scores'])
     (PARAMS_DIR / f'best_h{h}.json').write_text(json.dumps(selected, ensure_ascii=False, indent=2))

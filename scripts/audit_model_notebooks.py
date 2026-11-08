@@ -19,7 +19,7 @@ models = (ROOT / 'scripts/five_starts_models.py').read_text()
 prefix = features.split('for h in range(1, 9):\n    write_horizon(h)')[0]
 model_nodes = ast.parse(models).body
 definitions = ast.Module(body=[n for n in model_nodes if isinstance(n, (ast.FunctionDef, ast.Import, ast.ImportFrom))], type_ignores=[])
-grid = pd.date_range('2025-01-01', '2025-03-15 10:30', freq='30min')
+grid = pd.date_range('2025-07-28', '2025-11-01 10:30', freq='30min')
 rng = np.random.default_rng(17)
 raw = pd.DataFrame({'timestamp': grid.repeat(3), 'route_id': np.tile([2, 7, 29], len(grid))})
 for name in ['target_1h', *[f'status_{i}' for i in range(1, 7)]]:
@@ -45,7 +45,7 @@ with tempfile.TemporaryDirectory() as temporary:
         return env
     base = prepare(raw, 'baseline')
     for i, minute in enumerate(base['TRAIN_MINUTES']):
-        cutoff = pd.Timestamp('2025-03-10') + pd.Timedelta(minutes=minute)
+        cutoff = pd.Timestamp('2025-10-10') + pd.Timedelta(minutes=minute)
         changed = raw.copy()
         changed.loc[changed.timestamp > cutoff, changed.columns.difference(['route_id', 'timestamp'])] += 100000
         perturbed = prepare(changed, f'future_{i}')
@@ -68,13 +68,13 @@ with tempfile.TemporaryDirectory() as temporary:
             after = perturbed['add_correlation_features'](perturbed['horizon_dataset'](h, origins), h, changed_lags)
             pd.testing.assert_frame_equal(before, after)
     changed = raw.copy()
-    changed.loc[changed.timestamp >= base['holdout_start'].normalize(), 'target_1h'] += 1000000
+    changed.loc[changed.timestamp >= pd.Timestamp('2025-09-20'), 'target_1h'] += 1000000
     perturbed = prepare(changed, 'holdout')
     for fold in base['folds']:
         origins = grid.get_indexer(fold['tuning'])
         for h in range(1, 9):
             pd.testing.assert_frame_equal(base['horizon_dataset'](h, origins), perturbed['horizon_dataset'](h, origins))
-    origin = grid.get_loc(pd.Timestamp('2025-03-10 10:30'))
+    origin = grid.get_loc(pd.Timestamp('2025-10-10 10:30'))
     oracle = base['horizon_dataset'](1, np.array([origin]))
     target = base['target']
     expected = {

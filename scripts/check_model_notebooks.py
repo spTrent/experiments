@@ -33,7 +33,7 @@ for algorithm in ('xgb', 'lightgbm', 'random_forest', 'ridge', 'prophet', 'catbo
 feature_source = (ROOT / 'scripts/five_starts_features.py').read_text()
 model_source = (ROOT / 'scripts/five_starts_models.py').read_text()
 feature_prefix = feature_source.split('for h in range(1, 9):\n    write_horizon(h)')[0]
-grid = pd.date_range('2025-01-01', '2025-03-15 10:30', freq='30min')
+grid = pd.date_range('2025-07-28', '2025-11-01 10:30', freq='30min')
 rng = np.random.default_rng(42)
 data = pd.DataFrame({'timestamp': grid.repeat(2), 'route_id': np.tile([10, 20], len(grid))})
 for name in ['target_1h', *[f'status_{i}' for i in range(1, 7)]]:
@@ -63,7 +63,7 @@ with tempfile.TemporaryDirectory() as temporary:
                     SEED=42, N_JOBS=1, N_TRIALS=2, MAX_TREES=2, EARLY_STOPPING_ROUNDS=1, PREDICTION_BATCH=5)
     first = environment('first')
     exec(feature_prefix, first)
-    cutoff = pd.Timestamp('2025-03-10 10:30')
+    cutoff = pd.Timestamp('2025-10-10 10:30')
     origin = np.array([grid.get_loc(cutoff)])
     reference = {h: first['horizon_dataset'](h, origin) for h in range(1, 9)}
     altered = data.copy()
@@ -120,7 +120,12 @@ with tempfile.TemporaryDirectory() as temporary:
     search_count = 8 * 2 * 3
     if len(fit_calls) != search_count + 16:
         raise RuntimeError(f'Неверное число fit: {len(fit_calls)}')
+    selection_end = pd.Timestamp('2025-09-20')
+    if any(last >= selection_end for _, last, _ in fit_calls[:search_count]):
+        raise RuntimeError('В подбор попали метки периода стекинга')
     boundary = first['holdout_start'].normalize()
+    if boundary != pd.Timestamp('2025-10-18') or first['folds'][-1]['tuning'][-1].date() != pd.Timestamp('2025-09-19').date():
+        raise RuntimeError('Неверные границы подбора и test')
     if any(last >= boundary for _, last, _ in fit_calls[:search_count + 8]):
         raise RuntimeError('Test попал в обучение до refit')
     for h, (_, last, count) in enumerate(fit_calls[-8:], 1):
@@ -142,7 +147,7 @@ with tempfile.TemporaryDirectory() as temporary:
             raise RuntimeError(f'Нет документа {filename}')
     for h in range(1, 9):
         best = json.loads((first['PARAMS_DIR'] / f'best_h{h}.json').read_text())
-        if not best['params'] or 'tuning_score' not in best:
+        if not best['params'] or 'tuning_score' not in best or pd.Timestamp(best['selection_end_exclusive']) != selection_end or pd.Timestamp(best['selection_labels_through']) >= selection_end:
             raise RuntimeError('Нет лучших параметров Optuna')
     with zipfile.ZipFile(first['RUN_DIR'] / 'reports.zip') as archive:
         if 'model_params/best_h8.json' not in archive.namelist() or 'docs/feature_importance.csv' not in archive.namelist():

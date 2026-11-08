@@ -18,10 +18,10 @@ from IPython.display import display
 ALGORITHM = {algorithm!r}
 RESIDUAL = {residual}
 DEVICE = 'cuda' if ALGORITHM in ('xgb', 'catboost') else 'cpu'
-N_TRIALS = 12
+N_TRIALS = 20
 N_JOBS = min(4, os.cpu_count() or 1)
 SEED = 42
-MAX_TREES = 2500
+MAX_TREES = 3000
 EARLY_STOPPING_ROUNDS = 100
 PREDICTION_BATCH = 4096
 RUN_LABEL = datetime.now(timezone.utc).strftime('%Y%m%dT%H%M%S%fZ')

@@ -1,0 +1,23 @@
+name: rwb-a10
+channels:
+  - rapidsai
+  - conda-forge
+  - nvidia
+  - nodefaults
+dependencies:
+  - python=3.12
+  - cuda-version=12.9
+  - cuml=26.06
+  - cupy
+  - pandas<3
+  - numpy<3
+  - scikit-learn>=1.6
+  - pyarrow
+  - ipython
+  - ipykernel
+  - jupyterlab
+  - pip
+  - pip:
+      - catboost==1.2.10
+      - xgboost==3.4.1
+      - lightgbm==4.6.0

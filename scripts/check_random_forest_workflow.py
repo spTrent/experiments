@@ -39,8 +39,8 @@ with tempfile.TemporaryDirectory() as temporary:
         frame[name] = rng.uniform(10, 100, len(frame)).astype(np.float32)
     train_path = root / 'train.parquet'
     frame.to_parquet(train_path, index=False)
-    direct = nbformat.read(ROOT / 'random_forest_direct.ipynb', as_version=4)
-    residual = nbformat.read(ROOT / 'random_forest_residual.ipynb', as_version=4)
+    direct = nbformat.read(ROOT / 'notebooks/models/random_forest_direct.ipynb', as_version=4)
+    residual = nbformat.read(ROOT / 'notebooks/models/random_forest_residual.ipynb', as_version=4)
     for notebook in (direct, residual):
         nbformat.validate(notebook)
         for cell in notebook.cells:

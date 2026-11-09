@@ -5,7 +5,7 @@ import json
 from pathlib import Path
 
 ROOT = Path(__file__).resolve().parents[1]
-SOURCE = ROOT / 'stepa' / 'stepa330.ipynb'
+SOURCE = ROOT / 'notebooks' / 'stepa' / 'stepa330.ipynb'
 
 
 def build():
@@ -104,7 +104,7 @@ Legacy tuning участвует в early stopping: его нельзя испо
         cells.append(dict(cell_type='code', execution_count=None, metadata={}, outputs=[], source=body.splitlines(keepends=True)))
     notebook = dict(cells=cells, metadata=dict(kernelspec=dict(display_name='Python 3', language='python', name='python3'),
                     language_info=dict(name='python', version='3.11'), accelerator='GPU'), nbformat=4, nbformat_minor=4)
-    destination = ROOT / 'stepa' / '00_baseline.ipynb'
+    destination = ROOT / 'notebooks' / 'stepa' / '00_baseline.ipynb'
     destination.write_text(json.dumps(notebook, ensure_ascii=False, indent=1)+'\n')
     print(destination)
 

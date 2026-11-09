@@ -98,4 +98,4 @@ cells.extend([nbformat.v4.new_markdown_cell('## Кэш, модель и Optuna')
 notebook = nbformat.v4.new_notebook(cells=cells,metadata={'kernelspec':{'display_name':'Python 3','language':'python','name':'python3'},'language_info':{'name':'python'}})
 for i,cell in enumerate(notebook.cells):
     cell.id=f'rf-experiments-{i:02d}'
-nbformat.write(notebook,ROOT/'random_forest_feature_experiments.ipynb')
+nbformat.write(notebook,ROOT/'notebooks/features/random_forest_feature_experiments.ipynb')

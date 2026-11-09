@@ -43,7 +43,7 @@ class ModelDouble:
 
 
 def main():
-    n = json.loads((ROOT/'stepa/00_baseline.ipynb').read_text())
+    n = json.loads((ROOT/'notebooks/stepa/00_baseline.ipynb').read_text())
     codes = [''.join(c['source']) for c in n['cells'] if c['cell_type'] == 'code']
     for code in codes:
         ast.parse(code)
@@ -78,7 +78,7 @@ def main():
             exec(code, env)
         origin = np.array([len(times)-100])
         before = [env['horizon_dataset'](h, origin) for h in range(1,9)]
-        reference = json.loads((ROOT/'stepa/stepa330.ipynb').read_text())
+        reference = json.loads((ROOT/'notebooks/stepa/stepa330.ipynb').read_text())
         old_env = env.copy()
         old_code = ''.join(reference['cells'][9]['source']).split('\ndef write_horizon')[0]
         old_env['validation_lag_table'] = env['calculate_dynamic_shoulder'](

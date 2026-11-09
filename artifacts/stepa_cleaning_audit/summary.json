@@ -1,0 +1,19 @@
+{
+  "rows": 4630000,
+  "routes": 1000,
+  "timestamps": 4630,
+  "start": "2025-07-28 00:00:00",
+  "end": "2025-11-01 10:30:00",
+  "nulls": 0,
+  "duplicate_route_timestamps": 0,
+  "regular_30min_grid": true,
+  "complete_panel": true,
+  "test_rows": 8000,
+  "unique_test_ids": true,
+  "tune_start": "2025-10-04 00:00:00",
+  "local_test_start": "2025-10-18 00:00:00",
+  "train_rows": 3264000,
+  "suspicious_train_rows": 153,
+  "suspicious_train_row_share": 4.6875e-05,
+  "suspicious_train_volume_share": 0.0006243438251274008
+}

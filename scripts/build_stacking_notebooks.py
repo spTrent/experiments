@@ -12,7 +12,7 @@ def template(name):
     return (SOURCE/name).read_text()
 
 def route_backend():
-    notebook = json.loads((BASE/'ridge_by_route_horizon.ipynb').read_text())
+    notebook = json.loads((BASE/'notebooks/models/ridge_by_route_horizon.ipynb').read_text())
     source = ''.join(notebook['cells'][9]['source'])
     names = {'to_host','synchronize','linalg_guard','totals_to_metrics','DeviceBatch'}
     return '\n\n'.join(ast.get_source_segment(source,node) for node in ast.parse(source).body if getattr(node,'name','') in names)

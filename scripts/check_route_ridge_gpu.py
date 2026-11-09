@@ -41,7 +41,7 @@ def fixture(root):
 
 
 def load_notebook(root, device):
-    path = Path(__file__).resolve().parents[1] / 'ridge_by_route_horizon.ipynb'
+    path = Path(__file__).resolve().parents[1] / 'notebooks/models/ridge_by_route_horizon.ipynb'
     notebook = nbformat.read(path, as_version=4)
     nbformat.validate(notebook)
     namespace = {}

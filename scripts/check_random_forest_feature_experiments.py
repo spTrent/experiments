@@ -30,7 +30,7 @@ class PredictionStub:
         return np.full(len(matrix),0.001,dtype=np.float32)
 
 
-notebook = nbformat.read(ROOT / 'random_forest_feature_experiments.ipynb',as_version=4)
+notebook = nbformat.read(ROOT / 'notebooks/features/random_forest_feature_experiments.ipynb',as_version=4)
 nbformat.validate(notebook)
 for cell in notebook.cells:
     if cell.cell_type!='code':

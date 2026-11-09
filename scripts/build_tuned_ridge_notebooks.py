@@ -90,7 +90,7 @@ for part in range(1,5):
     original,settings = read_part(part)
     if settings['CODE_ID']!=setup['CODE_ID']:
         raise ValueError('Несогласованные исходные версии')
-    text = ''.join(original['cells'][1]['source']).replace("MODE = 'oof'","MODE = 'assemble'" if part==1 else "MODE = 'evaluate'")
+    text = ''.join(original['cells'][1]['source']).replace("MODE = 'oof'","MODE = 'submit'").replace("PROFILE = 'recent75'","PROFILE = 'five_starts'")
     bridge_intro = f'''# Подключение подобранных Ridge · часть {part}
 
 Сохраняет CODE_ID и базовые выходы уже запущенной stacking_part_{part}. Сами исходные ноутбуки не изменены.
@@ -102,7 +102,7 @@ PROFILE='five_starts'. OOF баз здесь не запускается.
 2. Все части: MODE='evaluate', ROLE='worker' — досчитать только отсутствующие исходные базы победителя.
    На локальном компьютере выполнить MODE='evaluate' и обновить экспорт Ridge.
 3. Часть 1: MODE='evaluate', ROLE='collect' — независимая оценка победителя.
-4. Все части: MODE='submit', ROLE='worker'. Локально MODE='submit', обновить экспорт.
+4. Все части: MODE='submit', ROLE='worker' — только full, пять стартов по всей размеченной истории. Для выбранного fixed локальный экспорт не требуется.
 5. Часть 1: MODE='submit', ROLE='collect' — submission_tuned.csv.
 
 Новые метамодели сохраняются в meta_tuned; исходный meta не заменяется. На каждом этапе подключайте полный
@@ -115,6 +115,10 @@ output предшествующих этапов и исходных часте�
     engine = [source.replace("path = ROOT/f'meta/{stage}_post_calibration.joblib'", "path = ROOT/profile_path(f'meta/{stage}_post_calibration.joblib')")
               .replace("path = ROOT/'submission.csv'", "path = ROOT/'submission_tuned.csv'")
               .replace("f'baseline_{len(cols)}_{key}'", "f'baseline_{label}_{key}'") for source in engine]
+    engine = [source.replace("stages = ['test'] if MODE=='evaluate' else ['extra','full']",
+                             "stages = ['test'] if MODE=='evaluate' else ['full']")
+              .replace("train = pd.concat([oof,test.loc[test.cutoff<TEST_START+7*DAY],collect_stage('extra',cols)],ignore_index=True)",
+                       "train = pd.concat([oof,test],ignore_index=True)") for source in engine]
     engine.append(f'EXPECTED_TUNED_CODE_ID = {digest!r}\n'+bridge)
     engine.append("if MODE=='oof':\n    raise ValueError('OOF уже вычисляется исходными ноутбуками')\n"+unpack(original['cells'][-2]))
     entries = [('markdown',bridge_intro),('code',text)]

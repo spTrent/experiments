@@ -16,7 +16,7 @@ import nbformat
 ROOT = Path(__file__).resolve().parents[1]
 for algorithm in ('xgb', 'lightgbm', 'random_forest', 'ridge', 'prophet', 'catboost'):
     for variant in ('direct', 'residual'):
-        notebook = nbformat.read(ROOT / f'{algorithm}_{variant}.ipynb', as_version=4)
+        notebook = nbformat.read(ROOT / f'notebooks/models/{algorithm}_{variant}.ipynb', as_version=4)
         nbformat.validate(notebook)
         for cell in notebook.cells:
             if cell.cell_type != 'code':

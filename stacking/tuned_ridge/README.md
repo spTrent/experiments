@@ -1,5 +1,7 @@
 # Маршрутные Ridge на Windows + RTX 4060 Laptop
 
+Полный маршрут от четырёх готовых Kaggle-output до сабмита: [подробная инструкция по сборке стекинга](../STACKING_ASSEMBLY_GUIDE.md).
+
 Для компьютера с 16 ГБ RAM и 8 ГБ VRAM подготовлен автономный `stacking/ridge_tuned_local.ipynb`.
 Текущие `stacking/stacking_part_1…4.ipynb` не изменены; их работа в Kaggle продолжается.
 

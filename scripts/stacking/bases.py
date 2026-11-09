@@ -8,7 +8,7 @@ class HorizonData:
         self.frame = None
         self.baseline = np.empty((self.stop,len(routes)),np.float32)
         self.origins = np.arange(self.stop)
-        if PROFILE=='fast':
+        if PROFILE=='five_starts':
             grid = times[:self.stop]
             self.origins = self.origins[np.isin(grid.hour*60+grid.minute,TRAIN_MINUTES)]
         self.slots = np.full(self.stop,-1,dtype=int)

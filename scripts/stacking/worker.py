@@ -49,7 +49,7 @@ def run_stage(data,stage,cols):
         del x,train,q,validation,encoded
     rel = task_path(h,stage,'shared','profile28')
     if not complete(rel):
-        origins = train_indices(h,boundary,'five_starts')
+        origins = train_indices(h,boundary,REGIMES[0])
         p = data.baseline[origins].ravel()
         keep = np.isfinite(p)
         row = metric(target[origins+h].ravel()[keep],p[keep])
@@ -61,8 +61,8 @@ def run_stage(data,stage,cols):
 def run_worker():
     global ETA_CONTEXT
     if MODE=='oof':
-        if not OOF_WEEKS or any(i not in range(1,5) for i in OOF_WEEKS):
-            raise ValueError('OOF_WEEKS должен содержать номера недель 1–4')
+        if not OOF_WEEKS or any(i not in STACK_WEEKS for i in OOF_WEEKS):
+            raise ValueError('OOF_WEEKS должен содержать номера недель 2, 3, 4')
         stages = [f'oof{i}' for i in sorted(set(OOF_WEEKS))]
         cols = predictors(True)
     else:

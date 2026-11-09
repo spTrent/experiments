@@ -26,7 +26,9 @@ LAG_MAX_LOOKBACK_HOURS = 24
 LAG_MIN_PAIRS = 336
 LAG_MIN_CORRELATION = 0.05
 TRAIN_MINUTES = (570, 600, 630, 660, 690)
-REGIMES = {'full':('five_starts','mixed_starts','recent_all'), 'fast':('five_starts',)}[PROFILE]
+REGIMES = {'five_starts':('five_starts',), 'recent75':('recent_all',)}[PROFILE]
+STACK_WEEKS = (2, 3, 4)
+VALIDATION_WEEKS = STACK_WEEKS[1:]
 FAMILIES = ('rf', 'light_gbm', 'catboost', 'xgb', 'ridge')
 MODEL_NAMES = [f'{f}_{v}' for f in FAMILIES for v in ('direct', 'residual')]
 KEY = ['cutoff', 'route_id', 'horizon']
@@ -51,7 +53,7 @@ def initialize():
     TRAIN_PATH = locate('train_solo_track.parquet')
     TEST_PATH = locate('test_solo_track.parquet')
     fingerprints = [file_digest(TRAIN_PATH),file_digest(TEST_PATH)]
-    identity = [CODE_ID,str(ROUTE_ALPHA),*fingerprints]
+    identity = [CODE_ID,PROFILE,str(ROUTE_ALPHA),*fingerprints]
     if not np.isfinite(ROUTE_ALPHA) or ROUTE_ALPHA<=0:
         raise ValueError('ROUTE_ALPHA должен быть положительным')
     RUN_ID = hashlib.sha256('|'.join(identity).encode()).hexdigest()[:24]
@@ -59,20 +61,10 @@ def initialize():
     ROOT = OUTPUT / f'stack_{RUN_ID}'
     ROOT.mkdir(parents=True, exist_ok=True)
     CHECKPOINTS = [p for p in INPUT.rglob(ROOT.name) if p.is_dir() and p.resolve() != ROOT.resolve()]
-    global LEGACY_ROOTS, LEGACY_ID
-    legacy_code = '3b8eeac831b45fb4d966222cd335cbd8766c6ed6b2d243b63056fc4afea15b79'
-    LEGACY_ID = hashlib.sha256('|'.join([legacy_code,*fingerprints]).encode()).hexdigest()[:24]
-    LEGACY_ROOTS = [p for p in INPUT.rglob(f'stack_{LEGACY_ID}') if p.is_dir()]
     print(f'Конфигурация {RUN_ID}, часть {PART}, режим {MODE}, роль {ROLE}')
 
 def profile_path(rel):
-    name = str(rel)
-    if PROFILE=='fast':
-        if name.startswith('meta/'):
-            return name.replace('meta/','meta_fast/',1)
-        if '/timings/' in name:
-            return name.replace('/timings/','/timings_fast/',1)
-    return name
+    return str(rel)
 
 def existing(rel):
     rel = profile_path(rel)
@@ -148,28 +140,7 @@ def task_path(h, stage, regime, name):
     return f'h{h}/{stage}/{regime}/{name}.parquet'
 
 def complete(rel):
-    if existing(rel + '.json') is not None and existing(rel) is not None:
-        return True
-    parts = Path(rel).parts
-    if len(parts)!=4 or not parts[1].startswith('oof') or Path(rel).stem not in [*MODEL_NAMES,'profile28']:
-        return False
-    for root in globals().get('LEGACY_ROOTS',[]):
-        data = root/rel
-        manifest = root/(rel+'.json')
-        if not (data.is_file() and manifest.is_file()):
-            continue
-        info = json.loads(manifest.read_text())
-        boundary,_ = stage_spec(parts[1])
-        if info['run_id']!=LEGACY_ID or pd.Timestamp(info['boundary'])!=boundary or not pd.Timestamp(info['fit_through'])<boundary:
-            raise ValueError(f'Некорректный исходный OOF {data}')
-        dest = ROOT/rel
-        dest.parent.mkdir(parents=True,exist_ok=True)
-        tmp = dest.with_suffix('.copying')
-        shutil.copyfile(data,tmp)
-        tmp.replace(dest)
-        save(rel+'.json',dict(info,run_id=RUN_ID,source_run_id=LEGACY_ID))
-        return True
-    return False
+    return existing(rel + '.json') is not None and existing(rel) is not None
 
 def result_frame(h, origins):
     frame = pd.DataFrame(dict(cutoff=times[origins].repeat(len(routes)), route_id=np.tile(routes, len(origins))))

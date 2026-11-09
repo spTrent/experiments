@@ -142,7 +142,7 @@ def compare_candidate(oof, spec, label, report, raw_label=None):
     rows = []
     past_actual,past_prediction = 0.,0.
     strength = spec.get('post_strength',0.)
-    for week in (2,3,4):
+    for week in VALIDATION_WEEKS:
         valid = oof.loc[oof.stage==f'oof{week}']
         train = oof.loc[oof.cutoff<valid.cutoff.min()]
         rel = f'meta/cv/{label}_{week}'
@@ -184,7 +184,7 @@ def compare_candidate(oof, spec, label, report, raw_label=None):
 
 def report_base_calibration(oof):
     rows = []
-    for week in (2,3,4):
+    for week in VALIDATION_WEEKS:
         valid = oof.loc[oof.stage==f'oof{week}']
         past = oof.loc[oof.cutoff<valid.cutoff.min()]
         cols = predictors(True)
@@ -198,9 +198,9 @@ def report_base_calibration(oof):
     display(table.pivot_table(index='model',columns='strength',values='score'))
 
 def assemble():
-    oof = pd.concat([collect_stage(f'oof{i}',predictors(True)) for i in range(1,5)],ignore_index=True)
-    if len(oof)!=224000 or oof.duplicated(KEY).any():
-        raise ValueError('OOF должен содержать 224000 уникальных строк')
+    oof = pd.concat([collect_stage(f'oof{i}',predictors(True)) for i in STACK_WEEKS],ignore_index=True)
+    if len(oof)!=168000 or oof.duplicated(KEY).any():
+        raise ValueError('OOF должен содержать 168000 уникальных строк')
     save('meta/oof.parquet',oof)
     report_base_calibration(oof)
     report = []
@@ -208,12 +208,18 @@ def assemble():
     def rank(entry):
         spec = entry['spec']
         return (entry['mean_week_score'],entry['n_columns'],entry['kind']!='weighted',
-                bool(spec.get('base_strength') or spec.get('post_strength')),entry['id'])
+                bool(spec.get('base_strength') or spec.get('post_strength') or spec.get('post_calibration')),entry['id'])
     best = min(leaderboard,key=rank)
+    history = raw_meta_history(oof,best['id'])
+    save('meta/calibration_history.parquet',history)
     for mode in ('base_strength','post_strength'):
         for strength in (0.5,1.0):
             spec = dict(best['spec'],**{mode:strength})
             leaderboard.append(compare_candidate(oof,spec,f'{mode}_{strength}',report,best['id']))
+    for calibration in post_calibration_specs():
+        spec = dict(best['spec'],post_calibration=calibration)
+        label = f"post_{calibration['kind']}_{calibration['strength']}"
+        leaderboard.append(compare_post_calibration(oof,spec,label,report,best['id'],history))
     ordered = sorted(leaderboard,key=rank)
     save('meta/validation.parquet',pd.DataFrame(report))
     save('meta/leaderboard.json',ordered)
@@ -234,6 +240,8 @@ def evaluate():
     raw_test = b.copy()
     post_factor = winner.get('post_factor',1.)
     a,b = a*post_factor,b*post_factor
+    if winner.get('post_calibration'):
+        a,b = final_post_calibration('test',winner,oof,test,a,b)
     save_calibration('test',winner,oof,post_factor)
     rows = {'train':metric(oof.y,a),'test':metric(test.y,b)}
     save('meta/test_predictions.parquet',test.assign(prediction=b,raw_prediction=raw_test))
@@ -248,7 +256,7 @@ def submit():
     test = pd.read_parquet(require('meta/test_predictions.parquet'))
     oof = pd.read_parquet(require('meta/oof.parquet'))
     train = pd.concat([oof,test.loc[test.cutoff<TEST_START+7*DAY],collect_stage('extra',cols)],ignore_index=True)
-    if len(train)!=336000 or train.duplicated(KEY).any():
+    if len(train)!=280000 or train.duplicated(KEY).any():
         raise ValueError('Неполные финальные OOF')
     forecast = collect_stage('full',cols)
     a,p = meta_predict(winner,train,forecast)
@@ -258,6 +266,8 @@ def submit():
                                                 winner['post_oof_prediction']+test.raw_prediction.sum(),
                                                 winner['post_strength']))
     a,p = a*post_factor,p*post_factor
+    if winner.get('post_calibration'):
+        a,p = final_post_calibration('full',winner,train,forecast,a,p,test)
     save_calibration('full',winner,train,post_factor)
     display(pd.DataFrame([metric(train.y,a)],index=['full OOF train']))
     forecast['y_pred'] = p
@@ -265,7 +275,7 @@ def submit():
         forecast[['route_id','timestamp','y_pred']],on=['route_id','timestamp'],how='left',validate='one_to_one',sort=False)
     if len(result)!=8000 or not result.id.is_unique or not np.isfinite(result.y_pred).all() or (result.y_pred<0).any():
         raise ValueError('Нарушен контракт submission')
-    path = ROOT/('submission_fast.csv' if PROFILE=='fast' else 'submission.csv')
+    path = ROOT/'submission.csv'
     temp = path.with_suffix('.partial')
     result[['id','y_pred']].to_csv(temp,index=False)
     temp.replace(path)

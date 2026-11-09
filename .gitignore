@@ -20,3 +20,9 @@ ridge_by_route_horizon.zip
 AGENTS.md
 .python-version
 .venv-experiments/
+
+/matvey/results-00_baseline/
+/stacking/stack_oof/
+/stacking/stack_oof.zip
+/stacking/ridge_output/ridge_tuned_050f6cb497e6eed2adb518d3/
+/stacking/ridge_output/ridge_tuned_050f6cb497e6eed2adb518d3.zip

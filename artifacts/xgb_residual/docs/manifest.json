@@ -1,0 +1,33 @@
+{
+  "algorithm": "xgb",
+  "residual": true,
+  "seed": 42,
+  "device": "cuda",
+  "n_trials": 7,
+  "python": "3.13.16",
+  "platform": "Linux-6.18.55+-x86_64-with-glibc2.39",
+  "versions": {
+    "numpy": "2.1.3",
+    "pandas": "2.3.3",
+    "pyarrow": "23.0.1",
+    "scikit-learn": "1.6.1",
+    "xgboost": "3.4.1",
+    "catboost": "1.2.10",
+    "lightgbm": "4.6.0",
+    "prophet": "1.5.0",
+    "optuna": "5.0.0",
+    "joblib": "1.6.0"
+  },
+  "feature_pipeline": "five_starts_windows_v4_stage_safe_hpo",
+  "starts": [
+    570,
+    600,
+    630,
+    660,
+    690
+  ],
+  "holdout_start": "2025-10-18 10:30:00",
+  "selection_end_exclusive": "2025-09-20 00:00:00",
+  "search_objective": "mean of three tuning WAPE + absolute relative bias scores",
+  "test_note": "Независимая оценка test получена до переобучения на всей истории. Период test ранее использовался в проекте; это не новый слепой holdout."
+}

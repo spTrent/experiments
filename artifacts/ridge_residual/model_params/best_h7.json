@@ -1,0 +1,18 @@
+{
+  "algorithm": "ridge",
+  "residual": true,
+  "horizon": 7,
+  "params": {
+    "alpha": 824680.3705221143
+  },
+  "trees": null,
+  "selection_end_exclusive": "2025-09-20 00:00:00",
+  "selection_labels_through": "2025-09-19 14:00:00",
+  "trial": 14,
+  "tuning_score": 0.3721881639787256,
+  "fold_scores": [
+    0.3801917859965278,
+    0.39609152533867087,
+    0.3402811806009781
+  ]
+}

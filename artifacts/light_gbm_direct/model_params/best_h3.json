@@ -1,0 +1,24 @@
+{
+  "algorithm": "lightgbm",
+  "residual": false,
+  "horizon": 3,
+  "params": {
+    "num_leaves": 53,
+    "learning_rate": 0.021962256150304792,
+    "min_child_samples": 80,
+    "subsample": 0.7096834432905521,
+    "colsample_bytree": 0.5325257964926398,
+    "reg_alpha": 4.9352962094020985,
+    "reg_lambda": 78.86714129990483
+  },
+  "trees": 292,
+  "selection_end_exclusive": "2025-09-20 00:00:00",
+  "selection_labels_through": "2025-09-19 12:00:00",
+  "trial": 4,
+  "tuning_score": 0.3365216977282319,
+  "fold_scores": [
+    0.3239785719718299,
+    0.3194332120824642,
+    0.3661533091304017
+  ]
+}

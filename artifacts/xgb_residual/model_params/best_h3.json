@@ -1,0 +1,24 @@
+{
+  "algorithm": "xgb",
+  "residual": true,
+  "horizon": 3,
+  "params": {
+    "max_depth": 4,
+    "learning_rate": 0.028941442788596318,
+    "min_child_weight": 4.059611610484305,
+    "subsample": 0.8336647510712832,
+    "colsample_bytree": 0.7159725093210578,
+    "reg_alpha": 0.000558952420521792,
+    "reg_lambda": 6.847920095574778
+  },
+  "trees": 877,
+  "selection_end_exclusive": "2025-09-20 00:00:00",
+  "selection_labels_through": "2025-09-19 12:00:00",
+  "trial": 2,
+  "tuning_score": 0.34915417497175677,
+  "fold_scores": [
+    0.3365974313647089,
+    0.33501342380068666,
+    0.37585166974987483
+  ]
+}

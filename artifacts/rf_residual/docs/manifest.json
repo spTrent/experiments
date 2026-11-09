@@ -1,0 +1,77 @@
+{
+  "algorithm": "random_forest",
+  "residual": true,
+  "seed": 42,
+  "device": "cuda",
+  "n_trials": 4,
+  "n_streams": 4,
+  "prediction_batch": 32768,
+  "search_trees": [
+    150,
+    222,
+    300,
+    500
+  ],
+  "search_depths": [
+    6,
+    8,
+    10,
+    12
+  ],
+  "feature_cache": "/kaggle/working/artifacts/rf_shared_features_v2",
+  "prepared_cache": "/kaggle/working/artifacts/rf_shared_features_v2/prepared_1.6.1_ffded4c4a204e4e1",
+  "holdout_start": "2025-10-18 10:30:00",
+  "selection_end_exclusive": "2025-09-20 00:00:00",
+  "contract": {
+    "features": {
+      "source": "15c604e7cc91baa57abb879c5734ad4da01c71ca9b0dea75dfdaf974d05a42f5",
+      "data": "300aecbe2d3dc28be03bff957ba56ab20c7fa8ceb81b0301822d4bf6473bd076",
+      "starts": [
+        570,
+        600,
+        630,
+        660,
+        690
+      ],
+      "offsets": [
+        -4,
+        -3,
+        -2,
+        -1,
+        0,
+        1,
+        2,
+        3,
+        4
+      ],
+      "lookback": 24,
+      "min_pairs": 336,
+      "min_correlation": 0.05
+    },
+    "source": "ffded4c4a204e4e1de48fff1ed126d4755489150b859517c0a710c8e25aa0857",
+    "residual": true,
+    "n_trials": 4,
+    "seed": 42,
+    "n_streams": 4,
+    "trees": [
+      150,
+      222,
+      300,
+      500
+    ],
+    "depths": [
+      6,
+      8,
+      10,
+      12
+    ],
+    "versions": {
+      "numpy": "2.1.3",
+      "pandas": "2.3.3",
+      "scikit-learn": "1.6.1",
+      "optuna": "5.0.0"
+    },
+    "cuml": "26.06.00"
+  },
+  "test_note": "Независимая оценка test получена на моделях, обученных только на истории до test, включая train и val. Переобучение на всей истории и submission не выполняются. Период test ранее использовался в проекте; это не новый слепой holdout."
+}

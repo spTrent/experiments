@@ -1,0 +1,22 @@
+{
+  "algorithm": "random_forest",
+  "residual": true,
+  "horizon": 6,
+  "params": {
+    "n_estimators": 150,
+    "max_depth": 10,
+    "min_samples_leaf": 35,
+    "max_features": 0.6477043815695467,
+    "max_samples": 0.569746930326021
+  },
+  "trial": 1,
+  "tuning_score": 0.3620337557780707,
+  "fold_scores": [
+    0.3706884163107711,
+    0.35988931368820654,
+    0.35552353733523445
+  ],
+  "trees": 150,
+  "selection_end_exclusive": "2025-09-20 00:00:00",
+  "selection_labels_through": "2025-09-19 13:30:00"
+}

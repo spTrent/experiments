@@ -1,0 +1,22 @@
+{
+  "algorithm": "catboost",
+  "residual": true,
+  "horizon": 8,
+  "params": {
+    "depth": 4,
+    "learning_rate": 0.0542425537773747,
+    "l2_leaf_reg": 1.1715937392307056,
+    "random_strength": 2.7279612062363463,
+    "bagging_temperature": 0.5175599632000338
+  },
+  "trees": 715,
+  "selection_end_exclusive": "2025-09-20 00:00:00",
+  "selection_labels_through": "2025-09-19 14:30:00",
+  "trial": 8,
+  "tuning_score": 0.37241783460486877,
+  "fold_scores": [
+    0.3958759915916222,
+    0.3727780130275801,
+    0.3485994991954041
+  ]
+}

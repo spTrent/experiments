@@ -1,0 +1,178 @@
+{
+  "1": {
+    "algorithm": "random_forest",
+    "residual": false,
+    "horizon": 1,
+    "params": {
+      "n_estimators": 150,
+      "max_depth": 10,
+      "min_samples_leaf": 32,
+      "max_features": 0.6,
+      "max_samples": 0.8
+    },
+    "trial": 0,
+    "tuning_score": 0.2978348147598541,
+    "fold_scores": [
+      0.26783833607079893,
+      0.35015051786120815,
+      0.27551559034755535
+    ],
+    "trees": 150,
+    "selection_end_exclusive": "2025-09-20 00:00:00",
+    "selection_labels_through": "2025-09-19 11:00:00"
+  },
+  "2": {
+    "algorithm": "random_forest",
+    "residual": false,
+    "horizon": 2,
+    "params": {
+      "n_estimators": 300,
+      "max_depth": 8,
+      "min_samples_leaf": 24,
+      "max_features": 0.3406585285177396,
+      "max_samples": 0.9330880728874675
+    },
+    "trial": 1,
+    "tuning_score": 0.35763425490600653,
+    "fold_scores": [
+      0.33188640131066327,
+      0.38740022150853354,
+      0.3536161418988229
+    ],
+    "trees": 300,
+    "selection_end_exclusive": "2025-09-20 00:00:00",
+    "selection_labels_through": "2025-09-19 11:30:00"
+  },
+  "3": {
+    "algorithm": "random_forest",
+    "residual": false,
+    "horizon": 3,
+    "params": {
+      "n_estimators": 300,
+      "max_depth": 8,
+      "min_samples_leaf": 24,
+      "max_features": 0.3406585285177396,
+      "max_samples": 0.9330880728874675
+    },
+    "trial": 1,
+    "tuning_score": 0.33440917733261805,
+    "fold_scores": [
+      0.3245221081956277,
+      0.31900289055407893,
+      0.35970253324814727
+    ],
+    "trees": 300,
+    "selection_end_exclusive": "2025-09-20 00:00:00",
+    "selection_labels_through": "2025-09-19 12:00:00"
+  },
+  "4": {
+    "algorithm": "random_forest",
+    "residual": false,
+    "horizon": 4,
+    "params": {
+      "n_estimators": 150,
+      "max_depth": 10,
+      "min_samples_leaf": 32,
+      "max_features": 0.6,
+      "max_samples": 0.8
+    },
+    "trial": 0,
+    "tuning_score": 0.3332479012648378,
+    "fold_scores": [
+      0.3251508702113345,
+      0.3274099288802086,
+      0.3471829047029702
+    ],
+    "trees": 150,
+    "selection_end_exclusive": "2025-09-20 00:00:00",
+    "selection_labels_through": "2025-09-19 12:30:00"
+  },
+  "5": {
+    "algorithm": "random_forest",
+    "residual": false,
+    "horizon": 5,
+    "params": {
+      "n_estimators": 300,
+      "max_depth": 12,
+      "min_samples_leaf": 18,
+      "max_features": 0.7252813963310067,
+      "max_samples": 0.5852620618436457
+    },
+    "trial": 4,
+    "tuning_score": 0.3371107521034447,
+    "fold_scores": [
+      0.32949209429133736,
+      0.33170117587571574,
+      0.35013898614328115
+    ],
+    "trees": 300,
+    "selection_end_exclusive": "2025-09-20 00:00:00",
+    "selection_labels_through": "2025-09-19 13:00:00"
+  },
+  "6": {
+    "algorithm": "random_forest",
+    "residual": false,
+    "horizon": 6,
+    "params": {
+      "n_estimators": 300,
+      "max_depth": 12,
+      "min_samples_leaf": 23,
+      "max_features": 0.5045012539746527,
+      "max_samples": 0.6831809216468459
+    },
+    "trial": 3,
+    "tuning_score": 0.34117440192777887,
+    "fold_scores": [
+      0.3478705876496498,
+      0.3334536588045337,
+      0.34219895932915306
+    ],
+    "trees": 300,
+    "selection_end_exclusive": "2025-09-20 00:00:00",
+    "selection_labels_through": "2025-09-19 13:30:00"
+  },
+  "7": {
+    "algorithm": "random_forest",
+    "residual": false,
+    "horizon": 7,
+    "params": {
+      "n_estimators": 300,
+      "max_depth": 12,
+      "min_samples_leaf": 18,
+      "max_features": 0.7252813963310067,
+      "max_samples": 0.5852620618436457
+    },
+    "trial": 4,
+    "tuning_score": 0.3681586005080961,
+    "fold_scores": [
+      0.37501649465718084,
+      0.37628486757413265,
+      0.3531744392929749
+    ],
+    "trees": 300,
+    "selection_end_exclusive": "2025-09-20 00:00:00",
+    "selection_labels_through": "2025-09-19 14:00:00"
+  },
+  "8": {
+    "algorithm": "random_forest",
+    "residual": false,
+    "horizon": 8,
+    "params": {
+      "n_estimators": 300,
+      "max_depth": 12,
+      "min_samples_leaf": 18,
+      "max_features": 0.7252813963310067,
+      "max_samples": 0.5852620618436457
+    },
+    "trial": 4,
+    "tuning_score": 0.36645082789764616,
+    "fold_scores": [
+      0.37831892703498315,
+      0.3710947695256506,
+      0.3499387871323048
+    ],
+    "trees": 300,
+    "selection_end_exclusive": "2025-09-20 00:00:00",
+    "selection_labels_through": "2025-09-19 14:30:00"
+  }
+}

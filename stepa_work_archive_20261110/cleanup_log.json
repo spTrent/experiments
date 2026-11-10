@@ -1,0 +1,169 @@
+{
+  "moved_to": "/home/zakatinstepan/PycharmProjects/experiments/stepa_work_archive_20261110",
+  "moved_files": [
+    [
+      "OPTIMIZATION_REPORT.md",
+      8300
+    ],
+    [
+      "active_strategy.py",
+      459
+    ],
+    [
+      "build_reproduction_notebook.py",
+      21590
+    ],
+    [
+      "final",
+      211823
+    ],
+    [
+      "finalize_best.py",
+      6648
+    ],
+    [
+      "network_strategy.py",
+      2169
+    ],
+    [
+      "network_volume.py",
+      3711
+    ],
+    [
+      "optimize_validation.py",
+      6326
+    ],
+    [
+      "prepare_final_anchor.py",
+      2966
+    ],
+    [
+      "reproduced_0328",
+      187212
+    ],
+    [
+      "residual_deep.py",
+      3663
+    ],
+    [
+      "residual_ewma.py",
+      3663
+    ],
+    [
+      "residual_linear.py",
+      2936
+    ],
+    [
+      "residual_rolling.py",
+      3574
+    ],
+    [
+      "results",
+      18299
+    ],
+    [
+      "rolling_calibration.py",
+      2978
+    ]
+  ],
+  "deleted_redundant_files": [
+    [
+      "stepa_checkpoint_0328_bundle/reference/evaluation_predictions.parquet",
+      13503396
+    ],
+    [
+      "stepa_checkpoint_0328_bundle/inputs/test_keys.parquet",
+      54612
+    ],
+    [
+      "stepa_checkpoint_0328_bundle/reference/iterations.csv",
+      3264
+    ],
+    [
+      "stepa_checkpoint_0328_bundle/reference/manifest.json",
+      4235
+    ],
+    [
+      "stepa_checkpoint_0328_bundle/reference/validation_by_day.csv",
+      1433
+    ],
+    [
+      "stepa_checkpoint_0328_bundle/reference/validation_metrics.csv",
+      1961
+    ],
+    [
+      "stepa_checkpoint_0328_bundle/reference/local_verification.json",
+      729
+    ],
+    [
+      "stepa_checkpoint_0328_bundle/models/baseline/h1/train_range.json",
+      219
+    ],
+    [
+      "stepa_checkpoint_0328_bundle/models/baseline/h2/train_range.json",
+      219
+    ],
+    [
+      "stepa_checkpoint_0328_bundle/models/baseline/h3/train_range.json",
+      219
+    ],
+    [
+      "stepa_checkpoint_0328_bundle/models/baseline/h4/train_range.json",
+      219
+    ],
+    [
+      "stepa_checkpoint_0328_bundle/models/baseline/h5/train_range.json",
+      219
+    ],
+    [
+      "stepa_checkpoint_0328_bundle/models/baseline/h6/train_range.json",
+      219
+    ],
+    [
+      "stepa_checkpoint_0328_bundle/models/baseline/h7/train_range.json",
+      219
+    ],
+    [
+      "stepa_checkpoint_0328_bundle/models/baseline/h8/train_range.json",
+      219
+    ],
+    [
+      "stepa_checkpoint_0328_bundle/code/__pycache__/winning_strategy.cpython-314.pyc",
+      1066
+    ],
+    [
+      "stepa_checkpoint_0328_bundle/code/__pycache__/residual_ewma.cpython-314.pyc",
+      6854
+    ],
+    [
+      "stepa_checkpoint_0328_bundle/code/__pycache__/residual_deep.cpython-314.pyc",
+      6854
+    ],
+    [
+      "stepa_checkpoint_0328_bundle.zip",
+      176250685
+    ],
+    [
+      "stepa_checkpoint_0328_bundle.zip.sha256",
+      99
+    ]
+  ],
+  "dropped_unused_history_columns": [
+    "prediction",
+    "slot_daily7",
+    "slot_weekly4"
+  ],
+  "remaining_bundle_files": 40,
+  "stepa_bytes_before": 502113125,
+  "stepa_bytes_after": 308544615,
+  "verification": {
+    "checkpoint": "stepa_checkpoint_0.321453823624",
+    "public_score_reported_by_user": 0.328,
+    "rows": 8000,
+    "numeric_predictions_match": true,
+    "max_absolute_difference": 0.0,
+    "original_sha256": "a89b9b277796a4fc08d4900bc10185afbf1bfe6ec14e3e9a69985551c9018eed",
+    "reproduced_sha256": "a89b9b277796a4fc08d4900bc10185afbf1bfe6ec14e3e9a69985551c9018eed",
+    "byte_identical": true
+  }
+}

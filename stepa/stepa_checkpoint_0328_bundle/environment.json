@@ -1,0 +1,14 @@
+{
+  "python": "3.14.4 (main, Aug 20 2026, 10:41:58) [GCC 15.2.0]",
+  "packages": {
+    "numpy": "2.4.6",
+    "pandas": "3.0.6",
+    "pyarrow": "26.0.1",
+    "catboost": "1.2.10",
+    "scipy": "1.18.1",
+    "joblib": "1.6.0",
+    "nbformat": "5.11.1",
+    "nbclient": "0.11.0",
+    "ipykernel": "7.4.0"
+  }
+}

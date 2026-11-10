@@ -1,0 +1,10 @@
+{
+  "checkpoint": "stepa_checkpoint_0.321453823624",
+  "public_score_reported_by_user": 0.328,
+  "rows": 8000,
+  "numeric_predictions_match": true,
+  "max_absolute_difference": 0.0,
+  "original_sha256": "a89b9b277796a4fc08d4900bc10185afbf1bfe6ec14e3e9a69985551c9018eed",
+  "reproduced_sha256": "a89b9b277796a4fc08d4900bc10185afbf1bfe6ec14e3e9a69985551c9018eed",
+  "byte_identical": true
+}

@@ -1,0 +1,116 @@
+{
+  "iterations": 10,
+  "best_score": 0.3214538236236013,
+  "history": [
+    {
+      "iteration": 1,
+      "name": "global_multiplier_scipy_pooled",
+      "holdout_score": 0.3332098310977661,
+      "elapsed_seconds": 1.1260501670003578,
+      "strategy_sha256": "d3f585654083cb514859b1b951f4680f355a66894211ad039f669988fb33ec56",
+      "calibration_fit_first": "2025-10-04 10:30:00",
+      "calibration_fit_last_label": "2025-10-17 14:30:00",
+      "holdout_first": "2025-10-18 10:30:00",
+      "holdout_last": "2025-10-31 10:30:00",
+      "note": "Повторно просматриваемый локальный holdout; внешний score неизвестен."
+    },
+    {
+      "iteration": 2,
+      "name": "global_affine_scipy_pooled",
+      "holdout_score": 0.33314773028570477,
+      "elapsed_seconds": 0.7550694560013653,
+      "strategy_sha256": "cb38cde0ce171747b3aba5c0b5baa875899789f4c6e479e02e205afdf16a7b53",
+      "calibration_fit_first": "2025-10-04 10:30:00",
+      "calibration_fit_last_label": "2025-10-17 14:30:00",
+      "holdout_first": "2025-10-18 10:30:00",
+      "holdout_last": "2025-10-31 10:30:00",
+      "note": "Повторно просматриваемый локальный holdout; внешний score неизвестен."
+    },
+    {
+      "iteration": 4,
+      "name": "rolling7_per_horizon_shift_route_shrink025",
+      "holdout_score": 0.3263651598395757,
+      "elapsed_seconds": 1.1612215389977791,
+      "strategy_sha256": "87c1e5c1fcaec00483bb80a4ba65e6b16d8231b24243d2066bb288775cf6661a",
+      "calibration_fit_first": "2025-10-04 10:30:00",
+      "calibration_fit_last_label": "2025-10-17 14:30:00",
+      "holdout_first": "2025-10-18 10:30:00",
+      "holdout_last": "2025-10-31 10:30:00",
+      "note": "Повторно просматриваемый локальный holdout; внешний score неизвестен."
+    },
+    {
+      "iteration": 5,
+      "name": "residual_catboost_depth4_450_rolling7_bias",
+      "holdout_score": 0.32418111180792425,
+      "elapsed_seconds": 11.67384202699759,
+      "strategy_sha256": "f27fcc408d15750e1070f52d0adc32a364331eb49777acd4140491d1c9855628",
+      "calibration_fit_first": "2025-10-04 10:30:00",
+      "calibration_fit_last_label": "2025-10-17 14:30:00",
+      "holdout_first": "2025-10-18 10:30:00",
+      "holdout_last": "2025-10-31 10:30:00",
+      "note": "Повторно просматриваемый локальный holdout; внешний score неизвестен."
+    },
+    {
+      "iteration": 6,
+      "name": "residual_catboost_depth4_450_ewma7_bias",
+      "holdout_score": 0.32150512952796045,
+      "elapsed_seconds": 11.23378718100139,
+      "strategy_sha256": "4c994b091853261ee58d4bffe24253e1f64fda5cc0b91400ec0d57d9733c7605",
+      "calibration_fit_first": "2025-10-04 10:30:00",
+      "calibration_fit_last_label": "2025-10-17 14:30:00",
+      "holdout_first": "2025-10-18 10:30:00",
+      "holdout_last": "2025-10-31 10:30:00",
+      "note": "Повторно просматриваемый локальный holdout; внешний score неизвестен."
+    },
+    {
+      "iteration": 7,
+      "name": "residual_ewma7_plus_causal_network_volume_depth4",
+      "holdout_score": 0.32150512952796045,
+      "elapsed_seconds": 12.49770945400087,
+      "strategy_sha256": "be31857b9fa0e066a446a4296ff615e07d99ab31f33e0a34a39f8f371f3b3700",
+      "calibration_fit_first": "2025-10-04 10:30:00",
+      "calibration_fit_last_label": "2025-10-17 14:30:00",
+      "holdout_first": "2025-10-18 10:30:00",
+      "holdout_last": "2025-10-31 10:30:00",
+      "note": "Повторно просматриваемый локальный holdout; внешний score неизвестен."
+    },
+    {
+      "iteration": 8,
+      "name": "residual_catboost_depth5_900_ewma7_bias",
+      "holdout_score": 0.3215522695721678,
+      "elapsed_seconds": 23.25042383699838,
+      "strategy_sha256": "8529977323469b2340087087d55c07c3baa18e140343ee1049d09f1d02ab50f3",
+      "calibration_fit_first": "2025-10-04 10:30:00",
+      "calibration_fit_last_label": "2025-10-17 14:30:00",
+      "holdout_first": "2025-10-18 10:30:00",
+      "holdout_last": "2025-10-31 10:30:00",
+      "note": "Повторно просматриваемый локальный holdout; внешний score неизвестен."
+    },
+    {
+      "iteration": 9,
+      "name": "residual_smooth_mae_ridge001_ewma7",
+      "holdout_score": 0.3232758545838607,
+      "elapsed_seconds": 2.6861707030002435,
+      "strategy_sha256": "8e3b4fa34578dbc0451e3f3d7eabf96eddce265ce4ddef5374752845431d3f97",
+      "calibration_fit_first": "2025-10-04 10:30:00",
+      "calibration_fit_last_label": "2025-10-17 14:30:00",
+      "holdout_first": "2025-10-18 10:30:00",
+      "holdout_last": "2025-10-31 10:30:00",
+      "note": "Повторно просматриваемый локальный holdout; внешний score неизвестен."
+    },
+    {
+      "iteration": 10,
+      "name": "ensemble_shallow450_deep900_equal_ewma7",
+      "holdout_score": 0.3214538236236013,
+      "elapsed_seconds": 33.71467168100207,
+      "strategy_sha256": "d83f211eaa429d75f3cf4e721cdb4ee512ecd19422c5210c9e7b9852f498349f",
+      "calibration_fit_first": "2025-10-04 10:30:00",
+      "calibration_fit_last_label": "2025-10-17 14:30:00",
+      "holdout_first": "2025-10-18 10:30:00",
+      "holdout_last": "2025-10-31 10:30:00",
+      "note": "Повторно просматриваемый локальный holdout; внешний score неизвестен."
+    }
+  ],
+  "best_checkpoint": "stepa_checkpoint_0.321453823624",
+  "best_iteration": 10
+}

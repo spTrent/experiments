@@ -1,0 +1,77 @@
+{
+  "best_iteration": 10,
+  "strategy": "ensemble_shallow450_deep900_equal_ewma7",
+  "checkpoint": "stepa_checkpoint_0.321453823624",
+  "validation": {
+    "split": "holdout",
+    "horizon": 0,
+    "WAPE": 0.3200902992000887,
+    "Rbias": -0.0013635244235125,
+    "score": 0.3214538236236013,
+    "daily_score": 0.3383008928260467,
+    "rows": 112000,
+    "days": 14
+  },
+  "autonomous_validation_runs": 10,
+  "failed_runs": [
+    3
+  ],
+  "public_baseline_reported_by_user": 0.33,
+  "public_candidate_score": 0.328,
+  "submitted": true,
+  "evaluation_calibrator_fit": "2025-10-04..2025-10-17; per-origin EWMA uses only labels before cutoff minus 4h",
+  "final_calibrator_refit": "same selected hyperparameters; OOS labels 2025-10-04..2025-10-31",
+  "final_model_base": "ready full-history recent75 CatBoost; control h1/h2/h3/h4/h7, seasonal h5/h6/h8",
+  "final_calibrator_last_label": "2025-10-31 14:30:00",
+  "forecast_origin": "2025-11-01 10:30:00",
+  "forecast_first": "2025-11-01 11:00:00",
+  "forecast_last": "2025-11-01 14:30:00",
+  "submission_rows": 8000,
+  "submission_columns": [
+    "id",
+    "y_pred"
+  ],
+  "submission_sum": 2228731196.003049,
+  "prior_server_submission_sum": 2231172461.4582005,
+  "submission_sha256": "a89b9b277796a4fc08d4900bc10185afbf1bfe6ec14e3e9a69985551c9018eed",
+  "reloaded_model_predictions_identical": true,
+  "prefix_and_unknown_labels_invariance_passed": true,
+  "inputs_sha256": {
+    "final_predictions.parquet": "d64be5f61f43867586bc639a4aa961a15411ee7e830bb8db3a7f974dc6d69e97",
+    "anchor_features.parquet": "474b179696b5d5a3add1605a15391eb3f48502bf0b283d27d0bb69c39239ce34",
+    "network_training.parquet": "648054c7b7a9e853a5e2826ff3baa02434e68625133a3a7118ff05f815d28d94",
+    "test_keys.parquet": "6ebac2d70e5a83b0b655ecc5384d6f6f34602c74f9503e3575ef5c819d70a5b2",
+    "selected_evaluation.parquet": "e50c0afe455dc8300d92139c1637d08635f3c9577541b110e535daa062d8ac4a",
+    "control_evaluation.parquet": "023186d5b600b504200a2b4b570b8483aae9f36b4e6663aa28b8ac73e5c8ae94"
+  },
+  "source_sha256": {
+    "network_volume.py": "af0a9ac86c9f0fe7c0d4025812e29055706f05ce58c5510056b24ae148e25718",
+    "finalize_best.py": "81c18f9a750a8ae3959dc729b39195b4276d86449e001bd1c8d67f351cfcbd42",
+    "rolling_calibration.py": "87c1e5c1fcaec00483bb80a4ba65e6b16d8231b24243d2066bb288775cf6661a",
+    "network_strategy.py": "be31857b9fa0e066a446a4296ff615e07d99ab31f33e0a34a39f8f371f3b3700",
+    "optimize_validation.py": "955b50f2f3246b18a5c19d57c7aaeb0b4876ec2235a67084a28fc7a9d7fbeba3",
+    "residual_linear.py": "8e3b4fa34578dbc0451e3f3d7eabf96eddce265ce4ddef5374752845431d3f97",
+    "prepare_final_anchor.py": "387a47980f585ca9b76559c921ac8b59e07de7d0813ebd57edff615f0c9ad7c9",
+    "residual_deep.py": "8529977323469b2340087087d55c07c3baa18e140343ee1049d09f1d02ab50f3",
+    "residual_rolling.py": "f27fcc408d15750e1070f52d0adc32a364331eb49777acd4140491d1c9855628",
+    "active_strategy.py": "d83f211eaa429d75f3cf4e721cdb4ee512ecd19422c5210c9e7b9852f498349f",
+    "residual_ewma.py": "4c994b091853261ee58d4bffe24253e1f64fda5cc0b91400ec0d57d9733c7605"
+  },
+  "base_model_sha256": {
+    "h1": "04aae8d162f1683138e7318ead9369cf81a2043d29972d7c997020b3d9a1beb3",
+    "h2": "0c4ca67aad6b9759437af9d69a234b638c53a6ba365bbc5d5a773dac0d21bb72",
+    "h3": "07f6989a4fa2563f35d8809ec27e68a3bf1e33958fe1a027b7602301e7bde0ed",
+    "h4": "7f1f09db5635f81ec6b4d285776bec59def0b980bff5502149d387fe4461d825",
+    "h5": "bfc61c868565fe365da682a051513fc63a5928248055d31d9fe071dcca69a4c3",
+    "h6": "07d084549a929d7460a04b9221bead7c0a14e8a5db7bf72e2e0d8391948c5a2c",
+    "h7": "7b19ab844dc2c7af2c20f8e526baafd6aa3da7fda79af3c710cd78b5d4a7488b",
+    "h8": "5816cc00b4f19d47d1ec5eb771137e6f587c99b9c278a01998f202de075ccda8"
+  },
+  "limitations": [
+    "External score is unmeasured; user submits manually.",
+    "Holdout has been examined repeatedly during project development and these 10 runs.",
+    "Pooled bias can cancel between days; daily and two weekly scores are reported separately.",
+    "Final refit is not evaluated on its own training dates; transfer of OOS correction to full-history base models is uncertain."
+  ],
+  "public_score_source": "user reported 2026-11-10; candidate from iterations 1-10"
+}

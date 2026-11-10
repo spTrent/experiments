@@ -1,0 +1,15 @@
+{
+  "k": 1,
+  "config": 2,
+  "mode": "rolling7",
+  "balance": false,
+  "period": "calibration_select",
+  "factor": 1.0,
+  "n": 56000,
+  "volume": 16119467610.0,
+  "absolute": 5216811565.355398,
+  "signed": -132767182.58657089,
+  "WAPE": 0.3236342348005995,
+  "relative_bias": -0.00823644960235575,
+  "score": 0.3318706844029552
+}

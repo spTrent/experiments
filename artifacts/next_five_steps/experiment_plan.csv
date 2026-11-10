@@ -1,0 +1,6 @@
+priority,experiment,relative_cost,isolated_change,acceptance
+1,raw_y_for_residual_and_bias,low,keep cleaned bases; raw targets only in correction layer,reduce bias without WAPE degradation
+2,causal_horizon_bias_with_shrinkage,low,global correction vs shrunk horizon correction,better full-day metric across pre-test blocks
+3,few_regularized_shape_weights,low_if_OOF_available,global weight vs few horizon-group weights; fixed totals,lower WAPE with identical totals
+4,learn_route_shares,medium,route-level-normalized target vs actual network share; fixed totals,lower WAPE with identical totals
+5,clean_X_raw_y_base_training,high,same cleaned feature history; raw base labels,beat matched raw control on original targets

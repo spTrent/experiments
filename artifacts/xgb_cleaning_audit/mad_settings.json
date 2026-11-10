@@ -1,0 +1,7 @@
+{
+  "window_days": 28,
+  "min_days": 14,
+  "z_threshold": 4.0,
+  "log_scale_floor": 0.25,
+  "mad_normalization": 1.4826
+}

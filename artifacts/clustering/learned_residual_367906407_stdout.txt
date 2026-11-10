@@ -1,0 +1,153 @@
+GPU обязателен: CatBoost CUDA и CuPy проверены.
+
+
+Маршрутов: 1000 Выходы: /kaggle/working/cluster_experiment_de3fe58a14c1a1f1 CatBoost: GPU
+
+
+Источник OOF и полностью переобученных баз: /kaggle/input/notebooks/iskanderyamalov/clustering-calibration/cluster_experiment_3387cb53bcd07507
+
+Default metric period is 5 because MAE is/are not implemented for GPU
+
+
+ k  config     mode  balance             period   factor     n       volume     absolute        signed     WAPE  relative_bias    score
+ 1       0      raw    False              train 1.000000 56000 1.669733e+10 5.268890e+09 -6.470808e+08 0.315553  -3.875355e-02 0.354306
+ 1       0      raw    False calibration_select 1.000000 56000 1.611947e+10 5.182476e+09 -8.740220e+08 0.321504  -5.422152e-02 0.375726
+ 1       0    ratio     True              train 1.040316 56000 1.669733e+10 5.292699e+09 -1.048669e-06 0.316979  -6.280461e-17 0.316979
+ 1       0    ratio     True calibration_select 1.040316 56000 1.611947e+10 5.186861e+09 -2.593876e+08 0.321776  -1.609158e-02 0.337868
+ 1       0 rolling7    False              train 1.000000 56000 1.669733e+10 5.297113e+09 -1.732260e-07 0.317243  -1.037447e-17 0.317243
+ 1       0 rolling7    False calibration_select 1.000000 56000 1.611947e+10 5.193362e+09 -1.793433e+08 0.322180  -1.112588e-02 0.333305
+
+Default metric period is 5 because MAE is/are not implemented for GPU
+
+
+ k  config     mode  balance             period   factor     n       volume     absolute        signed     WAPE  relative_bias    score
+ 1       1      raw    False              train 1.000000 56000 1.669733e+10 5.229155e+09 -6.450041e+08 0.313173  -3.862918e-02 0.351802
+ 1       1      raw    False calibration_select 1.000000 56000 1.611947e+10 5.182428e+09 -8.582621e+08 0.321501  -5.324382e-02 0.374745
+ 1       1    ratio     True              train 1.040181 56000 1.669733e+10 5.253116e+09 -2.168119e-06 0.314608  -1.298482e-16 0.314608
+ 1       1    ratio     True calibration_select 1.040181 56000 1.611947e+10 5.188257e+09 -2.450463e+08 0.321863  -1.520188e-02 0.337065
+ 1       1 rolling7    False              train 1.000000 56000 1.669733e+10 5.259331e+09  7.087365e-07 0.314980   4.244610e-17 0.314980
+ 1       1 rolling7    False calibration_select 1.000000 56000 1.611947e+10 5.195072e+09 -1.683038e+08 0.322286  -1.044103e-02 0.332727
+
+Default metric period is 5 because MAE is/are not implemented for GPU
+
+
+ k  config     mode  balance             period   factor     n       volume     absolute        signed     WAPE  relative_bias    score
+ 1       2      raw    False              train 1.000000 56000 1.669733e+10 5.094307e+09 -6.672905e+08 0.305097  -3.996390e-02 0.345061
+ 1       2      raw    False calibration_select 1.000000 56000 1.611947e+10 5.202702e+09 -8.196248e+08 0.322759  -5.084689e-02 0.373606
+ 1       2    ratio     True              train 1.041628 56000 1.669733e+10 5.120629e+09  5.653128e-07 0.306674   3.385648e-17 0.306674
+ 1       2    ratio     True calibration_select 1.041628 56000 1.611947e+10 5.212544e+09 -1.827306e+08 0.323370  -1.133602e-02 0.334706
+ 1       2 rolling7    False              train 1.000000 56000 1.669733e+10 5.131022e+09  3.688037e-07 0.307296   2.208759e-17 0.307296
+ 1       2 rolling7    False calibration_select 1.000000 56000 1.611947e+10 5.216812e+09 -1.327672e+08 0.323634  -8.236450e-03 0.331871
+
+
+ k  config     mode  balance             period   factor     n       volume     absolute        signed     WAPE  relative_bias    score
+ 1       3      raw    False              train 1.000000 56000 1.669733e+10 5.386137e+09  1.409445e+06 0.322575   8.441142e-05 0.322659
+ 1       3      raw    False calibration_select 1.000000 56000 1.611947e+10 5.187485e+09 -3.029206e+08 0.321815  -1.879222e-02 0.340607
+ 1       3    ratio     True              train 0.999916 56000 1.669733e+10 5.386034e+09 -1.437962e-06 0.322569  -8.611928e-17 0.322569
+ 1       3    ratio     True calibration_select 0.999916 56000 1.611947e+10 5.187436e+09 -3.042556e+08 0.321812  -1.887504e-02 0.340687
+ 1       3 rolling7    False              train 1.000000 56000 1.669733e+10 5.386032e+09  2.458692e-07 0.322568   1.472506e-17 0.322568
+ 1       3 rolling7    False calibration_select 1.000000 56000 1.611947e+10 5.190439e+09 -2.293496e+08 0.321998  -1.422811e-02 0.336226
+
+
+ k  config     mode  balance             period   factor     n       volume     absolute        signed     WAPE  relative_bias    score
+ 1      -1      raw    False              train 1.000000 56000 1.669733e+10 5.159671e+09 -6.561473e+08 0.309012  -3.929654e-02 0.348308
+ 1      -1      raw    False calibration_select 1.000000 56000 1.611947e+10 5.190566e+09 -8.389434e+08 0.322006  -5.204536e-02 0.374051
+ 1      -1    ratio     True              train 1.040904 56000 1.669733e+10 5.184186e+09 -1.674518e-06 0.310480  -1.002866e-16 0.310480
+ 1      -1    ratio     True calibration_select 1.040904 56000 1.611947e+10 5.198137e+09 -2.139101e+08 0.322476  -1.327029e-02 0.335746
+ 1      -1 rolling7    False              train 1.000000 56000 1.669733e+10 5.193055e+09 -3.725290e-07 0.311011  -2.231070e-17 0.311011
+ 1      -1 rolling7    False calibration_select 1.000000 56000 1.611947e+10 5.203904e+09 -1.505355e+08 0.322833  -9.338739e-03 0.332172
+
+Default metric period is 5 because MAE is/are not implemented for GPU
+Default metric period is 5 because MAE is/are not implemented for GPU
+Default metric period is 5 because MAE is/are not implemented for GPU
+Default metric period is 5 because MAE is/are not implemented for GPU
+Default metric period is 5 because MAE is/are not implemented for GPU
+Default metric period is 5 because MAE is/are not implemented for GPU
+Default metric period is 5 because MAE is/are not implemented for GPU
+Default metric period is 5 because MAE is/are not implemented for GPU
+
+
+ k  config     mode  balance             period   factor     n       volume     absolute        signed     WAPE  relative_bias    score
+ 8       0      raw    False              train 1.000000 56000 1.669733e+10 5.281736e+09 -6.462021e+08 0.316322  -3.870092e-02 0.355023
+ 8       0      raw    False calibration_select 1.000000 56000 1.611947e+10 5.188728e+09 -9.251985e+08 0.321892  -5.739635e-02 0.379288
+ 8       0    ratio     True              train 1.040259 56000 1.669733e+10 5.307889e+09  9.685755e-07 0.317888   5.800781e-17 0.317888
+ 8       0    ratio     True calibration_select 1.040259 56000 1.611947e+10 5.189587e+09 -3.134927e+08 0.321945  -1.944808e-02 0.341393
+ 8       0 rolling7    False              train 1.000000 56000 1.669733e+10 5.311824e+09 -5.587935e-07 0.318124  -3.346604e-17 0.318124
+ 8       0 rolling7    False calibration_select 1.000000 56000 1.611947e+10 5.196846e+09 -2.067463e+08 0.322396  -1.282588e-02 0.335222
+
+Default metric period is 5 because MAE is/are not implemented for GPU
+Default metric period is 5 because MAE is/are not implemented for GPU
+Default metric period is 5 because MAE is/are not implemented for GPU
+Default metric period is 5 because MAE is/are not implemented for GPU
+Default metric period is 5 because MAE is/are not implemented for GPU
+Default metric period is 5 because MAE is/are not implemented for GPU
+Default metric period is 5 because MAE is/are not implemented for GPU
+Default metric period is 5 because MAE is/are not implemented for GPU
+
+
+ k  config     mode  balance             period   factor     n       volume     absolute        signed     WAPE  relative_bias    score
+ 8       1      raw    False              train 1.000000 56000 1.669733e+10 5.152497e+09 -6.348927e+08 0.308582  -3.802361e-02 0.346606
+ 8       1      raw    False calibration_select 1.000000 56000 1.611947e+10 5.196557e+09 -9.157080e+08 0.322378  -5.680759e-02 0.379185
+ 8       1    ratio     True              train 1.039527 56000 1.669733e+10 5.180647e+09 -2.607703e-07 0.310268  -1.561749e-17 0.310268
+ 8       1    ratio     True calibration_select 1.039527 56000 1.611947e+10 5.198193e+09 -3.147559e+08 0.322479  -1.952644e-02 0.342006
+ 8       1 rolling7    False              train 1.000000 56000 1.669733e+10 5.187754e+09 -6.342307e-07 0.310694  -3.798396e-17 0.310694
+ 8       1 rolling7    False calibration_select 1.000000 56000 1.611947e+10 5.204561e+09 -2.085892e+08 0.322874  -1.294020e-02 0.335814
+
+Default metric period is 5 because MAE is/are not implemented for GPU
+Default metric period is 5 because MAE is/are not implemented for GPU
+Default metric period is 5 because MAE is/are not implemented for GPU
+Default metric period is 5 because MAE is/are not implemented for GPU
+Default metric period is 5 because MAE is/are not implemented for GPU
+Default metric period is 5 because MAE is/are not implemented for GPU
+Default metric period is 5 because MAE is/are not implemented for GPU
+Default metric period is 5 because MAE is/are not implemented for GPU
+
+
+ k  config     mode  balance             period   factor     n       volume     absolute        signed     WAPE  relative_bias    score
+ 8       2      raw    False              train 1.000000 56000 1.669733e+10 4.965099e+09 -6.082150e+08 0.297359  -3.642588e-02 0.333785
+ 8       2      raw    False calibration_select 1.000000 56000 1.611947e+10 5.219648e+09 -8.601217e+08 0.323810  -5.335919e-02 0.377169
+ 8       2    ratio     True              train 1.037803 56000 1.669733e+10 4.992121e+09  2.998859e-07 0.298977   1.796011e-17 0.298977
+ 8       2    ratio     True calibration_select 1.037803 56000 1.611947e+10 5.225256e+09 -2.832744e+08 0.324158  -1.757343e-02 0.341732
+ 8       2 rolling7    False              train 1.000000 56000 1.669733e+10 5.004870e+09  1.499429e-07 0.299741   8.980055e-18 0.299741
+ 8       2 rolling7    False calibration_select 1.000000 56000 1.611947e+10 5.230058e+09 -1.888072e+08 0.324456  -1.171299e-02 0.336169
+
+
+ k  config     mode  balance             period   factor     n       volume     absolute        signed     WAPE  relative_bias    score
+ 8       3      raw    False              train 1.000000 56000 1.669733e+10 5.326973e+09 -1.258068e+07 0.319031  -7.534545e-04 0.319785
+ 8       3      raw    False calibration_select 1.000000 56000 1.611947e+10 5.191590e+09 -3.060661e+08 0.322070  -1.898736e-02 0.341057
+ 8       3    ratio     True              train 1.000754 56000 1.669733e+10 5.327795e+09 -1.316890e-06 0.319081  -7.886831e-17 0.319081
+ 8       3    ratio     True calibration_select 1.000754 56000 1.611947e+10 5.192015e+09 -2.941425e+08 0.322096  -1.824765e-02 0.340344
+ 8       3 rolling7    False              train 1.000000 56000 1.669733e+10 5.327885e+09 -5.811453e-07 0.319086  -3.480468e-17 0.319086
+ 8       3 rolling7    False calibration_select 1.000000 56000 1.611947e+10 5.195721e+09 -2.141563e+08 0.322326  -1.328557e-02 0.335611
+
+
+ k  config     mode  balance             period   factor     n       volume     absolute        signed     WAPE  relative_bias    score
+ 8      -1      raw    False              train 1.000000 56000 1.669733e+10 5.054293e+09 -6.215538e+08 0.302701  -3.722475e-02 0.339925
+ 8      -1      raw    False calibration_select 1.000000 56000 1.611947e+10 5.204021e+09 -8.879149e+08 0.322841  -5.508339e-02 0.377924
+ 8      -1    ratio     True              train 1.038664 56000 1.669733e+10 5.080406e+09  7.171184e-07 0.304265   4.294809e-17 0.304265
+ 8      -1    ratio     True calibration_select 1.038664 56000 1.611947e+10 5.207880e+09 -2.990021e+08 0.323080  -1.854913e-02 0.341629
+ 8      -1 rolling7    False              train 1.000000 56000 1.669733e+10 5.091103e+09 -3.725290e-09 0.304905  -2.231070e-19 0.304905
+ 8      -1 rolling7    False calibration_select 1.000000 56000 1.611947e+10 5.213449e+09 -1.986982e+08 0.323426  -1.232660e-02 0.335752
+
+Default metric period is 5 because MAE is/are not implemented for GPU
+
+
+period           method            protocol      n       volume     absolute        signed     WAPE  relative_bias    score
+ train              raw frozen_or_in_sample 112000 3.281680e+10 1.060327e+10 -1.161201e+09 0.323105      -0.035384 0.358489
+ train learned_residual frozen_or_in_sample 112000 3.281680e+10 1.020687e+10 -1.296900e+09 0.311026      -0.039519 0.350545
+  test              raw frozen_or_in_sample 112000 3.239887e+10 1.035824e+10 -1.550681e+09 0.319710      -0.047862 0.367572
+  test learned_residual         prequential 112000 3.239887e+10 1.040851e+10 -1.691604e+07 0.321262      -0.000522 0.321784
+Оценка test получена до полного переобучения. Этот test уже изучался в проекте. Для rolling7 это последовательная оценка: используются только метки timestamp < cutoff − 4 часа; правило зафиксировано до test.
+
+Default metric period is 5 because MAE is/are not implemented for GPU
+
+
+             period           method            protocol      n       volume     absolute        signed     WAPE  relative_bias    score
+              train              raw frozen_or_in_sample 112000 3.281680e+10 1.060327e+10 -1.161201e+09 0.323105      -0.035384 0.358489
+              train learned_residual frozen_or_in_sample 112000 3.281680e+10 1.020687e+10 -1.296900e+09 0.311026      -0.039519 0.350545
+               test              raw frozen_or_in_sample 112000 3.239887e+10 1.035824e+10 -1.550681e+09 0.319710      -0.047862 0.367572
+               test learned_residual         prequential 112000 3.239887e+10 1.040851e+10 -1.691604e+07 0.321262      -0.000522 0.321784
+full_in_sample_meta learned_residual                 NaN 224000 6.521566e+10 2.047373e+10 -2.456649e+09 0.313939      -0.037670 0.351608
+Train/test выше относятся к прежней оценочной модели, до полного refit метамоделей.
+Базовые модели взяты из полного refit исходного запуска на той же всей истории; метамодели переобучены на всех доступных OOF val/test.
+Сабмит: /kaggle/working/cluster_experiment_de3fe58a14c1a1f1/submission.csv

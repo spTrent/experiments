@@ -1,0 +1,18 @@
+{
+  "source_notebook": "best/raw-vs-clean.ipynb",
+  "models": "CatBoost plus LightGBM plus residual CatBoost; not XGBoost",
+  "run_minutes": 103.49257603333334,
+  "test_start": "2025-10-18 10:30:00",
+  "test_end": "2025-10-31 10:30:00",
+  "branches": [
+    "raw",
+    "median6",
+    "seasonal_mad"
+  ],
+  "verified_same_keys_and_raw_targets": true,
+  "recomputed_metrics_match_csv_atol": 1e-12,
+  "raw_control_retrained_in_this_run": false,
+  "cleaning": "upper clipping only; zeros retained",
+  "selected_on_tuning": "median6",
+  "models_trained_locally": false
+}

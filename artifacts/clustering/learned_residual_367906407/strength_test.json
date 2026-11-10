@@ -1,0 +1,9 @@
+{
+  "period": "test",
+  "protocol": "prequential",
+  "strength": 0.75,
+  "mode": "rolling_offset7",
+  "WAPE": 0.3210945254538519,
+  "relative_bias": 0.002045315039143421,
+  "score": 0.3231398404929953
+}

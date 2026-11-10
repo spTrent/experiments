@@ -1,0 +1,11 @@
+{
+  "training_target_end_exclusive": "2025-10-18 00:00:00",
+  "training_scope": "train_plus_val",
+  "local_test_used_for_fit": false,
+  "learned_statistics_fit_before": "2025-10-18 00:00:00",
+  "future_feature_cutoff": "2025-11-01 10:30:00",
+  "multiplier": 1.05,
+  "multiplier_source": "fixed_before_this_run_from_previous_val_selection",
+  "full_history_refit": false,
+  "note": "Диагностический сабмит по явному запросу пользователя: локальный test исключён из fit, но доступен как история признаков."
+}

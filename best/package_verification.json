@@ -1,0 +1,13 @@
+{
+  "notebook": "session6.ipynb",
+  "notebook_structurally_valid": true,
+  "code_cells_compiled": true,
+  "all_input_hashes_verified": true,
+  "full_notebook_executed": false,
+  "cpu_inference_executed_from_final_folder": true,
+  "rows": 8000,
+  "max_absolute_difference": 1.1641532182693481e-10,
+  "strict_comparison_passed": true,
+  "cached_validation_score_recomputed": 0.3191901999528053,
+  "public_score_reported_by_user": 0.326
+}

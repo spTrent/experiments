@@ -1,0 +1,20 @@
+{
+  "winner": "cat_k8",
+  "choices": {
+    "cat_k1": {
+      "variant": "cat_k1",
+      "half_life": 1,
+      "WAPE": 0.32301333194285137,
+      "relative_bias": -0.00643991799970621,
+      "score": 0.3294532499425576
+    },
+    "cat_k8": {
+      "variant": "cat_k8",
+      "half_life": 1,
+      "WAPE": 0.32249783212429894,
+      "relative_bias": -0.006696880487363917,
+      "score": 0.3291947126116629
+    }
+  },
+  "protocol": "prequential; only labels timestamp < cutoff - 4 hours"
+}

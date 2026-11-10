@@ -9,11 +9,56 @@ import joblib
 import numpy as np
 import pandas as pd
 from catboost import CatBoostRegressor
+from catboost.utils import get_gpu_device_count
 from sklearn.cluster import KMeans
-from sklearn.linear_model import Ridge
 from sklearn.preprocessing import StandardScaler
 from threadpoolctl import threadpool_limits
 from IPython.display import display
+
+
+def require_gpu():
+    global cp
+    if TASK_TYPE != 'GPU':
+        raise ValueError("Обучение разрешено только на GPU: TASK_TYPE='GPU'")
+    if get_gpu_device_count() < 1:
+        raise RuntimeError('CatBoost не видит GPU. Включите NVIDIA GPU в настройках Kaggle.')
+    try:
+        import cupy as cp
+        probe = cp.linalg.solve(cp.eye(2, dtype=cp.float64), cp.ones(2, dtype=cp.float64))
+        if not np.allclose(cp.asnumpy(probe), 1):
+            raise RuntimeError('Ошибка проверки CUDA')
+        cp.cuda.get_current_stream().synchronize()
+    except Exception as error:
+        raise RuntimeError('Для Ridge требуется рабочий CuPy под CUDA вашей Kaggle-сессии. CPU fallback отключён.') from error
+    print('GPU обязателен: CatBoost CUDA и CuPy проверены.', flush=True)
+
+
+class GPURidge:
+    def __init__(self, alpha):
+        self.alpha = float(alpha)
+
+    def fit(self, x, y, sample_weight=None):
+        width = x.shape[1] + 1
+        gram = cp.zeros((width, width), dtype=cp.float64)
+        rhs = cp.zeros(width, dtype=cp.float64)
+        for start in range(0, len(y), PREDICT_BATCH):
+            stop = min(start + PREDICT_BATCH, len(y))
+            z = cp.empty((stop - start, width), dtype=cp.float64)
+            z[:, :-1] = cp.asarray(x[start:stop])
+            z[:, -1] = 1
+            weights = cp.ones(stop - start) if sample_weight is None else cp.asarray(sample_weight[start:stop])
+            gram += z.T @ (z * weights[:, None])
+            rhs += z.T @ (cp.asarray(y[start:stop]) * weights)
+        penalty = cp.full(width, self.alpha, dtype=cp.float64)
+        penalty[-1] = 0
+        solution = cp.asnumpy(cp.linalg.solve(gram + cp.diag(penalty), rhs))
+        if not np.isfinite(solution).all():
+            raise ValueError('Неконечные коэффициенты GPU Ridge')
+        self.coef_, self.intercept_ = solution[:-1], float(solution[-1])
+        return self
+
+    def predict(self, x):
+        return cp.asnumpy(cp.asarray(x, dtype=cp.float64) @ cp.asarray(self.coef_) + self.intercept_)
 
 
 def write_json(path, value):
@@ -33,7 +78,8 @@ def digest_file(path):
 
 def load_inputs():
     global TIMES, ROUTES, VALUES, REQUESTS, VAL_START, TEST_START, TEST_END, RUN, ROLL
-    if TASK_TYPE not in ('CPU', 'GPU') or THREADS < 1 or PREDICT_BATCH < 1 or MIN_CLUSTER_ROUTES < 1:
+    require_gpu()
+    if THREADS < 1 or PREDICT_BATCH < 1 or MIN_CLUSTER_ROUTES < 1:
         raise ValueError('Некорректные настройки исполнения')
     if not RIDGE_LAMBDAS or min(RIDGE_LAMBDAS) <= 0 or not CAT_CONFIGS:
         raise ValueError('Нужны положительные регуляризации и конфигурации CatBoost')
@@ -222,7 +268,7 @@ def fit_model(train, segmentation, family, k, settings):
         if family == 'ridge':
             scaler = StandardScaler().fit(x)
             z = scaler.transform(x)
-            model = Ridge(alpha=float(settings['lambda']) * len(x), solver='lsqr', tol=1e-5)
+            model = GPURidge(alpha=float(settings['lambda']) * len(x))
             model.fit(z, y, sample_weight=w)
         else:
             scaler = None

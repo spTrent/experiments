@@ -1,0 +1,866 @@
+[{"stream_name":"stderr","time":7.850313378,"data":"0.00s - Debugger warning: It seems that frozen modules are being used, which may\n"}
+,{"stream_name":"stderr","time":7.850484629,"data":"0.00s - make the debugger miss breakpoints. Please pass -Xfrozen_modules=off\n"}
+,{"stream_name":"stderr","time":7.850491879,"data":"0.00s - to python to disable frozen modules.\n"}
+,{"stream_name":"stderr","time":7.850495928,"data":"0.00s - Note: Debugging will proceed. Set PYDEVD_DISABLE_FILE_VALIDATION=1 to disable this validation.\n"}
+,{"stream_name":"stderr","time":8.462750318,"data":"0.00s - Debugger warning: It seems that frozen modules are being used, which may\n"}
+,{"stream_name":"stderr","time":8.462807254,"data":"0.00s - make the debugger miss breakpoints. Please pass -Xfrozen_modules=off\n"}
+,{"stream_name":"stderr","time":8.46281555,"data":"0.00s - to python to disable frozen modules.\n"}
+,{"stream_name":"stderr","time":8.462819682,"data":"0.00s - Note: Debugging will proceed. Set PYDEVD_DISABLE_FILE_VALIDATION=1 to disable this validation.\n"}
+,{"stream_name":"stdout","time":19.356230002,"data":"GPU обязателен: CatBoost CUDA и CuPy проверены.\n"}
+,{"stream_name":"stdout","time":23.44722402,"data":"Маршрутов: 1000 Выходы: /kaggle/working/cluster_experiment_4bb5c8cdccd95781 CatBoost: GPU\n"}
+,{"stream_name":"stdout","time":68.690653695,"data":"xgb_direct_compact h 1 k 1 group 0 seconds 41.7\n"}
+,{"stream_name":"stderr","time":68.908862467,"data":"/usr/local/lib/python3.13/dist-packages/xgboost/core.py:569: UserWarning: [02:09:22] WARNING: /__w/xgboost/xgboost/src/common/error_msg.cc:62: Falling back to prediction using DMatrix due to mismatched devices. This might lead to higher memory usage and slower performance. XGBoost is running on: cuda:0, while the input data is on: cpu.\n"}
+,{"stream_name":"stderr","time":68.908899777,"data":"Potential solutions:\n"}
+,{"stream_name":"stderr","time":68.908904505,"data":"- Use a data structure that matches the device ordinal in the booster.\n"}
+,{"stream_name":"stderr","time":68.908908846,"data":"- Set the device for booster before call to inplace_predict.\n"}
+,{"stream_name":"stderr","time":68.908913037,"data":"\n"}
+,{"stream_name":"stderr","time":68.908916847,"data":"This warning will only be shown once.\n"}
+,{"stream_name":"stderr","time":68.908920717,"data":"\n"}
+,{"stream_name":"stderr","time":68.908924609,"data":"  return func(**kwargs)\n"}
+,{"stream_name":"stderr","time":68.908928543,"data":"\n"}
+,{"stream_name":"stderr","time":68.90893241,"data":"/usr/local/lib/python3.13/dist-packages/xgboost/core.py:569: UserWarning: [02:09:22] WARNING: /__w/xgboost/xgboost/src/common/error_msg.cc:62: Falling back to prediction using DMatrix due to mismatched devices. This might lead to higher memory usage and slower performance. XGBoost is running on: cuda:0, while the input data is on: cpu.\n"}
+,{"stream_name":"stderr","time":68.908937163,"data":"Potential solutions:\n"}
+,{"stream_name":"stderr","time":68.908941019,"data":"- Use a data structure that matches the device ordinal in the booster.\n"}
+,{"stream_name":"stderr","time":68.908944993,"data":"- Set the device for booster before call to inplace_predict.\n"}
+,{"stream_name":"stderr","time":68.908948917,"data":"\n"}
+,{"stream_name":"stderr","time":68.908952757,"data":"This warning will only be shown once.\n"}
+,{"stream_name":"stderr","time":68.908956647,"data":"\n"}
+,{"stream_name":"stderr","time":68.908960598,"data":"  return func(**kwargs)\n"}
+,{"stream_name":"stdout","time":71.558327634,"data":"Test закрыт. Калибровка и выбор используют только периоды до test.\n"}
+,{"stream_name":"stdout","time":113.956809858,"data":"xgb_direct_compact h 1 k 8 group -1 seconds 42.2\n"}
+,{"stream_name":"stdout","time":124.540711839,"data":"xgb_direct_compact h 1 k 8 group 0 seconds 10.6\n"}
+,{"stream_name":"stdout","time":133.693330993,"data":"xgb_direct_compact h 1 k 8 group 1 seconds 9.1\n"}
+,{"stream_name":"stdout","time":136.833105962,"data":"xgb_direct_compact h 1 k 8 group 2 seconds 3.1\n"}
+,{"stream_name":"stdout","time":143.570142349,"data":"xgb_direct_compact h 1 k 8 group 3 seconds 6.7\n"}
+,{"stream_name":"stdout","time":154.740484924,"data":"xgb_direct_compact h 1 k 8 group 4 seconds 11.2\n"}
+,{"stream_name":"stdout","time":161.937298642,"data":"xgb_direct_compact h 1 k 8 group 6 seconds 7.2\n"}
+,{"stream_name":"stdout","time":166.576289375,"data":"xgb_direct_compact h 1 k 8 group 7 seconds 4.6\n"}
+,{"stream_name":"stdout","time":169.712152717,"data":"Test закрыт. Калибровка и выбор используют только периоды до test.\n"}
+,{"stream_name":"stdout","time":195.424044585,"data":"xgb_direct_compact h 2 k 1 group 0 seconds 22.7\n"}
+,{"stream_name":"stdout","time":197.536327742,"data":"Test закрыт. Калибровка и выбор используют только периоды до test.\n"}
+,{"stream_name":"stdout","time":220.658055954,"data":"xgb_direct_compact h 2 k 8 group -1 seconds 23.0\n"}
+,{"stream_name":"stdout","time":226.249487107,"data":"xgb_direct_compact h 2 k 8 group 0 seconds 5.6\n"}
+,{"stream_name":"stdout","time":230.998307702,"data":"xgb_direct_compact h 2 k 8 group 1 seconds 4.8\n"}
+,{"stream_name":"stdout","time":232.569843715,"data":"xgb_direct_compact h 2 k 8 group 2 seconds 1.6\n"}
+,{"stream_name":"stdout","time":236.024114255,"data":"xgb_direct_compact h 2 k 8 group 3 seconds 3.5\n"}
+,{"stream_name":"stdout","time":241.905912768,"data":"xgb_direct_compact h 2 k 8 group 4 seconds 5.9\n"}
+,{"stream_name":"stdout","time":245.497898831,"data":"xgb_direct_compact h 2 k 8 group 6 seconds 3.6\n"}
+,{"stream_name":"stdout","time":247.837473131,"data":"xgb_direct_compact h 2 k 8 group 7 seconds 2.3\n"}
+,{"stream_name":"stdout","time":250.242759958,"data":"Test закрыт. Калибровка и выбор используют только периоды до test.\n"}
+,{"stream_name":"stdout","time":273.950526105,"data":"xgb_direct_compact h 3 k 1 group 0 seconds 20.8\n"}
+,{"stream_name":"stdout","time":275.935161995,"data":"Test закрыт. Калибровка и выбор используют только периоды до test.\n"}
+,{"stream_name":"stdout","time":296.741315277,"data":"xgb_direct_compact h 3 k 8 group -1 seconds 20.7\n"}
+,{"stream_name":"stdout","time":301.635045691,"data":"xgb_direct_compact h 3 k 8 group 0 seconds 4.9\n"}
+,{"stream_name":"stdout","time":305.762935278,"data":"xgb_direct_compact h 3 k 8 group 1 seconds 4.1\n"}
+,{"stream_name":"stdout","time":307.107901606,"data":"xgb_direct_compact h 3 k 8 group 2 seconds 1.3\n"}
+,{"stream_name":"stdout","time":310.0930728,"data":"xgb_direct_compact h 3 k 8 group 3 seconds 3.0\n"}
+,{"stream_name":"stdout","time":315.304136554,"data":"xgb_direct_compact h 3 k 8 group 4 seconds 5.2\n"}
+,{"stream_name":"stdout","time":318.484916462,"data":"xgb_direct_compact h 3 k 8 group 6 seconds 3.2\n"}
+,{"stream_name":"stdout","time":320.510041371,"data":"xgb_direct_compact h 3 k 8 group 7 seconds 2.0\n"}
+,{"stream_name":"stdout","time":322.822417324,"data":"Test закрыт. Калибровка и выбор используют только периоды до test.\n"}
+,{"stream_name":"stdout","time":336.3543917,"data":"xgb_direct_compact h 4 k 1 group 0 seconds 10.7\n"}
+,{"stream_name":"stdout","time":338.035351607,"data":"Test закрыт. Калибровка и выбор используют только периоды до test.\n"}
+,{"stream_name":"stdout","time":348.925437589,"data":"xgb_direct_compact h 4 k 8 group -1 seconds 10.8\n"}
+,{"stream_name":"stdout","time":351.427674697,"data":"xgb_direct_compact h 4 k 8 group 0 seconds 2.5\n"}
+,{"stream_name":"stdout","time":353.391473232,"data":"xgb_direct_compact h 4 k 8 group 1 seconds 2.0\n"}
+,{"stream_name":"stdout","time":353.9090247,"data":"xgb_direct_compact h 4 k 8 group 2 seconds 0.5\n"}
+,{"stream_name":"stdout","time":355.278101138,"data":"xgb_direct_compact h 4 k 8 group 3 seconds 1.4\n"}
+,{"stream_name":"stdout","time":357.859833251,"data":"xgb_direct_compact h 4 k 8 group 4 seconds 2.6\n"}
+,{"stream_name":"stdout","time":359.341421289,"data":"xgb_direct_compact h 4 k 8 group 6 seconds 1.5\n"}
+,{"stream_name":"stdout","time":360.202837781,"data":"xgb_direct_compact h 4 k 8 group 7 seconds 0.9\n"}
+,{"stream_name":"stdout","time":362.165501336,"data":"Test закрыт. Калибровка и выбор используют только периоды до test.\n"}
+,{"stream_name":"stdout","time":374.780868993,"data":"xgb_direct_compact h 5 k 1 group 0 seconds 9.8\n"}
+,{"stream_name":"stdout","time":376.440359396,"data":"Test закрыт. Калибровка и выбор используют только периоды до test.\n"}
+,{"stream_name":"stdout","time":386.459731299,"data":"xgb_direct_compact h 5 k 8 group -1 seconds 9.9\n"}
+,{"stream_name":"stdout","time":388.658579778,"data":"xgb_direct_compact h 5 k 8 group 0 seconds 2.2\n"}
+,{"stream_name":"stdout","time":390.453604521,"data":"xgb_direct_compact h 5 k 8 group 1 seconds 1.8\n"}
+,{"stream_name":"stdout","time":390.91288399,"data":"xgb_direct_compact h 5 k 8 group 2 seconds 0.5\n"}
+,{"stream_name":"stdout","time":392.172270954,"data":"xgb_direct_compact h 5 k 8 group 3 seconds 1.3\n"}
+,{"stream_name":"stdout","time":394.5521275,"data":"xgb_direct_compact h 5 k 8 group 4 seconds 2.4\n"}
+,{"stream_name":"stdout","time":395.865590045,"data":"xgb_direct_compact h 5 k 8 group 6 seconds 1.3\n"}
+,{"stream_name":"stdout","time":396.606566558,"data":"xgb_direct_compact h 5 k 8 group 7 seconds 0.7\n"}
+,{"stream_name":"stdout","time":398.467836503,"data":"Test закрыт. Калибровка и выбор используют только периоды до test.\n"}
+,{"stream_name":"stdout","time":411.307450922,"data":"xgb_direct_compact h 6 k 1 group 0 seconds 10.0\n"}
+,{"stream_name":"stdout","time":412.972605622,"data":"Test закрыт. Калибровка и выбор используют только периоды до test.\n"}
+,{"stream_name":"stdout","time":422.805571897,"data":"xgb_direct_compact h 6 k 8 group -1 seconds 9.7\n"}
+,{"stream_name":"stdout","time":425.008593993,"data":"xgb_direct_compact h 6 k 8 group 0 seconds 2.2\n"}
+,{"stream_name":"stdout","time":426.879614541,"data":"xgb_direct_compact h 6 k 8 group 1 seconds 1.9\n"}
+,{"stream_name":"stdout","time":427.360614463,"data":"xgb_direct_compact h 6 k 8 group 2 seconds 0.5\n"}
+,{"stream_name":"stdout","time":428.651749246,"data":"xgb_direct_compact h 6 k 8 group 3 seconds 1.3\n"}
+,{"stream_name":"stdout","time":431.106888979,"data":"xgb_direct_compact h 6 k 8 group 4 seconds 2.5\n"}
+,{"stream_name":"stdout","time":432.52639541,"data":"xgb_direct_compact h 6 k 8 group 6 seconds 1.4\n"}
+,{"stream_name":"stdout","time":433.324770913,"data":"xgb_direct_compact h 6 k 8 group 7 seconds 0.8\n"}
+,{"stream_name":"stdout","time":435.20615882,"data":"Test закрыт. Калибровка и выбор используют только периоды до test.\n"}
+,{"stream_name":"stdout","time":451.414057215,"data":"xgb_direct_compact h 7 k 1 group 0 seconds 13.3\n"}
+,{"stream_name":"stdout","time":453.213123424,"data":"Test закрыт. Калибровка и выбор используют только периоды до test.\n"}
+,{"stream_name":"stdout","time":466.660159689,"data":"xgb_direct_compact h 7 k 8 group -1 seconds 13.3\n"}
+,{"stream_name":"stdout","time":469.785832329,"data":"xgb_direct_compact h 7 k 8 group 0 seconds 3.1\n"}
+,{"stream_name":"stdout","time":472.396092929,"data":"xgb_direct_compact h 7 k 8 group 1 seconds 2.6\n"}
+,{"stream_name":"stdout","time":473.121903795,"data":"xgb_direct_compact h 7 k 8 group 2 seconds 0.7\n"}
+,{"stream_name":"stdout","time":474.956424412,"data":"xgb_direct_compact h 7 k 8 group 3 seconds 1.8\n"}
+,{"stream_name":"stdout","time":478.233902282,"data":"xgb_direct_compact h 7 k 8 group 4 seconds 3.3\n"}
+,{"stream_name":"stdout","time":480.205601559,"data":"xgb_direct_compact h 7 k 8 group 6 seconds 2.0\n"}
+,{"stream_name":"stdout","time":481.432839173,"data":"xgb_direct_compact h 7 k 8 group 7 seconds 1.2\n"}
+,{"stream_name":"stdout","time":483.415587477,"data":"Test закрыт. Калибровка и выбор используют только периоды до test.\n"}
+,{"stream_name":"stdout","time":496.424699261,"data":"xgb_direct_compact h 8 k 1 group 0 seconds 10.2\n"}
+,{"stream_name":"stdout","time":498.120412524,"data":"Test закрыт. Калибровка и выбор используют только периоды до test.\n"}
+,{"stream_name":"stdout","time":508.820092445,"data":"xgb_direct_compact h 8 k 8 group -1 seconds 10.6\n"}
+,{"stream_name":"stdout","time":511.171689414,"data":"xgb_direct_compact h 8 k 8 group 0 seconds 2.3\n"}
+,{"stream_name":"stdout","time":513.106539404,"data":"xgb_direct_compact h 8 k 8 group 1 seconds 1.9\n"}
+,{"stream_name":"stdout","time":513.599931734,"data":"xgb_direct_compact h 8 k 8 group 2 seconds 0.5\n"}
+,{"stream_name":"stdout","time":514.921057506,"data":"xgb_direct_compact h 8 k 8 group 3 seconds 1.3\n"}
+,{"stream_name":"stdout","time":517.377892791,"data":"xgb_direct_compact h 8 k 8 group 4 seconds 2.5\n"}
+,{"stream_name":"stdout","time":518.783866395,"data":"xgb_direct_compact h 8 k 8 group 6 seconds 1.4\n"}
+,{"stream_name":"stdout","time":519.614850896,"data":"xgb_direct_compact h 8 k 8 group 7 seconds 0.8\n"}
+,{"stream_name":"stdout","time":521.547312161,"data":"Test закрыт. Калибровка и выбор используют только периоды до test.\n"}
+,{"stream_name":"stdout","time":572.642708466,"data":"xgb_direct_compact h 1 k 1 group 0 seconds 47.5\n"}
+,{"stream_name":"stdout","time":575.737663832,"data":"Test закрыт. Калибровка и выбор используют только периоды до test.\n"}
+,{"stream_name":"stdout","time":624.123671821,"data":"xgb_direct_compact h 1 k 8 group -1 seconds 48.2\n"}
+,{"stream_name":"stdout","time":630.78184117,"data":"xgb_direct_compact h 1 k 8 group 0 seconds 6.7\n"}
+,{"stream_name":"stdout","time":636.115060124,"data":"xgb_direct_compact h 1 k 8 group 1 seconds 5.3\n"}
+,{"stream_name":"stdout","time":642.560924465,"data":"xgb_direct_compact h 1 k 8 group 2 seconds 6.4\n"}
+,{"stream_name":"stdout","time":658.888539441,"data":"xgb_direct_compact h 1 k 8 group 3 seconds 16.3\n"}
+,{"stream_name":"stdout","time":670.810216413,"data":"xgb_direct_compact h 1 k 8 group 4 seconds 11.9\n"}
+,{"stream_name":"stdout","time":674.633841512,"data":"xgb_direct_compact h 1 k 8 group 5 seconds 3.8\n"}
+,{"stream_name":"stdout","time":682.604702868,"data":"xgb_direct_compact h 1 k 8 group 6 seconds 8.0\n"}
+,{"stream_name":"stdout","time":685.948137102,"data":"Test закрыт. Калибровка и выбор используют только периоды до test.\n"}
+,{"stream_name":"stdout","time":714.876648203,"data":"xgb_direct_compact h 2 k 1 group 0 seconds 25.6\n"}
+,{"stream_name":"stdout","time":717.194406695,"data":"Test закрыт. Калибровка и выбор используют только периоды до test.\n"}
+,{"stream_name":"stdout","time":743.043884704,"data":"xgb_direct_compact h 2 k 8 group -1 seconds 25.7\n"}
+,{"stream_name":"stdout","time":746.394807254,"data":"xgb_direct_compact h 2 k 8 group 0 seconds 3.3\n"}
+,{"stream_name":"stdout","time":748.987434985,"data":"xgb_direct_compact h 2 k 8 group 1 seconds 2.6\n"}
+,{"stream_name":"stdout","time":752.188929738,"data":"xgb_direct_compact h 2 k 8 group 2 seconds 3.2\n"}
+,{"stream_name":"stdout","time":760.622133156,"data":"xgb_direct_compact h 2 k 8 group 3 seconds 8.4\n"}
+,{"stream_name":"stdout","time":766.709840485,"data":"xgb_direct_compact h 2 k 8 group 4 seconds 6.1\n"}
+,{"stream_name":"stdout","time":768.562910971,"data":"xgb_direct_compact h 2 k 8 group 5 seconds 1.9\n"}
+,{"stream_name":"stdout","time":772.566935493,"data":"xgb_direct_compact h 2 k 8 group 6 seconds 4.0\n"}
+,{"stream_name":"stdout","time":775.181856209,"data":"Test закрыт. Калибровка и выбор используют только периоды до test.\n"}
+,{"stream_name":"stdout","time":801.432414025,"data":"xgb_direct_compact h 3 k 1 group 0 seconds 23.0\n"}
+,{"stream_name":"stdout","time":803.621084031,"data":"Test закрыт. Калибровка и выбор используют только периоды до test.\n"}
+,{"stream_name":"stdout","time":826.32413332,"data":"xgb_direct_compact h 3 k 8 group -1 seconds 22.6\n"}
+,{"stream_name":"stdout","time":829.286902138,"data":"xgb_direct_compact h 3 k 8 group 0 seconds 3.0\n"}
+,{"stream_name":"stdout","time":831.583529167,"data":"xgb_direct_compact h 3 k 8 group 1 seconds 2.3\n"}
+,{"stream_name":"stdout","time":834.379556821,"data":"xgb_direct_compact h 3 k 8 group 2 seconds 2.8\n"}
+,{"stream_name":"stdout","time":842.113901909,"data":"xgb_direct_compact h 3 k 8 group 3 seconds 7.7\n"}
+,{"stream_name":"stdout","time":847.46832208,"data":"xgb_direct_compact h 3 k 8 group 4 seconds 5.3\n"}
+,{"stream_name":"stdout","time":849.034167081,"data":"xgb_direct_compact h 3 k 8 group 5 seconds 1.6\n"}
+,{"stream_name":"stdout","time":852.544842543,"data":"xgb_direct_compact h 3 k 8 group 6 seconds 3.5\n"}
+,{"stream_name":"stdout","time":855.005629145,"data":"Test закрыт. Калибровка и выбор используют только периоды до test.\n"}
+,{"stream_name":"stdout","time":869.642166243,"data":"xgb_direct_compact h 4 k 1 group 0 seconds 11.5\n"}
+,{"stream_name":"stdout","time":871.564784281,"data":"Test закрыт. Калибровка и выбор используют только периоды до test.\n"}
+,{"stream_name":"stdout","time":883.146110961,"data":"xgb_direct_compact h 4 k 8 group -1 seconds 11.4\n"}
+,{"stream_name":"stdout","time":884.442229816,"data":"xgb_direct_compact h 4 k 8 group 0 seconds 1.3\n"}
+,{"stream_name":"stdout","time":885.394580349,"data":"xgb_direct_compact h 4 k 8 group 1 seconds 1.0\n"}
+,{"stream_name":"stdout","time":886.628850333,"data":"xgb_direct_compact h 4 k 8 group 2 seconds 1.2\n"}
+,{"stream_name":"stdout","time":890.370068351,"data":"xgb_direct_compact h 4 k 8 group 3 seconds 3.7\n"}
+,{"stream_name":"stdout","time":893.087490856,"data":"xgb_direct_compact h 4 k 8 group 4 seconds 2.7\n"}
+,{"stream_name":"stdout","time":893.688955102,"data":"xgb_direct_compact h 4 k 8 group 5 seconds 0.6\n"}
+,{"stream_name":"stdout","time":895.31612873,"data":"xgb_direct_compact h 4 k 8 group 6 seconds 1.6\n"}
+,{"stream_name":"stdout","time":897.382427201,"data":"Test закрыт. Калибровка и выбор используют только периоды до test.\n"}
+,{"stream_name":"stdout","time":911.509308991,"data":"xgb_direct_compact h 5 k 1 group 0 seconds 11.0\n"}
+,{"stream_name":"stdout","time":913.355959979,"data":"Test закрыт. Калибровка и выбор используют только периоды до test.\n"}
+,{"stream_name":"stdout","time":924.557187032,"data":"xgb_direct_compact h 5 k 8 group -1 seconds 11.1\n"}
+,{"stream_name":"stdout","time":925.775216933,"data":"xgb_direct_compact h 5 k 8 group 0 seconds 1.2\n"}
+,{"stream_name":"stdout","time":926.638836491,"data":"xgb_direct_compact h 5 k 8 group 1 seconds 0.9\n"}
+,{"stream_name":"stdout","time":927.808579898,"data":"xgb_direct_compact h 5 k 8 group 2 seconds 1.2\n"}
+,{"stream_name":"stdout","time":931.398851791,"data":"xgb_direct_compact h 5 k 8 group 3 seconds 3.6\n"}
+,{"stream_name":"stdout","time":933.85508243,"data":"xgb_direct_compact h 5 k 8 group 4 seconds 2.5\n"}
+,{"stream_name":"stdout","time":934.386688822,"data":"xgb_direct_compact h 5 k 8 group 5 seconds 0.5\n"}
+,{"stream_name":"stdout","time":935.967117483,"data":"xgb_direct_compact h 5 k 8 group 6 seconds 1.6\n"}
+,{"stream_name":"stdout","time":938.039117942,"data":"Test закрыт. Калибровка и выбор используют только периоды до test.\n"}
+,{"stream_name":"stdout","time":952.399081356,"data":"xgb_direct_compact h 6 k 1 group 0 seconds 11.3\n"}
+,{"stream_name":"stdout","time":954.230930353,"data":"Test закрыт. Калибровка и выбор используют только периоды до test.\n"}
+,{"stream_name":"stdout","time":965.70302454,"data":"xgb_direct_compact h 6 k 8 group -1 seconds 11.3\n"}
+,{"stream_name":"stdout","time":966.961394334,"data":"xgb_direct_compact h 6 k 8 group 0 seconds 1.3\n"}
+,{"stream_name":"stdout","time":967.873962718,"data":"xgb_direct_compact h 6 k 8 group 1 seconds 0.9\n"}
+,{"stream_name":"stdout","time":969.096941797,"data":"xgb_direct_compact h 6 k 8 group 2 seconds 1.2\n"}
+,{"stream_name":"stdout","time":972.773221731,"data":"xgb_direct_compact h 6 k 8 group 3 seconds 3.7\n"}
+,{"stream_name":"stdout","time":975.269551701,"data":"xgb_direct_compact h 6 k 8 group 4 seconds 2.5\n"}
+,{"stream_name":"stdout","time":975.833674468,"data":"xgb_direct_compact h 6 k 8 group 5 seconds 0.6\n"}
+,{"stream_name":"stdout","time":977.489876017,"data":"xgb_direct_compact h 6 k 8 group 6 seconds 1.7\n"}
+,{"stream_name":"stdout","time":979.545925009,"data":"Test закрыт. Калибровка и выбор используют только периоды до test.\n"}
+,{"stream_name":"stdout","time":996.996238182,"data":"xgb_direct_compact h 7 k 1 group 0 seconds 14.3\n"}
+,{"stream_name":"stdout","time":998.983056683,"data":"Test закрыт. Калибровка и выбор используют только периоды до test.\n"}
+,{"stream_name":"stdout","time":1013.750945071,"data":"xgb_direct_compact h 7 k 8 group -1 seconds 14.6\n"}
+,{"stream_name":"stdout","time":1015.522104263,"data":"xgb_direct_compact h 7 k 8 group 0 seconds 1.8\n"}
+,{"stream_name":"stdout","time":1016.822207994,"data":"xgb_direct_compact h 7 k 8 group 1 seconds 1.3\n"}
+,{"stream_name":"stdout","time":1018.452955064,"data":"xgb_direct_compact h 7 k 8 group 2 seconds 1.6\n"}
+,{"stream_name":"stdout","time":1023.188389524,"data":"xgb_direct_compact h 7 k 8 group 3 seconds 4.7\n"}
+,{"stream_name":"stdout","time":1026.520904555,"data":"xgb_direct_compact h 7 k 8 group 4 seconds 3.3\n"}
+,{"stream_name":"stdout","time":1027.399507714,"data":"xgb_direct_compact h 7 k 8 group 5 seconds 0.9\n"}
+,{"stream_name":"stdout","time":1029.475909644,"data":"xgb_direct_compact h 7 k 8 group 6 seconds 2.1\n"}
+,{"stream_name":"stdout","time":1031.700627878,"data":"Test закрыт. Калибровка и выбор используют только периоды до test.\n"}
+,{"stream_name":"stdout","time":1046.322709872,"data":"xgb_direct_compact h 8 k 1 group 0 seconds 11.5\n"}
+,{"stream_name":"stdout","time":1048.202919514,"data":"Test закрыт. Калибровка и выбор используют только периоды до test.\n"}
+,{"stream_name":"stdout","time":1060.044266969,"data":"xgb_direct_compact h 8 k 8 group -1 seconds 11.7\n"}
+,{"stream_name":"stdout","time":1061.330837692,"data":"xgb_direct_compact h 8 k 8 group 0 seconds 1.3\n"}
+,{"stream_name":"stdout","time":1062.260100618,"data":"xgb_direct_compact h 8 k 8 group 1 seconds 0.9\n"}
+,{"stream_name":"stdout","time":1063.463856604,"data":"xgb_direct_compact h 8 k 8 group 2 seconds 1.2\n"}
+,{"stream_name":"stdout","time":1067.145314163,"data":"xgb_direct_compact h 8 k 8 group 3 seconds 3.7\n"}
+,{"stream_name":"stdout","time":1069.765844742,"data":"xgb_direct_compact h 8 k 8 group 4 seconds 2.6\n"}
+,{"stream_name":"stdout","time":1070.341365984,"data":"xgb_direct_compact h 8 k 8 group 5 seconds 0.6\n"}
+,{"stream_name":"stdout","time":1072.051398078,"data":"xgb_direct_compact h 8 k 8 group 6 seconds 1.7\n"}
+,{"stream_name":"stdout","time":1074.094474337,"data":"Test закрыт. Калибровка и выбор используют только периоды до test.\n"}
+,{"stream_name":"stdout","time":1075.463564061,"data":"Победитель выбран до test: cat_k8 horizon_shrink50\n"}
+,{"stream_name":"stdout","time":1130.614203057,"data":"xgb_direct_compact h 1 k 1 group 0 seconds 51.5\n"}
+,{"stream_name":"stdout","time":1138.986850226,"data":"xgb_direct_compact h 1 k 8 group 0 seconds 4.8\n"}
+,{"stream_name":"stdout","time":1146.497209438,"data":"xgb_direct_compact h 1 k 8 group 1 seconds 7.5\n"}
+,{"stream_name":"stdout","time":1160.381023873,"data":"xgb_direct_compact h 1 k 8 group 2 seconds 13.9\n"}
+,{"stream_name":"stdout","time":1164.162512658,"data":"xgb_direct_compact h 1 k 8 group 3 seconds 3.8\n"}
+,{"stream_name":"stdout","time":1174.518923943,"data":"xgb_direct_compact h 1 k 8 group 4 seconds 10.4\n"}
+,{"stream_name":"stdout","time":1179.059899654,"data":"xgb_direct_compact h 1 k 8 group 5 seconds 4.5\n"}
+,{"stream_name":"stdout","time":1186.654849897,"data":"xgb_direct_compact h 1 k 8 group 6 seconds 7.6\n"}
+,{"stream_name":"stdout","time":1198.016623007,"data":"xgb_direct_compact h 1 k 8 group 7 seconds 11.3\n"}
+,{"stream_name":"stdout","time":1233.320959719,"data":"xgb_direct_compact h 2 k 1 group 0 seconds 28.0\n"}
+,{"stream_name":"stdout","time":1238.54136921,"data":"xgb_direct_compact h 2 k 8 group 0 seconds 2.5\n"}
+,{"stream_name":"stdout","time":1242.374923789,"data":"xgb_direct_compact h 2 k 8 group 1 seconds 3.8\n"}
+,{"stream_name":"stdout","time":1249.68253123,"data":"xgb_direct_compact h 2 k 8 group 2 seconds 7.3\n"}
+,{"stream_name":"stdout","time":1251.546910405,"data":"xgb_direct_compact h 2 k 8 group 3 seconds 1.9\n"}
+,{"stream_name":"stdout","time":1256.91792631,"data":"xgb_direct_compact h 2 k 8 group 4 seconds 5.4\n"}
+,{"stream_name":"stdout","time":1259.129895437,"data":"xgb_direct_compact h 2 k 8 group 5 seconds 2.2\n"}
+,{"stream_name":"stdout","time":1262.959511028,"data":"xgb_direct_compact h 2 k 8 group 6 seconds 3.8\n"}
+,{"stream_name":"stdout","time":1268.756890901,"data":"xgb_direct_compact h 2 k 8 group 7 seconds 5.8\n"}
+,{"stream_name":"stdout","time":1299.985838822,"data":"xgb_direct_compact h 3 k 1 group 0 seconds 24.7\n"}
+,{"stream_name":"stdout","time":1304.809492909,"data":"xgb_direct_compact h 3 k 8 group 0 seconds 2.2\n"}
+,{"stream_name":"stdout","time":1308.096135977,"data":"xgb_direct_compact h 3 k 8 group 1 seconds 3.3\n"}
+,{"stream_name":"stdout","time":1314.519138269,"data":"xgb_direct_compact h 3 k 8 group 2 seconds 6.4\n"}
+,{"stream_name":"stdout","time":1316.090897351,"data":"xgb_direct_compact h 3 k 8 group 3 seconds 1.6\n"}
+,{"stream_name":"stdout","time":1320.750887664,"data":"xgb_direct_compact h 3 k 8 group 4 seconds 4.7\n"}
+,{"stream_name":"stdout","time":1322.723412878,"data":"xgb_direct_compact h 3 k 8 group 5 seconds 2.0\n"}
+,{"stream_name":"stdout","time":1326.125846028,"data":"xgb_direct_compact h 3 k 8 group 6 seconds 3.4\n"}
+,{"stream_name":"stdout","time":1331.273847517,"data":"xgb_direct_compact h 3 k 8 group 7 seconds 5.1\n"}
+,{"stream_name":"stdout","time":1349.901037442,"data":"xgb_direct_compact h 4 k 1 group 0 seconds 12.4\n"}
+,{"stream_name":"stdout","time":1353.220935744,"data":"xgb_direct_compact h 4 k 8 group 0 seconds 1.0\n"}
+,{"stream_name":"stdout","time":1354.794902933,"data":"xgb_direct_compact h 4 k 8 group 1 seconds 1.6\n"}
+,{"stream_name":"stdout","time":1358.028919841,"data":"xgb_direct_compact h 4 k 8 group 2 seconds 3.2\n"}
+,{"stream_name":"stdout","time":1358.638836874,"data":"xgb_direct_compact h 4 k 8 group 3 seconds 0.6\n"}
+,{"stream_name":"stdout","time":1361.017313747,"data":"xgb_direct_compact h 4 k 8 group 4 seconds 2.4\n"}
+,{"stream_name":"stdout","time":1361.867918368,"data":"xgb_direct_compact h 4 k 8 group 5 seconds 0.8\n"}
+,{"stream_name":"stdout","time":1363.473744402,"data":"xgb_direct_compact h 4 k 8 group 6 seconds 1.6\n"}
+,{"stream_name":"stdout","time":1365.93526717,"data":"xgb_direct_compact h 4 k 8 group 7 seconds 2.5\n"}
+,{"stream_name":"stdout","time":1383.258810194,"data":"xgb_direct_compact h 5 k 1 group 0 seconds 11.5\n"}
+,{"stream_name":"stdout","time":1386.28286215,"data":"xgb_direct_compact h 5 k 8 group 0 seconds 0.8\n"}
+,{"stream_name":"stdout","time":1387.672910731,"data":"xgb_direct_compact h 5 k 8 group 1 seconds 1.4\n"}
+,{"stream_name":"stdout","time":1390.61892027,"data":"xgb_direct_compact h 5 k 8 group 2 seconds 2.9\n"}
+,{"stream_name":"stdout","time":1391.140480876,"data":"xgb_direct_compact h 5 k 8 group 3 seconds 0.5\n"}
+,{"stream_name":"stdout","time":1393.291680437,"data":"xgb_direct_compact h 5 k 8 group 4 seconds 2.1\n"}
+,{"stream_name":"stdout","time":1393.989631369,"data":"xgb_direct_compact h 5 k 8 group 5 seconds 0.7\n"}
+,{"stream_name":"stdout","time":1395.430735935,"data":"xgb_direct_compact h 5 k 8 group 6 seconds 1.4\n"}
+,{"stream_name":"stdout","time":1397.687489459,"data":"xgb_direct_compact h 5 k 8 group 7 seconds 2.3\n"}
+,{"stream_name":"stdout","time":1415.597814536,"data":"xgb_direct_compact h 6 k 1 group 0 seconds 12.2\n"}
+,{"stream_name":"stdout","time":1418.733277476,"data":"xgb_direct_compact h 6 k 8 group 0 seconds 0.9\n"}
+,{"stream_name":"stdout","time":1420.225555568,"data":"xgb_direct_compact h 6 k 8 group 1 seconds 1.5\n"}
+,{"stream_name":"stdout","time":1423.256851838,"data":"xgb_direct_compact h 6 k 8 group 2 seconds 3.0\n"}
+,{"stream_name":"stdout","time":1423.822548549,"data":"xgb_direct_compact h 6 k 8 group 3 seconds 0.5\n"}
+,{"stream_name":"stdout","time":1425.993395894,"data":"xgb_direct_compact h 6 k 8 group 4 seconds 2.2\n"}
+,{"stream_name":"stdout","time":1426.711815198,"data":"xgb_direct_compact h 6 k 8 group 5 seconds 0.7\n"}
+,{"stream_name":"stdout","time":1428.236733667,"data":"xgb_direct_compact h 6 k 8 group 6 seconds 1.5\n"}
+,{"stream_name":"stdout","time":1430.60014825,"data":"xgb_direct_compact h 6 k 8 group 7 seconds 2.4\n"}
+,{"stream_name":"stdout","time":1452.303030469,"data":"xgb_direct_compact h 7 k 1 group 0 seconds 15.9\n"}
+,{"stream_name":"stdout","time":1456.013011048,"data":"xgb_direct_compact h 7 k 8 group 0 seconds 1.3\n"}
+,{"stream_name":"stdout","time":1458.054392511,"data":"xgb_direct_compact h 7 k 8 group 1 seconds 2.0\n"}
+,{"stream_name":"stdout","time":1462.15385929,"data":"xgb_direct_compact h 7 k 8 group 2 seconds 4.1\n"}
+,{"stream_name":"stdout","time":1463.045898486,"data":"xgb_direct_compact h 7 k 8 group 3 seconds 0.9\n"}
+,{"stream_name":"stdout","time":1466.001437181,"data":"xgb_direct_compact h 7 k 8 group 4 seconds 3.0\n"}
+,{"stream_name":"stdout","time":1467.116859798,"data":"xgb_direct_compact h 7 k 8 group 5 seconds 1.1\n"}
+,{"stream_name":"stdout","time":1469.142934009,"data":"xgb_direct_compact h 7 k 8 group 6 seconds 2.0\n"}
+,{"stream_name":"stdout","time":1472.368914198,"data":"xgb_direct_compact h 7 k 8 group 7 seconds 3.2\n"}
+,{"stream_name":"stdout","time":1490.794963928,"data":"xgb_direct_compact h 8 k 1 group 0 seconds 12.6\n"}
+,{"stream_name":"stdout","time":1494.031152771,"data":"xgb_direct_compact h 8 k 8 group 0 seconds 1.0\n"}
+,{"stream_name":"stdout","time":1495.562450488,"data":"xgb_direct_compact h 8 k 8 group 1 seconds 1.5\n"}
+,{"stream_name":"stdout","time":1498.742448868,"data":"xgb_direct_compact h 8 k 8 group 2 seconds 3.2\n"}
+,{"stream_name":"stdout","time":1499.336781607,"data":"xgb_direct_compact h 8 k 8 group 3 seconds 0.6\n"}
+,{"stream_name":"stdout","time":1501.742844009,"data":"xgb_direct_compact h 8 k 8 group 4 seconds 2.4\n"}
+,{"stream_name":"stdout","time":1502.528474363,"data":"xgb_direct_compact h 8 k 8 group 5 seconds 0.8\n"}
+,{"stream_name":"stdout","time":1504.070901073,"data":"xgb_direct_compact h 8 k 8 group 6 seconds 1.5\n"}
+,{"stream_name":"stdout","time":1506.639396647,"data":"xgb_direct_compact h 8 k 8 group 7 seconds 2.6\n"}
+,{"stream_name":"stdout","time":1509.183556757,"data":"Независимая оценка test получена до переобучения на всей доступной размеченной истории. Этот test ранее изучался в проекте и не является новым слепым holdout. Коэффициенты, способ калибровки и вариант модели зафиксированы до test. Train включает бывшую val.\n"}
+,{"stream_name":"stdout","time":1509.186449496,"data":"GPU обязателен: CatBoost CUDA и CuPy проверены.\n"}
+,{"stream_name":"stdout","time":1511.806487114,"data":"Маршрутов: 1000 Выходы: /kaggle/working/cluster_experiment_29e153d8117d7b62 CatBoost: GPU\n"}
+,{"stream_name":"stdout","time":1582.850850197,"data":"xgb_direct_tuned h 1 k 1 group 0 seconds 67.7\n"}
+,{"stream_name":"stdout","time":1586.516628948,"data":"Test закрыт. Калибровка и выбор используют только периоды до test.\n"}
+,{"stream_name":"stdout","time":1656.680104541,"data":"xgb_direct_tuned h 1 k 8 group -1 seconds 70.0\n"}
+,{"stream_name":"stdout","time":1674.579836779,"data":"xgb_direct_tuned h 1 k 8 group 0 seconds 17.9\n"}
+,{"stream_name":"stdout","time":1690.304034249,"data":"xgb_direct_tuned h 1 k 8 group 1 seconds 15.7\n"}
+,{"stream_name":"stdout","time":1696.136242294,"data":"xgb_direct_tuned h 1 k 8 group 2 seconds 5.8\n"}
+,{"stream_name":"stdout","time":1707.974853023,"data":"xgb_direct_tuned h 1 k 8 group 3 seconds 11.8\n"}
+,{"stream_name":"stdout","time":1727.050398138,"data":"xgb_direct_tuned h 1 k 8 group 4 seconds 19.1\n"}
+,{"stream_name":"stdout","time":1739.599922417,"data":"xgb_direct_tuned h 1 k 8 group 6 seconds 12.6\n"}
+,{"stream_name":"stdout","time":1747.810351136,"data":"xgb_direct_tuned h 1 k 8 group 7 seconds 8.2\n"}
+,{"stream_name":"stdout","time":1751.895090432,"data":"Test закрыт. Калибровка и выбор используют только периоды до test.\n"}
+,{"stream_name":"stdout","time":1778.712861245,"data":"xgb_direct_tuned h 2 k 1 group 0 seconds 23.7\n"}
+,{"stream_name":"stdout","time":1780.798604651,"data":"Test закрыт. Калибровка и выбор используют только периоды до test.\n"}
+,{"stream_name":"stdout","time":1804.366165289,"data":"xgb_direct_tuned h 2 k 8 group -1 seconds 23.4\n"}
+,{"stream_name":"stdout","time":1809.846814297,"data":"xgb_direct_tuned h 2 k 8 group 0 seconds 5.5\n"}
+,{"stream_name":"stdout","time":1814.575340271,"data":"xgb_direct_tuned h 2 k 8 group 1 seconds 4.7\n"}
+,{"stream_name":"stdout","time":1816.104895427,"data":"xgb_direct_tuned h 2 k 8 group 2 seconds 1.5\n"}
+,{"stream_name":"stdout","time":1819.546386694,"data":"xgb_direct_tuned h 2 k 8 group 3 seconds 3.4\n"}
+,{"stream_name":"stdout","time":1825.48923381,"data":"xgb_direct_tuned h 2 k 8 group 4 seconds 5.9\n"}
+,{"stream_name":"stdout","time":1829.121901997,"data":"xgb_direct_tuned h 2 k 8 group 6 seconds 3.6\n"}
+,{"stream_name":"stdout","time":1831.472125215,"data":"xgb_direct_tuned h 2 k 8 group 7 seconds 2.3\n"}
+,{"stream_name":"stdout","time":1833.863197462,"data":"Test закрыт. Калибровка и выбор используют только периоды до test.\n"}
+,{"stream_name":"stdout","time":1859.385836284,"data":"xgb_direct_tuned h 3 k 1 group 0 seconds 22.6\n"}
+,{"stream_name":"stdout","time":1861.53802231,"data":"Test закрыт. Калибровка и выбор используют только периоды до test.\n"}
+,{"stream_name":"stdout","time":1884.184144354,"data":"xgb_direct_tuned h 3 k 8 group -1 seconds 22.5\n"}
+,{"stream_name":"stdout","time":1889.587026992,"data":"xgb_direct_tuned h 3 k 8 group 0 seconds 5.4\n"}
+,{"stream_name":"stdout","time":1894.347244968,"data":"xgb_direct_tuned h 3 k 8 group 1 seconds 4.8\n"}
+,{"stream_name":"stdout","time":1896.02283167,"data":"xgb_direct_tuned h 3 k 8 group 2 seconds 1.7\n"}
+,{"stream_name":"stdout","time":1899.578333483,"data":"xgb_direct_tuned h 3 k 8 group 3 seconds 3.6\n"}
+,{"stream_name":"stdout","time":1905.588846465,"data":"xgb_direct_tuned h 3 k 8 group 4 seconds 6.0\n"}
+,{"stream_name":"stdout","time":1909.310617006,"data":"xgb_direct_tuned h 3 k 8 group 6 seconds 3.7\n"}
+,{"stream_name":"stdout","time":1911.674754242,"data":"xgb_direct_tuned h 3 k 8 group 7 seconds 2.4\n"}
+,{"stream_name":"stdout","time":1913.95127756,"data":"Test закрыт. Калибровка и выбор используют только периоды до test.\n"}
+,{"stream_name":"stdout","time":1927.443849462,"data":"xgb_direct_tuned h 4 k 1 group 0 seconds 10.6\n"}
+,{"stream_name":"stdout","time":1929.104416685,"data":"Test закрыт. Калибровка и выбор используют только периоды до test.\n"}
+,{"stream_name":"stdout","time":1939.87617679,"data":"xgb_direct_tuned h 4 k 8 group -1 seconds 10.6\n"}
+,{"stream_name":"stdout","time":1942.311836616,"data":"xgb_direct_tuned h 4 k 8 group 0 seconds 2.4\n"}
+,{"stream_name":"stdout","time":1944.285027104,"data":"xgb_direct_tuned h 4 k 8 group 1 seconds 2.0\n"}
+,{"stream_name":"stdout","time":1944.796781021,"data":"xgb_direct_tuned h 4 k 8 group 2 seconds 0.5\n"}
+,{"stream_name":"stdout","time":1946.172312597,"data":"xgb_direct_tuned h 4 k 8 group 3 seconds 1.4\n"}
+,{"stream_name":"stdout","time":1948.742007995,"data":"xgb_direct_tuned h 4 k 8 group 4 seconds 2.6\n"}
+,{"stream_name":"stdout","time":1950.21889217,"data":"xgb_direct_tuned h 4 k 8 group 6 seconds 1.5\n"}
+,{"stream_name":"stdout","time":1951.078745672,"data":"xgb_direct_tuned h 4 k 8 group 7 seconds 0.9\n"}
+,{"stream_name":"stdout","time":1953.017797095,"data":"Test закрыт. Калибровка и выбор используют только периоды до test.\n"}
+,{"stream_name":"stdout","time":1965.823889296,"data":"xgb_direct_tuned h 5 k 1 group 0 seconds 9.9\n"}
+,{"stream_name":"stdout","time":1967.504093135,"data":"Test закрыт. Калибровка и выбор используют только периоды до test.\n"}
+,{"stream_name":"stdout","time":1977.387558912,"data":"xgb_direct_tuned h 5 k 8 group -1 seconds 9.7\n"}
+,{"stream_name":"stdout","time":1979.61725594,"data":"xgb_direct_tuned h 5 k 8 group 0 seconds 2.2\n"}
+,{"stream_name":"stdout","time":1981.533979593,"data":"xgb_direct_tuned h 5 k 8 group 1 seconds 1.9\n"}
+,{"stream_name":"stdout","time":1981.984226881,"data":"xgb_direct_tuned h 5 k 8 group 2 seconds 0.4\n"}
+,{"stream_name":"stdout","time":1983.225811476,"data":"xgb_direct_tuned h 5 k 8 group 3 seconds 1.2\n"}
+,{"stream_name":"stdout","time":1985.487597973,"data":"xgb_direct_tuned h 5 k 8 group 4 seconds 2.3\n"}
+,{"stream_name":"stdout","time":1986.774468123,"data":"xgb_direct_tuned h 5 k 8 group 6 seconds 1.3\n"}
+,{"stream_name":"stdout","time":1987.512832571,"data":"xgb_direct_tuned h 5 k 8 group 7 seconds 0.7\n"}
+,{"stream_name":"stdout","time":1989.363292299,"data":"Test закрыт. Калибровка и выбор используют только периоды до test.\n"}
+,{"stream_name":"stdout","time":2002.561134605,"data":"xgb_direct_tuned h 6 k 1 group 0 seconds 10.2\n"}
+,{"stream_name":"stdout","time":2004.14427453,"data":"Test закрыт. Калибровка и выбор используют только периоды до test.\n"}
+,{"stream_name":"stdout","time":2014.036260804,"data":"xgb_direct_tuned h 6 k 8 group -1 seconds 9.8\n"}
+,{"stream_name":"stdout","time":2016.352726112,"data":"xgb_direct_tuned h 6 k 8 group 0 seconds 2.3\n"}
+,{"stream_name":"stdout","time":2018.203187261,"data":"xgb_direct_tuned h 6 k 8 group 1 seconds 1.9\n"}
+,{"stream_name":"stdout","time":2018.677627233,"data":"xgb_direct_tuned h 6 k 8 group 2 seconds 0.5\n"}
+,{"stream_name":"stdout","time":2019.980235429,"data":"xgb_direct_tuned h 6 k 8 group 3 seconds 1.3\n"}
+,{"stream_name":"stdout","time":2022.450439891,"data":"xgb_direct_tuned h 6 k 8 group 4 seconds 2.5\n"}
+,{"stream_name":"stdout","time":2023.835198239,"data":"xgb_direct_tuned h 6 k 8 group 6 seconds 1.4\n"}
+,{"stream_name":"stdout","time":2024.632741283,"data":"xgb_direct_tuned h 6 k 8 group 7 seconds 0.8\n"}
+,{"stream_name":"stdout","time":2026.517495336,"data":"Test закрыт. Калибровка и выбор используют только периоды до test.\n"}
+,{"stream_name":"stdout","time":2042.738893855,"data":"xgb_direct_tuned h 7 k 1 group 0 seconds 13.3\n"}
+,{"stream_name":"stdout","time":2044.512419742,"data":"Test закрыт. Калибровка и выбор используют только периоды до test.\n"}
+,{"stream_name":"stdout","time":2057.983827982,"data":"xgb_direct_tuned h 7 k 8 group -1 seconds 13.3\n"}
+,{"stream_name":"stdout","time":2061.117136451,"data":"xgb_direct_tuned h 7 k 8 group 0 seconds 3.1\n"}
+,{"stream_name":"stdout","time":2063.740028989,"data":"xgb_direct_tuned h 7 k 8 group 1 seconds 2.6\n"}
+,{"stream_name":"stdout","time":2064.436834855,"data":"xgb_direct_tuned h 7 k 8 group 2 seconds 0.7\n"}
+,{"stream_name":"stdout","time":2066.244935785,"data":"xgb_direct_tuned h 7 k 8 group 3 seconds 1.8\n"}
+,{"stream_name":"stdout","time":2069.442410688,"data":"xgb_direct_tuned h 7 k 8 group 4 seconds 3.2\n"}
+,{"stream_name":"stdout","time":2071.360126581,"data":"xgb_direct_tuned h 7 k 8 group 6 seconds 1.9\n"}
+,{"stream_name":"stdout","time":2072.533615093,"data":"xgb_direct_tuned h 7 k 8 group 7 seconds 1.2\n"}
+,{"stream_name":"stdout","time":2074.561391872,"data":"Test закрыт. Калибровка и выбор используют только периоды до test.\n"}
+,{"stream_name":"stdout","time":2087.760254825,"data":"xgb_direct_tuned h 8 k 1 group 0 seconds 10.4\n"}
+,{"stream_name":"stdout","time":2089.469187897,"data":"Test закрыт. Калибровка и выбор используют только периоды до test.\n"}
+,{"stream_name":"stdout","time":2100.187628885,"data":"xgb_direct_tuned h 8 k 8 group -1 seconds 10.6\n"}
+,{"stream_name":"stdout","time":2102.605375409,"data":"xgb_direct_tuned h 8 k 8 group 0 seconds 2.4\n"}
+,{"stream_name":"stdout","time":2104.559928219,"data":"xgb_direct_tuned h 8 k 8 group 1 seconds 2.0\n"}
+,{"stream_name":"stdout","time":2105.093417856,"data":"xgb_direct_tuned h 8 k 8 group 2 seconds 0.5\n"}
+,{"stream_name":"stdout","time":2106.423827468,"data":"xgb_direct_tuned h 8 k 8 group 3 seconds 1.4\n"}
+,{"stream_name":"stdout","time":2108.879240598,"data":"xgb_direct_tuned h 8 k 8 group 4 seconds 2.5\n"}
+,{"stream_name":"stdout","time":2110.286593933,"data":"xgb_direct_tuned h 8 k 8 group 6 seconds 1.4\n"}
+,{"stream_name":"stdout","time":2111.120854823,"data":"xgb_direct_tuned h 8 k 8 group 7 seconds 0.8\n"}
+,{"stream_name":"stdout","time":2113.064830737,"data":"Test закрыт. Калибровка и выбор используют только периоды до test.\n"}
+,{"stream_name":"stdout","time":2191.734433632,"data":"xgb_direct_tuned h 1 k 1 group 0 seconds 75.0\n"}
+,{"stream_name":"stdout","time":2195.748921389,"data":"Test закрыт. Калибровка и выбор используют только периоды до test.\n"}
+,{"stream_name":"stdout","time":2273.294417645,"data":"xgb_direct_tuned h 1 k 8 group -1 seconds 77.4\n"}
+,{"stream_name":"stdout","time":2284.651857284,"data":"xgb_direct_tuned h 1 k 8 group 0 seconds 11.4\n"}
+,{"stream_name":"stdout","time":2293.938553136,"data":"xgb_direct_tuned h 1 k 8 group 1 seconds 9.3\n"}
+,{"stream_name":"stdout","time":2305.142716868,"data":"xgb_direct_tuned h 1 k 8 group 2 seconds 11.2\n"}
+,{"stream_name":"stdout","time":2332.17701255,"data":"xgb_direct_tuned h 1 k 8 group 3 seconds 27.1\n"}
+,{"stream_name":"stdout","time":2352.059865194,"data":"xgb_direct_tuned h 1 k 8 group 4 seconds 19.9\n"}
+,{"stream_name":"stdout","time":2358.78905805,"data":"xgb_direct_tuned h 1 k 8 group 5 seconds 6.7\n"}
+,{"stream_name":"stdout","time":2372.388657708,"data":"xgb_direct_tuned h 1 k 8 group 6 seconds 13.6\n"}
+,{"stream_name":"stdout","time":2376.803961666,"data":"Test закрыт. Калибровка и выбор используют только периоды до test.\n"}
+,{"stream_name":"stdout","time":2405.995788965,"data":"xgb_direct_tuned h 2 k 1 group 0 seconds 25.8\n"}
+,{"stream_name":"stdout","time":2408.297470498,"data":"Test закрыт. Калибровка и выбор используют только периоды до test.\n"}
+,{"stream_name":"stdout","time":2434.239023357,"data":"xgb_direct_tuned h 2 k 8 group -1 seconds 25.8\n"}
+,{"stream_name":"stdout","time":2437.655825319,"data":"xgb_direct_tuned h 2 k 8 group 0 seconds 3.4\n"}
+,{"stream_name":"stdout","time":2440.275782016,"data":"xgb_direct_tuned h 2 k 8 group 1 seconds 2.6\n"}
+,{"stream_name":"stdout","time":2443.551847947,"data":"xgb_direct_tuned h 2 k 8 group 2 seconds 3.3\n"}
+,{"stream_name":"stdout","time":2452.015288341,"data":"xgb_direct_tuned h 2 k 8 group 3 seconds 8.5\n"}
+,{"stream_name":"stdout","time":2458.192909485,"data":"xgb_direct_tuned h 2 k 8 group 4 seconds 6.2\n"}
+,{"stream_name":"stdout","time":2460.055188768,"data":"xgb_direct_tuned h 2 k 8 group 5 seconds 1.9\n"}
+,{"stream_name":"stdout","time":2464.150939039,"data":"xgb_direct_tuned h 2 k 8 group 6 seconds 4.1\n"}
+,{"stream_name":"stdout","time":2466.788217854,"data":"Test закрыт. Калибровка и выбор используют только периоды до test.\n"}
+,{"stream_name":"stdout","time":2494.797386812,"data":"xgb_direct_tuned h 3 k 1 group 0 seconds 24.8\n"}
+,{"stream_name":"stdout","time":2497.102137225,"data":"Test закрыт. Калибровка и выбор используют только периоды до test.\n"}
+,{"stream_name":"stdout","time":2522.402243033,"data":"xgb_direct_tuned h 3 k 8 group -1 seconds 25.2\n"}
+,{"stream_name":"stdout","time":2525.794944995,"data":"xgb_direct_tuned h 3 k 8 group 0 seconds 3.4\n"}
+,{"stream_name":"stdout","time":2528.426850302,"data":"xgb_direct_tuned h 3 k 8 group 1 seconds 2.7\n"}
+,{"stream_name":"stdout","time":2531.659890875,"data":"xgb_direct_tuned h 3 k 8 group 2 seconds 3.2\n"}
+,{"stream_name":"stdout","time":2540.023754487,"data":"xgb_direct_tuned h 3 k 8 group 3 seconds 8.4\n"}
+,{"stream_name":"stdout","time":2546.194215704,"data":"xgb_direct_tuned h 3 k 8 group 4 seconds 6.2\n"}
+,{"stream_name":"stdout","time":2548.077856928,"data":"xgb_direct_tuned h 3 k 8 group 5 seconds 1.9\n"}
+,{"stream_name":"stdout","time":2552.087317708,"data":"xgb_direct_tuned h 3 k 8 group 6 seconds 4.0\n"}
+,{"stream_name":"stdout","time":2554.613448591,"data":"Test закрыт. Калибровка и выбор используют только периоды до test.\n"}
+,{"stream_name":"stdout","time":2569.674931789,"data":"xgb_direct_tuned h 4 k 1 group 0 seconds 11.9\n"}
+,{"stream_name":"stdout","time":2571.576911688,"data":"Test закрыт. Калибровка и выбор используют только периоды до test.\n"}
+,{"stream_name":"stdout","time":2583.414606845,"data":"xgb_direct_tuned h 4 k 8 group -1 seconds 11.7\n"}
+,{"stream_name":"stdout","time":2584.758330982,"data":"xgb_direct_tuned h 4 k 8 group 0 seconds 1.3\n"}
+,{"stream_name":"stdout","time":2585.724567389,"data":"xgb_direct_tuned h 4 k 8 group 1 seconds 1.0\n"}
+,{"stream_name":"stdout","time":2586.995914799,"data":"xgb_direct_tuned h 4 k 8 group 2 seconds 1.3\n"}
+,{"stream_name":"stdout","time":2590.803890697,"data":"xgb_direct_tuned h 4 k 8 group 3 seconds 3.8\n"}
+,{"stream_name":"stdout","time":2593.505236384,"data":"xgb_direct_tuned h 4 k 8 group 4 seconds 2.7\n"}
+,{"stream_name":"stdout","time":2594.098381516,"data":"xgb_direct_tuned h 4 k 8 group 5 seconds 0.6\n"}
+,{"stream_name":"stdout","time":2595.735865004,"data":"xgb_direct_tuned h 4 k 8 group 6 seconds 1.6\n"}
+,{"stream_name":"stdout","time":2597.805236475,"data":"Test закрыт. Калибровка и выбор используют только периоды до test.\n"}
+,{"stream_name":"stdout","time":2611.768934304,"data":"xgb_direct_tuned h 5 k 1 group 0 seconds 10.8\n"}
+,{"stream_name":"stdout","time":2613.595490775,"data":"Test закрыт. Калибровка и выбор используют только периоды до test.\n"}
+,{"stream_name":"stdout","time":2624.268808986,"data":"xgb_direct_tuned h 5 k 8 group -1 seconds 10.5\n"}
+,{"stream_name":"stdout","time":2625.456903005,"data":"xgb_direct_tuned h 5 k 8 group 0 seconds 1.2\n"}
+,{"stream_name":"stdout","time":2626.305909503,"data":"xgb_direct_tuned h 5 k 8 group 1 seconds 0.8\n"}
+,{"stream_name":"stdout","time":2627.479276252,"data":"xgb_direct_tuned h 5 k 8 group 2 seconds 1.2\n"}
+,{"stream_name":"stdout","time":2630.961288361,"data":"xgb_direct_tuned h 5 k 8 group 3 seconds 3.5\n"}
+,{"stream_name":"stdout","time":2633.472889969,"data":"xgb_direct_tuned h 5 k 8 group 4 seconds 2.5\n"}
+,{"stream_name":"stdout","time":2633.998116495,"data":"xgb_direct_tuned h 5 k 8 group 5 seconds 0.5\n"}
+,{"stream_name":"stdout","time":2635.577479522,"data":"xgb_direct_tuned h 5 k 8 group 6 seconds 1.6\n"}
+,{"stream_name":"stdout","time":2637.599044216,"data":"Test закрыт. Калибровка и выбор используют только периоды до test.\n"}
+,{"stream_name":"stdout","time":2651.839613952,"data":"xgb_direct_tuned h 6 k 1 group 0 seconds 11.1\n"}
+,{"stream_name":"stdout","time":2653.697934476,"data":"Test закрыт. Калибровка и выбор используют только периоды до test.\n"}
+,{"stream_name":"stdout","time":2665.077918095,"data":"xgb_direct_tuned h 6 k 8 group -1 seconds 11.2\n"}
+,{"stream_name":"stdout","time":2666.30949637,"data":"xgb_direct_tuned h 6 k 8 group 0 seconds 1.2\n"}
+,{"stream_name":"stdout","time":2667.193371966,"data":"xgb_direct_tuned h 6 k 8 group 1 seconds 0.9\n"}
+,{"stream_name":"stdout","time":2668.353477228,"data":"xgb_direct_tuned h 6 k 8 group 2 seconds 1.2\n"}
+,{"stream_name":"stdout","time":2671.946929438,"data":"xgb_direct_tuned h 6 k 8 group 3 seconds 3.6\n"}
+,{"stream_name":"stdout","time":2674.537829785,"data":"xgb_direct_tuned h 6 k 8 group 4 seconds 2.6\n"}
+,{"stream_name":"stdout","time":2675.091858644,"data":"xgb_direct_tuned h 6 k 8 group 5 seconds 0.6\n"}
+,{"stream_name":"stdout","time":2676.676608383,"data":"xgb_direct_tuned h 6 k 8 group 6 seconds 1.6\n"}
+,{"stream_name":"stdout","time":2678.711849802,"data":"Test закрыт. Калибровка и выбор используют только периоды до test.\n"}
+,{"stream_name":"stdout","time":2696.204539325,"data":"xgb_direct_tuned h 7 k 1 group 0 seconds 14.3\n"}
+,{"stream_name":"stdout","time":2698.181422978,"data":"Test закрыт. Калибровка и выбор используют только периоды до test.\n"}
+,{"stream_name":"stdout","time":2713.029135432,"data":"xgb_direct_tuned h 7 k 8 group -1 seconds 14.7\n"}
+,{"stream_name":"stdout","time":2714.815020591,"data":"xgb_direct_tuned h 7 k 8 group 0 seconds 1.8\n"}
+,{"stream_name":"stdout","time":2716.116708152,"data":"xgb_direct_tuned h 7 k 8 group 1 seconds 1.3\n"}
+,{"stream_name":"stdout","time":2717.833361213,"data":"xgb_direct_tuned h 7 k 8 group 2 seconds 1.7\n"}
+,{"stream_name":"stdout","time":2722.725162428,"data":"xgb_direct_tuned h 7 k 8 group 3 seconds 4.9\n"}
+,{"stream_name":"stdout","time":2726.189403728,"data":"xgb_direct_tuned h 7 k 8 group 4 seconds 3.5\n"}
+,{"stream_name":"stdout","time":2727.099418922,"data":"xgb_direct_tuned h 7 k 8 group 5 seconds 0.9\n"}
+,{"stream_name":"stdout","time":2729.161625562,"data":"xgb_direct_tuned h 7 k 8 group 6 seconds 2.1\n"}
+,{"stream_name":"stdout","time":2731.393931488,"data":"Test закрыт. Калибровка и выбор используют только периоды до test.\n"}
+,{"stream_name":"stdout","time":2746.301533571,"data":"xgb_direct_tuned h 8 k 1 group 0 seconds 11.8\n"}
+,{"stream_name":"stdout","time":2748.217099438,"data":"Test закрыт. Калибровка и выбор используют только периоды до test.\n"}
+,{"stream_name":"stdout","time":2760.150066352,"data":"xgb_direct_tuned h 8 k 8 group -1 seconds 11.8\n"}
+,{"stream_name":"stdout","time":2761.536161411,"data":"xgb_direct_tuned h 8 k 8 group 0 seconds 1.4\n"}
+,{"stream_name":"stdout","time":2762.467260556,"data":"xgb_direct_tuned h 8 k 8 group 1 seconds 0.9\n"}
+,{"stream_name":"stdout","time":2763.681911496,"data":"xgb_direct_tuned h 8 k 8 group 2 seconds 1.2\n"}
+,{"stream_name":"stdout","time":2767.345161339,"data":"xgb_direct_tuned h 8 k 8 group 3 seconds 3.7\n"}
+,{"stream_name":"stdout","time":2769.941909584,"data":"xgb_direct_tuned h 8 k 8 group 4 seconds 2.6\n"}
+,{"stream_name":"stdout","time":2770.516457481,"data":"xgb_direct_tuned h 8 k 8 group 5 seconds 0.6\n"}
+,{"stream_name":"stdout","time":2772.11630933,"data":"xgb_direct_tuned h 8 k 8 group 6 seconds 1.6\n"}
+,{"stream_name":"stdout","time":2774.157098486,"data":"Test закрыт. Калибровка и выбор используют только периоды до test.\n"}
+,{"stream_name":"stdout","time":2775.553993694,"data":"Победитель выбран до test: cat_k8 horizon_shrink50\n"}
+,{"stream_name":"stdout","time":2861.074932703,"data":"xgb_direct_tuned h 1 k 1 group 0 seconds 81.8\n"}
+,{"stream_name":"stdout","time":2875.138361681,"data":"xgb_direct_tuned h 1 k 8 group 0 seconds 8.4\n"}
+,{"stream_name":"stdout","time":2887.885175225,"data":"xgb_direct_tuned h 1 k 8 group 1 seconds 12.7\n"}
+,{"stream_name":"stdout","time":2910.760509497,"data":"xgb_direct_tuned h 1 k 8 group 2 seconds 22.9\n"}
+,{"stream_name":"stdout","time":2917.480242282,"data":"xgb_direct_tuned h 1 k 8 group 3 seconds 6.7\n"}
+,{"stream_name":"stdout","time":2935.046610452,"data":"xgb_direct_tuned h 1 k 8 group 4 seconds 17.6\n"}
+,{"stream_name":"stdout","time":2943.1407081,"data":"xgb_direct_tuned h 1 k 8 group 5 seconds 8.1\n"}
+,{"stream_name":"stdout","time":2956.143570036,"data":"xgb_direct_tuned h 1 k 8 group 6 seconds 13.0\n"}
+,{"stream_name":"stdout","time":2975.257503151,"data":"xgb_direct_tuned h 1 k 8 group 7 seconds 19.1\n"}
+,{"stream_name":"stdout","time":3011.715625008,"data":"xgb_direct_tuned h 2 k 1 group 0 seconds 27.9\n"}
+,{"stream_name":"stdout","time":3016.904199911,"data":"xgb_direct_tuned h 2 k 8 group 0 seconds 2.5\n"}
+,{"stream_name":"stdout","time":3020.735970555,"data":"xgb_direct_tuned h 2 k 8 group 1 seconds 3.8\n"}
+,{"stream_name":"stdout","time":3028.093579348,"data":"xgb_direct_tuned h 2 k 8 group 2 seconds 7.4\n"}
+,{"stream_name":"stdout","time":3029.974905352,"data":"xgb_direct_tuned h 2 k 8 group 3 seconds 1.9\n"}
+,{"stream_name":"stdout","time":3035.562529036,"data":"xgb_direct_tuned h 2 k 8 group 4 seconds 5.6\n"}
+,{"stream_name":"stdout","time":3037.826175111,"data":"xgb_direct_tuned h 2 k 8 group 5 seconds 2.3\n"}
+,{"stream_name":"stdout","time":3041.76147351,"data":"xgb_direct_tuned h 2 k 8 group 6 seconds 3.9\n"}
+,{"stream_name":"stdout","time":3047.587174535,"data":"xgb_direct_tuned h 2 k 8 group 7 seconds 5.8\n"}
+,{"stream_name":"stdout","time":3081.08022511,"data":"xgb_direct_tuned h 3 k 1 group 0 seconds 27.0\n"}
+,{"stream_name":"stdout","time":3086.39583579,"data":"xgb_direct_tuned h 3 k 8 group 0 seconds 2.5\n"}
+,{"stream_name":"stdout","time":3090.171073324,"data":"xgb_direct_tuned h 3 k 8 group 1 seconds 3.8\n"}
+,{"stream_name":"stdout","time":3097.537886099,"data":"xgb_direct_tuned h 3 k 8 group 2 seconds 7.4\n"}
+,{"stream_name":"stdout","time":3099.446925442,"data":"xgb_direct_tuned h 3 k 8 group 3 seconds 1.9\n"}
+,{"stream_name":"stdout","time":3104.911582451,"data":"xgb_direct_tuned h 3 k 8 group 4 seconds 5.5\n"}
+,{"stream_name":"stdout","time":3107.208888801,"data":"xgb_direct_tuned h 3 k 8 group 5 seconds 2.3\n"}
+,{"stream_name":"stdout","time":3111.049020595,"data":"xgb_direct_tuned h 3 k 8 group 6 seconds 3.8\n"}
+,{"stream_name":"stdout","time":3117.006999559,"data":"xgb_direct_tuned h 3 k 8 group 7 seconds 5.9\n"}
+,{"stream_name":"stdout","time":3136.22696759,"data":"xgb_direct_tuned h 4 k 1 group 0 seconds 12.9\n"}
+,{"stream_name":"stdout","time":3139.472297748,"data":"xgb_direct_tuned h 4 k 8 group 0 seconds 1.0\n"}
+,{"stream_name":"stdout","time":3141.046828204,"data":"xgb_direct_tuned h 4 k 8 group 1 seconds 1.6\n"}
+,{"stream_name":"stdout","time":3144.438279101,"data":"xgb_direct_tuned h 4 k 8 group 2 seconds 3.4\n"}
+,{"stream_name":"stdout","time":3145.051176504,"data":"xgb_direct_tuned h 4 k 8 group 3 seconds 0.6\n"}
+,{"stream_name":"stdout","time":3147.431337398,"data":"xgb_direct_tuned h 4 k 8 group 4 seconds 2.3\n"}
+,{"stream_name":"stdout","time":3148.216590987,"data":"xgb_direct_tuned h 4 k 8 group 5 seconds 0.8\n"}
+,{"stream_name":"stdout","time":3149.76991748,"data":"xgb_direct_tuned h 4 k 8 group 6 seconds 1.5\n"}
+,{"stream_name":"stdout","time":3152.411916271,"data":"xgb_direct_tuned h 4 k 8 group 7 seconds 2.6\n"}
+,{"stream_name":"stdout","time":3170.067285151,"data":"xgb_direct_tuned h 5 k 1 group 0 seconds 11.9\n"}
+,{"stream_name":"stdout","time":3173.288834756,"data":"xgb_direct_tuned h 5 k 8 group 0 seconds 0.9\n"}
+,{"stream_name":"stdout","time":3174.734256471,"data":"xgb_direct_tuned h 5 k 8 group 1 seconds 1.4\n"}
+,{"stream_name":"stdout","time":3177.714532397,"data":"xgb_direct_tuned h 5 k 8 group 2 seconds 2.9\n"}
+,{"stream_name":"stdout","time":3178.21976528,"data":"xgb_direct_tuned h 5 k 8 group 3 seconds 0.5\n"}
+,{"stream_name":"stdout","time":3180.334685594,"data":"xgb_direct_tuned h 5 k 8 group 4 seconds 2.1\n"}
+,{"stream_name":"stdout","time":3181.057731925,"data":"xgb_direct_tuned h 5 k 8 group 5 seconds 0.7\n"}
+,{"stream_name":"stdout","time":3182.628852053,"data":"xgb_direct_tuned h 5 k 8 group 6 seconds 1.6\n"}
+,{"stream_name":"stdout","time":3185.051569132,"data":"xgb_direct_tuned h 5 k 8 group 7 seconds 2.4\n"}
+,{"stream_name":"stdout","time":3203.091644501,"data":"xgb_direct_tuned h 6 k 1 group 0 seconds 12.3\n"}
+,{"stream_name":"stdout","time":3206.263837856,"data":"xgb_direct_tuned h 6 k 8 group 0 seconds 0.9\n"}
+,{"stream_name":"stdout","time":3207.708510851,"data":"xgb_direct_tuned h 6 k 8 group 1 seconds 1.4\n"}
+,{"stream_name":"stdout","time":3210.759026345,"data":"xgb_direct_tuned h 6 k 8 group 2 seconds 3.0\n"}
+,{"stream_name":"stdout","time":3211.299862681,"data":"xgb_direct_tuned h 6 k 8 group 3 seconds 0.6\n"}
+,{"stream_name":"stdout","time":3213.613879328,"data":"xgb_direct_tuned h 6 k 8 group 4 seconds 2.3\n"}
+,{"stream_name":"stdout","time":3214.378595218,"data":"xgb_direct_tuned h 6 k 8 group 5 seconds 0.8\n"}
+,{"stream_name":"stdout","time":3215.951960691,"data":"xgb_direct_tuned h 6 k 8 group 6 seconds 1.6\n"}
+,{"stream_name":"stdout","time":3218.483859507,"data":"xgb_direct_tuned h 6 k 8 group 7 seconds 2.5\n"}
+,{"stream_name":"stdout","time":3239.987361379,"data":"xgb_direct_tuned h 7 k 1 group 0 seconds 15.7\n"}
+,{"stream_name":"stdout","time":3243.841902988,"data":"xgb_direct_tuned h 7 k 8 group 0 seconds 1.4\n"}
+,{"stream_name":"stdout","time":3245.89424912,"data":"xgb_direct_tuned h 7 k 8 group 1 seconds 2.1\n"}
+,{"stream_name":"stdout","time":3250.093499244,"data":"xgb_direct_tuned h 7 k 8 group 2 seconds 4.2\n"}
+,{"stream_name":"stdout","time":3250.988896234,"data":"xgb_direct_tuned h 7 k 8 group 3 seconds 0.9\n"}
+,{"stream_name":"stdout","time":3254.107849203,"data":"xgb_direct_tuned h 7 k 8 group 4 seconds 3.1\n"}
+,{"stream_name":"stdout","time":3255.242861871,"data":"xgb_direct_tuned h 7 k 8 group 5 seconds 1.1\n"}
+,{"stream_name":"stdout","time":3257.296838083,"data":"xgb_direct_tuned h 7 k 8 group 6 seconds 2.0\n"}
+,{"stream_name":"stdout","time":3260.566272358,"data":"xgb_direct_tuned h 7 k 8 group 7 seconds 3.3\n"}
+,{"stream_name":"stdout","time":3279.270385313,"data":"xgb_direct_tuned h 8 k 1 group 0 seconds 12.7\n"}
+,{"stream_name":"stdout","time":3282.553840427,"data":"xgb_direct_tuned h 8 k 8 group 0 seconds 1.0\n"}
+,{"stream_name":"stdout","time":3284.108457596,"data":"xgb_direct_tuned h 8 k 8 group 1 seconds 1.6\n"}
+,{"stream_name":"stdout","time":3287.386859319,"data":"xgb_direct_tuned h 8 k 8 group 2 seconds 3.3\n"}
+,{"stream_name":"stdout","time":3287.988271233,"data":"xgb_direct_tuned h 8 k 8 group 3 seconds 0.6\n"}
+,{"stream_name":"stdout","time":3290.324716185,"data":"xgb_direct_tuned h 8 k 8 group 4 seconds 2.3\n"}
+,{"stream_name":"stdout","time":3291.129868487,"data":"xgb_direct_tuned h 8 k 8 group 5 seconds 0.8\n"}
+,{"stream_name":"stdout","time":3292.75785846,"data":"xgb_direct_tuned h 8 k 8 group 6 seconds 1.6\n"}
+,{"stream_name":"stdout","time":3295.300886212,"data":"xgb_direct_tuned h 8 k 8 group 7 seconds 2.5\n"}
+,{"stream_name":"stdout","time":3297.851759542,"data":"Независимая оценка test получена до переобучения на всей доступной размеченной истории. Этот test ранее изучался в проекте и не является новым слепым holdout. Коэффициенты, способ калибровки и вариант модели зафиксированы до test. Train включает бывшую val.\n"}
+,{"stream_name":"stdout","time":3297.854416758,"data":"GPU обязателен: CatBoost CUDA и CuPy проверены.\n"}
+,{"stream_name":"stdout","time":3300.400703579,"data":"Маршрутов: 1000 Выходы: /kaggle/working/cluster_experiment_9a9972a55222334e CatBoost: GPU\n"}
+,{"stream_name":"stdout","time":3376.669188647,"data":"xgb_residual_tuned h 1 k 1 group 0 seconds 72.6\n"}
+,{"stream_name":"stdout","time":3381.081366225,"data":"Test закрыт. Калибровка и выбор используют только периоды до test.\n"}
+,{"stream_name":"stdout","time":3456.051315608,"data":"xgb_residual_tuned h 1 k 8 group -1 seconds 74.5\n"}
+,{"stream_name":"stdout","time":3474.043484083,"data":"xgb_residual_tuned h 1 k 8 group 0 seconds 18.0\n"}
+,{"stream_name":"stdout","time":3489.757761441,"data":"xgb_residual_tuned h 1 k 8 group 1 seconds 15.7\n"}
+,{"stream_name":"stdout","time":3495.096664207,"data":"xgb_residual_tuned h 1 k 8 group 2 seconds 5.4\n"}
+,{"stream_name":"stdout","time":3506.582595754,"data":"xgb_residual_tuned h 1 k 8 group 3 seconds 11.5\n"}
+,{"stream_name":"stdout","time":3525.678998817,"data":"xgb_residual_tuned h 1 k 8 group 4 seconds 19.1\n"}
+,{"stream_name":"stdout","time":3537.881845983,"data":"xgb_residual_tuned h 1 k 8 group 6 seconds 12.2\n"}
+,{"stream_name":"stdout","time":3545.766647306,"data":"xgb_residual_tuned h 1 k 8 group 7 seconds 7.9\n"}
+,{"stream_name":"stdout","time":3550.766116173,"data":"Test закрыт. Калибровка и выбор используют только периоды до test.\n"}
+,{"stream_name":"stdout","time":3574.565010321,"data":"xgb_residual_tuned h 2 k 1 group 0 seconds 20.2\n"}
+,{"stream_name":"stdout","time":3576.851225761,"data":"Test закрыт. Калибровка и выбор используют только периоды до test.\n"}
+,{"stream_name":"stdout","time":3597.468672551,"data":"xgb_residual_tuned h 2 k 8 group -1 seconds 20.2\n"}
+,{"stream_name":"stdout","time":3602.153868511,"data":"xgb_residual_tuned h 2 k 8 group 0 seconds 4.7\n"}
+,{"stream_name":"stdout","time":3606.152965694,"data":"xgb_residual_tuned h 2 k 8 group 1 seconds 4.0\n"}
+,{"stream_name":"stdout","time":3607.344874363,"data":"xgb_residual_tuned h 2 k 8 group 2 seconds 1.2\n"}
+,{"stream_name":"stdout","time":3610.167250673,"data":"xgb_residual_tuned h 2 k 8 group 3 seconds 2.8\n"}
+,{"stream_name":"stdout","time":3615.136032852,"data":"xgb_residual_tuned h 2 k 8 group 4 seconds 5.0\n"}
+,{"stream_name":"stdout","time":3618.184846491,"data":"xgb_residual_tuned h 2 k 8 group 6 seconds 3.0\n"}
+,{"stream_name":"stdout","time":3620.051905386,"data":"xgb_residual_tuned h 2 k 8 group 7 seconds 1.9\n"}
+,{"stream_name":"stdout","time":3622.668877117,"data":"Test закрыт. Калибровка и выбор используют только периоды до test.\n"}
+,{"stream_name":"stdout","time":3655.691315522,"data":"xgb_residual_tuned h 3 k 1 group 0 seconds 29.8\n"}
+,{"stream_name":"stdout","time":3658.336574961,"data":"Test закрыт. Калибровка и выбор используют только периоды до test.\n"}
+,{"stream_name":"stdout","time":3688.671869194,"data":"xgb_residual_tuned h 3 k 8 group -1 seconds 29.9\n"}
+,{"stream_name":"stdout","time":3695.800972681,"data":"xgb_residual_tuned h 3 k 8 group 0 seconds 7.2\n"}
+,{"stream_name":"stdout","time":3701.849180981,"data":"xgb_residual_tuned h 3 k 8 group 1 seconds 6.0\n"}
+,{"stream_name":"stdout","time":3703.823718914,"data":"xgb_residual_tuned h 3 k 8 group 2 seconds 2.0\n"}
+,{"stream_name":"stdout","time":3708.234361444,"data":"xgb_residual_tuned h 3 k 8 group 3 seconds 4.4\n"}
+,{"stream_name":"stdout","time":3715.836266011,"data":"xgb_residual_tuned h 3 k 8 group 4 seconds 7.6\n"}
+,{"stream_name":"stdout","time":3720.569122108,"data":"xgb_residual_tuned h 3 k 8 group 6 seconds 4.7\n"}
+,{"stream_name":"stdout","time":3723.555838938,"data":"xgb_residual_tuned h 3 k 8 group 7 seconds 3.0\n"}
+,{"stream_name":"stdout","time":3726.534485449,"data":"Test закрыт. Калибровка и выбор используют только периоды до test.\n"}
+,{"stream_name":"stdout","time":3751.898762597,"data":"xgb_residual_tuned h 4 k 1 group 0 seconds 22.1\n"}
+,{"stream_name":"stdout","time":3754.20364042,"data":"Test закрыт. Калибровка и выбор используют только периоды до test.\n"}
+,{"stream_name":"stdout","time":3776.597761602,"data":"xgb_residual_tuned h 4 k 8 group -1 seconds 22.0\n"}
+,{"stream_name":"stdout","time":3781.826908918,"data":"xgb_residual_tuned h 4 k 8 group 0 seconds 5.2\n"}
+,{"stream_name":"stdout","time":3786.435017921,"data":"xgb_residual_tuned h 4 k 8 group 1 seconds 4.6\n"}
+,{"stream_name":"stdout","time":3788.032998171,"data":"xgb_residual_tuned h 4 k 8 group 2 seconds 1.6\n"}
+,{"stream_name":"stdout","time":3791.393701721,"data":"xgb_residual_tuned h 4 k 8 group 3 seconds 3.4\n"}
+,{"stream_name":"stdout","time":3797.029454875,"data":"xgb_residual_tuned h 4 k 8 group 4 seconds 5.6\n"}
+,{"stream_name":"stdout","time":3800.522076654,"data":"xgb_residual_tuned h 4 k 8 group 6 seconds 3.5\n"}
+,{"stream_name":"stdout","time":3802.716050546,"data":"xgb_residual_tuned h 4 k 8 group 7 seconds 2.2\n"}
+,{"stream_name":"stdout","time":3805.319216152,"data":"Test закрыт. Калибровка и выбор используют только периоды до test.\n"}
+,{"stream_name":"stdout","time":3825.876883714,"data":"xgb_residual_tuned h 5 k 1 group 0 seconds 17.3\n"}
+,{"stream_name":"stdout","time":3827.982653714,"data":"Test закрыт. Калибровка и выбор используют только периоды до test.\n"}
+,{"stream_name":"stdout","time":3845.492920114,"data":"xgb_residual_tuned h 5 k 8 group -1 seconds 17.1\n"}
+,{"stream_name":"stdout","time":3849.631852188,"data":"xgb_residual_tuned h 5 k 8 group 0 seconds 4.1\n"}
+,{"stream_name":"stdout","time":3853.212014239,"data":"xgb_residual_tuned h 5 k 8 group 1 seconds 3.6\n"}
+,{"stream_name":"stdout","time":3854.392057522,"data":"xgb_residual_tuned h 5 k 8 group 2 seconds 1.2\n"}
+,{"stream_name":"stdout","time":3856.939229545,"data":"xgb_residual_tuned h 5 k 8 group 3 seconds 2.5\n"}
+,{"stream_name":"stdout","time":3861.226763866,"data":"xgb_residual_tuned h 5 k 8 group 4 seconds 4.3\n"}
+,{"stream_name":"stdout","time":3863.860672282,"data":"xgb_residual_tuned h 5 k 8 group 6 seconds 2.6\n"}
+,{"stream_name":"stdout","time":3865.491567144,"data":"xgb_residual_tuned h 5 k 8 group 7 seconds 1.6\n"}
+,{"stream_name":"stdout","time":3867.858315247,"data":"Test закрыт. Калибровка и выбор используют только периоды до test.\n"}
+,{"stream_name":"stdout","time":3879.786234661,"data":"xgb_residual_tuned h 6 k 1 group 0 seconds 8.8\n"}
+,{"stream_name":"stdout","time":3881.747490418,"data":"Test закрыт. Калибровка и выбор используют только периоды до test.\n"}
+,{"stream_name":"stdout","time":3891.249586251,"data":"xgb_residual_tuned h 6 k 8 group -1 seconds 9.1\n"}
+,{"stream_name":"stdout","time":3893.132371819,"data":"xgb_residual_tuned h 6 k 8 group 0 seconds 1.9\n"}
+,{"stream_name":"stdout","time":3894.750414647,"data":"xgb_residual_tuned h 6 k 8 group 1 seconds 1.6\n"}
+,{"stream_name":"stdout","time":3895.152368488,"data":"xgb_residual_tuned h 6 k 8 group 2 seconds 0.4\n"}
+,{"stream_name":"stdout","time":3896.256449564,"data":"xgb_residual_tuned h 6 k 8 group 3 seconds 1.1\n"}
+,{"stream_name":"stdout","time":3898.244380664,"data":"xgb_residual_tuned h 6 k 8 group 4 seconds 2.0\n"}
+,{"stream_name":"stdout","time":3899.422918021,"data":"xgb_residual_tuned h 6 k 8 group 6 seconds 1.2\n"}
+,{"stream_name":"stdout","time":3900.084326715,"data":"xgb_residual_tuned h 6 k 8 group 7 seconds 0.7\n"}
+,{"stream_name":"stdout","time":3902.275969299,"data":"Test закрыт. Калибровка и выбор используют только периоды до test.\n"}
+,{"stream_name":"stdout","time":3914.204559717,"data":"xgb_residual_tuned h 7 k 1 group 0 seconds 8.9\n"}
+,{"stream_name":"stdout","time":3916.115053611,"data":"Test закрыт. Калибровка и выбор используют только периоды до test.\n"}
+,{"stream_name":"stdout","time":3925.632727731,"data":"xgb_residual_tuned h 7 k 8 group -1 seconds 9.1\n"}
+,{"stream_name":"stdout","time":3927.575840322,"data":"xgb_residual_tuned h 7 k 8 group 0 seconds 2.0\n"}
+,{"stream_name":"stdout","time":3929.277418796,"data":"xgb_residual_tuned h 7 k 8 group 1 seconds 1.7\n"}
+,{"stream_name":"stdout","time":3929.679224819,"data":"xgb_residual_tuned h 7 k 8 group 2 seconds 0.4\n"}
+,{"stream_name":"stdout","time":3930.785848107,"data":"xgb_residual_tuned h 7 k 8 group 3 seconds 1.1\n"}
+,{"stream_name":"stdout","time":3932.850788761,"data":"xgb_residual_tuned h 7 k 8 group 4 seconds 2.1\n"}
+,{"stream_name":"stdout","time":3934.043449945,"data":"xgb_residual_tuned h 7 k 8 group 6 seconds 1.2\n"}
+,{"stream_name":"stdout","time":3934.726460889,"data":"xgb_residual_tuned h 7 k 8 group 7 seconds 0.7\n"}
+,{"stream_name":"stdout","time":3936.841359029,"data":"Test закрыт. Калибровка и выбор используют только периоды до test.\n"}
+,{"stream_name":"stdout","time":3952.474427558,"data":"xgb_residual_tuned h 8 k 1 group 0 seconds 12.5\n"}
+,{"stream_name":"stdout","time":3954.467126604,"data":"Test закрыт. Калибровка и выбор используют только периоды до test.\n"}
+,{"stream_name":"stdout","time":3967.653118485,"data":"xgb_residual_tuned h 8 k 8 group -1 seconds 12.8\n"}
+,{"stream_name":"stdout","time":3970.626181519,"data":"xgb_residual_tuned h 8 k 8 group 0 seconds 3.0\n"}
+,{"stream_name":"stdout","time":3973.125205181,"data":"xgb_residual_tuned h 8 k 8 group 1 seconds 2.5\n"}
+,{"stream_name":"stdout","time":3973.887925365,"data":"xgb_residual_tuned h 8 k 8 group 2 seconds 0.8\n"}
+,{"stream_name":"stdout","time":3975.674839982,"data":"xgb_residual_tuned h 8 k 8 group 3 seconds 1.8\n"}
+,{"stream_name":"stdout","time":3978.892910048,"data":"xgb_residual_tuned h 8 k 8 group 4 seconds 3.2\n"}
+,{"stream_name":"stdout","time":3980.800596326,"data":"xgb_residual_tuned h 8 k 8 group 6 seconds 1.9\n"}
+,{"stream_name":"stdout","time":3981.970912997,"data":"xgb_residual_tuned h 8 k 8 group 7 seconds 1.2\n"}
+,{"stream_name":"stdout","time":3984.168866927,"data":"Test закрыт. Калибровка и выбор используют только периоды до test.\n"}
+,{"stream_name":"stdout","time":4068.462562069,"data":"xgb_residual_tuned h 1 k 1 group 0 seconds 80.3\n"}
+,{"stream_name":"stdout","time":4074.300025724,"data":"Test закрыт. Калибровка и выбор используют только периоды до test.\n"}
+,{"stream_name":"stdout","time":4157.193166941,"data":"xgb_residual_tuned h 1 k 8 group -1 seconds 82.4\n"}
+,{"stream_name":"stdout","time":4168.382679335,"data":"xgb_residual_tuned h 1 k 8 group 0 seconds 11.2\n"}
+,{"stream_name":"stdout","time":4177.152363457,"data":"xgb_residual_tuned h 1 k 8 group 1 seconds 8.8\n"}
+,{"stream_name":"stdout","time":4188.025897875,"data":"xgb_residual_tuned h 1 k 8 group 2 seconds 10.8\n"}
+,{"stream_name":"stdout","time":4215.841120876,"data":"xgb_residual_tuned h 1 k 8 group 3 seconds 27.8\n"}
+,{"stream_name":"stdout","time":4236.057143818,"data":"xgb_residual_tuned h 1 k 8 group 4 seconds 20.2\n"}
+,{"stream_name":"stdout","time":4242.3012929,"data":"xgb_residual_tuned h 1 k 8 group 5 seconds 6.3\n"}
+,{"stream_name":"stdout","time":4255.653884759,"data":"xgb_residual_tuned h 1 k 8 group 6 seconds 13.4\n"}
+,{"stream_name":"stdout","time":4261.138753138,"data":"Test закрыт. Калибровка и выбор используют только периоды до test.\n"}
+,{"stream_name":"stdout","time":4286.980488877,"data":"xgb_residual_tuned h 2 k 1 group 0 seconds 22.0\n"}
+,{"stream_name":"stdout","time":4289.467854883,"data":"Test закрыт. Калибровка и выбор используют только периоды до test.\n"}
+,{"stream_name":"stdout","time":4312.234934178,"data":"xgb_residual_tuned h 2 k 8 group -1 seconds 22.3\n"}
+,{"stream_name":"stdout","time":4315.045906282,"data":"xgb_residual_tuned h 2 k 8 group 0 seconds 2.8\n"}
+,{"stream_name":"stdout","time":4317.178136327,"data":"xgb_residual_tuned h 2 k 8 group 1 seconds 2.1\n"}
+,{"stream_name":"stdout","time":4319.763841545,"data":"xgb_residual_tuned h 2 k 8 group 2 seconds 2.6\n"}
+,{"stream_name":"stdout","time":4327.059443642,"data":"xgb_residual_tuned h 2 k 8 group 3 seconds 7.3\n"}
+,{"stream_name":"stdout","time":4332.33197168,"data":"xgb_residual_tuned h 2 k 8 group 4 seconds 5.3\n"}
+,{"stream_name":"stdout","time":4333.745690948,"data":"xgb_residual_tuned h 2 k 8 group 5 seconds 1.4\n"}
+,{"stream_name":"stdout","time":4337.064435445,"data":"xgb_residual_tuned h 2 k 8 group 6 seconds 3.3\n"}
+,{"stream_name":"stdout","time":4339.902635925,"data":"Test закрыт. Калибровка и выбор используют только периоды до test.\n"}
+,{"stream_name":"stdout","time":4376.397674119,"data":"xgb_residual_tuned h 3 k 1 group 0 seconds 32.9\n"}
+,{"stream_name":"stdout","time":4380.444628611,"data":"Test закрыт. Калибровка и выбор используют только периоды до test.\n"}
+,{"stream_name":"stdout","time":4413.902836874,"data":"xgb_residual_tuned h 3 k 8 group -1 seconds 33.0\n"}
+,{"stream_name":"stdout","time":4418.221160453,"data":"xgb_residual_tuned h 3 k 8 group 0 seconds 4.3\n"}
+,{"stream_name":"stdout","time":4421.53094485,"data":"xgb_residual_tuned h 3 k 8 group 1 seconds 3.3\n"}
+,{"stream_name":"stdout","time":4425.684373688,"data":"xgb_residual_tuned h 3 k 8 group 2 seconds 4.1\n"}
+,{"stream_name":"stdout","time":4436.57592698,"data":"xgb_residual_tuned h 3 k 8 group 3 seconds 10.9\n"}
+,{"stream_name":"stdout","time":4444.43529341,"data":"xgb_residual_tuned h 3 k 8 group 4 seconds 7.8\n"}
+,{"stream_name":"stdout","time":4446.709126508,"data":"xgb_residual_tuned h 3 k 8 group 5 seconds 2.3\n"}
+,{"stream_name":"stdout","time":4451.849796802,"data":"xgb_residual_tuned h 3 k 8 group 6 seconds 5.1\n"}
+,{"stream_name":"stdout","time":4455.109071026,"data":"Test закрыт. Калибровка и выбор используют только периоды до test.\n"}
+,{"stream_name":"stdout","time":4483.172110956,"data":"xgb_residual_tuned h 4 k 1 group 0 seconds 24.5\n"}
+,{"stream_name":"stdout","time":4486.80847015,"data":"Test закрыт. Калибровка и выбор используют только периоды до test.\n"}
+,{"stream_name":"stdout","time":4511.23470972,"data":"xgb_residual_tuned h 4 k 8 group -1 seconds 24.0\n"}
+,{"stream_name":"stdout","time":4514.50065276,"data":"xgb_residual_tuned h 4 k 8 group 0 seconds 3.2\n"}
+,{"stream_name":"stdout","time":4517.002539648,"data":"xgb_residual_tuned h 4 k 8 group 1 seconds 2.5\n"}
+,{"stream_name":"stdout","time":4520.073359846,"data":"xgb_residual_tuned h 4 k 8 group 2 seconds 3.1\n"}
+,{"stream_name":"stdout","time":4528.32796731,"data":"xgb_residual_tuned h 4 k 8 group 3 seconds 8.2\n"}
+,{"stream_name":"stdout","time":4534.260166709,"data":"xgb_residual_tuned h 4 k 8 group 4 seconds 5.9\n"}
+,{"stream_name":"stdout","time":4536.048836154,"data":"xgb_residual_tuned h 4 k 8 group 5 seconds 1.8\n"}
+,{"stream_name":"stdout","time":4539.916833569,"data":"xgb_residual_tuned h 4 k 8 group 6 seconds 3.9\n"}
+,{"stream_name":"stdout","time":4542.793757021,"data":"Test закрыт. Калибровка и выбор используют только периоды до test.\n"}
+,{"stream_name":"stdout","time":4565.104567132,"data":"xgb_residual_tuned h 5 k 1 group 0 seconds 18.8\n"}
+,{"stream_name":"stdout","time":4568.530977743,"data":"Test закрыт. Калибровка и выбор используют только периоды до test.\n"}
+,{"stream_name":"stdout","time":4587.533682522,"data":"xgb_residual_tuned h 5 k 8 group -1 seconds 18.6\n"}
+,{"stream_name":"stdout","time":4589.952917639,"data":"xgb_residual_tuned h 5 k 8 group 0 seconds 2.4\n"}
+,{"stream_name":"stdout","time":4591.853462868,"data":"xgb_residual_tuned h 5 k 8 group 1 seconds 1.9\n"}
+,{"stream_name":"stdout","time":4594.179118191,"data":"xgb_residual_tuned h 5 k 8 group 2 seconds 2.3\n"}
+,{"stream_name":"stdout","time":4600.579043319,"data":"xgb_residual_tuned h 5 k 8 group 3 seconds 6.4\n"}
+,{"stream_name":"stdout","time":4605.199494389,"data":"xgb_residual_tuned h 5 k 8 group 4 seconds 4.7\n"}
+,{"stream_name":"stdout","time":4606.488917388,"data":"xgb_residual_tuned h 5 k 8 group 5 seconds 1.3\n"}
+,{"stream_name":"stdout","time":4609.401355282,"data":"xgb_residual_tuned h 5 k 8 group 6 seconds 2.9\n"}
+,{"stream_name":"stdout","time":4612.032403375,"data":"Test закрыт. Калибровка и выбор используют только периоды до test.\n"}
+,{"stream_name":"stdout","time":4625.367931985,"data":"xgb_residual_tuned h 6 k 1 group 0 seconds 9.9\n"}
+,{"stream_name":"stdout","time":4628.429966936,"data":"Test закрыт. Калибровка и выбор используют только периоды до test.\n"}
+,{"stream_name":"stdout","time":4638.642091411,"data":"xgb_residual_tuned h 6 k 8 group -1 seconds 9.7\n"}
+,{"stream_name":"stdout","time":4639.714164505,"data":"xgb_residual_tuned h 6 k 8 group 0 seconds 1.1\n"}
+,{"stream_name":"stdout","time":4640.460472065,"data":"xgb_residual_tuned h 6 k 8 group 1 seconds 0.7\n"}
+,{"stream_name":"stdout","time":4641.506568078,"data":"xgb_residual_tuned h 6 k 8 group 2 seconds 1.0\n"}
+,{"stream_name":"stdout","time":4644.727877729,"data":"xgb_residual_tuned h 6 k 8 group 3 seconds 3.2\n"}
+,{"stream_name":"stdout","time":4646.870840632,"data":"xgb_residual_tuned h 6 k 8 group 4 seconds 2.1\n"}
+,{"stream_name":"stdout","time":4647.318418464,"data":"xgb_residual_tuned h 6 k 8 group 5 seconds 0.4\n"}
+,{"stream_name":"stdout","time":4648.676366034,"data":"xgb_residual_tuned h 6 k 8 group 6 seconds 1.4\n"}
+,{"stream_name":"stdout","time":4650.965147026,"data":"Test закрыт. Калибровка и выбор используют только периоды до test.\n"}
+,{"stream_name":"stdout","time":4664.490317974,"data":"xgb_residual_tuned h 7 k 1 group 0 seconds 10.1\n"}
+,{"stream_name":"stdout","time":4667.58268104,"data":"Test закрыт. Калибровка и выбор используют только периоды до test.\n"}
+,{"stream_name":"stdout","time":4678.11290249,"data":"xgb_residual_tuned h 7 k 8 group -1 seconds 10.1\n"}
+,{"stream_name":"stdout","time":4679.175196668,"data":"xgb_residual_tuned h 7 k 8 group 0 seconds 1.1\n"}
+,{"stream_name":"stdout","time":4679.969056414,"data":"xgb_residual_tuned h 7 k 8 group 1 seconds 0.8\n"}
+,{"stream_name":"stdout","time":4681.052873178,"data":"xgb_residual_tuned h 7 k 8 group 2 seconds 1.1\n"}
+,{"stream_name":"stdout","time":4684.145019337,"data":"xgb_residual_tuned h 7 k 8 group 3 seconds 3.1\n"}
+,{"stream_name":"stdout","time":4686.246733877,"data":"xgb_residual_tuned h 7 k 8 group 4 seconds 2.1\n"}
+,{"stream_name":"stdout","time":4686.684015202,"data":"xgb_residual_tuned h 7 k 8 group 5 seconds 0.4\n"}
+,{"stream_name":"stdout","time":4688.03507004,"data":"xgb_residual_tuned h 7 k 8 group 6 seconds 1.3\n"}
+,{"stream_name":"stdout","time":4690.335269883,"data":"Test закрыт. Калибровка и выбор используют только периоды до test.\n"}
+,{"stream_name":"stdout","time":4707.487018701,"data":"xgb_residual_tuned h 8 k 1 group 0 seconds 13.8\n"}
+,{"stream_name":"stdout","time":4710.761835597,"data":"Test закрыт. Калибровка и выбор используют только периоды до test.\n"}
+,{"stream_name":"stdout","time":4724.86140385,"data":"xgb_residual_tuned h 8 k 8 group -1 seconds 13.7\n"}
+,{"stream_name":"stdout","time":4726.551118297,"data":"xgb_residual_tuned h 8 k 8 group 0 seconds 1.7\n"}
+,{"stream_name":"stdout","time":4727.842843085,"data":"xgb_residual_tuned h 8 k 8 group 1 seconds 1.3\n"}
+,{"stream_name":"stdout","time":4729.474101,"data":"xgb_residual_tuned h 8 k 8 group 2 seconds 1.6\n"}
+,{"stream_name":"stdout","time":4734.046898737,"data":"xgb_residual_tuned h 8 k 8 group 3 seconds 4.6\n"}
+,{"stream_name":"stdout","time":4737.321618109,"data":"xgb_residual_tuned h 8 k 8 group 4 seconds 3.3\n"}
+,{"stream_name":"stdout","time":4738.175385654,"data":"xgb_residual_tuned h 8 k 8 group 5 seconds 0.9\n"}
+,{"stream_name":"stdout","time":4740.254961188,"data":"xgb_residual_tuned h 8 k 8 group 6 seconds 2.1\n"}
+,{"stream_name":"stdout","time":4742.754434603,"data":"Test закрыт. Калибровка и выбор используют только периоды до test.\n"}
+,{"stream_name":"stdout","time":4744.100234551,"data":"Победитель выбран до test: cat_k8 horizon\n"}
+,{"stream_name":"stdout","time":4835.888594606,"data":"xgb_residual_tuned h 1 k 1 group 0 seconds 87.7\n"}
+,{"stream_name":"stdout","time":4849.71576098,"data":"xgb_residual_tuned h 1 k 8 group 0 seconds 8.0\n"}
+,{"stream_name":"stdout","time":4862.315507044,"data":"xgb_residual_tuned h 1 k 8 group 1 seconds 12.6\n"}
+,{"stream_name":"stdout","time":4885.793235913,"data":"xgb_residual_tuned h 1 k 8 group 2 seconds 23.4\n"}
+,{"stream_name":"stdout","time":4892.034909201,"data":"xgb_residual_tuned h 1 k 8 group 3 seconds 6.3\n"}
+,{"stream_name":"stdout","time":4909.765574442,"data":"xgb_residual_tuned h 1 k 8 group 4 seconds 17.7\n"}
+,{"stream_name":"stdout","time":4917.396788783,"data":"xgb_residual_tuned h 1 k 8 group 5 seconds 7.6\n"}
+,{"stream_name":"stdout","time":4930.140172962,"data":"xgb_residual_tuned h 1 k 8 group 6 seconds 12.8\n"}
+,{"stream_name":"stdout","time":4949.383016538,"data":"xgb_residual_tuned h 1 k 8 group 7 seconds 19.2\n"}
+,{"stream_name":"stdout","time":4984.208865044,"data":"xgb_residual_tuned h 2 k 1 group 0 seconds 24.6\n"}
+,{"stream_name":"stdout","time":4989.546064638,"data":"xgb_residual_tuned h 2 k 8 group 0 seconds 2.0\n"}
+,{"stream_name":"stdout","time":4992.740732634,"data":"xgb_residual_tuned h 2 k 8 group 1 seconds 3.2\n"}
+,{"stream_name":"stdout","time":4998.956442581,"data":"xgb_residual_tuned h 2 k 8 group 2 seconds 6.2\n"}
+,{"stream_name":"stdout","time":5000.372854665,"data":"xgb_residual_tuned h 2 k 8 group 3 seconds 1.4\n"}
+,{"stream_name":"stdout","time":5005.040220507,"data":"xgb_residual_tuned h 2 k 8 group 4 seconds 4.7\n"}
+,{"stream_name":"stdout","time":5006.826224962,"data":"xgb_residual_tuned h 2 k 8 group 5 seconds 1.8\n"}
+,{"stream_name":"stdout","time":5009.996839454,"data":"xgb_residual_tuned h 2 k 8 group 6 seconds 3.2\n"}
+,{"stream_name":"stdout","time":5015.029825423,"data":"xgb_residual_tuned h 2 k 8 group 7 seconds 5.0\n"}
+,{"stream_name":"stdout","time":5057.887965116,"data":"xgb_residual_tuned h 3 k 1 group 0 seconds 35.9\n"}
+,{"stream_name":"stdout","time":5064.782343862,"data":"xgb_residual_tuned h 3 k 8 group 0 seconds 3.1\n"}
+,{"stream_name":"stdout","time":5069.621055431,"data":"xgb_residual_tuned h 3 k 8 group 1 seconds 4.8\n"}
+,{"stream_name":"stdout","time":5079.01303533,"data":"xgb_residual_tuned h 3 k 8 group 2 seconds 9.4\n"}
+,{"stream_name":"stdout","time":5081.315493616,"data":"xgb_residual_tuned h 3 k 8 group 3 seconds 2.3\n"}
+,{"stream_name":"stdout","time":5088.42031387,"data":"xgb_residual_tuned h 3 k 8 group 4 seconds 7.1\n"}
+,{"stream_name":"stdout","time":5091.259655768,"data":"xgb_residual_tuned h 3 k 8 group 5 seconds 2.9\n"}
+,{"stream_name":"stdout","time":5096.239165263,"data":"xgb_residual_tuned h 3 k 8 group 6 seconds 5.0\n"}
+,{"stream_name":"stdout","time":5103.808084139,"data":"xgb_residual_tuned h 3 k 8 group 7 seconds 7.6\n"}
+,{"stream_name":"stdout","time":5137.501336226,"data":"xgb_residual_tuned h 4 k 1 group 0 seconds 26.1\n"}
+,{"stream_name":"stdout","time":5143.281849611,"data":"xgb_residual_tuned h 4 k 8 group 0 seconds 2.5\n"}
+,{"stream_name":"stdout","time":5146.999488864,"data":"xgb_residual_tuned h 4 k 8 group 1 seconds 3.7\n"}
+,{"stream_name":"stdout","time":5154.127311599,"data":"xgb_residual_tuned h 4 k 8 group 2 seconds 7.1\n"}
+,{"stream_name":"stdout","time":5155.81538803,"data":"xgb_residual_tuned h 4 k 8 group 3 seconds 1.7\n"}
+,{"stream_name":"stdout","time":5161.167081703,"data":"xgb_residual_tuned h 4 k 8 group 4 seconds 5.3\n"}
+,{"stream_name":"stdout","time":5163.405853959,"data":"xgb_residual_tuned h 4 k 8 group 5 seconds 2.2\n"}
+,{"stream_name":"stdout","time":5167.146354236,"data":"xgb_residual_tuned h 4 k 8 group 6 seconds 3.7\n"}
+,{"stream_name":"stdout","time":5172.880127843,"data":"xgb_residual_tuned h 4 k 8 group 7 seconds 5.7\n"}
+,{"stream_name":"stdout","time":5200.157477168,"data":"xgb_residual_tuned h 5 k 1 group 0 seconds 20.3\n"}
+,{"stream_name":"stdout","time":5205.188362196,"data":"xgb_residual_tuned h 5 k 8 group 0 seconds 1.8\n"}
+,{"stream_name":"stdout","time":5207.951722464,"data":"xgb_residual_tuned h 5 k 8 group 1 seconds 2.8\n"}
+,{"stream_name":"stdout","time":5213.336468358,"data":"xgb_residual_tuned h 5 k 8 group 2 seconds 5.4\n"}
+,{"stream_name":"stdout","time":5214.575919462,"data":"xgb_residual_tuned h 5 k 8 group 3 seconds 1.2\n"}
+,{"stream_name":"stdout","time":5218.619417737,"data":"xgb_residual_tuned h 5 k 8 group 4 seconds 4.0\n"}
+,{"stream_name":"stdout","time":5220.235675515,"data":"xgb_residual_tuned h 5 k 8 group 5 seconds 1.6\n"}
+,{"stream_name":"stdout","time":5223.159186446,"data":"xgb_residual_tuned h 5 k 8 group 6 seconds 2.9\n"}
+,{"stream_name":"stdout","time":5227.586949934,"data":"xgb_residual_tuned h 5 k 8 group 7 seconds 4.4\n"}
+,{"stream_name":"stdout","time":5245.339064423,"data":"xgb_residual_tuned h 6 k 1 group 0 seconds 11.0\n"}
+,{"stream_name":"stdout","time":5248.891938092,"data":"xgb_residual_tuned h 6 k 8 group 0 seconds 0.7\n"}
+,{"stream_name":"stdout","time":5250.188729792,"data":"xgb_residual_tuned h 6 k 8 group 1 seconds 1.3\n"}
+,{"stream_name":"stdout","time":5252.920654076,"data":"xgb_residual_tuned h 6 k 8 group 2 seconds 2.7\n"}
+,{"stream_name":"stdout","time":5253.369430328,"data":"xgb_residual_tuned h 6 k 8 group 3 seconds 0.4\n"}
+,{"stream_name":"stdout","time":5255.247201031,"data":"xgb_residual_tuned h 6 k 8 group 4 seconds 1.9\n"}
+,{"stream_name":"stdout","time":5255.874262691,"data":"xgb_residual_tuned h 6 k 8 group 5 seconds 0.6\n"}
+,{"stream_name":"stdout","time":5257.171873528,"data":"xgb_residual_tuned h 6 k 8 group 6 seconds 1.3\n"}
+,{"stream_name":"stdout","time":5259.223126348,"data":"xgb_residual_tuned h 6 k 8 group 7 seconds 2.0\n"}
+,{"stream_name":"stdout","time":5276.74496534,"data":"xgb_residual_tuned h 7 k 1 group 0 seconds 11.1\n"}
+,{"stream_name":"stdout","time":5280.293060816,"data":"xgb_residual_tuned h 7 k 8 group 0 seconds 0.7\n"}
+,{"stream_name":"stdout","time":5281.675902364,"data":"xgb_residual_tuned h 7 k 8 group 1 seconds 1.4\n"}
+,{"stream_name":"stdout","time":5284.441065632,"data":"xgb_residual_tuned h 7 k 8 group 2 seconds 2.8\n"}
+,{"stream_name":"stdout","time":5284.915695517,"data":"xgb_residual_tuned h 7 k 8 group 3 seconds 0.5\n"}
+,{"stream_name":"stdout","time":5286.899751496,"data":"xgb_residual_tuned h 7 k 8 group 4 seconds 2.0\n"}
+,{"stream_name":"stdout","time":5287.54363372,"data":"xgb_residual_tuned h 7 k 8 group 5 seconds 0.6\n"}
+,{"stream_name":"stdout","time":5288.89556597,"data":"xgb_residual_tuned h 7 k 8 group 6 seconds 1.3\n"}
+,{"stream_name":"stdout","time":5291.002956394,"data":"xgb_residual_tuned h 7 k 8 group 7 seconds 2.1\n"}
+,{"stream_name":"stdout","time":5312.785515543,"data":"xgb_residual_tuned h 8 k 1 group 0 seconds 15.4\n"}
+,{"stream_name":"stdout","time":5317.072895755,"data":"xgb_residual_tuned h 8 k 8 group 0 seconds 1.3\n"}
+,{"stream_name":"stdout","time":5319.086911257,"data":"xgb_residual_tuned h 8 k 8 group 1 seconds 2.0\n"}
+,{"stream_name":"stdout","time":5323.198357296,"data":"xgb_residual_tuned h 8 k 8 group 2 seconds 4.1\n"}
+,{"stream_name":"stdout","time":5324.024857248,"data":"xgb_residual_tuned h 8 k 8 group 3 seconds 0.8\n"}
+,{"stream_name":"stdout","time":5327.078357461,"data":"xgb_residual_tuned h 8 k 8 group 4 seconds 3.1\n"}
+,{"stream_name":"stdout","time":5328.162909964,"data":"xgb_residual_tuned h 8 k 8 group 5 seconds 1.1\n"}
+,{"stream_name":"stdout","time":5330.138234858,"data":"xgb_residual_tuned h 8 k 8 group 6 seconds 2.0\n"}
+,{"stream_name":"stdout","time":5333.379968016,"data":"xgb_residual_tuned h 8 k 8 group 7 seconds 3.2\n"}
+,{"stream_name":"stdout","time":5336.339731102,"data":"Независимая оценка test получена до переобучения на всей доступной размеченной истории. Этот test ранее изучался в проекте и не является новым слепым holdout. Коэффициенты, способ калибровки и вариант модели зафиксированы до test. Train включает бывшую val.\n"}
+,{"stream_name":"stdout","time":5336.342241179,"data":"Лучший по val: {'experiment': 'xgb_direct_tuned', 'directory': '/kaggle/working/cluster_experiment_29e153d8117d7b62', 'selection_score': 0.33075334705371273, 'winner': 'cat_k8', 'strategy': 'horizon_shrink50'}\n"}
+,{"stream_name":"stdout","time":5352.794465984,"data":"xgb_direct_tuned h 1 k 8 group 0 seconds 12.0\n"}
+,{"stream_name":"stdout","time":5363.862815274,"data":"xgb_direct_tuned h 1 k 8 group 1 seconds 11.1\n"}
+,{"stream_name":"stdout","time":5372.045289778,"data":"xgb_direct_tuned h 1 k 8 group 2 seconds 8.2\n"}
+,{"stream_name":"stdout","time":5393.657603292,"data":"xgb_direct_tuned h 1 k 8 group 3 seconds 21.6\n"}
+,{"stream_name":"stdout","time":5403.040982058,"data":"xgb_direct_tuned h 1 k 8 group 4 seconds 9.4\n"}
+,{"stream_name":"stdout","time":5416.406517436,"data":"xgb_direct_tuned h 1 k 8 group 5 seconds 13.4\n"}
+,{"stream_name":"stdout","time":5435.888126163,"data":"xgb_direct_tuned h 1 k 8 group 6 seconds 19.4\n"}
+,{"stream_name":"stdout","time":5462.044851471,"data":"xgb_direct_tuned h 1 k 8 group 7 seconds 26.2\n"}
+,{"stream_name":"stdout","time":5470.811730442,"data":"Train/test в таблице — прежние оценочные модели и прежние коэффициенты, до полного refit.\n"}
+,{"stream_name":"stdout","time":5478.587136376,"data":"xgb_direct_tuned h 2 k 8 group 0 seconds 3.7\n"}
+,{"stream_name":"stdout","time":5481.952466012,"data":"xgb_direct_tuned h 2 k 8 group 1 seconds 3.4\n"}
+,{"stream_name":"stdout","time":5484.319559571,"data":"xgb_direct_tuned h 2 k 8 group 2 seconds 2.4\n"}
+,{"stream_name":"stdout","time":5491.305478956,"data":"xgb_direct_tuned h 2 k 8 group 3 seconds 7.0\n"}
+,{"stream_name":"stdout","time":5494.004102287,"data":"xgb_direct_tuned h 2 k 8 group 4 seconds 2.7\n"}
+,{"stream_name":"stdout","time":5497.985983714,"data":"xgb_direct_tuned h 2 k 8 group 5 seconds 4.0\n"}
+,{"stream_name":"stdout","time":5504.061452376,"data":"xgb_direct_tuned h 2 k 8 group 6 seconds 6.0\n"}
+,{"stream_name":"stdout","time":5512.381856711,"data":"xgb_direct_tuned h 2 k 8 group 7 seconds 8.4\n"}
+,{"stream_name":"stdout","time":5515.978487705,"data":"Train/test в таблице — прежние оценочные модели и прежние коэффициенты, до полного refit.\n"}
+,{"stream_name":"stdout","time":5523.684859387,"data":"xgb_direct_tuned h 3 k 8 group 0 seconds 3.7\n"}
+,{"stream_name":"stdout","time":5527.06394199,"data":"xgb_direct_tuned h 3 k 8 group 1 seconds 3.4\n"}
+,{"stream_name":"stdout","time":5529.491442236,"data":"xgb_direct_tuned h 3 k 8 group 2 seconds 2.4\n"}
+,{"stream_name":"stdout","time":5536.492377945,"data":"xgb_direct_tuned h 3 k 8 group 3 seconds 7.0\n"}
+,{"stream_name":"stdout","time":5539.185007443,"data":"xgb_direct_tuned h 3 k 8 group 4 seconds 2.7\n"}
+,{"stream_name":"stdout","time":5543.216348091,"data":"xgb_direct_tuned h 3 k 8 group 5 seconds 4.0\n"}
+,{"stream_name":"stdout","time":5549.238822869,"data":"xgb_direct_tuned h 3 k 8 group 6 seconds 6.0\n"}
+,{"stream_name":"stdout","time":5557.692908544,"data":"xgb_direct_tuned h 3 k 8 group 7 seconds 8.4\n"}
+,{"stream_name":"stdout","time":5562.806240298,"data":"Train/test в таблице — прежние оценочные модели и прежние коэффициенты, до полного refit.\n"}
+,{"stream_name":"stdout","time":5568.378256274,"data":"xgb_direct_tuned h 4 k 8 group 0 seconds 1.6\n"}
+,{"stream_name":"stdout","time":5569.693763279,"data":"xgb_direct_tuned h 4 k 8 group 1 seconds 1.4\n"}
+,{"stream_name":"stdout","time":5570.544884553,"data":"xgb_direct_tuned h 4 k 8 group 2 seconds 0.8\n"}
+,{"stream_name":"stdout","time":5573.689096324,"data":"xgb_direct_tuned h 4 k 8 group 3 seconds 3.1\n"}
+,{"stream_name":"stdout","time":5574.722844274,"data":"xgb_direct_tuned h 4 k 8 group 4 seconds 1.0\n"}
+,{"stream_name":"stdout","time":5576.365671129,"data":"xgb_direct_tuned h 4 k 8 group 5 seconds 1.6\n"}
+,{"stream_name":"stdout","time":5579.014812695,"data":"xgb_direct_tuned h 4 k 8 group 6 seconds 2.6\n"}
+,{"stream_name":"stdout","time":5582.914842382,"data":"xgb_direct_tuned h 4 k 8 group 7 seconds 3.9\n"}
+,{"stream_name":"stdout","time":5585.618236198,"data":"Train/test в таблице — прежние оценочные модели и прежние коэффициенты, до полного refit.\n"}
+,{"stream_name":"stdout","time":5590.954274223,"data":"xgb_direct_tuned h 5 k 8 group 0 seconds 1.4\n"}
+,{"stream_name":"stdout","time":5592.23022251,"data":"xgb_direct_tuned h 5 k 8 group 1 seconds 1.3\n"}
+,{"stream_name":"stdout","time":5592.992087586,"data":"xgb_direct_tuned h 5 k 8 group 2 seconds 0.8\n"}
+,{"stream_name":"stdout","time":5595.856855231,"data":"xgb_direct_tuned h 5 k 8 group 3 seconds 2.9\n"}
+,{"stream_name":"stdout","time":5596.771896982,"data":"xgb_direct_tuned h 5 k 8 group 4 seconds 0.9\n"}
+,{"stream_name":"stdout","time":5598.358890376,"data":"xgb_direct_tuned h 5 k 8 group 5 seconds 1.6\n"}
+,{"stream_name":"stdout","time":5600.900745129,"data":"xgb_direct_tuned h 5 k 8 group 6 seconds 2.5\n"}
+,{"stream_name":"stdout","time":5604.388697884,"data":"xgb_direct_tuned h 5 k 8 group 7 seconds 3.5\n"}
+,{"stream_name":"stdout","time":5608.166750524,"data":"Train/test в таблице — прежние оценочные модели и прежние коэффициенты, до полного refit.\n"}
+,{"stream_name":"stdout","time":5613.537903749,"data":"xgb_direct_tuned h 6 k 8 group 0 seconds 1.5\n"}
+,{"stream_name":"stdout","time":5614.81385106,"data":"xgb_direct_tuned h 6 k 8 group 1 seconds 1.3\n"}
+,{"stream_name":"stdout","time":5615.601996786,"data":"xgb_direct_tuned h 6 k 8 group 2 seconds 0.8\n"}
+,{"stream_name":"stdout","time":5618.58406613,"data":"xgb_direct_tuned h 6 k 8 group 3 seconds 3.0\n"}
+,{"stream_name":"stdout","time":5619.536905639,"data":"xgb_direct_tuned h 6 k 8 group 4 seconds 0.9\n"}
+,{"stream_name":"stdout","time":5621.098053027,"data":"xgb_direct_tuned h 6 k 8 group 5 seconds 1.6\n"}
+,{"stream_name":"stdout","time":5623.670888344,"data":"xgb_direct_tuned h 6 k 8 group 6 seconds 2.6\n"}
+,{"stream_name":"stdout","time":5627.17103274,"data":"xgb_direct_tuned h 6 k 8 group 7 seconds 3.5\n"}
+,{"stream_name":"stdout","time":5629.822628891,"data":"Train/test в таблице — прежние оценочные модели и прежние коэффициенты, до полного refit.\n"}
+,{"stream_name":"stdout","time":5635.892625238,"data":"xgb_direct_tuned h 7 k 8 group 0 seconds 2.1\n"}
+,{"stream_name":"stdout","time":5637.639998957,"data":"xgb_direct_tuned h 7 k 8 group 1 seconds 1.8\n"}
+,{"stream_name":"stdout","time":5638.810577096,"data":"xgb_direct_tuned h 7 k 8 group 2 seconds 1.2\n"}
+,{"stream_name":"stdout","time":5642.637922575,"data":"xgb_direct_tuned h 7 k 8 group 3 seconds 3.8\n"}
+,{"stream_name":"stdout","time":5644.01489883,"data":"xgb_direct_tuned h 7 k 8 group 4 seconds 1.4\n"}
+,{"stream_name":"stdout","time":5646.160555349,"data":"xgb_direct_tuned h 7 k 8 group 5 seconds 2.1\n"}
+,{"stream_name":"stdout","time":5649.496375916,"data":"xgb_direct_tuned h 7 k 8 group 6 seconds 3.3\n"}
+,{"stream_name":"stdout","time":5654.22689413,"data":"xgb_direct_tuned h 7 k 8 group 7 seconds 4.7\n"}
+,{"stream_name":"stdout","time":5657.169615718,"data":"Train/test в таблице — прежние оценочные модели и прежние коэффициенты, до полного refit.\n"}
+,{"stream_name":"stdout","time":5662.631359122,"data":"xgb_direct_tuned h 8 k 8 group 0 seconds 1.5\n"}
+,{"stream_name":"stdout","time":5663.953332869,"data":"xgb_direct_tuned h 8 k 8 group 1 seconds 1.3\n"}
+,{"stream_name":"stdout","time":5664.785075159,"data":"xgb_direct_tuned h 8 k 8 group 2 seconds 0.8\n"}
+,{"stream_name":"stdout","time":5667.843022967,"data":"xgb_direct_tuned h 8 k 8 group 3 seconds 3.0\n"}
+,{"stream_name":"stdout","time":5668.811329774,"data":"xgb_direct_tuned h 8 k 8 group 4 seconds 1.0\n"}
+,{"stream_name":"stdout","time":5670.448473315,"data":"xgb_direct_tuned h 8 k 8 group 5 seconds 1.6\n"}
+,{"stream_name":"stdout","time":5673.13992151,"data":"xgb_direct_tuned h 8 k 8 group 6 seconds 2.7\n"}
+,{"stream_name":"stdout","time":5676.87020079,"data":"xgb_direct_tuned h 8 k 8 group 7 seconds 3.7\n"}
+,{"stream_name":"stdout","time":5680.691839456,"data":"Train/test в таблице — прежние оценочные модели и прежние коэффициенты, до полного refit.\n"}
+,{"stream_name":"stdout","time":5683.460260623,"data":"Сабмит: /kaggle/working/cluster_experiment_29e153d8117d7b62/submission.csv\n"}
+,{"stream_name":"stdout","time":5683.460294599,"data":"Независимая оценка test получена до переобучения базовых моделей и обновления коэффициентов на всей доступной OOF-истории.\n"}
+,{"stream_name":"stdout","time":5683.460307773,"data":"Независимые test-метрики получены до полного переобучения. Test ранее изучался; победитель выбирался по val.\n"}
+,{"stream_name":"stderr","time":5688.604421213,"data":"/usr/local/lib/python3.13/dist-packages/mistune.py:435: SyntaxWarning: invalid escape sequence '\\|'\n"}
+,{"stream_name":"stderr","time":5688.604463404,"data":"  cells[i][c] = re.sub('\\\\\\\\\\|', '|', cell)\n"}
+,{"stream_name":"stderr","time":5688.790153441,"data":"/usr/local/lib/python3.13/dist-packages/nbconvert/filters/filter_links.py:36: SyntaxWarning: invalid escape sequence '\\_'\n"}
+,{"stream_name":"stderr","time":5688.790187226,"data":"  text = re.sub(r'_', '\\_', text) # Escape underscores in display text\n"}
+,{"stream_name":"stderr","time":5689.599697553,"data":"[NbConvertApp] Converting notebook __notebook__.ipynb to notebook\n"}
+,{"stream_name":"stderr","time":5689.882177137,"data":"[NbConvertApp] Writing 683274 bytes to __notebook__.ipynb\n"}
+,{"stream_name":"stderr","time":5692.562279207,"data":"[NbConvertApp] Converting notebook __notebook__.ipynb to html\n"}
+,{"stream_name":"stderr","time":5693.564638896,"data":"[NbConvertApp] Writing 955870 bytes to __results__.html\n"}
+]

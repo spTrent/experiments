@@ -1,0 +1,12 @@
+{
+  "scope": "raw descriptive audit; no forecasting models fitted",
+  "zero_targets": 69841,
+  "mad4_zero_replacements": 53306,
+  "share_of_zero_targets_replaced_pct": 76.32479489125299,
+  "isolated_zero_points": 40473,
+  "zero_routes_per_timestamp_max": 44,
+  "overlap_triplet_violations": 5330,
+  "overlap_triplet_violation_pct": 0.1151685393258427,
+  "overlap_triplet_violations_before_2025_10_07": 4052,
+  "overlap_condition": "middle target_1h <= left target_1h + right target_1h; necessary only if hourly volumes are exact sums of two nonnegative halfhour bins; identifies inconsistent triplets, not the corrupted field"
+}

@@ -1,0 +1,3 @@
+branch,mean_prediction_change,mean_absolute_prediction_change,median_absolute_prediction_change,p95_absolute_prediction_change,route_rows_with_smaller_absolute_error_pct,prediction_change_pct_of_mean_target
+median6,-255.34549245497203,2773.7043955938398,1951.5671581074275,7391.049004070212,49.762499999999996,0.9588448372011433
+seasonal_mad,-247.87963839964183,2701.0430085647454,1885.565125556721,7407.825490470155,50.25803571428571,0.9337264446545559

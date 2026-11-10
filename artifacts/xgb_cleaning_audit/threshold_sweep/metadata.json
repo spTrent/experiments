@@ -1,0 +1,33 @@
+{
+  "thresholds": [
+    3,
+    4,
+    5,
+    6
+  ],
+  "settings_except_threshold": {
+    "window_days": 28,
+    "min_days": 14,
+    "z_threshold": 4.0,
+    "log_scale_floor": 0.25,
+    "mad_normalization": 1.4826
+  },
+  "source_rows": 4630000,
+  "route_count": 1000,
+  "timestamp_count": 4630,
+  "horizons": [
+    1,
+    2,
+    3,
+    4,
+    5,
+    6,
+    7,
+    8
+  ],
+  "correlation_fit_before": "2025-10-07 00:00:00",
+  "comparison": "exact float32 inequality; two NaNs equal; denominator excludes two NaNs",
+  "all_halfhours": "all available labeled origin/horizon pairs",
+  "nine_starts": "same history, origins 08:30 through 12:30 inclusive",
+  "elapsed_seconds": 145.43594649998704
+}

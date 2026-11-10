@@ -1,0 +1,3 @@
+branch,days_improved,days_worsened,first_week_mean_daily_delta,second_week_mean_daily_delta
+median6,9,5,-0.00020468707129966957,-0.001178980099390381
+seasonal_mad,11,3,-0.0002933009819095024,-0.0012424426678585327

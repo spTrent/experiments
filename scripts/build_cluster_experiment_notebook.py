@@ -14,12 +14,12 @@ RIDGE_LAMBDAS = (0.0001, 0.001, 0.01, 0.1, 1.0)
 CAT_CONFIGS = [dict(depth=4, iterations=400, learning_rate=0.05), dict(depth=6, iterations=600, learning_rate=0.05)]
 VAL_DAYS = 14
 TEST_DAYS = 14
-TASK_TYPE = 'CPU'
+TASK_TYPE = 'GPU'
 THREADS = 4
 PREDICT_BATCH = 100000
 SEED = 42
 CREATE_ARCHIVE = True
-PIPELINE_VERSION = 'cluster_catboost_ridge_v1'
+PIPELINE_VERSION = 'cluster_catboost_ridge_gpu_v2'
 TARGET = 'target_1h'
 STATUSES = [f'status_{i}' for i in range(1, 7)]
 '''
@@ -27,7 +27,7 @@ config += f"CODE_HASH = {hashlib.sha256(runtime.encode()).hexdigest()!r}\n"
 entries = [
     ('markdown', '''# Похожие маршруты: общий и кластерный CatBoost, контроль Ridge
 
-Автономный эксперимент для Kaggle. Подключите `train_solo_track.parquet` и `test_solo_track.parquet`, затем Run All. Обучение запускает пользователь. Нужны стандартные пакеты Kaggle: NumPy, pandas, pyarrow, scikit-learn, CatBoost, joblib. Ноутбук не обращается к файлам репозитория.
+Автономный эксперимент для Kaggle. Подключите `train_solo_track.parquet` и `test_solo_track.parquet`, включите NVIDIA GPU, затем Run All. Обучение запускает пользователь. Нужны NumPy, pandas, pyarrow, scikit-learn, CatBoost, joblib и CuPy, совместимый с CUDA сессии. Ноутбук не обращается к файлам репозитория.
 
 Проверяем две гипотезы: помогает ли нелинейный CatBoost относительно общей Ridge и улучшает ли разделение на 8 или 16 групп общий CatBoost. На каждый горизонт обучается отдельная модель. Все варианты используют одинаковые признаки, нормировку и временные границы. Это новый компактный набор признаков, а не точная копия эксперимента с 8000 Ridge.
 
@@ -35,7 +35,7 @@ Train использует все допустимые получасовые с
 
 Настройки выбираются только на val: один параметр регуляризации Ridge или одна конфигурация CatBoost на горизонт; конфигурация CatBoost общая для всех кластеров этого горизонта. Затем лучший вариант целиком выбирается по суммарной WAPE + |Relative Bias| на val. Test всех четырёх вариантов выводится только после сохранения выбора; победитель по test автоматически не меняется.
 
-**Ресурсы:** обучение последовательное, по одному горизонту и варианту. Общая модель обрабатывает около 4 млн строк на горизонт. Это полноценный, потенциально длительный запуск; предпочтительна Kaggle-сессия с большим объёмом RAM. По умолчанию CPU. Можно заранее выбрать `TASK_TYPE='GPU'` при включённом GPU; автоматического переключения нет. Ускорение GPU не измерено. Число потоков и размер пакета прогноза настраиваются ниже.
+**Ресурсы:** GPU обязателен для обучения CatBoost и контрольной Ridge. Перед чтением данных проверяются CUDA для CatBoost и CuPy; при ошибке или TASK_TYPE, отличном от GPU, запуск останавливается без CPU fallback. Ridge накапливает взвешенные матрицы пакетами и решает систему на GPU в float64, свободный член не штрафуется. Подготовка признаков, стандартизация и KMeans работают на CPU. Обучение последовательное, по одному горизонту и варианту. Общая модель обрабатывает около 4 млн строк на горизонт. Предпочтительна Kaggle-сессия с большим объёмом RAM. Ускорение GPU не измерено. Число потоков CPU и размер пакета настраиваются ниже.
 
 Завершённые пары вариант × горизонт сохраняются. Повторный Run All с теми же входами и настройками продолжает расчёт; незавершённая пара пересчитывается. Для продолжения в новой Kaggle-сессии восстановите папку результата в OUTPUT_ROOT. Одновременные запуски в одну папку не поддерживаются.
 '''),
@@ -82,6 +82,7 @@ for i, (kind, source) in enumerate(entries):
         cell.update(execution_count=None, outputs=[])
     cells.append(cell)
 notebook = dict(nbformat=4, nbformat_minor=5, metadata=dict(kernelspec=dict(display_name='Python 3', language='python', name='python3')), cells=cells)
-path = BASE / 'notebooks/models/cluster_catboost_ridge.ipynb'
+path = BASE / 'notebooks/clustering/cluster_catboost_ridge.ipynb'
+path.parent.mkdir(parents=True, exist_ok=True)
 path.write_text(json.dumps(notebook, ensure_ascii=False, indent=1) + '\n')
 print(path)

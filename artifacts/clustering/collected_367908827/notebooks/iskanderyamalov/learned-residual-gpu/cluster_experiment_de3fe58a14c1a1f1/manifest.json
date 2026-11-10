@@ -1,0 +1,42 @@
+{
+  "version": "learned_residual_gpu_v1",
+  "code": "965e8a99d37e0b061f1e48f1c420690d0bad4a300d9fe03e76ca9a6543dd2ef4",
+  "clusters": [
+    1,
+    8
+  ],
+  "horizons": [
+    1,
+    2,
+    3,
+    4,
+    5,
+    6,
+    7,
+    8
+  ],
+  "min_cluster_routes": 10,
+  "ridge_lambdas": [
+    0.01
+  ],
+  "cat_configs": [
+    {
+      "depth": 6,
+      "iterations": 600,
+      "learning_rate": 0.05
+    }
+  ],
+  "seed": 42,
+  "val_days": 14,
+  "test_days": 14,
+  "task_type": "GPU",
+  "versions": {
+    "numpy": "2.1.3",
+    "pandas": "2.3.3",
+    "scikit-learn": "1.6.1",
+    "catboost": "1.2.10",
+    "pyarrow": "23.0.1"
+  },
+  "train_hash": "300aecbe2d3dc28be03bff957ba56ab20c7fa8ceb81b0301822d4bf6473bd076",
+  "test_hash": "62442611ead0ed9eaad187b461c6c6d4584c17016f827663084e1d4f9b5c3ad6"
+}

@@ -33,3 +33,8 @@ AGENTS.md
 /artifacts/matvey/03/models/
 /artifacts/matvey/03/interim_*
 /artifacts/matvey/03/submission.csv
+
+/best/.cache/
+/best/outputs/
+/best/bundle/inference_cache/
+*.zip

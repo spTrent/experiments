@@ -1,0 +1,28 @@
+[
+  {
+    "variant": "cat_k1",
+    "h": 5,
+    "strategy": "raw",
+    "period": "train",
+    "n": 3595000,
+    "volume": 926096138748.0,
+    "absolute": 321898245836.10645,
+    "signed": -36449750041.092224,
+    "WAPE": 0.3475862087831231,
+    "relative_bias": -0.0393584947782733,
+    "score": 0.3869447035613964
+  },
+  {
+    "variant": "cat_k1",
+    "h": 5,
+    "strategy": "raw",
+    "period": "calibration_select",
+    "n": 7000,
+    "volume": 1969973636.0,
+    "absolute": 680417505.3073893,
+    "signed": -43162598.24864508,
+    "WAPE": 0.34539421892415073,
+    "relative_bias": -0.02191024156865675,
+    "score": 0.3673044604928075
+  }
+]

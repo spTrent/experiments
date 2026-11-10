@@ -1,0 +1,22 @@
+{
+  "winner": "cat_k1",
+  "choices": {
+    "cat_k1": {
+      "variant": "cat_k1",
+      "half_life": 3,
+      "shrink_days": 7,
+      "WAPE": 0.32182209587404886,
+      "relative_bias": -0.012615225383931544,
+      "score": 0.3344373212579804
+    },
+    "cat_k8": {
+      "variant": "cat_k8",
+      "half_life": 7,
+      "shrink_days": 7,
+      "WAPE": 0.32193199539081946,
+      "relative_bias": -0.013042078469176663,
+      "score": 0.3349740738599961
+    }
+  },
+  "note": "Выбор по val до test. Test ранее изучался."
+}

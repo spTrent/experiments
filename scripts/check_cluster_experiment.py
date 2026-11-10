@@ -4,13 +4,14 @@ import io
 import json
 import tempfile
 import tokenize
+import types
 from pathlib import Path
 import nbformat
 import numpy as np
 import pandas as pd
 
 BASE = Path(__file__).resolve().parents[1]
-path = BASE / 'notebooks/models/cluster_catboost_ridge.ipynb'
+path = BASE / 'notebooks/clustering/cluster_catboost_ridge.ipynb'
 nb = nbformat.read(path, as_version=4)
 nbformat.validate(nb)
 for cell in nb.cells:
@@ -45,7 +46,35 @@ class DummyRegressor:
 ns = {}
 exec(nb.cells[1].source, ns)
 exec(nb.cells[3].source, ns)
-ns.update(CatBoostRegressor=DummyRegressor, Ridge=DummyRegressor, display=lambda *args, **kwargs: None,
+ns['cp'] = types.SimpleNamespace(**{name: getattr(np, name) for name in ('zeros', 'ones', 'empty', 'full', 'float64', 'asarray', 'diag', 'linalg')}, asnumpy=np.asarray)
+ns['PREDICT_BATCH'] = 7
+rng = np.random.default_rng(42)
+x = rng.normal(size=(37, 5))
+y = 4 + x @ np.arange(1, 6) + rng.normal(size=37)
+w = rng.uniform(0.1, 3, size=37)
+gpu_ridge = ns['GPURidge'](alpha=2.5).fit(x, y, sample_weight=w)
+augmented = np.column_stack([x, np.ones(len(x))]) * np.sqrt(w[:, None])
+penalty = np.column_stack([np.sqrt(2.5) * np.eye(5), np.zeros(5)])
+expected = np.linalg.lstsq(np.vstack([augmented, penalty]), np.r_[y * np.sqrt(w), np.zeros(5)], rcond=None)[0]
+if not np.allclose(gpu_ridge.predict(x), np.column_stack([x, np.ones(len(x))]) @ expected, rtol=1e-10, atol=1e-10):
+    raise ValueError('GPU Ridge не совпадает с взвешенным решением через least squares')
+real_gpu_check = ns['require_gpu']
+ns['TASK_TYPE'] = 'CPU'
+try:
+    real_gpu_check()
+except ValueError:
+    pass
+else:
+    raise ValueError('CPU обучение не заблокировано')
+ns['TASK_TYPE'] = 'GPU'
+ns['get_gpu_device_count'] = lambda: 0
+try:
+    real_gpu_check()
+except RuntimeError:
+    pass
+else:
+    raise ValueError('Отсутствие GPU не блокирует запуск')
+ns.update(CatBoostRegressor=DummyRegressor, GPURidge=DummyRegressor, require_gpu=lambda: None, display=lambda *args, **kwargs: None,
           CLUSTERS=(1, 2, 3), HORIZONS=(1, 2), MIN_CLUSTER_ROUTES=3, THREADS=1,
           CAT_CONFIGS=[dict(depth=4, iterations=2, learning_rate=0.05)], RIDGE_LAMBDAS=(0.01,),
           CREATE_ARCHIVE=False, STEP=pd.Timedelta(minutes=30), PREDICT_BATCH=1000)

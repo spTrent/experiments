@@ -1,0 +1,23 @@
+[
+  {
+    "experiment": "xgb_direct_compact",
+    "directory": "/kaggle/working/cluster_experiment_4bb5c8cdccd95781",
+    "selection_score": 0.3307560130906715,
+    "winner": "cat_k8",
+    "strategy": "horizon_shrink50"
+  },
+  {
+    "experiment": "xgb_direct_tuned",
+    "directory": "/kaggle/working/cluster_experiment_29e153d8117d7b62",
+    "selection_score": 0.33075334705371273,
+    "winner": "cat_k8",
+    "strategy": "horizon_shrink50"
+  },
+  {
+    "experiment": "xgb_residual_tuned",
+    "directory": "/kaggle/working/cluster_experiment_9a9972a55222334e",
+    "selection_score": 0.33878912965447444,
+    "winner": "cat_k8",
+    "strategy": "horizon"
+  }
+]

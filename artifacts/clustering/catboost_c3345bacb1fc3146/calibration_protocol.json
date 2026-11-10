@@ -1,0 +1,28 @@
+{
+  "strategies": [
+    "raw",
+    "fixed_1.025",
+    "fixed_1.05",
+    "global",
+    "horizon",
+    "horizon_shrink50",
+    "group",
+    "group_shrink50",
+    "group_horizon",
+    "group_horizon_shrink50",
+    "recent_global_2",
+    "recent_global_3",
+    "recent_global_7",
+    "offset",
+    "affine",
+    "affine_horizon",
+    "affine_group",
+    "affine_group_shrink50"
+  ],
+  "affine_slope_bounds": [
+    0.5,
+    1.5
+  ],
+  "test_protocol": "all_coefficients_frozen_before_test",
+  "test_used_for_selection": false
+}

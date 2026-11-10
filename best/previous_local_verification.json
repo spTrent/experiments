@@ -1,0 +1,15 @@
+{
+  "rows": 8000,
+  "max_absolute_difference": 1.1641532182693481e-10,
+  "max_relative_difference": 2.8933949013750716e-16,
+  "mean_absolute_difference": 3.3101077434594116e-12,
+  "allclose_rtol_1e-6_atol_0.01": true,
+  "server_csv_sha256": "612b07519e218ccc06535ac7cacd49dfad5dc0162eadaba9380dae660de25e78",
+  "local_csv_sha256": "62c3ae8a81fe5e2776322640778168f034a5333899408df0ae2576121ab6b3d5",
+  "numpy": "2.5.4",
+  "pandas": "3.1.1",
+  "verified_rtol_1e-12_atol_1e-8": true,
+  "days_improved": 14,
+  "days": 14,
+  "daily_bias_preserved": true
+}

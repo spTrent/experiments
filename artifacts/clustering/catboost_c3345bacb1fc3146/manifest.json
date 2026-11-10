@@ -1,0 +1,165 @@
+{
+  "version": "rich_calibration_v3_catboost_rich_calibration",
+  "code": "94d2cafedd36da4c436c2476effb458424b1b25feb9d6475d2d453768f5d2573",
+  "clusters": [
+    1,
+    8
+  ],
+  "horizons": [
+    1,
+    2,
+    3,
+    4,
+    5,
+    6,
+    7,
+    8
+  ],
+  "min_cluster_routes": 10,
+  "ridge_lambdas": [
+    0.01
+  ],
+  "cat_configs": [
+    {
+      "experiment": {
+        "name": "catboost_rich_calibration",
+        "algorithm": "cat",
+        "residual": false,
+        "parameter_set": "selected_cat",
+        "loss": "MAE",
+        "compact": false
+      },
+      "parameters": {
+        "selected_cat": {
+          "1": {
+            "params": {
+              "depth": 6,
+              "learning_rate": 0.03694755509074355,
+              "l2_leaf_reg": 1.5679933916723008,
+              "random_strength": 2.052699079536471,
+              "bagging_temperature": 0.8803049874792026
+            },
+            "trees": 900
+          },
+          "2": {
+            "params": {
+              "depth": 5,
+              "learning_rate": 0.1358198535217987,
+              "l2_leaf_reg": 29.10635913133069,
+              "random_strength": 1.7959754525911098,
+              "bagging_temperature": 0.31203728088487304
+            },
+            "trees": 387
+          },
+          "3": {
+            "params": {
+              "depth": 4,
+              "learning_rate": 0.0224831270535195,
+              "l2_leaf_reg": 53.99484409787433,
+              "random_strength": 1.8033450352296265,
+              "bagging_temperature": 1.416145155592091
+            },
+            "trees": 900
+          },
+          "4": {
+            "params": {
+              "depth": 6,
+              "learning_rate": 0.0299058938693663,
+              "l2_leaf_reg": 10.677482709481351,
+              "random_strength": 1.7772437065861273,
+              "bagging_temperature": 0.09290082543999545
+            },
+            "trees": 364
+          },
+          "5": {
+            "params": {
+              "depth": 4,
+              "learning_rate": 0.0224831270535195,
+              "l2_leaf_reg": 53.99484409787433,
+              "random_strength": 1.8033450352296265,
+              "bagging_temperature": 1.416145155592091
+            },
+            "trees": 504
+          },
+          "6": {
+            "params": {
+              "depth": 4,
+              "learning_rate": 0.1411758906434134,
+              "l2_leaf_reg": 46.22589001020831,
+              "random_strength": 0.6370173320348285,
+              "bagging_temperature": 0.36364993441420124
+            },
+            "trees": 125
+          },
+          "7": {
+            "params": {
+              "depth": 4,
+              "learning_rate": 0.1411758906434134,
+              "l2_leaf_reg": 46.22589001020831,
+              "random_strength": 0.6370173320348285,
+              "bagging_temperature": 0.36364993441420124
+            },
+            "trees": 167
+          },
+          "8": {
+            "params": {
+              "depth": 4,
+              "learning_rate": 0.03691990689655602,
+              "l2_leaf_reg": 11.207606211860567,
+              "random_strength": 1.2958350559263474,
+              "bagging_temperature": 0.5824582803960838
+            },
+            "trees": 900
+          }
+        }
+      },
+      "parameter_sources": {
+        "1": {
+          "path": "artifacts/catboost_direct/model_params/best_h1.json",
+          "sha256": "9eb23b61f07304b2492b9f1b832baddf089475d11662594a2e8900e4bf2ce427"
+        },
+        "2": {
+          "path": "artifacts/catboost_direct/model_params/best_h2.json",
+          "sha256": "6020af33dec8120329d156da334dd8d5009e8f36d940b0513fc69aa57bca91f9"
+        },
+        "3": {
+          "path": "artifacts/catboost_direct/model_params/best_h3.json",
+          "sha256": "e23414075054b603385f3838d004ee27f8b4c4fee00259328d6448f0f61f6479"
+        },
+        "4": {
+          "path": "artifacts/catboost_direct/model_params/best_h4.json",
+          "sha256": "874e8e19a3c711fd33c277aba46750a31c4a79aba6ce9fd037b267d1bb9483b9"
+        },
+        "5": {
+          "path": "artifacts/catboost_direct/model_params/best_h5.json",
+          "sha256": "7d230bf8bed5443c5e70f1fe358875b2ee7a1ef9947fa8b1611ab6bab46aa627"
+        },
+        "6": {
+          "path": "artifacts/catboost_direct/model_params/best_h6.json",
+          "sha256": "5444cf9e9f14f0e44165c4c730b6da31c4209336d72612c0332c277293034c10"
+        },
+        "7": {
+          "path": "artifacts/catboost_direct/model_params/best_h7.json",
+          "sha256": "38a048ed513e4b4bf40ac2f618a0f7932705e3fdbfcdfe29bdf6ad0bd0a3c046"
+        },
+        "8": {
+          "path": "artifacts/catboost_direct/model_params/best_h8.json",
+          "sha256": "a62502011bf7cb91fda031da949e8184599aeb473d5a07a6ac6d4026544aba5a"
+        }
+      }
+    }
+  ],
+  "seed": 42,
+  "val_days": 14,
+  "test_days": 14,
+  "task_type": "GPU",
+  "versions": {
+    "numpy": "2.1.3",
+    "pandas": "2.3.3",
+    "scikit-learn": "1.6.1",
+    "catboost": "1.2.10",
+    "pyarrow": "23.0.1"
+  },
+  "train_hash": "300aecbe2d3dc28be03bff957ba56ab20c7fa8ceb81b0301822d4bf6473bd076",
+  "test_hash": "62442611ead0ed9eaad187b461c6c6d4584c17016f827663084e1d4f9b5c3ad6"
+}

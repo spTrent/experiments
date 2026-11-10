@@ -1,0 +1,8 @@
+{
+  "algorithm": "xgb",
+  "model_weight": 0.75,
+  "half_life": 2,
+  "WAPE": 0.3247427708164284,
+  "relative_bias": -0.003465456378230457,
+  "score": 0.3282082271946588
+}

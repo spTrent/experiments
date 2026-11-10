@@ -1,0 +1,3566 @@
+GPU обязателен: CatBoost CUDA и CuPy проверены.
+
+
+Маршрутов: 1000 Выходы: /kaggle/working/cluster_experiment_1480e9985a67846f CatBoost: GPU
+
+
+
+
+Default metric period is 5 because MAE is/are not implemented for GPU
+
+catboost_direct_tuned h 1 k 1 group 0 seconds 85.6
+
+
+Test закрыт. Калибровка и выбор используют только периоды до test.
+
+Default metric period is 5 because MAE is/are not implemented for GPU
+
+catboost_direct_tuned h 1 k 8 group -1 seconds 86.8
+
+Default metric period is 5 because MAE is/are not implemented for GPU
+
+catboost_direct_tuned h 1 k 8 group 0 seconds 22.7
+
+Default metric period is 5 because MAE is/are not implemented for GPU
+
+catboost_direct_tuned h 1 k 8 group 1 seconds 20.0
+
+Default metric period is 5 because MAE is/are not implemented for GPU
+
+catboost_direct_tuned h 1 k 8 group 2 seconds 9.3
+
+Default metric period is 5 because MAE is/are not implemented for GPU
+
+catboost_direct_tuned h 1 k 8 group 3 seconds 14.9
+
+Default metric period is 5 because MAE is/are not implemented for GPU
+
+catboost_direct_tuned h 1 k 8 group 4 seconds 23.5
+
+Default metric period is 5 because MAE is/are not implemented for GPU
+
+catboost_direct_tuned h 1 k 8 group 6 seconds 15.8
+
+Default metric period is 5 because MAE is/are not implemented for GPU
+
+catboost_direct_tuned h 1 k 8 group 7 seconds 11.0
+
+
+Test закрыт. Калибровка и выбор используют только периоды до test.
+
+Default metric period is 5 because MAE is/are not implemented for GPU
+
+catboost_direct_tuned h 2 k 1 group 0 seconds 14.3
+
+
+Test закрыт. Калибровка и выбор используют только периоды до test.
+
+Default metric period is 5 because MAE is/are not implemented for GPU
+
+catboost_direct_tuned h 2 k 8 group -1 seconds 14.3
+
+Default metric period is 5 because MAE is/are not implemented for GPU
+
+catboost_direct_tuned h 2 k 8 group 0 seconds 3.9
+
+Default metric period is 5 because MAE is/are not implemented for GPU
+
+catboost_direct_tuned h 2 k 8 group 1 seconds 3.4
+
+Default metric period is 5 because MAE is/are not implemented for GPU
+
+catboost_direct_tuned h 2 k 8 group 2 seconds 1.7
+
+Default metric period is 5 because MAE is/are not implemented for GPU
+
+catboost_direct_tuned h 2 k 8 group 3 seconds 2.6
+
+Default metric period is 5 because MAE is/are not implemented for GPU
+
+catboost_direct_tuned h 2 k 8 group 4 seconds 4.0
+
+Default metric period is 5 because MAE is/are not implemented for GPU
+
+catboost_direct_tuned h 2 k 8 group 6 seconds 2.7
+
+Default metric period is 5 because MAE is/are not implemented for GPU
+
+catboost_direct_tuned h 2 k 8 group 7 seconds 2.0
+
+
+Test закрыт. Калибровка и выбор используют только периоды до test.
+
+Default metric period is 5 because MAE is/are not implemented for GPU
+
+catboost_direct_tuned h 3 k 1 group 0 seconds 31.1
+
+
+Test закрыт. Калибровка и выбор используют только периоды до test.
+
+Default metric period is 5 because MAE is/are not implemented for GPU
+
+catboost_direct_tuned h 3 k 8 group -1 seconds 31.2
+
+Default metric period is 5 because MAE is/are not implemented for GPU
+
+catboost_direct_tuned h 3 k 8 group 0 seconds 8.4
+
+Default metric period is 5 because MAE is/are not implemented for GPU
+
+catboost_direct_tuned h 3 k 8 group 1 seconds 7.3
+
+Default metric period is 5 because MAE is/are not implemented for GPU
+
+catboost_direct_tuned h 3 k 8 group 2 seconds 3.4
+
+Default metric period is 5 because MAE is/are not implemented for GPU
+
+catboost_direct_tuned h 3 k 8 group 3 seconds 5.4
+
+Default metric period is 5 because MAE is/are not implemented for GPU
+
+catboost_direct_tuned h 3 k 8 group 4 seconds 8.7
+
+Default metric period is 5 because MAE is/are not implemented for GPU
+
+catboost_direct_tuned h 3 k 8 group 6 seconds 5.8
+
+Default metric period is 5 because MAE is/are not implemented for GPU
+
+catboost_direct_tuned h 3 k 8 group 7 seconds 4.1
+
+
+Test закрыт. Калибровка и выбор используют только периоды до test.
+
+Default metric period is 5 because MAE is/are not implemented for GPU
+
+catboost_direct_tuned h 4 k 1 group 0 seconds 17.4
+
+
+Test закрыт. Калибровка и выбор используют только периоды до test.
+
+Default metric period is 5 because MAE is/are not implemented for GPU
+
+catboost_direct_tuned h 4 k 8 group -1 seconds 17.4
+
+Default metric period is 5 because MAE is/are not implemented for GPU
+
+catboost_direct_tuned h 4 k 8 group 0 seconds 4.6
+
+Default metric period is 5 because MAE is/are not implemented for GPU
+
+catboost_direct_tuned h 4 k 8 group 1 seconds 4.0
+
+Default metric period is 5 because MAE is/are not implemented for GPU
+
+catboost_direct_tuned h 4 k 8 group 2 seconds 1.9
+
+Default metric period is 5 because MAE is/are not implemented for GPU
+
+catboost_direct_tuned h 4 k 8 group 3 seconds 3.1
+
+Default metric period is 5 because MAE is/are not implemented for GPU
+
+catboost_direct_tuned h 4 k 8 group 4 seconds 4.8
+
+Default metric period is 5 because MAE is/are not implemented for GPU
+
+catboost_direct_tuned h 4 k 8 group 6 seconds 3.2
+
+Default metric period is 5 because MAE is/are not implemented for GPU
+
+catboost_direct_tuned h 4 k 8 group 7 seconds 2.3
+
+
+Test закрыт. Калибровка и выбор используют только периоды до test.
+
+Default metric period is 5 because MAE is/are not implemented for GPU
+
+catboost_direct_tuned h 5 k 1 group 0 seconds 15.0
+
+
+Test закрыт. Калибровка и выбор используют только периоды до test.
+
+Default metric period is 5 because MAE is/are not implemented for GPU
+
+catboost_direct_tuned h 5 k 8 group -1 seconds 15.1
+
+Default metric period is 5 because MAE is/are not implemented for GPU
+
+catboost_direct_tuned h 5 k 8 group 0 seconds 4.1
+
+Default metric period is 5 because MAE is/are not implemented for GPU
+
+catboost_direct_tuned h 5 k 8 group 1 seconds 3.6
+
+Default metric period is 5 because MAE is/are not implemented for GPU
+
+catboost_direct_tuned h 5 k 8 group 2 seconds 1.7
+
+Default metric period is 5 because MAE is/are not implemented for GPU
+
+catboost_direct_tuned h 5 k 8 group 3 seconds 2.7
+
+Default metric period is 5 because MAE is/are not implemented for GPU
+
+catboost_direct_tuned h 5 k 8 group 4 seconds 4.3
+
+Default metric period is 5 because MAE is/are not implemented for GPU
+
+catboost_direct_tuned h 5 k 8 group 6 seconds 2.9
+
+Default metric period is 5 because MAE is/are not implemented for GPU
+
+catboost_direct_tuned h 5 k 8 group 7 seconds 2.1
+
+
+Test закрыт. Калибровка и выбор используют только периоды до test.
+
+Default metric period is 5 because MAE is/are not implemented for GPU
+
+catboost_direct_tuned h 6 k 1 group 0 seconds 7.5
+
+
+Test закрыт. Калибровка и выбор используют только периоды до test.
+
+Default metric period is 5 because MAE is/are not implemented for GPU
+
+catboost_direct_tuned h 6 k 8 group -1 seconds 7.3
+
+Default metric period is 5 because MAE is/are not implemented for GPU
+
+catboost_direct_tuned h 6 k 8 group 0 seconds 2.1
+
+Default metric period is 5 because MAE is/are not implemented for GPU
+
+catboost_direct_tuned h 6 k 8 group 1 seconds 1.7
+
+Default metric period is 5 because MAE is/are not implemented for GPU
+
+catboost_direct_tuned h 6 k 8 group 2 seconds 0.9
+
+Default metric period is 5 because MAE is/are not implemented for GPU
+
+catboost_direct_tuned h 6 k 8 group 3 seconds 1.4
+
+Default metric period is 5 because MAE is/are not implemented for GPU
+
+catboost_direct_tuned h 6 k 8 group 4 seconds 2.1
+
+Default metric period is 5 because MAE is/are not implemented for GPU
+
+catboost_direct_tuned h 6 k 8 group 6 seconds 1.4
+
+Default metric period is 5 because MAE is/are not implemented for GPU
+
+catboost_direct_tuned h 6 k 8 group 7 seconds 1.1
+
+
+Test закрыт. Калибровка и выбор используют только периоды до test.
+
+Default metric period is 5 because MAE is/are not implemented for GPU
+
+catboost_direct_tuned h 7 k 1 group 0 seconds 8.1
+
+
+Test закрыт. Калибровка и выбор используют только периоды до test.
+
+Default metric period is 5 because MAE is/are not implemented for GPU
+
+catboost_direct_tuned h 7 k 8 group -1 seconds 8.1
+
+Default metric period is 5 because MAE is/are not implemented for GPU
+
+catboost_direct_tuned h 7 k 8 group 0 seconds 2.3
+
+Default metric period is 5 because MAE is/are not implemented for GPU
+
+catboost_direct_tuned h 7 k 8 group 1 seconds 1.9
+
+Default metric period is 5 because MAE is/are not implemented for GPU
+
+catboost_direct_tuned h 7 k 8 group 2 seconds 1.0
+
+Default metric period is 5 because MAE is/are not implemented for GPU
+
+catboost_direct_tuned h 7 k 8 group 3 seconds 1.5
+
+Default metric period is 5 because MAE is/are not implemented for GPU
+
+catboost_direct_tuned h 7 k 8 group 4 seconds 2.3
+
+Default metric period is 5 because MAE is/are not implemented for GPU
+
+catboost_direct_tuned h 7 k 8 group 6 seconds 1.6
+
+Default metric period is 5 because MAE is/are not implemented for GPU
+
+catboost_direct_tuned h 7 k 8 group 7 seconds 1.2
+
+
+Test закрыт. Калибровка и выбор используют только периоды до test.
+
+Default metric period is 5 because MAE is/are not implemented for GPU
+
+catboost_direct_tuned h 8 k 1 group 0 seconds 25.3
+
+
+Test закрыт. Калибровка и выбор используют только периоды до test.
+
+Default metric period is 5 because MAE is/are not implemented for GPU
+
+catboost_direct_tuned h 8 k 8 group -1 seconds 25.0
+
+Default metric period is 5 because MAE is/are not implemented for GPU
+
+catboost_direct_tuned h 8 k 8 group 0 seconds 6.8
+
+Default metric period is 5 because MAE is/are not implemented for GPU
+
+catboost_direct_tuned h 8 k 8 group 1 seconds 5.9
+
+Default metric period is 5 because MAE is/are not implemented for GPU
+
+catboost_direct_tuned h 8 k 8 group 2 seconds 2.8
+
+Default metric period is 5 because MAE is/are not implemented for GPU
+
+catboost_direct_tuned h 8 k 8 group 3 seconds 4.4
+
+Default metric period is 5 because MAE is/are not implemented for GPU
+
+catboost_direct_tuned h 8 k 8 group 4 seconds 7.1
+
+Default metric period is 5 because MAE is/are not implemented for GPU
+
+catboost_direct_tuned h 8 k 8 group 6 seconds 4.7
+
+Default metric period is 5 because MAE is/are not implemented for GPU
+
+catboost_direct_tuned h 8 k 8 group 7 seconds 3.3
+
+
+Test закрыт. Калибровка и выбор используют только периоды до test.
+
+
+
+Default metric period is 5 because MAE is/are not implemented for GPU
+
+catboost_direct_tuned h 1 k 1 group 0 seconds 95.6
+
+
+Test закрыт. Калибровка и выбор используют только периоды до test.
+
+Default metric period is 5 because MAE is/are not implemented for GPU
+
+catboost_direct_tuned h 1 k 8 group -1 seconds 95.6
+
+Default metric period is 5 because MAE is/are not implemented for GPU
+
+catboost_direct_tuned h 1 k 8 group 0 seconds 14.8
+
+Default metric period is 5 because MAE is/are not implemented for GPU
+
+catboost_direct_tuned h 1 k 8 group 1 seconds 12.0
+
+Default metric period is 5 because MAE is/are not implemented for GPU
+
+catboost_direct_tuned h 1 k 8 group 2 seconds 14.2
+
+Default metric period is 5 because MAE is/are not implemented for GPU
+
+catboost_direct_tuned h 1 k 8 group 3 seconds 33.2
+
+Default metric period is 5 because MAE is/are not implemented for GPU
+
+catboost_direct_tuned h 1 k 8 group 4 seconds 24.6
+
+Default metric period is 5 because MAE is/are not implemented for GPU
+
+catboost_direct_tuned h 1 k 8 group 5 seconds 9.5
+
+Default metric period is 5 because MAE is/are not implemented for GPU
+
+catboost_direct_tuned h 1 k 8 group 6 seconds 17.4
+
+
+Test закрыт. Калибровка и выбор используют только периоды до test.
+
+Default metric period is 5 because MAE is/are not implemented for GPU
+
+catboost_direct_tuned h 2 k 1 group 0 seconds 15.6
+
+
+Test закрыт. Калибровка и выбор используют только периоды до test.
+
+Default metric period is 5 because MAE is/are not implemented for GPU
+
+catboost_direct_tuned h 2 k 8 group -1 seconds 15.7
+
+Default metric period is 5 because MAE is/are not implemented for GPU
+
+catboost_direct_tuned h 2 k 8 group 0 seconds 2.5
+
+Default metric period is 5 because MAE is/are not implemented for GPU
+
+catboost_direct_tuned h 2 k 8 group 1 seconds 2.1
+
+Default metric period is 5 because MAE is/are not implemented for GPU
+
+catboost_direct_tuned h 2 k 8 group 2 seconds 2.4
+
+Default metric period is 5 because MAE is/are not implemented for GPU
+
+catboost_direct_tuned h 2 k 8 group 3 seconds 5.7
+
+Default metric period is 5 because MAE is/are not implemented for GPU
+
+catboost_direct_tuned h 2 k 8 group 4 seconds 4.3
+
+Default metric period is 5 because MAE is/are not implemented for GPU
+
+catboost_direct_tuned h 2 k 8 group 5 seconds 1.7
+
+Default metric period is 5 because MAE is/are not implemented for GPU
+
+catboost_direct_tuned h 2 k 8 group 6 seconds 3.0
+
+
+Test закрыт. Калибровка и выбор используют только периоды до test.
+
+Default metric period is 5 because MAE is/are not implemented for GPU
+
+catboost_direct_tuned h 3 k 1 group 0 seconds 34.1
+
+
+Test закрыт. Калибровка и выбор используют только периоды до test.
+
+Default metric period is 5 because MAE is/are not implemented for GPU
+
+catboost_direct_tuned h 3 k 8 group -1 seconds 34.4
+
+Default metric period is 5 because MAE is/are not implemented for GPU
+
+catboost_direct_tuned h 3 k 8 group 0 seconds 5.5
+
+Default metric period is 5 because MAE is/are not implemented for GPU
+
+catboost_direct_tuned h 3 k 8 group 1 seconds 4.5
+
+Default metric period is 5 because MAE is/are not implemented for GPU
+
+catboost_direct_tuned h 3 k 8 group 2 seconds 5.2
+
+Default metric period is 5 because MAE is/are not implemented for GPU
+
+catboost_direct_tuned h 3 k 8 group 3 seconds 12.2
+
+Default metric period is 5 because MAE is/are not implemented for GPU
+
+catboost_direct_tuned h 3 k 8 group 4 seconds 9.0
+
+Default metric period is 5 because MAE is/are not implemented for GPU
+
+catboost_direct_tuned h 3 k 8 group 5 seconds 3.5
+
+Default metric period is 5 because MAE is/are not implemented for GPU
+
+catboost_direct_tuned h 3 k 8 group 6 seconds 6.3
+
+
+Test закрыт. Калибровка и выбор используют только периоды до test.
+
+Default metric period is 5 because MAE is/are not implemented for GPU
+
+catboost_direct_tuned h 4 k 1 group 0 seconds 19.0
+
+
+Test закрыт. Калибровка и выбор используют только периоды до test.
+
+Default metric period is 5 because MAE is/are not implemented for GPU
+
+catboost_direct_tuned h 4 k 8 group -1 seconds 19.4
+
+Default metric period is 5 because MAE is/are not implemented for GPU
+
+catboost_direct_tuned h 4 k 8 group 0 seconds 3.1
+
+Default metric period is 5 because MAE is/are not implemented for GPU
+
+catboost_direct_tuned h 4 k 8 group 1 seconds 2.5
+
+Default metric period is 5 because MAE is/are not implemented for GPU
+
+catboost_direct_tuned h 4 k 8 group 2 seconds 2.8
+
+Default metric period is 5 because MAE is/are not implemented for GPU
+
+catboost_direct_tuned h 4 k 8 group 3 seconds 6.7
+
+Default metric period is 5 because MAE is/are not implemented for GPU
+
+catboost_direct_tuned h 4 k 8 group 4 seconds 4.9
+
+Default metric period is 5 because MAE is/are not implemented for GPU
+
+catboost_direct_tuned h 4 k 8 group 5 seconds 1.9
+
+Default metric period is 5 because MAE is/are not implemented for GPU
+
+catboost_direct_tuned h 4 k 8 group 6 seconds 3.4
+
+
+Test закрыт. Калибровка и выбор используют только периоды до test.
+
+Default metric period is 5 because MAE is/are not implemented for GPU
+
+catboost_direct_tuned h 5 k 1 group 0 seconds 16.5
+
+
+Test закрыт. Калибровка и выбор используют только периоды до test.
+
+Default metric period is 5 because MAE is/are not implemented for GPU
+
+catboost_direct_tuned h 5 k 8 group -1 seconds 16.6
+
+Default metric period is 5 because MAE is/are not implemented for GPU
+
+catboost_direct_tuned h 5 k 8 group 0 seconds 2.8
+
+Default metric period is 5 because MAE is/are not implemented for GPU
+
+catboost_direct_tuned h 5 k 8 group 1 seconds 2.2
+
+Default metric period is 5 because MAE is/are not implemented for GPU
+
+catboost_direct_tuned h 5 k 8 group 2 seconds 2.6
+
+Default metric period is 5 because MAE is/are not implemented for GPU
+
+catboost_direct_tuned h 5 k 8 group 3 seconds 6.1
+
+Default metric period is 5 because MAE is/are not implemented for GPU
+
+catboost_direct_tuned h 5 k 8 group 4 seconds 4.5
+
+Default metric period is 5 because MAE is/are not implemented for GPU
+
+catboost_direct_tuned h 5 k 8 group 5 seconds 1.8
+
+Default metric period is 5 because MAE is/are not implemented for GPU
+
+catboost_direct_tuned h 5 k 8 group 6 seconds 3.1
+
+
+Test закрыт. Калибровка и выбор используют только периоды до test.
+
+Default metric period is 5 because MAE is/are not implemented for GPU
+
+catboost_direct_tuned h 6 k 1 group 0 seconds 8.0
+
+
+Test закрыт. Калибровка и выбор используют только периоды до test.
+
+Default metric period is 5 because MAE is/are not implemented for GPU
+
+catboost_direct_tuned h 6 k 8 group -1 seconds 7.8
+
+Default metric period is 5 because MAE is/are not implemented for GPU
+
+catboost_direct_tuned h 6 k 8 group 0 seconds 1.4
+
+Default metric period is 5 because MAE is/are not implemented for GPU
+
+catboost_direct_tuned h 6 k 8 group 1 seconds 1.2
+
+Default metric period is 5 because MAE is/are not implemented for GPU
+
+catboost_direct_tuned h 6 k 8 group 2 seconds 1.3
+
+Default metric period is 5 because MAE is/are not implemented for GPU
+
+catboost_direct_tuned h 6 k 8 group 3 seconds 2.9
+
+Default metric period is 5 because MAE is/are not implemented for GPU
+
+catboost_direct_tuned h 6 k 8 group 4 seconds 2.1
+
+Default metric period is 5 because MAE is/are not implemented for GPU
+
+catboost_direct_tuned h 6 k 8 group 5 seconds 0.9
+
+Default metric period is 5 because MAE is/are not implemented for GPU
+
+catboost_direct_tuned h 6 k 8 group 6 seconds 1.6
+
+
+Test закрыт. Калибровка и выбор используют только периоды до test.
+
+Default metric period is 5 because MAE is/are not implemented for GPU
+
+catboost_direct_tuned h 7 k 1 group 0 seconds 9.0
+
+
+Test закрыт. Калибровка и выбор используют только периоды до test.
+
+Default metric period is 5 because MAE is/are not implemented for GPU
+
+catboost_direct_tuned h 7 k 8 group -1 seconds 8.8
+
+Default metric period is 5 because MAE is/are not implemented for GPU
+
+catboost_direct_tuned h 7 k 8 group 0 seconds 1.5
+
+Default metric period is 5 because MAE is/are not implemented for GPU
+
+catboost_direct_tuned h 7 k 8 group 1 seconds 1.2
+
+Default metric period is 5 because MAE is/are not implemented for GPU
+
+catboost_direct_tuned h 7 k 8 group 2 seconds 1.4
+
+Default metric period is 5 because MAE is/are not implemented for GPU
+
+catboost_direct_tuned h 7 k 8 group 3 seconds 3.4
+
+Default metric period is 5 because MAE is/are not implemented for GPU
+
+catboost_direct_tuned h 7 k 8 group 4 seconds 2.4
+
+Default metric period is 5 because MAE is/are not implemented for GPU
+
+catboost_direct_tuned h 7 k 8 group 5 seconds 1.1
+
+Default metric period is 5 because MAE is/are not implemented for GPU
+
+catboost_direct_tuned h 7 k 8 group 6 seconds 1.7
+
+
+Test закрыт. Калибровка и выбор используют только периоды до test.
+
+Default metric period is 5 because MAE is/are not implemented for GPU
+
+catboost_direct_tuned h 8 k 1 group 0 seconds 27.6
+
+
+Test закрыт. Калибровка и выбор используют только периоды до test.
+
+Default metric period is 5 because MAE is/are not implemented for GPU
+
+catboost_direct_tuned h 8 k 8 group -1 seconds 27.3
+
+Default metric period is 5 because MAE is/are not implemented for GPU
+
+catboost_direct_tuned h 8 k 8 group 0 seconds 4.5
+
+Default metric period is 5 because MAE is/are not implemented for GPU
+
+catboost_direct_tuned h 8 k 8 group 1 seconds 3.6
+
+Default metric period is 5 because MAE is/are not implemented for GPU
+
+catboost_direct_tuned h 8 k 8 group 2 seconds 4.3
+
+Default metric period is 5 because MAE is/are not implemented for GPU
+
+catboost_direct_tuned h 8 k 8 group 3 seconds 9.9
+
+Default metric period is 5 because MAE is/are not implemented for GPU
+
+catboost_direct_tuned h 8 k 8 group 4 seconds 7.3
+
+Default metric period is 5 because MAE is/are not implemented for GPU
+
+catboost_direct_tuned h 8 k 8 group 5 seconds 2.9
+
+Default metric period is 5 because MAE is/are not implemented for GPU
+
+catboost_direct_tuned h 8 k 8 group 6 seconds 5.1
+
+
+Test закрыт. Калибровка и выбор используют только периоды до test.
+
+
+
+
+Победитель выбран до test: cat_k8 global
+
+
+Default metric period is 5 because MAE is/are not implemented for GPU
+
+catboost_direct_tuned h 1 k 1 group 0 seconds 104.1
+
+
+Default metric period is 5 because MAE is/are not implemented for GPU
+
+catboost_direct_tuned h 1 k 8 group 0 seconds 11.5
+
+Default metric period is 5 because MAE is/are not implemented for GPU
+
+catboost_direct_tuned h 1 k 8 group 1 seconds 16.6
+
+Default metric period is 5 because MAE is/are not implemented for GPU
+
+catboost_direct_tuned h 1 k 8 group 2 seconds 29.1
+
+Default metric period is 5 because MAE is/are not implemented for GPU
+
+catboost_direct_tuned h 1 k 8 group 3 seconds 9.5
+
+Default metric period is 5 because MAE is/are not implemented for GPU
+
+catboost_direct_tuned h 1 k 8 group 4 seconds 22.3
+
+Default metric period is 5 because MAE is/are not implemented for GPU
+
+catboost_direct_tuned h 1 k 8 group 5 seconds 10.8
+
+Default metric period is 5 because MAE is/are not implemented for GPU
+
+catboost_direct_tuned h 1 k 8 group 6 seconds 16.4
+
+Default metric period is 5 because MAE is/are not implemented for GPU
+
+catboost_direct_tuned h 1 k 8 group 7 seconds 23.7
+
+
+Default metric period is 5 because MAE is/are not implemented for GPU
+
+catboost_direct_tuned h 2 k 1 group 0 seconds 17.1
+
+
+Default metric period is 5 because MAE is/are not implemented for GPU
+
+catboost_direct_tuned h 2 k 8 group 0 seconds 2.0
+
+Default metric period is 5 because MAE is/are not implemented for GPU
+
+catboost_direct_tuned h 2 k 8 group 1 seconds 2.8
+
+Default metric period is 5 because MAE is/are not implemented for GPU
+
+catboost_direct_tuned h 2 k 8 group 2 seconds 4.9
+
+Default metric period is 5 because MAE is/are not implemented for GPU
+
+catboost_direct_tuned h 2 k 8 group 3 seconds 1.7
+
+Default metric period is 5 because MAE is/are not implemented for GPU
+
+catboost_direct_tuned h 2 k 8 group 4 seconds 3.9
+
+Default metric period is 5 because MAE is/are not implemented for GPU
+
+catboost_direct_tuned h 2 k 8 group 5 seconds 2.0
+
+Default metric period is 5 because MAE is/are not implemented for GPU
+
+catboost_direct_tuned h 2 k 8 group 6 seconds 2.8
+
+Default metric period is 5 because MAE is/are not implemented for GPU
+
+catboost_direct_tuned h 2 k 8 group 7 seconds 4.1
+
+
+Default metric period is 5 because MAE is/are not implemented for GPU
+
+catboost_direct_tuned h 3 k 1 group 0 seconds 37.4
+
+
+Default metric period is 5 because MAE is/are not implemented for GPU
+
+catboost_direct_tuned h 3 k 8 group 0 seconds 4.2
+
+Default metric period is 5 because MAE is/are not implemented for GPU
+
+catboost_direct_tuned h 3 k 8 group 1 seconds 6.0
+
+Default metric period is 5 because MAE is/are not implemented for GPU
+
+catboost_direct_tuned h 3 k 8 group 2 seconds 10.7
+
+Default metric period is 5 because MAE is/are not implemented for GPU
+
+catboost_direct_tuned h 3 k 8 group 3 seconds 3.6
+
+Default metric period is 5 because MAE is/are not implemented for GPU
+
+catboost_direct_tuned h 3 k 8 group 4 seconds 8.2
+
+Default metric period is 5 because MAE is/are not implemented for GPU
+
+catboost_direct_tuned h 3 k 8 group 5 seconds 4.0
+
+Default metric period is 5 because MAE is/are not implemented for GPU
+
+catboost_direct_tuned h 3 k 8 group 6 seconds 6.0
+
+Default metric period is 5 because MAE is/are not implemented for GPU
+
+catboost_direct_tuned h 3 k 8 group 7 seconds 8.7
+
+
+Default metric period is 5 because MAE is/are not implemented for GPU
+
+catboost_direct_tuned h 4 k 1 group 0 seconds 20.8
+
+
+Default metric period is 5 because MAE is/are not implemented for GPU
+
+catboost_direct_tuned h 4 k 8 group 0 seconds 2.3
+
+Default metric period is 5 because MAE is/are not implemented for GPU
+
+catboost_direct_tuned h 4 k 8 group 1 seconds 3.2
+
+Default metric period is 5 because MAE is/are not implemented for GPU
+
+catboost_direct_tuned h 4 k 8 group 2 seconds 5.9
+
+Default metric period is 5 because MAE is/are not implemented for GPU
+
+catboost_direct_tuned h 4 k 8 group 3 seconds 2.1
+
+Default metric period is 5 because MAE is/are not implemented for GPU
+
+catboost_direct_tuned h 4 k 8 group 4 seconds 4.6
+
+Default metric period is 5 because MAE is/are not implemented for GPU
+
+catboost_direct_tuned h 4 k 8 group 5 seconds 2.3
+
+Default metric period is 5 because MAE is/are not implemented for GPU
+
+catboost_direct_tuned h 4 k 8 group 6 seconds 3.3
+
+Default metric period is 5 because MAE is/are not implemented for GPU
+
+catboost_direct_tuned h 4 k 8 group 7 seconds 4.8
+
+
+Default metric period is 5 because MAE is/are not implemented for GPU
+
+catboost_direct_tuned h 5 k 1 group 0 seconds 17.9
+
+
+Default metric period is 5 because MAE is/are not implemented for GPU
+
+catboost_direct_tuned h 5 k 8 group 0 seconds 2.1
+
+Default metric period is 5 because MAE is/are not implemented for GPU
+
+catboost_direct_tuned h 5 k 8 group 1 seconds 2.9
+
+Default metric period is 5 because MAE is/are not implemented for GPU
+
+catboost_direct_tuned h 5 k 8 group 2 seconds 5.2
+
+Default metric period is 5 because MAE is/are not implemented for GPU
+
+catboost_direct_tuned h 5 k 8 group 3 seconds 1.8
+
+Default metric period is 5 because MAE is/are not implemented for GPU
+
+catboost_direct_tuned h 5 k 8 group 4 seconds 4.0
+
+Default metric period is 5 because MAE is/are not implemented for GPU
+
+catboost_direct_tuned h 5 k 8 group 5 seconds 2.0
+
+Default metric period is 5 because MAE is/are not implemented for GPU
+
+catboost_direct_tuned h 5 k 8 group 6 seconds 3.0
+
+Default metric period is 5 because MAE is/are not implemented for GPU
+
+catboost_direct_tuned h 5 k 8 group 7 seconds 4.3
+
+
+Default metric period is 5 because MAE is/are not implemented for GPU
+
+catboost_direct_tuned h 6 k 1 group 0 seconds 8.7
+
+
+Default metric period is 5 because MAE is/are not implemented for GPU
+
+catboost_direct_tuned h 6 k 8 group 0 seconds 1.1
+
+Default metric period is 5 because MAE is/are not implemented for GPU
+
+catboost_direct_tuned h 6 k 8 group 1 seconds 1.5
+
+Default metric period is 5 because MAE is/are not implemented for GPU
+
+catboost_direct_tuned h 6 k 8 group 2 seconds 2.5
+
+Default metric period is 5 because MAE is/are not implemented for GPU
+
+catboost_direct_tuned h 6 k 8 group 3 seconds 0.9
+
+Default metric period is 5 because MAE is/are not implemented for GPU
+
+catboost_direct_tuned h 6 k 8 group 4 seconds 1.9
+
+Default metric period is 5 because MAE is/are not implemented for GPU
+
+catboost_direct_tuned h 6 k 8 group 5 seconds 1.1
+
+Default metric period is 5 because MAE is/are not implemented for GPU
+
+catboost_direct_tuned h 6 k 8 group 6 seconds 1.4
+
+Default metric period is 5 because MAE is/are not implemented for GPU
+
+catboost_direct_tuned h 6 k 8 group 7 seconds 2.1
+
+
+Default metric period is 5 because MAE is/are not implemented for GPU
+
+catboost_direct_tuned h 7 k 1 group 0 seconds 9.7
+
+
+Default metric period is 5 because MAE is/are not implemented for GPU
+
+catboost_direct_tuned h 7 k 8 group 0 seconds 1.3
+
+Default metric period is 5 because MAE is/are not implemented for GPU
+
+catboost_direct_tuned h 7 k 8 group 1 seconds 1.6
+
+Default metric period is 5 because MAE is/are not implemented for GPU
+
+catboost_direct_tuned h 7 k 8 group 2 seconds 2.9
+
+Default metric period is 5 because MAE is/are not implemented for GPU
+
+catboost_direct_tuned h 7 k 8 group 3 seconds 1.0
+
+Default metric period is 5 because MAE is/are not implemented for GPU
+
+catboost_direct_tuned h 7 k 8 group 4 seconds 2.2
+
+Default metric period is 5 because MAE is/are not implemented for GPU
+
+catboost_direct_tuned h 7 k 8 group 5 seconds 1.2
+
+Default metric period is 5 because MAE is/are not implemented for GPU
+
+catboost_direct_tuned h 7 k 8 group 6 seconds 1.6
+
+Default metric period is 5 because MAE is/are not implemented for GPU
+
+catboost_direct_tuned h 7 k 8 group 7 seconds 2.4
+
+
+Default metric period is 5 because MAE is/are not implemented for GPU
+
+catboost_direct_tuned h 8 k 1 group 0 seconds 30.2
+
+
+Default metric period is 5 because MAE is/are not implemented for GPU
+
+catboost_direct_tuned h 8 k 8 group 0 seconds 3.4
+
+Default metric period is 5 because MAE is/are not implemented for GPU
+
+catboost_direct_tuned h 8 k 8 group 1 seconds 4.8
+
+Default metric period is 5 because MAE is/are not implemented for GPU
+
+catboost_direct_tuned h 8 k 8 group 2 seconds 8.7
+
+Default metric period is 5 because MAE is/are not implemented for GPU
+
+catboost_direct_tuned h 8 k 8 group 3 seconds 2.8
+
+Default metric period is 5 because MAE is/are not implemented for GPU
+
+catboost_direct_tuned h 8 k 8 group 4 seconds 6.6
+
+Default metric period is 5 because MAE is/are not implemented for GPU
+
+catboost_direct_tuned h 8 k 8 group 5 seconds 3.2
+
+Default metric period is 5 because MAE is/are not implemented for GPU
+
+catboost_direct_tuned h 8 k 8 group 6 seconds 4.9
+
+Default metric period is 5 because MAE is/are not implemented for GPU
+
+catboost_direct_tuned h 8 k 8 group 7 seconds 7.0
+
+
+
+
+Независимая оценка test получена до переобучения на всей доступной размеченной истории. Этот test ранее изучался в проекте и не является новым слепым holdout. Коэффициенты, способ калибровки и вариант модели зафиксированы до test. Train включает бывшую val.
+
+
+GPU обязателен: CatBoost CUDA и CuPy проверены.
+
+
+Маршрутов: 1000 Выходы: /kaggle/working/cluster_experiment_4c5d9d1f0133736b CatBoost: GPU
+
+
+
+
+catboost_residual_tuned h 1 k 1 group 0 seconds 68.9
+
+
+Test закрыт. Калибровка и выбор используют только периоды до test.
+catboost_residual_tuned h 1 k 8 group -1 seconds 68.7
+catboost_residual_tuned h 1 k 8 group 0 seconds 18.1
+catboost_residual_tuned h 1 k 8 group 1 seconds 16.0
+catboost_residual_tuned h 1 k 8 group 2 seconds 7.5
+catboost_residual_tuned h 1 k 8 group 3 seconds 12.2
+catboost_residual_tuned h 1 k 8 group 4 seconds 19.2
+catboost_residual_tuned h 1 k 8 group 6 seconds 12.5
+catboost_residual_tuned h 1 k 8 group 7 seconds 8.7
+
+
+Test закрыт. Калибровка и выбор используют только периоды до test.
+catboost_residual_tuned h 2 k 1 group 0 seconds 53.9
+
+
+Test закрыт. Калибровка и выбор используют только периоды до test.
+catboost_residual_tuned h 2 k 8 group -1 seconds 53.2
+catboost_residual_tuned h 2 k 8 group 0 seconds 14.2
+catboost_residual_tuned h 2 k 8 group 1 seconds 12.8
+catboost_residual_tuned h 2 k 8 group 2 seconds 6.3
+catboost_residual_tuned h 2 k 8 group 3 seconds 9.4
+catboost_residual_tuned h 2 k 8 group 4 seconds 14.9
+catboost_residual_tuned h 2 k 8 group 6 seconds 10.0
+catboost_residual_tuned h 2 k 8 group 7 seconds 7.1
+
+
+Test закрыт. Калибровка и выбор используют только периоды до test.
+catboost_residual_tuned h 3 k 1 group 0 seconds 41.4
+
+
+Test закрыт. Калибровка и выбор используют только периоды до test.
+catboost_residual_tuned h 3 k 8 group -1 seconds 41.0
+catboost_residual_tuned h 3 k 8 group 0 seconds 11.1
+catboost_residual_tuned h 3 k 8 group 1 seconds 9.7
+catboost_residual_tuned h 3 k 8 group 2 seconds 4.7
+catboost_residual_tuned h 3 k 8 group 3 seconds 7.4
+catboost_residual_tuned h 3 k 8 group 4 seconds 11.5
+catboost_residual_tuned h 3 k 8 group 6 seconds 7.6
+catboost_residual_tuned h 3 k 8 group 7 seconds 5.4
+
+
+Test закрыт. Калибровка и выбор используют только периоды до test.
+catboost_residual_tuned h 4 k 1 group 0 seconds 10.9
+
+
+Test закрыт. Калибровка и выбор используют только периоды до test.
+catboost_residual_tuned h 4 k 8 group -1 seconds 10.9
+catboost_residual_tuned h 4 k 8 group 0 seconds 3.1
+catboost_residual_tuned h 4 k 8 group 1 seconds 2.6
+catboost_residual_tuned h 4 k 8 group 2 seconds 1.3
+catboost_residual_tuned h 4 k 8 group 3 seconds 2.0
+catboost_residual_tuned h 4 k 8 group 4 seconds 3.2
+catboost_residual_tuned h 4 k 8 group 6 seconds 2.1
+catboost_residual_tuned h 4 k 8 group 7 seconds 1.6
+
+
+Test закрыт. Калибровка и выбор используют только периоды до test.
+catboost_residual_tuned h 5 k 1 group 0 seconds 15.2
+
+
+Test закрыт. Калибровка и выбор используют только периоды до test.
+catboost_residual_tuned h 5 k 8 group -1 seconds 14.9
+catboost_residual_tuned h 5 k 8 group 0 seconds 4.0
+catboost_residual_tuned h 5 k 8 group 1 seconds 3.5
+catboost_residual_tuned h 5 k 8 group 2 seconds 1.8
+catboost_residual_tuned h 5 k 8 group 3 seconds 2.7
+catboost_residual_tuned h 5 k 8 group 4 seconds 4.2
+catboost_residual_tuned h 5 k 8 group 6 seconds 2.9
+catboost_residual_tuned h 5 k 8 group 7 seconds 2.1
+
+
+Test закрыт. Калибровка и выбор используют только периоды до test.
+catboost_residual_tuned h 6 k 1 group 0 seconds 6.5
+
+
+Test закрыт. Калибровка и выбор используют только периоды до test.
+catboost_residual_tuned h 6 k 8 group -1 seconds 6.3
+catboost_residual_tuned h 6 k 8 group 0 seconds 1.9
+catboost_residual_tuned h 6 k 8 group 1 seconds 1.6
+catboost_residual_tuned h 6 k 8 group 2 seconds 0.8
+catboost_residual_tuned h 6 k 8 group 3 seconds 1.2
+catboost_residual_tuned h 6 k 8 group 4 seconds 1.8
+catboost_residual_tuned h 6 k 8 group 6 seconds 1.3
+catboost_residual_tuned h 6 k 8 group 7 seconds 1.0
+
+
+Test закрыт. Калибровка и выбор используют только периоды до test.
+catboost_residual_tuned h 7 k 1 group 0 seconds 20.8
+
+
+Test закрыт. Калибровка и выбор используют только периоды до test.
+catboost_residual_tuned h 7 k 8 group -1 seconds 20.7
+catboost_residual_tuned h 7 k 8 group 0 seconds 5.5
+catboost_residual_tuned h 7 k 8 group 1 seconds 4.9
+catboost_residual_tuned h 7 k 8 group 2 seconds 2.4
+catboost_residual_tuned h 7 k 8 group 3 seconds 3.7
+catboost_residual_tuned h 7 k 8 group 4 seconds 5.8
+catboost_residual_tuned h 7 k 8 group 6 seconds 3.9
+catboost_residual_tuned h 7 k 8 group 7 seconds 2.9
+
+
+Test закрыт. Калибровка и выбор используют только периоды до test.
+catboost_residual_tuned h 8 k 1 group 0 seconds 19.4
+
+
+Test закрыт. Калибровка и выбор используют только периоды до test.
+catboost_residual_tuned h 8 k 8 group -1 seconds 19.5
+catboost_residual_tuned h 8 k 8 group 0 seconds 5.3
+catboost_residual_tuned h 8 k 8 group 1 seconds 4.7
+catboost_residual_tuned h 8 k 8 group 2 seconds 2.3
+catboost_residual_tuned h 8 k 8 group 3 seconds 3.6
+catboost_residual_tuned h 8 k 8 group 4 seconds 5.5
+catboost_residual_tuned h 8 k 8 group 6 seconds 3.6
+catboost_residual_tuned h 8 k 8 group 7 seconds 2.8
+
+
+Test закрыт. Калибровка и выбор используют только периоды до test.
+
+
+
+catboost_residual_tuned h 1 k 1 group 0 seconds 75.2
+
+
+Test закрыт. Калибровка и выбор используют только периоды до test.
+catboost_residual_tuned h 1 k 8 group -1 seconds 75.2
+catboost_residual_tuned h 1 k 8 group 0 seconds 11.8
+catboost_residual_tuned h 1 k 8 group 1 seconds 9.5
+catboost_residual_tuned h 1 k 8 group 2 seconds 11.3
+catboost_residual_tuned h 1 k 8 group 3 seconds 27.0
+catboost_residual_tuned h 1 k 8 group 4 seconds 19.9
+catboost_residual_tuned h 1 k 8 group 5 seconds 8.0
+catboost_residual_tuned h 1 k 8 group 6 seconds 14.0
+
+
+Test закрыт. Калибровка и выбор используют только периоды до test.
+catboost_residual_tuned h 2 k 1 group 0 seconds 59.0
+
+
+Test закрыт. Калибровка и выбор используют только периоды до test.
+catboost_residual_tuned h 2 k 8 group -1 seconds 58.7
+catboost_residual_tuned h 2 k 8 group 0 seconds 9.3
+catboost_residual_tuned h 2 k 8 group 1 seconds 7.6
+catboost_residual_tuned h 2 k 8 group 2 seconds 9.0
+catboost_residual_tuned h 2 k 8 group 3 seconds 21.0
+catboost_residual_tuned h 2 k 8 group 4 seconds 15.4
+catboost_residual_tuned h 2 k 8 group 5 seconds 6.3
+catboost_residual_tuned h 2 k 8 group 6 seconds 11.0
+
+
+Test закрыт. Калибровка и выбор используют только периоды до test.
+catboost_residual_tuned h 3 k 1 group 0 seconds 45.6
+
+
+Test закрыт. Калибровка и выбор используют только периоды до test.
+catboost_residual_tuned h 3 k 8 group -1 seconds 44.9
+catboost_residual_tuned h 3 k 8 group 0 seconds 7.2
+catboost_residual_tuned h 3 k 8 group 1 seconds 5.9
+catboost_residual_tuned h 3 k 8 group 2 seconds 7.0
+catboost_residual_tuned h 3 k 8 group 3 seconds 16.2
+catboost_residual_tuned h 3 k 8 group 4 seconds 12.0
+catboost_residual_tuned h 3 k 8 group 5 seconds 4.8
+catboost_residual_tuned h 3 k 8 group 6 seconds 8.4
+
+
+Test закрыт. Калибровка и выбор используют только периоды до test.
+catboost_residual_tuned h 4 k 1 group 0 seconds 12.0
+
+
+Test закрыт. Калибровка и выбор используют только периоды до test.
+catboost_residual_tuned h 4 k 8 group -1 seconds 11.9
+catboost_residual_tuned h 4 k 8 group 0 seconds 2.0
+catboost_residual_tuned h 4 k 8 group 1 seconds 1.7
+catboost_residual_tuned h 4 k 8 group 2 seconds 1.9
+catboost_residual_tuned h 4 k 8 group 3 seconds 4.5
+catboost_residual_tuned h 4 k 8 group 4 seconds 3.2
+catboost_residual_tuned h 4 k 8 group 5 seconds 1.3
+catboost_residual_tuned h 4 k 8 group 6 seconds 2.3
+
+
+Test закрыт. Калибровка и выбор используют только периоды до test.
+catboost_residual_tuned h 5 k 1 group 0 seconds 16.4
+
+
+Test закрыт. Калибровка и выбор используют только периоды до test.
+catboost_residual_tuned h 5 k 8 group -1 seconds 16.4
+catboost_residual_tuned h 5 k 8 group 0 seconds 2.7
+catboost_residual_tuned h 5 k 8 group 1 seconds 2.2
+catboost_residual_tuned h 5 k 8 group 2 seconds 2.5
+catboost_residual_tuned h 5 k 8 group 3 seconds 6.1
+catboost_residual_tuned h 5 k 8 group 4 seconds 4.4
+catboost_residual_tuned h 5 k 8 group 5 seconds 1.8
+catboost_residual_tuned h 5 k 8 group 6 seconds 3.0
+
+
+Test закрыт. Калибровка и выбор используют только периоды до test.
+catboost_residual_tuned h 6 k 1 group 0 seconds 7.3
+
+
+Test закрыт. Калибровка и выбор используют только периоды до test.
+catboost_residual_tuned h 6 k 8 group -1 seconds 7.0
+catboost_residual_tuned h 6 k 8 group 0 seconds 1.2
+catboost_residual_tuned h 6 k 8 group 1 seconds 1.0
+catboost_residual_tuned h 6 k 8 group 2 seconds 1.2
+catboost_residual_tuned h 6 k 8 group 3 seconds 2.7
+catboost_residual_tuned h 6 k 8 group 4 seconds 1.9
+catboost_residual_tuned h 6 k 8 group 5 seconds 0.9
+catboost_residual_tuned h 6 k 8 group 6 seconds 1.3
+
+
+Test закрыт. Калибровка и выбор используют только периоды до test.
+catboost_residual_tuned h 7 k 1 group 0 seconds 22.8
+
+
+Test закрыт. Калибровка и выбор используют только периоды до test.
+catboost_residual_tuned h 7 k 8 group -1 seconds 22.7
+catboost_residual_tuned h 7 k 8 group 0 seconds 3.7
+catboost_residual_tuned h 7 k 8 group 1 seconds 3.1
+catboost_residual_tuned h 7 k 8 group 2 seconds 3.5
+catboost_residual_tuned h 7 k 8 group 3 seconds 8.1
+catboost_residual_tuned h 7 k 8 group 4 seconds 6.1
+catboost_residual_tuned h 7 k 8 group 5 seconds 2.5
+catboost_residual_tuned h 7 k 8 group 6 seconds 4.2
+
+
+Test закрыт. Калибровка и выбор используют только периоды до test.
+catboost_residual_tuned h 8 k 1 group 0 seconds 21.2
+
+
+Test закрыт. Калибровка и выбор используют только периоды до test.
+catboost_residual_tuned h 8 k 8 group -1 seconds 21.5
+catboost_residual_tuned h 8 k 8 group 0 seconds 3.6
+catboost_residual_tuned h 8 k 8 group 1 seconds 3.0
+catboost_residual_tuned h 8 k 8 group 2 seconds 3.4
+catboost_residual_tuned h 8 k 8 group 3 seconds 7.7
+catboost_residual_tuned h 8 k 8 group 4 seconds 5.7
+catboost_residual_tuned h 8 k 8 group 5 seconds 2.4
+catboost_residual_tuned h 8 k 8 group 6 seconds 4.0
+
+
+Test закрыт. Калибровка и выбор используют только периоды до test.
+
+
+
+
+Победитель выбран до test: cat_k8 raw
+
+
+catboost_residual_tuned h 1 k 1 group 0 seconds 81.7
+
+
+catboost_residual_tuned h 1 k 8 group 0 seconds 9.3
+catboost_residual_tuned h 1 k 8 group 1 seconds 13.1
+catboost_residual_tuned h 1 k 8 group 2 seconds 23.6
+catboost_residual_tuned h 1 k 8 group 3 seconds 7.7
+catboost_residual_tuned h 1 k 8 group 4 seconds 18.0
+catboost_residual_tuned h 1 k 8 group 5 seconds 9.0
+catboost_residual_tuned h 1 k 8 group 6 seconds 13.2
+catboost_residual_tuned h 1 k 8 group 7 seconds 19.1
+
+
+catboost_residual_tuned h 2 k 1 group 0 seconds 64.4
+
+
+catboost_residual_tuned h 2 k 8 group 0 seconds 7.3
+catboost_residual_tuned h 2 k 8 group 1 seconds 10.4
+catboost_residual_tuned h 2 k 8 group 2 seconds 18.4
+catboost_residual_tuned h 2 k 8 group 3 seconds 6.2
+catboost_residual_tuned h 2 k 8 group 4 seconds 14.2
+catboost_residual_tuned h 2 k 8 group 5 seconds 6.9
+catboost_residual_tuned h 2 k 8 group 6 seconds 10.3
+catboost_residual_tuned h 2 k 8 group 7 seconds 15.1
+
+
+catboost_residual_tuned h 3 k 1 group 0 seconds 49.7
+
+
+catboost_residual_tuned h 3 k 8 group 0 seconds 5.6
+catboost_residual_tuned h 3 k 8 group 1 seconds 8.0
+catboost_residual_tuned h 3 k 8 group 2 seconds 14.0
+catboost_residual_tuned h 3 k 8 group 3 seconds 4.8
+catboost_residual_tuned h 3 k 8 group 4 seconds 10.9
+catboost_residual_tuned h 3 k 8 group 5 seconds 5.4
+catboost_residual_tuned h 3 k 8 group 6 seconds 8.1
+catboost_residual_tuned h 3 k 8 group 7 seconds 11.6
+
+
+catboost_residual_tuned h 4 k 1 group 0 seconds 13.1
+
+
+catboost_residual_tuned h 4 k 8 group 0 seconds 1.6
+catboost_residual_tuned h 4 k 8 group 1 seconds 2.1
+catboost_residual_tuned h 4 k 8 group 2 seconds 3.8
+catboost_residual_tuned h 4 k 8 group 3 seconds 1.4
+catboost_residual_tuned h 4 k 8 group 4 seconds 3.0
+catboost_residual_tuned h 4 k 8 group 5 seconds 1.6
+catboost_residual_tuned h 4 k 8 group 6 seconds 2.2
+catboost_residual_tuned h 4 k 8 group 7 seconds 3.1
+
+
+catboost_residual_tuned h 5 k 1 group 0 seconds 18.2
+
+
+catboost_residual_tuned h 5 k 8 group 0 seconds 2.1
+catboost_residual_tuned h 5 k 8 group 1 seconds 3.0
+catboost_residual_tuned h 5 k 8 group 2 seconds 5.1
+catboost_residual_tuned h 5 k 8 group 3 seconds 1.8
+catboost_residual_tuned h 5 k 8 group 4 seconds 4.0
+catboost_residual_tuned h 5 k 8 group 5 seconds 2.1
+catboost_residual_tuned h 5 k 8 group 6 seconds 3.0
+catboost_residual_tuned h 5 k 8 group 7 seconds 4.2
+
+
+catboost_residual_tuned h 6 k 1 group 0 seconds 7.8
+
+
+catboost_residual_tuned h 6 k 8 group 0 seconds 1.0
+catboost_residual_tuned h 6 k 8 group 1 seconds 1.3
+catboost_residual_tuned h 6 k 8 group 2 seconds 2.2
+catboost_residual_tuned h 6 k 8 group 3 seconds 0.9
+catboost_residual_tuned h 6 k 8 group 4 seconds 1.7
+catboost_residual_tuned h 6 k 8 group 5 seconds 1.0
+catboost_residual_tuned h 6 k 8 group 6 seconds 1.3
+catboost_residual_tuned h 6 k 8 group 7 seconds 2.0
+
+
+catboost_residual_tuned h 7 k 1 group 0 seconds 24.8
+
+
+catboost_residual_tuned h 7 k 8 group 0 seconds 2.9
+catboost_residual_tuned h 7 k 8 group 1 seconds 4.1
+catboost_residual_tuned h 7 k 8 group 2 seconds 7.1
+catboost_residual_tuned h 7 k 8 group 3 seconds 2.4
+catboost_residual_tuned h 7 k 8 group 4 seconds 5.5
+catboost_residual_tuned h 7 k 8 group 5 seconds 2.9
+catboost_residual_tuned h 7 k 8 group 6 seconds 4.1
+catboost_residual_tuned h 7 k 8 group 7 seconds 5.9
+
+
+catboost_residual_tuned h 8 k 1 group 0 seconds 23.2
+
+
+catboost_residual_tuned h 8 k 8 group 0 seconds 2.8
+catboost_residual_tuned h 8 k 8 group 1 seconds 3.9
+catboost_residual_tuned h 8 k 8 group 2 seconds 6.7
+catboost_residual_tuned h 8 k 8 group 3 seconds 2.4
+catboost_residual_tuned h 8 k 8 group 4 seconds 5.3
+catboost_residual_tuned h 8 k 8 group 5 seconds 2.7
+catboost_residual_tuned h 8 k 8 group 6 seconds 4.0
+catboost_residual_tuned h 8 k 8 group 7 seconds 5.6
+
+
+
+
+Независимая оценка test получена до переобучения на всей доступной размеченной истории. Этот test ранее изучался в проекте и не является новым слепым holdout. Коэффициенты, способ калибровки и вариант модели зафиксированы до test. Train включает бывшую val.
+
+
+GPU обязателен: CatBoost CUDA и CuPy проверены.
+
+
+Маршрутов: 1000 Выходы: /kaggle/working/cluster_experiment_29e153d8117d7b62 CatBoost: GPU
+
+
+
+
+xgb_direct_tuned h 1 k 1 group 0 seconds 75.7
+
+/usr/local/lib/python3.13/dist-packages/xgboost/core.py:569: UserWarning: [03:17:25] WARNING: /__w/xgboost/xgboost/src/common/error_msg.cc:62: Falling back to prediction using DMatrix due to mismatched devices. This might lead to higher memory usage and slower performance. XGBoost is running on: cuda:0, while the input data is on: cpu.
+Potential solutions:
+- Use a data structure that matches the device ordinal in the booster.
+- Set the device for booster before call to inplace_predict.
+
+This warning will only be shown once.
+
+  return func(**kwargs)
+
+
+Test закрыт. Калибровка и выбор используют только периоды до test.
+xgb_direct_tuned h 1 k 8 group -1 seconds 75.9
+xgb_direct_tuned h 1 k 8 group 0 seconds 18.0
+xgb_direct_tuned h 1 k 8 group 1 seconds 15.9
+xgb_direct_tuned h 1 k 8 group 2 seconds 6.5
+xgb_direct_tuned h 1 k 8 group 3 seconds 12.0
+xgb_direct_tuned h 1 k 8 group 4 seconds 19.3
+xgb_direct_tuned h 1 k 8 group 6 seconds 12.6
+xgb_direct_tuned h 1 k 8 group 7 seconds 7.7
+
+
+Test закрыт. Калибровка и выбор используют только периоды до test.
+xgb_direct_tuned h 2 k 1 group 0 seconds 23.7
+
+
+Test закрыт. Калибровка и выбор используют только периоды до test.
+xgb_direct_tuned h 2 k 8 group -1 seconds 25.3
+xgb_direct_tuned h 2 k 8 group 0 seconds 5.7
+xgb_direct_tuned h 2 k 8 group 1 seconds 4.9
+xgb_direct_tuned h 2 k 8 group 2 seconds 1.8
+xgb_direct_tuned h 2 k 8 group 3 seconds 3.5
+xgb_direct_tuned h 2 k 8 group 4 seconds 6.0
+xgb_direct_tuned h 2 k 8 group 6 seconds 3.7
+xgb_direct_tuned h 2 k 8 group 7 seconds 2.2
+
+
+Test закрыт. Калибровка и выбор используют только периоды до test.
+xgb_direct_tuned h 3 k 1 group 0 seconds 23.0
+
+
+Test закрыт. Калибровка и выбор используют только периоды до test.
+xgb_direct_tuned h 3 k 8 group -1 seconds 23.6
+xgb_direct_tuned h 3 k 8 group 0 seconds 5.6
+xgb_direct_tuned h 3 k 8 group 1 seconds 5.0
+xgb_direct_tuned h 3 k 8 group 2 seconds 1.8
+xgb_direct_tuned h 3 k 8 group 3 seconds 3.6
+xgb_direct_tuned h 3 k 8 group 4 seconds 6.0
+xgb_direct_tuned h 3 k 8 group 6 seconds 3.8
+xgb_direct_tuned h 3 k 8 group 7 seconds 2.2
+
+
+Test закрыт. Калибровка и выбор используют только периоды до test.
+xgb_direct_tuned h 4 k 1 group 0 seconds 9.8
+
+
+Test закрыт. Калибровка и выбор используют только периоды до test.
+xgb_direct_tuned h 4 k 8 group -1 seconds 10.1
+xgb_direct_tuned h 4 k 8 group 0 seconds 2.4
+xgb_direct_tuned h 4 k 8 group 1 seconds 1.9
+xgb_direct_tuned h 4 k 8 group 2 seconds 0.5
+xgb_direct_tuned h 4 k 8 group 3 seconds 1.3
+xgb_direct_tuned h 4 k 8 group 4 seconds 2.4
+xgb_direct_tuned h 4 k 8 group 6 seconds 1.4
+xgb_direct_tuned h 4 k 8 group 7 seconds 0.8
+
+
+Test закрыт. Калибровка и выбор используют только периоды до test.
+xgb_direct_tuned h 5 k 1 group 0 seconds 9.4
+
+
+Test закрыт. Калибровка и выбор используют только периоды до test.
+xgb_direct_tuned h 5 k 8 group -1 seconds 9.4
+xgb_direct_tuned h 5 k 8 group 0 seconds 2.0
+xgb_direct_tuned h 5 k 8 group 1 seconds 1.8
+xgb_direct_tuned h 5 k 8 group 2 seconds 0.5
+xgb_direct_tuned h 5 k 8 group 3 seconds 1.1
+xgb_direct_tuned h 5 k 8 group 4 seconds 2.2
+xgb_direct_tuned h 5 k 8 group 6 seconds 1.2
+xgb_direct_tuned h 5 k 8 group 7 seconds 0.7
+
+
+Test закрыт. Калибровка и выбор используют только периоды до test.
+xgb_direct_tuned h 6 k 1 group 0 seconds 9.4
+
+
+Test закрыт. Калибровка и выбор используют только периоды до test.
+xgb_direct_tuned h 6 k 8 group -1 seconds 9.8
+xgb_direct_tuned h 6 k 8 group 0 seconds 2.2
+xgb_direct_tuned h 6 k 8 group 1 seconds 1.8
+xgb_direct_tuned h 6 k 8 group 2 seconds 0.5
+xgb_direct_tuned h 6 k 8 group 3 seconds 1.2
+xgb_direct_tuned h 6 k 8 group 4 seconds 2.3
+xgb_direct_tuned h 6 k 8 group 6 seconds 1.3
+xgb_direct_tuned h 6 k 8 group 7 seconds 0.7
+
+
+Test закрыт. Калибровка и выбор используют только периоды до test.
+xgb_direct_tuned h 7 k 1 group 0 seconds 13.4
+
+
+Test закрыт. Калибровка и выбор используют только периоды до test.
+xgb_direct_tuned h 7 k 8 group -1 seconds 13.2
+xgb_direct_tuned h 7 k 8 group 0 seconds 3.0
+xgb_direct_tuned h 7 k 8 group 1 seconds 2.6
+xgb_direct_tuned h 7 k 8 group 2 seconds 0.8
+xgb_direct_tuned h 7 k 8 group 3 seconds 1.8
+xgb_direct_tuned h 7 k 8 group 4 seconds 3.3
+xgb_direct_tuned h 7 k 8 group 6 seconds 1.9
+xgb_direct_tuned h 7 k 8 group 7 seconds 1.1
+
+
+Test закрыт. Калибровка и выбор используют только периоды до test.
+xgb_direct_tuned h 8 k 1 group 0 seconds 10.3
+
+
+Test закрыт. Калибровка и выбор используют только периоды до test.
+xgb_direct_tuned h 8 k 8 group -1 seconds 10.2
+xgb_direct_tuned h 8 k 8 group 0 seconds 2.3
+xgb_direct_tuned h 8 k 8 group 1 seconds 1.9
+xgb_direct_tuned h 8 k 8 group 2 seconds 0.5
+xgb_direct_tuned h 8 k 8 group 3 seconds 1.3
+xgb_direct_tuned h 8 k 8 group 4 seconds 2.3
+xgb_direct_tuned h 8 k 8 group 6 seconds 1.4
+xgb_direct_tuned h 8 k 8 group 7 seconds 0.8
+
+
+Test закрыт. Калибровка и выбор используют только периоды до test.
+
+
+
+xgb_direct_tuned h 1 k 1 group 0 seconds 83.6
+
+
+Test закрыт. Калибровка и выбор используют только периоды до test.
+xgb_direct_tuned h 1 k 8 group -1 seconds 83.4
+xgb_direct_tuned h 1 k 8 group 0 seconds 11.5
+xgb_direct_tuned h 1 k 8 group 1 seconds 9.4
+xgb_direct_tuned h 1 k 8 group 2 seconds 11.3
+xgb_direct_tuned h 1 k 8 group 3 seconds 27.3
+xgb_direct_tuned h 1 k 8 group 4 seconds 20.0
+xgb_direct_tuned h 1 k 8 group 5 seconds 6.8
+xgb_direct_tuned h 1 k 8 group 6 seconds 13.9
+
+
+Test закрыт. Калибровка и выбор используют только периоды до test.
+xgb_direct_tuned h 2 k 1 group 0 seconds 26.0
+
+
+Test закрыт. Калибровка и выбор используют только периоды до test.
+xgb_direct_tuned h 2 k 8 group -1 seconds 27.6
+xgb_direct_tuned h 2 k 8 group 0 seconds 3.5
+xgb_direct_tuned h 2 k 8 group 1 seconds 2.7
+xgb_direct_tuned h 2 k 8 group 2 seconds 3.3
+xgb_direct_tuned h 2 k 8 group 3 seconds 8.7
+xgb_direct_tuned h 2 k 8 group 4 seconds 6.1
+xgb_direct_tuned h 2 k 8 group 5 seconds 1.8
+xgb_direct_tuned h 2 k 8 group 6 seconds 4.0
+
+
+Test закрыт. Калибровка и выбор используют только периоды до test.
+xgb_direct_tuned h 3 k 1 group 0 seconds 25.3
+
+
+Test закрыт. Калибровка и выбор используют только периоды до test.
+xgb_direct_tuned h 3 k 8 group -1 seconds 26.7
+xgb_direct_tuned h 3 k 8 group 0 seconds 3.5
+xgb_direct_tuned h 3 k 8 group 1 seconds 2.7
+xgb_direct_tuned h 3 k 8 group 2 seconds 3.2
+xgb_direct_tuned h 3 k 8 group 3 seconds 8.7
+xgb_direct_tuned h 3 k 8 group 4 seconds 6.1
+xgb_direct_tuned h 3 k 8 group 5 seconds 1.9
+xgb_direct_tuned h 3 k 8 group 6 seconds 4.0
+
+
+Test закрыт. Калибровка и выбор используют только периоды до test.
+xgb_direct_tuned h 4 k 1 group 0 seconds 10.9
+
+
+Test закрыт. Калибровка и выбор используют только периоды до test.
+xgb_direct_tuned h 4 k 8 group -1 seconds 11.1
+xgb_direct_tuned h 4 k 8 group 0 seconds 1.3
+xgb_direct_tuned h 4 k 8 group 1 seconds 0.9
+xgb_direct_tuned h 4 k 8 group 2 seconds 1.2
+xgb_direct_tuned h 4 k 8 group 3 seconds 3.6
+xgb_direct_tuned h 4 k 8 group 4 seconds 2.6
+xgb_direct_tuned h 4 k 8 group 5 seconds 0.6
+xgb_direct_tuned h 4 k 8 group 6 seconds 1.6
+
+
+Test закрыт. Калибровка и выбор используют только периоды до test.
+xgb_direct_tuned h 5 k 1 group 0 seconds 10.4
+
+
+Test закрыт. Калибровка и выбор используют только периоды до test.
+xgb_direct_tuned h 5 k 8 group -1 seconds 10.6
+xgb_direct_tuned h 5 k 8 group 0 seconds 1.2
+xgb_direct_tuned h 5 k 8 group 1 seconds 0.8
+xgb_direct_tuned h 5 k 8 group 2 seconds 1.2
+xgb_direct_tuned h 5 k 8 group 3 seconds 3.4
+xgb_direct_tuned h 5 k 8 group 4 seconds 2.4
+xgb_direct_tuned h 5 k 8 group 5 seconds 0.5
+xgb_direct_tuned h 5 k 8 group 6 seconds 1.4
+
+
+Test закрыт. Калибровка и выбор используют только периоды до test.
+xgb_direct_tuned h 6 k 1 group 0 seconds 10.7
+
+
+Test закрыт. Калибровка и выбор используют только периоды до test.
+xgb_direct_tuned h 6 k 8 group -1 seconds 10.7
+xgb_direct_tuned h 6 k 8 group 0 seconds 1.2
+xgb_direct_tuned h 6 k 8 group 1 seconds 0.8
+xgb_direct_tuned h 6 k 8 group 2 seconds 1.1
+xgb_direct_tuned h 6 k 8 group 3 seconds 3.4
+xgb_direct_tuned h 6 k 8 group 4 seconds 2.5
+xgb_direct_tuned h 6 k 8 group 5 seconds 0.5
+xgb_direct_tuned h 6 k 8 group 6 seconds 1.4
+
+
+Test закрыт. Калибровка и выбор используют только периоды до test.
+xgb_direct_tuned h 7 k 1 group 0 seconds 14.8
+
+
+Test закрыт. Калибровка и выбор используют только периоды до test.
+xgb_direct_tuned h 7 k 8 group -1 seconds 14.9
+xgb_direct_tuned h 7 k 8 group 0 seconds 1.8
+xgb_direct_tuned h 7 k 8 group 1 seconds 1.3
+xgb_direct_tuned h 7 k 8 group 2 seconds 1.7
+xgb_direct_tuned h 7 k 8 group 3 seconds 4.8
+xgb_direct_tuned h 7 k 8 group 4 seconds 3.3
+xgb_direct_tuned h 7 k 8 group 5 seconds 0.9
+xgb_direct_tuned h 7 k 8 group 6 seconds 2.1
+
+
+Test закрыт. Калибровка и выбор используют только периоды до test.
+xgb_direct_tuned h 8 k 1 group 0 seconds 11.0
+
+
+Test закрыт. Калибровка и выбор используют только периоды до test.
+xgb_direct_tuned h 8 k 8 group -1 seconds 11.3
+xgb_direct_tuned h 8 k 8 group 0 seconds 1.3
+xgb_direct_tuned h 8 k 8 group 1 seconds 0.9
+xgb_direct_tuned h 8 k 8 group 2 seconds 1.2
+xgb_direct_tuned h 8 k 8 group 3 seconds 3.6
+xgb_direct_tuned h 8 k 8 group 4 seconds 2.6
+xgb_direct_tuned h 8 k 8 group 5 seconds 0.6
+xgb_direct_tuned h 8 k 8 group 6 seconds 1.6
+
+
+Test закрыт. Калибровка и выбор используют только периоды до test.
+
+
+
+
+Победитель выбран до test: cat_k8 horizon_shrink50
+
+
+xgb_direct_tuned h 1 k 1 group 0 seconds 91.3
+
+
+xgb_direct_tuned h 1 k 8 group 0 seconds 8.2
+xgb_direct_tuned h 1 k 8 group 1 seconds 13.3
+xgb_direct_tuned h 1 k 8 group 2 seconds 23.6
+xgb_direct_tuned h 1 k 8 group 3 seconds 6.7
+xgb_direct_tuned h 1 k 8 group 4 seconds 17.9
+xgb_direct_tuned h 1 k 8 group 5 seconds 8.2
+xgb_direct_tuned h 1 k 8 group 6 seconds 13.3
+xgb_direct_tuned h 1 k 8 group 7 seconds 19.3
+
+
+xgb_direct_tuned h 2 k 1 group 0 seconds 28.2
+
+
+xgb_direct_tuned h 2 k 8 group 0 seconds 2.3
+xgb_direct_tuned h 2 k 8 group 1 seconds 4.0
+xgb_direct_tuned h 2 k 8 group 2 seconds 7.5
+xgb_direct_tuned h 2 k 8 group 3 seconds 1.9
+xgb_direct_tuned h 2 k 8 group 4 seconds 5.6
+xgb_direct_tuned h 2 k 8 group 5 seconds 2.3
+xgb_direct_tuned h 2 k 8 group 6 seconds 3.9
+xgb_direct_tuned h 2 k 8 group 7 seconds 6.0
+
+
+xgb_direct_tuned h 3 k 1 group 0 seconds 27.3
+
+
+xgb_direct_tuned h 3 k 8 group 0 seconds 2.4
+xgb_direct_tuned h 3 k 8 group 1 seconds 3.9
+xgb_direct_tuned h 3 k 8 group 2 seconds 7.6
+xgb_direct_tuned h 3 k 8 group 3 seconds 1.9
+xgb_direct_tuned h 3 k 8 group 4 seconds 5.6
+xgb_direct_tuned h 3 k 8 group 5 seconds 2.3
+xgb_direct_tuned h 3 k 8 group 6 seconds 4.0
+xgb_direct_tuned h 3 k 8 group 7 seconds 6.0
+
+
+xgb_direct_tuned h 4 k 1 group 0 seconds 12.5
+
+
+xgb_direct_tuned h 4 k 8 group 0 seconds 0.9
+xgb_direct_tuned h 4 k 8 group 1 seconds 1.5
+xgb_direct_tuned h 4 k 8 group 2 seconds 3.0
+xgb_direct_tuned h 4 k 8 group 3 seconds 0.6
+xgb_direct_tuned h 4 k 8 group 4 seconds 2.2
+xgb_direct_tuned h 4 k 8 group 5 seconds 0.7
+xgb_direct_tuned h 4 k 8 group 6 seconds 1.5
+xgb_direct_tuned h 4 k 8 group 7 seconds 2.5
+
+
+xgb_direct_tuned h 5 k 1 group 0 seconds 11.4
+
+
+xgb_direct_tuned h 5 k 8 group 0 seconds 0.8
+xgb_direct_tuned h 5 k 8 group 1 seconds 1.3
+xgb_direct_tuned h 5 k 8 group 2 seconds 2.7
+xgb_direct_tuned h 5 k 8 group 3 seconds 0.5
+xgb_direct_tuned h 5 k 8 group 4 seconds 2.1
+xgb_direct_tuned h 5 k 8 group 5 seconds 0.7
+xgb_direct_tuned h 5 k 8 group 6 seconds 1.4
+xgb_direct_tuned h 5 k 8 group 7 seconds 2.2
+
+
+xgb_direct_tuned h 6 k 1 group 0 seconds 11.8
+
+
+xgb_direct_tuned h 6 k 8 group 0 seconds 0.8
+xgb_direct_tuned h 6 k 8 group 1 seconds 1.4
+xgb_direct_tuned h 6 k 8 group 2 seconds 2.8
+xgb_direct_tuned h 6 k 8 group 3 seconds 0.6
+xgb_direct_tuned h 6 k 8 group 4 seconds 2.2
+xgb_direct_tuned h 6 k 8 group 5 seconds 0.8
+xgb_direct_tuned h 6 k 8 group 6 seconds 1.5
+xgb_direct_tuned h 6 k 8 group 7 seconds 2.4
+
+
+xgb_direct_tuned h 7 k 1 group 0 seconds 16.3
+
+
+xgb_direct_tuned h 7 k 8 group 0 seconds 1.3
+xgb_direct_tuned h 7 k 8 group 1 seconds 2.1
+xgb_direct_tuned h 7 k 8 group 2 seconds 4.2
+xgb_direct_tuned h 7 k 8 group 3 seconds 0.9
+xgb_direct_tuned h 7 k 8 group 4 seconds 3.0
+xgb_direct_tuned h 7 k 8 group 5 seconds 1.1
+xgb_direct_tuned h 7 k 8 group 6 seconds 2.1
+xgb_direct_tuned h 7 k 8 group 7 seconds 3.3
+
+
+xgb_direct_tuned h 8 k 1 group 0 seconds 12.1
+
+
+xgb_direct_tuned h 8 k 8 group 0 seconds 0.9
+xgb_direct_tuned h 8 k 8 group 1 seconds 1.5
+xgb_direct_tuned h 8 k 8 group 2 seconds 3.1
+xgb_direct_tuned h 8 k 8 group 3 seconds 0.6
+xgb_direct_tuned h 8 k 8 group 4 seconds 2.2
+xgb_direct_tuned h 8 k 8 group 5 seconds 0.8
+xgb_direct_tuned h 8 k 8 group 6 seconds 1.5
+xgb_direct_tuned h 8 k 8 group 7 seconds 2.4
+
+
+
+
+Независимая оценка test получена до переобучения на всей доступной размеченной истории. Этот test ранее изучался в проекте и не является новым слепым holdout. Коэффициенты, способ калибровки и вариант модели зафиксированы до test. Train включает бывшую val.
+
+
+GPU обязателен: CatBoost CUDA и CuPy проверены.
+
+
+Маршрутов: 1000 Выходы: /kaggle/working/cluster_experiment_9a9972a55222334e CatBoost: GPU
+
+
+
+
+xgb_residual_tuned h 1 k 1 group 0 seconds 80.3
+
+
+Test закрыт. Калибровка и выбор используют только периоды до test.
+xgb_residual_tuned h 1 k 8 group -1 seconds 80.4
+xgb_residual_tuned h 1 k 8 group 0 seconds 18.4
+xgb_residual_tuned h 1 k 8 group 1 seconds 16.3
+xgb_residual_tuned h 1 k 8 group 2 seconds 6.1
+xgb_residual_tuned h 1 k 8 group 3 seconds 11.7
+xgb_residual_tuned h 1 k 8 group 4 seconds 19.3
+xgb_residual_tuned h 1 k 8 group 6 seconds 12.4
+xgb_residual_tuned h 1 k 8 group 7 seconds 7.4
+
+
+Test закрыт. Калибровка и выбор используют только периоды до test.
+xgb_residual_tuned h 2 k 1 group 0 seconds 20.1
+
+
+Test закрыт. Калибровка и выбор используют только периоды до test.
+xgb_residual_tuned h 2 k 8 group -1 seconds 20.8
+xgb_residual_tuned h 2 k 8 group 0 seconds 4.8
+xgb_residual_tuned h 2 k 8 group 1 seconds 4.1
+xgb_residual_tuned h 2 k 8 group 2 seconds 1.3
+xgb_residual_tuned h 2 k 8 group 3 seconds 2.9
+xgb_residual_tuned h 2 k 8 group 4 seconds 5.1
+xgb_residual_tuned h 2 k 8 group 6 seconds 3.1
+xgb_residual_tuned h 2 k 8 group 7 seconds 1.8
+
+
+Test закрыт. Калибровка и выбор используют только периоды до test.
+xgb_residual_tuned h 3 k 1 group 0 seconds 30.7
+
+
+Test закрыт. Калибровка и выбор используют только периоды до test.
+xgb_residual_tuned h 3 k 8 group -1 seconds 33.1
+xgb_residual_tuned h 3 k 8 group 0 seconds 7.4
+xgb_residual_tuned h 3 k 8 group 1 seconds 6.3
+xgb_residual_tuned h 3 k 8 group 2 seconds 2.2
+xgb_residual_tuned h 3 k 8 group 3 seconds 4.4
+xgb_residual_tuned h 3 k 8 group 4 seconds 7.6
+xgb_residual_tuned h 3 k 8 group 6 seconds 4.7
+xgb_residual_tuned h 3 k 8 group 7 seconds 2.8
+
+
+Test закрыт. Калибровка и выбор используют только периоды до test.
+xgb_residual_tuned h 4 k 1 group 0 seconds 22.3
+
+
+Test закрыт. Калибровка и выбор используют только периоды до test.
+xgb_residual_tuned h 4 k 8 group -1 seconds 23.2
+xgb_residual_tuned h 4 k 8 group 0 seconds 5.6
+xgb_residual_tuned h 4 k 8 group 1 seconds 4.8
+xgb_residual_tuned h 4 k 8 group 2 seconds 1.7
+xgb_residual_tuned h 4 k 8 group 3 seconds 3.5
+xgb_residual_tuned h 4 k 8 group 4 seconds 5.6
+xgb_residual_tuned h 4 k 8 group 6 seconds 3.5
+xgb_residual_tuned h 4 k 8 group 7 seconds 2.1
+
+
+Test закрыт. Калибровка и выбор используют только периоды до test.
+xgb_residual_tuned h 5 k 1 group 0 seconds 16.7
+
+
+Test закрыт. Калибровка и выбор используют только периоды до test.
+xgb_residual_tuned h 5 k 8 group -1 seconds 17.3
+xgb_residual_tuned h 5 k 8 group 0 seconds 4.1
+xgb_residual_tuned h 5 k 8 group 1 seconds 3.5
+xgb_residual_tuned h 5 k 8 group 2 seconds 1.2
+xgb_residual_tuned h 5 k 8 group 3 seconds 2.6
+xgb_residual_tuned h 5 k 8 group 4 seconds 4.4
+xgb_residual_tuned h 5 k 8 group 6 seconds 2.7
+xgb_residual_tuned h 5 k 8 group 7 seconds 1.6
+
+
+Test закрыт. Калибровка и выбор используют только периоды до test.
+xgb_residual_tuned h 6 k 1 group 0 seconds 8.4
+
+
+Test закрыт. Калибровка и выбор используют только периоды до test.
+xgb_residual_tuned h 6 k 8 group -1 seconds 8.6
+xgb_residual_tuned h 6 k 8 group 0 seconds 1.8
+xgb_residual_tuned h 6 k 8 group 1 seconds 1.5
+xgb_residual_tuned h 6 k 8 group 2 seconds 0.4
+xgb_residual_tuned h 6 k 8 group 3 seconds 1.1
+xgb_residual_tuned h 6 k 8 group 4 seconds 1.9
+xgb_residual_tuned h 6 k 8 group 6 seconds 1.1
+xgb_residual_tuned h 6 k 8 group 7 seconds 0.6
+
+
+Test закрыт. Калибровка и выбор используют только периоды до test.
+xgb_residual_tuned h 7 k 1 group 0 seconds 8.4
+
+
+Test закрыт. Калибровка и выбор используют только периоды до test.
+xgb_residual_tuned h 7 k 8 group -1 seconds 8.7
+xgb_residual_tuned h 7 k 8 group 0 seconds 1.9
+xgb_residual_tuned h 7 k 8 group 1 seconds 1.5
+xgb_residual_tuned h 7 k 8 group 2 seconds 0.4
+xgb_residual_tuned h 7 k 8 group 3 seconds 1.1
+xgb_residual_tuned h 7 k 8 group 4 seconds 1.9
+xgb_residual_tuned h 7 k 8 group 6 seconds 1.2
+xgb_residual_tuned h 7 k 8 group 7 seconds 0.6
+
+
+Test закрыт. Калибровка и выбор используют только периоды до test.
+xgb_residual_tuned h 8 k 1 group 0 seconds 12.8
+
+
+Test закрыт. Калибровка и выбор используют только периоды до test.
+xgb_residual_tuned h 8 k 8 group -1 seconds 12.7
+xgb_residual_tuned h 8 k 8 group 0 seconds 3.1
+xgb_residual_tuned h 8 k 8 group 1 seconds 2.5
+xgb_residual_tuned h 8 k 8 group 2 seconds 0.8
+xgb_residual_tuned h 8 k 8 group 3 seconds 1.8
+xgb_residual_tuned h 8 k 8 group 4 seconds 3.2
+xgb_residual_tuned h 8 k 8 group 6 seconds 1.9
+xgb_residual_tuned h 8 k 8 group 7 seconds 1.1
+
+
+Test закрыт. Калибровка и выбор используют только периоды до test.
+
+
+
+xgb_residual_tuned h 1 k 1 group 0 seconds 87.1
+
+
+Test закрыт. Калибровка и выбор используют только периоды до test.
+xgb_residual_tuned h 1 k 8 group -1 seconds 88.1
+xgb_residual_tuned h 1 k 8 group 0 seconds 11.3
+xgb_residual_tuned h 1 k 8 group 1 seconds 8.9
+xgb_residual_tuned h 1 k 8 group 2 seconds 11.0
+xgb_residual_tuned h 1 k 8 group 3 seconds 28.6
+xgb_residual_tuned h 1 k 8 group 4 seconds 20.4
+xgb_residual_tuned h 1 k 8 group 5 seconds 6.3
+xgb_residual_tuned h 1 k 8 group 6 seconds 13.6
+
+
+Test закрыт. Калибровка и выбор используют только периоды до test.
+xgb_residual_tuned h 2 k 1 group 0 seconds 22.4
+
+
+Test закрыт. Калибровка и выбор используют только периоды до test.
+xgb_residual_tuned h 2 k 8 group -1 seconds 23.0
+xgb_residual_tuned h 2 k 8 group 0 seconds 2.9
+xgb_residual_tuned h 2 k 8 group 1 seconds 2.1
+xgb_residual_tuned h 2 k 8 group 2 seconds 2.7
+xgb_residual_tuned h 2 k 8 group 3 seconds 7.5
+xgb_residual_tuned h 2 k 8 group 4 seconds 5.2
+xgb_residual_tuned h 2 k 8 group 5 seconds 1.4
+xgb_residual_tuned h 2 k 8 group 6 seconds 3.3
+
+
+Test закрыт. Калибровка и выбор используют только периоды до test.
+xgb_residual_tuned h 3 k 1 group 0 seconds 34.2
+
+
+Test закрыт. Калибровка и выбор используют только периоды до test.
+xgb_residual_tuned h 3 k 8 group -1 seconds 35.8
+xgb_residual_tuned h 3 k 8 group 0 seconds 4.4
+xgb_residual_tuned h 3 k 8 group 1 seconds 3.3
+xgb_residual_tuned h 3 k 8 group 2 seconds 4.2
+xgb_residual_tuned h 3 k 8 group 3 seconds 11.0
+xgb_residual_tuned h 3 k 8 group 4 seconds 7.8
+xgb_residual_tuned h 3 k 8 group 5 seconds 2.3
+xgb_residual_tuned h 3 k 8 group 6 seconds 5.2
+
+
+Test закрыт. Калибровка и выбор используют только периоды до test.
+xgb_residual_tuned h 4 k 1 group 0 seconds 24.8
+
+
+Test закрыт. Калибровка и выбор используют только периоды до test.
+xgb_residual_tuned h 4 k 8 group -1 seconds 25.6
+xgb_residual_tuned h 4 k 8 group 0 seconds 3.3
+xgb_residual_tuned h 4 k 8 group 1 seconds 2.6
+xgb_residual_tuned h 4 k 8 group 2 seconds 3.2
+xgb_residual_tuned h 4 k 8 group 3 seconds 8.4
+xgb_residual_tuned h 4 k 8 group 4 seconds 6.0
+xgb_residual_tuned h 4 k 8 group 5 seconds 1.8
+xgb_residual_tuned h 4 k 8 group 6 seconds 3.9
+
+
+Test закрыт. Калибровка и выбор используют только периоды до test.
+xgb_residual_tuned h 5 k 1 group 0 seconds 18.9
+
+
+Test закрыт. Калибровка и выбор используют только периоды до test.
+xgb_residual_tuned h 5 k 8 group -1 seconds 19.2
+xgb_residual_tuned h 5 k 8 group 0 seconds 2.5
+xgb_residual_tuned h 5 k 8 group 1 seconds 1.9
+xgb_residual_tuned h 5 k 8 group 2 seconds 2.4
+xgb_residual_tuned h 5 k 8 group 3 seconds 6.4
+xgb_residual_tuned h 5 k 8 group 4 seconds 4.7
+xgb_residual_tuned h 5 k 8 group 5 seconds 1.3
+xgb_residual_tuned h 5 k 8 group 6 seconds 3.0
+
+
+Test закрыт. Калибровка и выбор используют только периоды до test.
+xgb_residual_tuned h 6 k 1 group 0 seconds 9.4
+
+
+Test закрыт. Калибровка и выбор используют только периоды до test.
+xgb_residual_tuned h 6 k 8 group -1 seconds 9.4
+xgb_residual_tuned h 6 k 8 group 0 seconds 1.0
+xgb_residual_tuned h 6 k 8 group 1 seconds 0.7
+xgb_residual_tuned h 6 k 8 group 2 seconds 1.0
+xgb_residual_tuned h 6 k 8 group 3 seconds 2.9
+xgb_residual_tuned h 6 k 8 group 4 seconds 2.0
+xgb_residual_tuned h 6 k 8 group 5 seconds 0.4
+xgb_residual_tuned h 6 k 8 group 6 seconds 1.2
+
+
+Test закрыт. Калибровка и выбор используют только периоды до test.
+xgb_residual_tuned h 7 k 1 group 0 seconds 9.8
+
+
+Test закрыт. Калибровка и выбор используют только периоды до test.
+xgb_residual_tuned h 7 k 8 group -1 seconds 9.2
+xgb_residual_tuned h 7 k 8 group 0 seconds 1.1
+xgb_residual_tuned h 7 k 8 group 1 seconds 0.7
+xgb_residual_tuned h 7 k 8 group 2 seconds 1.0
+xgb_residual_tuned h 7 k 8 group 3 seconds 3.0
+xgb_residual_tuned h 7 k 8 group 4 seconds 2.1
+xgb_residual_tuned h 7 k 8 group 5 seconds 0.4
+xgb_residual_tuned h 7 k 8 group 6 seconds 1.4
+
+
+Test закрыт. Калибровка и выбор используют только периоды до test.
+xgb_residual_tuned h 8 k 1 group 0 seconds 13.7
+
+
+Test закрыт. Калибровка и выбор используют только периоды до test.
+xgb_residual_tuned h 8 k 8 group -1 seconds 13.8
+xgb_residual_tuned h 8 k 8 group 0 seconds 1.7
+xgb_residual_tuned h 8 k 8 group 1 seconds 1.3
+xgb_residual_tuned h 8 k 8 group 2 seconds 1.6
+xgb_residual_tuned h 8 k 8 group 3 seconds 4.6
+xgb_residual_tuned h 8 k 8 group 4 seconds 3.3
+xgb_residual_tuned h 8 k 8 group 5 seconds 0.8
+xgb_residual_tuned h 8 k 8 group 6 seconds 2.1
+
+
+Test закрыт. Калибровка и выбор используют только периоды до test.
+
+
+
+
+Победитель выбран до test: cat_k8 horizon
+
+
+xgb_residual_tuned h 1 k 1 group 0 seconds 96.1
+
+
+xgb_residual_tuned h 1 k 8 group 0 seconds 7.7
+xgb_residual_tuned h 1 k 8 group 1 seconds 13.2
+xgb_residual_tuned h 1 k 8 group 2 seconds 24.3
+xgb_residual_tuned h 1 k 8 group 3 seconds 6.3
+xgb_residual_tuned h 1 k 8 group 4 seconds 18.3
+xgb_residual_tuned h 1 k 8 group 5 seconds 7.8
+xgb_residual_tuned h 1 k 8 group 6 seconds 13.1
+xgb_residual_tuned h 1 k 8 group 7 seconds 19.6
+
+
+xgb_residual_tuned h 2 k 1 group 0 seconds 24.7
+
+
+xgb_residual_tuned h 2 k 8 group 0 seconds 1.9
+xgb_residual_tuned h 2 k 8 group 1 seconds 3.2
+xgb_residual_tuned h 2 k 8 group 2 seconds 6.2
+xgb_residual_tuned h 2 k 8 group 3 seconds 1.4
+xgb_residual_tuned h 2 k 8 group 4 seconds 4.6
+xgb_residual_tuned h 2 k 8 group 5 seconds 1.8
+xgb_residual_tuned h 2 k 8 group 6 seconds 3.3
+xgb_residual_tuned h 2 k 8 group 7 seconds 5.0
+
+
+xgb_residual_tuned h 3 k 1 group 0 seconds 37.7
+
+
+xgb_residual_tuned h 3 k 8 group 0 seconds 3.0
+xgb_residual_tuned h 3 k 8 group 1 seconds 5.2
+xgb_residual_tuned h 3 k 8 group 2 seconds 9.7
+xgb_residual_tuned h 3 k 8 group 3 seconds 2.3
+xgb_residual_tuned h 3 k 8 group 4 seconds 7.1
+xgb_residual_tuned h 3 k 8 group 5 seconds 2.9
+xgb_residual_tuned h 3 k 8 group 6 seconds 5.0
+xgb_residual_tuned h 3 k 8 group 7 seconds 7.5
+
+
+xgb_residual_tuned h 4 k 1 group 0 seconds 27.1
+
+
+xgb_residual_tuned h 4 k 8 group 0 seconds 2.3
+xgb_residual_tuned h 4 k 8 group 1 seconds 3.8
+xgb_residual_tuned h 4 k 8 group 2 seconds 7.2
+xgb_residual_tuned h 4 k 8 group 3 seconds 1.7
+xgb_residual_tuned h 4 k 8 group 4 seconds 5.5
+xgb_residual_tuned h 4 k 8 group 5 seconds 2.3
+xgb_residual_tuned h 4 k 8 group 6 seconds 3.8
+xgb_residual_tuned h 4 k 8 group 7 seconds 5.8
+
+
+xgb_residual_tuned h 5 k 1 group 0 seconds 20.7
+
+
+xgb_residual_tuned h 5 k 8 group 0 seconds 1.7
+xgb_residual_tuned h 5 k 8 group 1 seconds 2.7
+xgb_residual_tuned h 5 k 8 group 2 seconds 5.4
+xgb_residual_tuned h 5 k 8 group 3 seconds 1.2
+xgb_residual_tuned h 5 k 8 group 4 seconds 4.0
+xgb_residual_tuned h 5 k 8 group 5 seconds 1.6
+xgb_residual_tuned h 5 k 8 group 6 seconds 2.8
+xgb_residual_tuned h 5 k 8 group 7 seconds 4.4
+
+
+xgb_residual_tuned h 6 k 1 group 0 seconds 10.0
+
+
+xgb_residual_tuned h 6 k 8 group 0 seconds 0.7
+xgb_residual_tuned h 6 k 8 group 1 seconds 1.2
+xgb_residual_tuned h 6 k 8 group 2 seconds 2.4
+xgb_residual_tuned h 6 k 8 group 3 seconds 0.4
+xgb_residual_tuned h 6 k 8 group 4 seconds 1.9
+xgb_residual_tuned h 6 k 8 group 5 seconds 0.6
+xgb_residual_tuned h 6 k 8 group 6 seconds 1.2
+xgb_residual_tuned h 6 k 8 group 7 seconds 1.9
+
+
+xgb_residual_tuned h 7 k 1 group 0 seconds 10.1
+
+
+xgb_residual_tuned h 7 k 8 group 0 seconds 0.6
+xgb_residual_tuned h 7 k 8 group 1 seconds 1.2
+xgb_residual_tuned h 7 k 8 group 2 seconds 2.4
+xgb_residual_tuned h 7 k 8 group 3 seconds 0.4
+xgb_residual_tuned h 7 k 8 group 4 seconds 1.9
+xgb_residual_tuned h 7 k 8 group 5 seconds 0.6
+xgb_residual_tuned h 7 k 8 group 6 seconds 1.3
+xgb_residual_tuned h 7 k 8 group 7 seconds 2.0
+
+
+xgb_residual_tuned h 8 k 1 group 0 seconds 15.7
+
+
+xgb_residual_tuned h 8 k 8 group 0 seconds 1.3
+xgb_residual_tuned h 8 k 8 group 1 seconds 2.0
+xgb_residual_tuned h 8 k 8 group 2 seconds 4.0
+xgb_residual_tuned h 8 k 8 group 3 seconds 0.8
+xgb_residual_tuned h 8 k 8 group 4 seconds 3.0
+xgb_residual_tuned h 8 k 8 group 5 seconds 1.1
+xgb_residual_tuned h 8 k 8 group 6 seconds 2.0
+xgb_residual_tuned h 8 k 8 group 7 seconds 3.2
+
+
+
+
+Независимая оценка test получена до переобучения на всей доступной размеченной истории. Этот test ранее изучался в проекте и не является новым слепым holdout. Коэффициенты, способ калибровки и вариант модели зафиксированы до test. Train включает бывшую val.
+
+
+GPU обязателен: CatBoost CUDA и CuPy проверены.
+
+
+Маршрутов: 1000 Выходы: /kaggle/working/cluster_experiment_20432bf935e0d065 CatBoost: GPU
+
+
+
+
+Default metric period is 5 because MAE is/are not implemented for GPU
+
+catboost_direct_compact h 1 k 1 group 0 seconds 32.4
+
+
+Test закрыт. Калибровка и выбор используют только периоды до test.
+
+Default metric period is 5 because MAE is/are not implemented for GPU
+
+catboost_direct_compact h 1 k 8 group -1 seconds 32.0
+
+Default metric period is 5 because MAE is/are not implemented for GPU
+
+catboost_direct_compact h 1 k 8 group 0 seconds 8.4
+
+Default metric period is 5 because MAE is/are not implemented for GPU
+
+catboost_direct_compact h 1 k 8 group 1 seconds 7.4
+
+Default metric period is 5 because MAE is/are not implemented for GPU
+
+catboost_direct_compact h 1 k 8 group 2 seconds 3.4
+
+Default metric period is 5 because MAE is/are not implemented for GPU
+
+catboost_direct_compact h 1 k 8 group 3 seconds 5.5
+
+Default metric period is 5 because MAE is/are not implemented for GPU
+
+catboost_direct_compact h 1 k 8 group 4 seconds 8.7
+
+Default metric period is 5 because MAE is/are not implemented for GPU
+
+catboost_direct_compact h 1 k 8 group 6 seconds 5.8
+
+Default metric period is 5 because MAE is/are not implemented for GPU
+
+catboost_direct_compact h 1 k 8 group 7 seconds 4.0
+
+
+Test закрыт. Калибровка и выбор используют только периоды до test.
+
+Default metric period is 5 because MAE is/are not implemented for GPU
+
+catboost_direct_compact h 2 k 1 group 0 seconds 14.4
+
+
+Test закрыт. Калибровка и выбор используют только периоды до test.
+
+Default metric period is 5 because MAE is/are not implemented for GPU
+
+catboost_direct_compact h 2 k 8 group -1 seconds 14.4
+
+Default metric period is 5 because MAE is/are not implemented for GPU
+
+catboost_direct_compact h 2 k 8 group 0 seconds 3.9
+
+Default metric period is 5 because MAE is/are not implemented for GPU
+
+catboost_direct_compact h 2 k 8 group 1 seconds 3.4
+
+Default metric period is 5 because MAE is/are not implemented for GPU
+
+catboost_direct_compact h 2 k 8 group 2 seconds 1.6
+
+Default metric period is 5 because MAE is/are not implemented for GPU
+
+catboost_direct_compact h 2 k 8 group 3 seconds 2.5
+
+Default metric period is 5 because MAE is/are not implemented for GPU
+
+catboost_direct_compact h 2 k 8 group 4 seconds 4.1
+
+Default metric period is 5 because MAE is/are not implemented for GPU
+
+catboost_direct_compact h 2 k 8 group 6 seconds 2.7
+
+Default metric period is 5 because MAE is/are not implemented for GPU
+
+catboost_direct_compact h 2 k 8 group 7 seconds 2.0
+
+
+Test закрыт. Калибровка и выбор используют только периоды до test.
+
+Default metric period is 5 because MAE is/are not implemented for GPU
+
+catboost_direct_compact h 3 k 1 group 0 seconds 23.4
+
+
+Test закрыт. Калибровка и выбор используют только периоды до test.
+
+Default metric period is 5 because MAE is/are not implemented for GPU
+
+catboost_direct_compact h 3 k 8 group -1 seconds 23.4
+
+Default metric period is 5 because MAE is/are not implemented for GPU
+
+catboost_direct_compact h 3 k 8 group 0 seconds 6.4
+
+Default metric period is 5 because MAE is/are not implemented for GPU
+
+catboost_direct_compact h 3 k 8 group 1 seconds 5.5
+
+Default metric period is 5 because MAE is/are not implemented for GPU
+
+catboost_direct_compact h 3 k 8 group 2 seconds 2.6
+
+Default metric period is 5 because MAE is/are not implemented for GPU
+
+catboost_direct_compact h 3 k 8 group 3 seconds 4.1
+
+Default metric period is 5 because MAE is/are not implemented for GPU
+
+catboost_direct_compact h 3 k 8 group 4 seconds 6.5
+
+Default metric period is 5 because MAE is/are not implemented for GPU
+
+catboost_direct_compact h 3 k 8 group 6 seconds 4.3
+
+Default metric period is 5 because MAE is/are not implemented for GPU
+
+catboost_direct_compact h 3 k 8 group 7 seconds 3.1
+
+
+Test закрыт. Калибровка и выбор используют только периоды до test.
+
+Default metric period is 5 because MAE is/are not implemented for GPU
+
+catboost_direct_compact h 4 k 1 group 0 seconds 15.5
+
+
+Test закрыт. Калибровка и выбор используют только периоды до test.
+
+Default metric period is 5 because MAE is/are not implemented for GPU
+
+catboost_direct_compact h 4 k 8 group -1 seconds 15.6
+
+Default metric period is 5 because MAE is/are not implemented for GPU
+
+catboost_direct_compact h 4 k 8 group 0 seconds 4.1
+
+Default metric period is 5 because MAE is/are not implemented for GPU
+
+catboost_direct_compact h 4 k 8 group 1 seconds 3.6
+
+Default metric period is 5 because MAE is/are not implemented for GPU
+
+catboost_direct_compact h 4 k 8 group 2 seconds 1.8
+
+Default metric period is 5 because MAE is/are not implemented for GPU
+
+catboost_direct_compact h 4 k 8 group 3 seconds 2.7
+
+Default metric period is 5 because MAE is/are not implemented for GPU
+
+catboost_direct_compact h 4 k 8 group 4 seconds 4.3
+
+Default metric period is 5 because MAE is/are not implemented for GPU
+
+catboost_direct_compact h 4 k 8 group 6 seconds 2.9
+
+Default metric period is 5 because MAE is/are not implemented for GPU
+
+catboost_direct_compact h 4 k 8 group 7 seconds 2.1
+
+
+Test закрыт. Калибровка и выбор используют только периоды до test.
+
+Default metric period is 5 because MAE is/are not implemented for GPU
+
+catboost_direct_compact h 5 k 1 group 0 seconds 15.1
+
+
+Test закрыт. Калибровка и выбор используют только периоды до test.
+
+Default metric period is 5 because MAE is/are not implemented for GPU
+
+catboost_direct_compact h 5 k 8 group -1 seconds 15.1
+
+Default metric period is 5 because MAE is/are not implemented for GPU
+
+catboost_direct_compact h 5 k 8 group 0 seconds 4.2
+
+Default metric period is 5 because MAE is/are not implemented for GPU
+
+catboost_direct_compact h 5 k 8 group 1 seconds 3.6
+
+Default metric period is 5 because MAE is/are not implemented for GPU
+
+catboost_direct_compact h 5 k 8 group 2 seconds 1.7
+
+Default metric period is 5 because MAE is/are not implemented for GPU
+
+catboost_direct_compact h 5 k 8 group 3 seconds 2.7
+
+Default metric period is 5 because MAE is/are not implemented for GPU
+
+catboost_direct_compact h 5 k 8 group 4 seconds 4.3
+
+Default metric period is 5 because MAE is/are not implemented for GPU
+
+catboost_direct_compact h 5 k 8 group 6 seconds 2.9
+
+Default metric period is 5 because MAE is/are not implemented for GPU
+
+catboost_direct_compact h 5 k 8 group 7 seconds 2.1
+
+
+Test закрыт. Калибровка и выбор используют только периоды до test.
+
+Default metric period is 5 because MAE is/are not implemented for GPU
+
+catboost_direct_compact h 6 k 1 group 0 seconds 7.3
+
+
+Test закрыт. Калибровка и выбор используют только периоды до test.
+
+Default metric period is 5 because MAE is/are not implemented for GPU
+
+catboost_direct_compact h 6 k 8 group -1 seconds 7.3
+
+Default metric period is 5 because MAE is/are not implemented for GPU
+
+catboost_direct_compact h 6 k 8 group 0 seconds 2.1
+
+Default metric period is 5 because MAE is/are not implemented for GPU
+
+catboost_direct_compact h 6 k 8 group 1 seconds 1.7
+
+Default metric period is 5 because MAE is/are not implemented for GPU
+
+catboost_direct_compact h 6 k 8 group 2 seconds 0.9
+
+Default metric period is 5 because MAE is/are not implemented for GPU
+
+catboost_direct_compact h 6 k 8 group 3 seconds 1.3
+
+Default metric period is 5 because MAE is/are not implemented for GPU
+
+catboost_direct_compact h 6 k 8 group 4 seconds 2.2
+
+Default metric period is 5 because MAE is/are not implemented for GPU
+
+catboost_direct_compact h 6 k 8 group 6 seconds 1.4
+
+Default metric period is 5 because MAE is/are not implemented for GPU
+
+catboost_direct_compact h 6 k 8 group 7 seconds 1.2
+
+
+Test закрыт. Калибровка и выбор используют только периоды до test.
+
+Default metric period is 5 because MAE is/are not implemented for GPU
+
+catboost_direct_compact h 7 k 1 group 0 seconds 8.2
+
+
+Test закрыт. Калибровка и выбор используют только периоды до test.
+
+Default metric period is 5 because MAE is/are not implemented for GPU
+
+catboost_direct_compact h 7 k 8 group -1 seconds 8.1
+
+Default metric period is 5 because MAE is/are not implemented for GPU
+
+catboost_direct_compact h 7 k 8 group 0 seconds 2.3
+
+Default metric period is 5 because MAE is/are not implemented for GPU
+
+catboost_direct_compact h 7 k 8 group 1 seconds 2.0
+
+Default metric period is 5 because MAE is/are not implemented for GPU
+
+catboost_direct_compact h 7 k 8 group 2 seconds 1.0
+
+Default metric period is 5 because MAE is/are not implemented for GPU
+
+catboost_direct_compact h 7 k 8 group 3 seconds 1.5
+
+Default metric period is 5 because MAE is/are not implemented for GPU
+
+catboost_direct_compact h 7 k 8 group 4 seconds 2.5
+
+Default metric period is 5 because MAE is/are not implemented for GPU
+
+catboost_direct_compact h 7 k 8 group 6 seconds 1.5
+
+Default metric period is 5 because MAE is/are not implemented for GPU
+
+catboost_direct_compact h 7 k 8 group 7 seconds 1.2
+
+
+Test закрыт. Калибровка и выбор используют только периоды до test.
+
+Default metric period is 5 because MAE is/are not implemented for GPU
+
+catboost_direct_compact h 8 k 1 group 0 seconds 23.2
+
+
+Test закрыт. Калибровка и выбор используют только периоды до test.
+
+Default metric period is 5 because MAE is/are not implemented for GPU
+
+catboost_direct_compact h 8 k 8 group -1 seconds 23.0
+
+Default metric period is 5 because MAE is/are not implemented for GPU
+
+catboost_direct_compact h 8 k 8 group 0 seconds 6.3
+
+Default metric period is 5 because MAE is/are not implemented for GPU
+
+catboost_direct_compact h 8 k 8 group 1 seconds 5.5
+
+Default metric period is 5 because MAE is/are not implemented for GPU
+
+catboost_direct_compact h 8 k 8 group 2 seconds 2.6
+
+Default metric period is 5 because MAE is/are not implemented for GPU
+
+catboost_direct_compact h 8 k 8 group 3 seconds 4.1
+
+Default metric period is 5 because MAE is/are not implemented for GPU
+
+catboost_direct_compact h 8 k 8 group 4 seconds 6.5
+
+Default metric period is 5 because MAE is/are not implemented for GPU
+
+catboost_direct_compact h 8 k 8 group 6 seconds 4.3
+
+Default metric period is 5 because MAE is/are not implemented for GPU
+
+catboost_direct_compact h 8 k 8 group 7 seconds 3.2
+
+
+Test закрыт. Калибровка и выбор используют только периоды до test.
+
+
+
+Default metric period is 5 because MAE is/are not implemented for GPU
+
+catboost_direct_compact h 1 k 1 group 0 seconds 35.4
+
+
+Test закрыт. Калибровка и выбор используют только периоды до test.
+
+Default metric period is 5 because MAE is/are not implemented for GPU
+
+catboost_direct_compact h 1 k 8 group -1 seconds 35.5
+
+Default metric period is 5 because MAE is/are not implemented for GPU
+
+catboost_direct_compact h 1 k 8 group 0 seconds 5.4
+
+Default metric period is 5 because MAE is/are not implemented for GPU
+
+catboost_direct_compact h 1 k 8 group 1 seconds 4.3
+
+Default metric period is 5 because MAE is/are not implemented for GPU
+
+catboost_direct_compact h 1 k 8 group 2 seconds 5.2
+
+Default metric period is 5 because MAE is/are not implemented for GPU
+
+catboost_direct_compact h 1 k 8 group 3 seconds 12.3
+
+Default metric period is 5 because MAE is/are not implemented for GPU
+
+catboost_direct_compact h 1 k 8 group 4 seconds 9.1
+
+Default metric period is 5 because MAE is/are not implemented for GPU
+
+catboost_direct_compact h 1 k 8 group 5 seconds 3.5
+
+Default metric period is 5 because MAE is/are not implemented for GPU
+
+catboost_direct_compact h 1 k 8 group 6 seconds 6.3
+
+
+Test закрыт. Калибровка и выбор используют только периоды до test.
+
+Default metric period is 5 because MAE is/are not implemented for GPU
+
+catboost_direct_compact h 2 k 1 group 0 seconds 15.9
+
+
+Test закрыт. Калибровка и выбор используют только периоды до test.
+
+Default metric period is 5 because MAE is/are not implemented for GPU
+
+catboost_direct_compact h 2 k 8 group -1 seconds 16.0
+
+Default metric period is 5 because MAE is/are not implemented for GPU
+
+catboost_direct_compact h 2 k 8 group 0 seconds 2.6
+
+Default metric period is 5 because MAE is/are not implemented for GPU
+
+catboost_direct_compact h 2 k 8 group 1 seconds 2.2
+
+Default metric period is 5 because MAE is/are not implemented for GPU
+
+catboost_direct_compact h 2 k 8 group 2 seconds 2.5
+
+Default metric period is 5 because MAE is/are not implemented for GPU
+
+catboost_direct_compact h 2 k 8 group 3 seconds 5.9
+
+Default metric period is 5 because MAE is/are not implemented for GPU
+
+catboost_direct_compact h 2 k 8 group 4 seconds 4.3
+
+Default metric period is 5 because MAE is/are not implemented for GPU
+
+catboost_direct_compact h 2 k 8 group 5 seconds 1.7
+
+Default metric period is 5 because MAE is/are not implemented for GPU
+
+catboost_direct_compact h 2 k 8 group 6 seconds 3.0
+
+
+Test закрыт. Калибровка и выбор используют только периоды до test.
+
+Default metric period is 5 because MAE is/are not implemented for GPU
+
+catboost_direct_compact h 3 k 1 group 0 seconds 25.4
+
+
+Test закрыт. Калибровка и выбор используют только периоды до test.
+
+Default metric period is 5 because MAE is/are not implemented for GPU
+
+catboost_direct_compact h 3 k 8 group -1 seconds 26.0
+
+Default metric period is 5 because MAE is/are not implemented for GPU
+
+catboost_direct_compact h 3 k 8 group 0 seconds 4.2
+
+Default metric period is 5 because MAE is/are not implemented for GPU
+
+catboost_direct_compact h 3 k 8 group 1 seconds 3.5
+
+Default metric period is 5 because MAE is/are not implemented for GPU
+
+catboost_direct_compact h 3 k 8 group 2 seconds 4.0
+
+Default metric period is 5 because MAE is/are not implemented for GPU
+
+catboost_direct_compact h 3 k 8 group 3 seconds 9.2
+
+Default metric period is 5 because MAE is/are not implemented for GPU
+
+catboost_direct_compact h 3 k 8 group 4 seconds 6.7
+
+Default metric period is 5 because MAE is/are not implemented for GPU
+
+catboost_direct_compact h 3 k 8 group 5 seconds 2.8
+
+Default metric period is 5 because MAE is/are not implemented for GPU
+
+catboost_direct_compact h 3 k 8 group 6 seconds 4.7
+
+
+Test закрыт. Калибровка и выбор используют только периоды до test.
+
+Default metric period is 5 because MAE is/are not implemented for GPU
+
+catboost_direct_compact h 4 k 1 group 0 seconds 17.0
+
+
+Test закрыт. Калибровка и выбор используют только периоды до test.
+
+Default metric period is 5 because MAE is/are not implemented for GPU
+
+catboost_direct_compact h 4 k 8 group -1 seconds 17.1
+
+Default metric period is 5 because MAE is/are not implemented for GPU
+
+catboost_direct_compact h 4 k 8 group 0 seconds 2.7
+
+Default metric period is 5 because MAE is/are not implemented for GPU
+
+catboost_direct_compact h 4 k 8 group 1 seconds 2.2
+
+Default metric period is 5 because MAE is/are not implemented for GPU
+
+catboost_direct_compact h 4 k 8 group 2 seconds 2.6
+
+Default metric period is 5 because MAE is/are not implemented for GPU
+
+catboost_direct_compact h 4 k 8 group 3 seconds 6.1
+
+Default metric period is 5 because MAE is/are not implemented for GPU
+
+catboost_direct_compact h 4 k 8 group 4 seconds 4.5
+
+Default metric period is 5 because MAE is/are not implemented for GPU
+
+catboost_direct_compact h 4 k 8 group 5 seconds 1.8
+
+Default metric period is 5 because MAE is/are not implemented for GPU
+
+catboost_direct_compact h 4 k 8 group 6 seconds 3.2
+
+
+Test закрыт. Калибровка и выбор используют только периоды до test.
+
+Default metric period is 5 because MAE is/are not implemented for GPU
+
+catboost_direct_compact h 5 k 1 group 0 seconds 16.7
+
+
+Test закрыт. Калибровка и выбор используют только периоды до test.
+
+Default metric period is 5 because MAE is/are not implemented for GPU
+
+catboost_direct_compact h 5 k 8 group -1 seconds 16.7
+
+Default metric period is 5 because MAE is/are not implemented for GPU
+
+catboost_direct_compact h 5 k 8 group 0 seconds 2.8
+
+Default metric period is 5 because MAE is/are not implemented for GPU
+
+catboost_direct_compact h 5 k 8 group 1 seconds 2.2
+
+Default metric period is 5 because MAE is/are not implemented for GPU
+
+catboost_direct_compact h 5 k 8 group 2 seconds 2.7
+
+Default metric period is 5 because MAE is/are not implemented for GPU
+
+catboost_direct_compact h 5 k 8 group 3 seconds 6.1
+
+Default metric period is 5 because MAE is/are not implemented for GPU
+
+catboost_direct_compact h 5 k 8 group 4 seconds 4.4
+
+Default metric period is 5 because MAE is/are not implemented for GPU
+
+catboost_direct_compact h 5 k 8 group 5 seconds 1.8
+
+Default metric period is 5 because MAE is/are not implemented for GPU
+
+catboost_direct_compact h 5 k 8 group 6 seconds 3.1
+
+
+Test закрыт. Калибровка и выбор используют только периоды до test.
+
+Default metric period is 5 because MAE is/are not implemented for GPU
+
+catboost_direct_compact h 6 k 1 group 0 seconds 8.1
+
+
+Test закрыт. Калибровка и выбор используют только периоды до test.
+
+Default metric period is 5 because MAE is/are not implemented for GPU
+
+catboost_direct_compact h 6 k 8 group -1 seconds 7.9
+
+Default metric period is 5 because MAE is/are not implemented for GPU
+
+catboost_direct_compact h 6 k 8 group 0 seconds 1.5
+
+Default metric period is 5 because MAE is/are not implemented for GPU
+
+catboost_direct_compact h 6 k 8 group 1 seconds 1.2
+
+Default metric period is 5 because MAE is/are not implemented for GPU
+
+catboost_direct_compact h 6 k 8 group 2 seconds 1.3
+
+Default metric period is 5 because MAE is/are not implemented for GPU
+
+catboost_direct_compact h 6 k 8 group 3 seconds 3.0
+
+Default metric period is 5 because MAE is/are not implemented for GPU
+
+catboost_direct_compact h 6 k 8 group 4 seconds 2.2
+
+Default metric period is 5 because MAE is/are not implemented for GPU
+
+catboost_direct_compact h 6 k 8 group 5 seconds 1.0
+
+Default metric period is 5 because MAE is/are not implemented for GPU
+
+catboost_direct_compact h 6 k 8 group 6 seconds 1.6
+
+
+Test закрыт. Калибровка и выбор используют только периоды до test.
+
+Default metric period is 5 because MAE is/are not implemented for GPU
+
+catboost_direct_compact h 7 k 1 group 0 seconds 9.0
+
+
+Test закрыт. Калибровка и выбор используют только периоды до test.
+
+Default metric period is 5 because MAE is/are not implemented for GPU
+
+catboost_direct_compact h 7 k 8 group -1 seconds 9.0
+
+Default metric period is 5 because MAE is/are not implemented for GPU
+
+catboost_direct_compact h 7 k 8 group 0 seconds 1.6
+
+Default metric period is 5 because MAE is/are not implemented for GPU
+
+catboost_direct_compact h 7 k 8 group 1 seconds 1.3
+
+Default metric period is 5 because MAE is/are not implemented for GPU
+
+catboost_direct_compact h 7 k 8 group 2 seconds 1.5
+
+Default metric period is 5 because MAE is/are not implemented for GPU
+
+catboost_direct_compact h 7 k 8 group 3 seconds 3.4
+
+Default metric period is 5 because MAE is/are not implemented for GPU
+
+catboost_direct_compact h 7 k 8 group 4 seconds 2.4
+
+Default metric period is 5 because MAE is/are not implemented for GPU
+
+catboost_direct_compact h 7 k 8 group 5 seconds 1.1
+
+Default metric period is 5 because MAE is/are not implemented for GPU
+
+catboost_direct_compact h 7 k 8 group 6 seconds 1.7
+
+
+Test закрыт. Калибровка и выбор используют только периоды до test.
+
+Default metric period is 5 because MAE is/are not implemented for GPU
+
+catboost_direct_compact h 8 k 1 group 0 seconds 25.4
+
+
+Test закрыт. Калибровка и выбор используют только периоды до test.
+
+Default metric period is 5 because MAE is/are not implemented for GPU
+
+catboost_direct_compact h 8 k 8 group -1 seconds 25.0
+
+Default metric period is 5 because MAE is/are not implemented for GPU
+
+catboost_direct_compact h 8 k 8 group 0 seconds 4.2
+
+Default metric period is 5 because MAE is/are not implemented for GPU
+
+catboost_direct_compact h 8 k 8 group 1 seconds 3.3
+
+Default metric period is 5 because MAE is/are not implemented for GPU
+
+catboost_direct_compact h 8 k 8 group 2 seconds 3.9
+
+Default metric period is 5 because MAE is/are not implemented for GPU
+
+catboost_direct_compact h 8 k 8 group 3 seconds 9.1
+
+Default metric period is 5 because MAE is/are not implemented for GPU
+
+catboost_direct_compact h 8 k 8 group 4 seconds 6.7
+
+Default metric period is 5 because MAE is/are not implemented for GPU
+
+catboost_direct_compact h 8 k 8 group 5 seconds 2.7
+
+Default metric period is 5 because MAE is/are not implemented for GPU
+
+catboost_direct_compact h 8 k 8 group 6 seconds 4.7
+
+
+Test закрыт. Калибровка и выбор используют только периоды до test.
+
+
+
+
+Победитель выбран до test: cat_k8 global
+
+
+Default metric period is 5 because MAE is/are not implemented for GPU
+
+catboost_direct_compact h 1 k 1 group 0 seconds 38.7
+
+
+Default metric period is 5 because MAE is/are not implemented for GPU
+
+catboost_direct_compact h 1 k 8 group 0 seconds 4.1
+
+Default metric period is 5 because MAE is/are not implemented for GPU
+
+catboost_direct_compact h 1 k 8 group 1 seconds 6.0
+
+Default metric period is 5 because MAE is/are not implemented for GPU
+
+catboost_direct_compact h 1 k 8 group 2 seconds 10.8
+
+Default metric period is 5 because MAE is/are not implemented for GPU
+
+catboost_direct_compact h 1 k 8 group 3 seconds 3.4
+
+Default metric period is 5 because MAE is/are not implemented for GPU
+
+catboost_direct_compact h 1 k 8 group 4 seconds 8.2
+
+Default metric period is 5 because MAE is/are not implemented for GPU
+
+catboost_direct_compact h 1 k 8 group 5 seconds 3.9
+
+Default metric period is 5 because MAE is/are not implemented for GPU
+
+catboost_direct_compact h 1 k 8 group 6 seconds 6.0
+
+Default metric period is 5 because MAE is/are not implemented for GPU
+
+catboost_direct_compact h 1 k 8 group 7 seconds 8.8
+
+
+Default metric period is 5 because MAE is/are not implemented for GPU
+
+catboost_direct_compact h 2 k 1 group 0 seconds 17.2
+
+
+Default metric period is 5 because MAE is/are not implemented for GPU
+
+catboost_direct_compact h 2 k 8 group 0 seconds 2.0
+
+Default metric period is 5 because MAE is/are not implemented for GPU
+
+catboost_direct_compact h 2 k 8 group 1 seconds 2.8
+
+Default metric period is 5 because MAE is/are not implemented for GPU
+
+catboost_direct_compact h 2 k 8 group 2 seconds 5.0
+
+Default metric period is 5 because MAE is/are not implemented for GPU
+
+catboost_direct_compact h 2 k 8 group 3 seconds 1.7
+
+Default metric period is 5 because MAE is/are not implemented for GPU
+
+catboost_direct_compact h 2 k 8 group 4 seconds 3.9
+
+Default metric period is 5 because MAE is/are not implemented for GPU
+
+catboost_direct_compact h 2 k 8 group 5 seconds 1.9
+
+Default metric period is 5 because MAE is/are not implemented for GPU
+
+catboost_direct_compact h 2 k 8 group 6 seconds 2.9
+
+Default metric period is 5 because MAE is/are not implemented for GPU
+
+catboost_direct_compact h 2 k 8 group 7 seconds 4.1
+
+
+Default metric period is 5 because MAE is/are not implemented for GPU
+
+catboost_direct_compact h 3 k 1 group 0 seconds 28.0
+
+
+Default metric period is 5 because MAE is/are not implemented for GPU
+
+catboost_direct_compact h 3 k 8 group 0 seconds 3.2
+
+Default metric period is 5 because MAE is/are not implemented for GPU
+
+catboost_direct_compact h 3 k 8 group 1 seconds 4.5
+
+Default metric period is 5 because MAE is/are not implemented for GPU
+
+catboost_direct_compact h 3 k 8 group 2 seconds 8.1
+
+Default metric period is 5 because MAE is/are not implemented for GPU
+
+catboost_direct_compact h 3 k 8 group 3 seconds 2.7
+
+Default metric period is 5 because MAE is/are not implemented for GPU
+
+catboost_direct_compact h 3 k 8 group 4 seconds 6.2
+
+Default metric period is 5 because MAE is/are not implemented for GPU
+
+catboost_direct_compact h 3 k 8 group 5 seconds 3.1
+
+Default metric period is 5 because MAE is/are not implemented for GPU
+
+catboost_direct_compact h 3 k 8 group 6 seconds 4.6
+
+Default metric period is 5 because MAE is/are not implemented for GPU
+
+catboost_direct_compact h 3 k 8 group 7 seconds 6.7
+
+
+Default metric period is 5 because MAE is/are not implemented for GPU
+
+catboost_direct_compact h 4 k 1 group 0 seconds 18.7
+
+
+Default metric period is 5 because MAE is/are not implemented for GPU
+
+catboost_direct_compact h 4 k 8 group 0 seconds 2.1
+
+Default metric period is 5 because MAE is/are not implemented for GPU
+
+catboost_direct_compact h 4 k 8 group 1 seconds 2.9
+
+Default metric period is 5 because MAE is/are not implemented for GPU
+
+catboost_direct_compact h 4 k 8 group 2 seconds 5.3
+
+Default metric period is 5 because MAE is/are not implemented for GPU
+
+catboost_direct_compact h 4 k 8 group 3 seconds 1.8
+
+Default metric period is 5 because MAE is/are not implemented for GPU
+
+catboost_direct_compact h 4 k 8 group 4 seconds 4.0
+
+Default metric period is 5 because MAE is/are not implemented for GPU
+
+catboost_direct_compact h 4 k 8 group 5 seconds 2.1
+
+Default metric period is 5 because MAE is/are not implemented for GPU
+
+catboost_direct_compact h 4 k 8 group 6 seconds 3.0
+
+Default metric period is 5 because MAE is/are not implemented for GPU
+
+catboost_direct_compact h 4 k 8 group 7 seconds 4.4
+
+
+Default metric period is 5 because MAE is/are not implemented for GPU
+
+catboost_direct_compact h 5 k 1 group 0 seconds 18.0
+
+
+Default metric period is 5 because MAE is/are not implemented for GPU
+
+catboost_direct_compact h 5 k 8 group 0 seconds 2.1
+
+Default metric period is 5 because MAE is/are not implemented for GPU
+
+catboost_direct_compact h 5 k 8 group 1 seconds 2.9
+
+Default metric period is 5 because MAE is/are not implemented for GPU
+
+catboost_direct_compact h 5 k 8 group 2 seconds 5.3
+
+Default metric period is 5 because MAE is/are not implemented for GPU
+
+catboost_direct_compact h 5 k 8 group 3 seconds 1.9
+
+Default metric period is 5 because MAE is/are not implemented for GPU
+
+catboost_direct_compact h 5 k 8 group 4 seconds 4.0
+
+Default metric period is 5 because MAE is/are not implemented for GPU
+
+catboost_direct_compact h 5 k 8 group 5 seconds 2.0
+
+Default metric period is 5 because MAE is/are not implemented for GPU
+
+catboost_direct_compact h 5 k 8 group 6 seconds 3.0
+
+Default metric period is 5 because MAE is/are not implemented for GPU
+
+catboost_direct_compact h 5 k 8 group 7 seconds 4.3
+
+
+Default metric period is 5 because MAE is/are not implemented for GPU
+
+catboost_direct_compact h 6 k 1 group 0 seconds 8.7
+
+
+Default metric period is 5 because MAE is/are not implemented for GPU
+
+catboost_direct_compact h 6 k 8 group 0 seconds 1.1
+
+Default metric period is 5 because MAE is/are not implemented for GPU
+
+catboost_direct_compact h 6 k 8 group 1 seconds 1.4
+
+Default metric period is 5 because MAE is/are not implemented for GPU
+
+catboost_direct_compact h 6 k 8 group 2 seconds 2.4
+
+Default metric period is 5 because MAE is/are not implemented for GPU
+
+catboost_direct_compact h 6 k 8 group 3 seconds 0.9
+
+Default metric period is 5 because MAE is/are not implemented for GPU
+
+catboost_direct_compact h 6 k 8 group 4 seconds 2.0
+
+Default metric period is 5 because MAE is/are not implemented for GPU
+
+catboost_direct_compact h 6 k 8 group 5 seconds 1.1
+
+Default metric period is 5 because MAE is/are not implemented for GPU
+
+catboost_direct_compact h 6 k 8 group 6 seconds 1.5
+
+Default metric period is 5 because MAE is/are not implemented for GPU
+
+catboost_direct_compact h 6 k 8 group 7 seconds 2.1
+
+
+Default metric period is 5 because MAE is/are not implemented for GPU
+
+catboost_direct_compact h 7 k 1 group 0 seconds 9.9
+
+
+Default metric period is 5 because MAE is/are not implemented for GPU
+
+catboost_direct_compact h 7 k 8 group 0 seconds 1.2
+
+Default metric period is 5 because MAE is/are not implemented for GPU
+
+catboost_direct_compact h 7 k 8 group 1 seconds 1.6
+
+Default metric period is 5 because MAE is/are not implemented for GPU
+
+catboost_direct_compact h 7 k 8 group 2 seconds 2.8
+
+Default metric period is 5 because MAE is/are not implemented for GPU
+
+catboost_direct_compact h 7 k 8 group 3 seconds 1.0
+
+Default metric period is 5 because MAE is/are not implemented for GPU
+
+catboost_direct_compact h 7 k 8 group 4 seconds 2.2
+
+Default metric period is 5 because MAE is/are not implemented for GPU
+
+catboost_direct_compact h 7 k 8 group 5 seconds 1.2
+
+Default metric period is 5 because MAE is/are not implemented for GPU
+
+catboost_direct_compact h 7 k 8 group 6 seconds 1.7
+
+Default metric period is 5 because MAE is/are not implemented for GPU
+
+catboost_direct_compact h 7 k 8 group 7 seconds 2.3
+
+
+Default metric period is 5 because MAE is/are not implemented for GPU
+
+catboost_direct_compact h 8 k 1 group 0 seconds 27.6
+
+
+Default metric period is 5 because MAE is/are not implemented for GPU
+
+catboost_direct_compact h 8 k 8 group 0 seconds 3.2
+
+Default metric period is 5 because MAE is/are not implemented for GPU
+
+catboost_direct_compact h 8 k 8 group 1 seconds 4.5
+
+Default metric period is 5 because MAE is/are not implemented for GPU
+
+catboost_direct_compact h 8 k 8 group 2 seconds 8.0
+
+Default metric period is 5 because MAE is/are not implemented for GPU
+
+catboost_direct_compact h 8 k 8 group 3 seconds 2.7
+
+Default metric period is 5 because MAE is/are not implemented for GPU
+
+catboost_direct_compact h 8 k 8 group 4 seconds 6.0
+
+Default metric period is 5 because MAE is/are not implemented for GPU
+
+catboost_direct_compact h 8 k 8 group 5 seconds 3.1
+
+Default metric period is 5 because MAE is/are not implemented for GPU
+
+catboost_direct_compact h 8 k 8 group 6 seconds 4.5
+
+Default metric period is 5 because MAE is/are not implemented for GPU
+
+catboost_direct_compact h 8 k 8 group 7 seconds 6.5
+
+
+
+
+Независимая оценка test получена до переобучения на всей доступной размеченной истории. Этот test ранее изучался в проекте и не является новым слепым holdout. Коэффициенты, способ калибровки и вариант модели зафиксированы до test. Train включает бывшую val.
+
+
+GPU обязателен: CatBoost CUDA и CuPy проверены.
+
+
+Маршрутов: 1000 Выходы: /kaggle/working/cluster_experiment_4bb5c8cdccd95781 CatBoost: GPU
+
+
+
+
+xgb_direct_compact h 1 k 1 group 0 seconds 48.1
+
+
+Test закрыт. Калибровка и выбор используют только периоды до test.
+xgb_direct_compact h 1 k 8 group -1 seconds 46.6
+xgb_direct_compact h 1 k 8 group 0 seconds 11.1
+xgb_direct_compact h 1 k 8 group 1 seconds 9.7
+xgb_direct_compact h 1 k 8 group 2 seconds 3.6
+xgb_direct_compact h 1 k 8 group 3 seconds 7.0
+xgb_direct_compact h 1 k 8 group 4 seconds 11.7
+xgb_direct_compact h 1 k 8 group 6 seconds 7.4
+xgb_direct_compact h 1 k 8 group 7 seconds 4.5
+
+
+Test закрыт. Калибровка и выбор используют только периоды до test.
+xgb_direct_compact h 2 k 1 group 0 seconds 23.6
+
+
+Test закрыт. Калибровка и выбор используют только периоды до test.
+xgb_direct_compact h 2 k 8 group -1 seconds 25.1
+xgb_direct_compact h 2 k 8 group 0 seconds 5.7
+xgb_direct_compact h 2 k 8 group 1 seconds 4.8
+xgb_direct_compact h 2 k 8 group 2 seconds 1.8
+xgb_direct_compact h 2 k 8 group 3 seconds 3.6
+xgb_direct_compact h 2 k 8 group 4 seconds 5.9
+xgb_direct_compact h 2 k 8 group 6 seconds 3.7
+xgb_direct_compact h 2 k 8 group 7 seconds 2.2
+
+
+Test закрыт. Калибровка и выбор используют только периоды до test.
+xgb_direct_compact h 3 k 1 group 0 seconds 20.8
+
+
+Test закрыт. Калибровка и выбор используют только периоды до test.
+xgb_direct_compact h 3 k 8 group -1 seconds 21.2
+xgb_direct_compact h 3 k 8 group 0 seconds 5.0
+xgb_direct_compact h 3 k 8 group 1 seconds 4.3
+xgb_direct_compact h 3 k 8 group 2 seconds 1.6
+xgb_direct_compact h 3 k 8 group 3 seconds 3.1
+xgb_direct_compact h 3 k 8 group 4 seconds 5.5
+xgb_direct_compact h 3 k 8 group 6 seconds 3.3
+xgb_direct_compact h 3 k 8 group 7 seconds 1.9
+
+
+Test закрыт. Калибровка и выбор используют только периоды до test.
+xgb_direct_compact h 4 k 1 group 0 seconds 10.2
+
+
+Test закрыт. Калибровка и выбор используют только периоды до test.
+xgb_direct_compact h 4 k 8 group -1 seconds 10.3
+xgb_direct_compact h 4 k 8 group 0 seconds 2.2
+xgb_direct_compact h 4 k 8 group 1 seconds 1.9
+xgb_direct_compact h 4 k 8 group 2 seconds 0.5
+xgb_direct_compact h 4 k 8 group 3 seconds 1.3
+xgb_direct_compact h 4 k 8 group 4 seconds 2.5
+xgb_direct_compact h 4 k 8 group 6 seconds 1.4
+xgb_direct_compact h 4 k 8 group 7 seconds 0.8
+
+
+Test закрыт. Калибровка и выбор используют только периоды до test.
+xgb_direct_compact h 5 k 1 group 0 seconds 9.4
+
+
+Test закрыт. Калибровка и выбор используют только периоды до test.
+xgb_direct_compact h 5 k 8 group -1 seconds 9.4
+xgb_direct_compact h 5 k 8 group 0 seconds 2.1
+xgb_direct_compact h 5 k 8 group 1 seconds 1.7
+xgb_direct_compact h 5 k 8 group 2 seconds 0.5
+xgb_direct_compact h 5 k 8 group 3 seconds 1.2
+xgb_direct_compact h 5 k 8 group 4 seconds 2.2
+xgb_direct_compact h 5 k 8 group 6 seconds 1.2
+xgb_direct_compact h 5 k 8 group 7 seconds 0.7
+
+
+Test закрыт. Калибровка и выбор используют только периоды до test.
+xgb_direct_compact h 6 k 1 group 0 seconds 9.8
+
+
+Test закрыт. Калибровка и выбор используют только периоды до test.
+xgb_direct_compact h 6 k 8 group -1 seconds 9.8
+xgb_direct_compact h 6 k 8 group 0 seconds 2.3
+xgb_direct_compact h 6 k 8 group 1 seconds 1.8
+xgb_direct_compact h 6 k 8 group 2 seconds 0.5
+xgb_direct_compact h 6 k 8 group 3 seconds 1.3
+xgb_direct_compact h 6 k 8 group 4 seconds 2.3
+xgb_direct_compact h 6 k 8 group 6 seconds 1.3
+xgb_direct_compact h 6 k 8 group 7 seconds 0.7
+
+
+Test закрыт. Калибровка и выбор используют только периоды до test.
+xgb_direct_compact h 7 k 1 group 0 seconds 13.0
+
+
+Test закрыт. Калибровка и выбор используют только периоды до test.
+xgb_direct_compact h 7 k 8 group -1 seconds 13.1
+xgb_direct_compact h 7 k 8 group 0 seconds 2.9
+xgb_direct_compact h 7 k 8 group 1 seconds 2.5
+xgb_direct_compact h 7 k 8 group 2 seconds 0.8
+xgb_direct_compact h 7 k 8 group 3 seconds 1.8
+xgb_direct_compact h 7 k 8 group 4 seconds 3.3
+xgb_direct_compact h 7 k 8 group 6 seconds 1.9
+xgb_direct_compact h 7 k 8 group 7 seconds 1.1
+
+
+Test закрыт. Калибровка и выбор используют только периоды до test.
+xgb_direct_compact h 8 k 1 group 0 seconds 10.0
+
+
+Test закрыт. Калибровка и выбор используют только периоды до test.
+xgb_direct_compact h 8 k 8 group -1 seconds 10.3
+xgb_direct_compact h 8 k 8 group 0 seconds 2.3
+xgb_direct_compact h 8 k 8 group 1 seconds 1.9
+xgb_direct_compact h 8 k 8 group 2 seconds 0.5
+xgb_direct_compact h 8 k 8 group 3 seconds 1.3
+xgb_direct_compact h 8 k 8 group 4 seconds 2.5
+xgb_direct_compact h 8 k 8 group 6 seconds 1.4
+xgb_direct_compact h 8 k 8 group 7 seconds 0.8
+
+
+Test закрыт. Калибровка и выбор используют только периоды до test.
+
+
+
+xgb_direct_compact h 1 k 1 group 0 seconds 54.5
+
+
+Test закрыт. Калибровка и выбор используют только периоды до test.
+xgb_direct_compact h 1 k 8 group -1 seconds 52.4
+xgb_direct_compact h 1 k 8 group 0 seconds 7.1
+xgb_direct_compact h 1 k 8 group 1 seconds 5.5
+xgb_direct_compact h 1 k 8 group 2 seconds 6.6
+xgb_direct_compact h 1 k 8 group 3 seconds 16.7
+xgb_direct_compact h 1 k 8 group 4 seconds 12.0
+xgb_direct_compact h 1 k 8 group 5 seconds 3.8
+xgb_direct_compact h 1 k 8 group 6 seconds 8.1
+
+
+Test закрыт. Калибровка и выбор используют только периоды до test.
+xgb_direct_compact h 2 k 1 group 0 seconds 26.5
+
+
+Test закрыт. Калибровка и выбор используют только периоды до test.
+xgb_direct_compact h 2 k 8 group -1 seconds 26.8
+xgb_direct_compact h 2 k 8 group 0 seconds 3.5
+xgb_direct_compact h 2 k 8 group 1 seconds 2.7
+xgb_direct_compact h 2 k 8 group 2 seconds 3.3
+xgb_direct_compact h 2 k 8 group 3 seconds 8.7
+xgb_direct_compact h 2 k 8 group 4 seconds 6.2
+xgb_direct_compact h 2 k 8 group 5 seconds 1.8
+xgb_direct_compact h 2 k 8 group 6 seconds 4.0
+
+
+Test закрыт. Калибровка и выбор используют только периоды до test.
+xgb_direct_compact h 3 k 1 group 0 seconds 22.9
+
+
+Test закрыт. Калибровка и выбор используют только периоды до test.
+xgb_direct_compact h 3 k 8 group -1 seconds 23.9
+xgb_direct_compact h 3 k 8 group 0 seconds 3.0
+xgb_direct_compact h 3 k 8 group 1 seconds 2.3
+xgb_direct_compact h 3 k 8 group 2 seconds 2.9
+xgb_direct_compact h 3 k 8 group 3 seconds 7.8
+xgb_direct_compact h 3 k 8 group 4 seconds 5.6
+xgb_direct_compact h 3 k 8 group 5 seconds 1.6
+xgb_direct_compact h 3 k 8 group 6 seconds 3.6
+
+
+Test закрыт. Калибровка и выбор используют только периоды до test.
+xgb_direct_compact h 4 k 1 group 0 seconds 11.3
+
+
+Test закрыт. Калибровка и выбор используют только периоды до test.
+xgb_direct_compact h 4 k 8 group -1 seconds 11.3
+xgb_direct_compact h 4 k 8 group 0 seconds 1.3
+xgb_direct_compact h 4 k 8 group 1 seconds 0.9
+xgb_direct_compact h 4 k 8 group 2 seconds 1.2
+xgb_direct_compact h 4 k 8 group 3 seconds 3.6
+xgb_direct_compact h 4 k 8 group 4 seconds 2.6
+xgb_direct_compact h 4 k 8 group 5 seconds 0.6
+xgb_direct_compact h 4 k 8 group 6 seconds 1.6
+
+
+Test закрыт. Калибровка и выбор используют только периоды до test.
+xgb_direct_compact h 5 k 1 group 0 seconds 10.2
+
+
+Test закрыт. Калибровка и выбор используют только периоды до test.
+xgb_direct_compact h 5 k 8 group -1 seconds 10.4
+xgb_direct_compact h 5 k 8 group 0 seconds 1.2
+xgb_direct_compact h 5 k 8 group 1 seconds 0.8
+xgb_direct_compact h 5 k 8 group 2 seconds 1.1
+xgb_direct_compact h 5 k 8 group 3 seconds 3.3
+xgb_direct_compact h 5 k 8 group 4 seconds 2.4
+xgb_direct_compact h 5 k 8 group 5 seconds 0.5
+xgb_direct_compact h 5 k 8 group 6 seconds 1.4
+
+
+Test закрыт. Калибровка и выбор используют только периоды до test.
+xgb_direct_compact h 6 k 1 group 0 seconds 10.8
+
+
+Test закрыт. Калибровка и выбор используют только периоды до test.
+xgb_direct_compact h 6 k 8 group -1 seconds 10.6
+xgb_direct_compact h 6 k 8 group 0 seconds 1.2
+xgb_direct_compact h 6 k 8 group 1 seconds 0.9
+xgb_direct_compact h 6 k 8 group 2 seconds 1.1
+xgb_direct_compact h 6 k 8 group 3 seconds 3.6
+xgb_direct_compact h 6 k 8 group 4 seconds 2.5
+xgb_direct_compact h 6 k 8 group 5 seconds 0.5
+xgb_direct_compact h 6 k 8 group 6 seconds 1.5
+
+
+Test закрыт. Калибровка и выбор используют только периоды до test.
+xgb_direct_compact h 7 k 1 group 0 seconds 15.0
+
+
+Test закрыт. Калибровка и выбор используют только периоды до test.
+xgb_direct_compact h 7 k 8 group -1 seconds 14.6
+xgb_direct_compact h 7 k 8 group 0 seconds 1.8
+xgb_direct_compact h 7 k 8 group 1 seconds 1.3
+xgb_direct_compact h 7 k 8 group 2 seconds 1.7
+xgb_direct_compact h 7 k 8 group 3 seconds 4.8
+xgb_direct_compact h 7 k 8 group 4 seconds 3.5
+xgb_direct_compact h 7 k 8 group 5 seconds 0.9
+xgb_direct_compact h 7 k 8 group 6 seconds 2.1
+
+
+Test закрыт. Калибровка и выбор используют только периоды до test.
+xgb_direct_compact h 8 k 1 group 0 seconds 11.2
+
+
+Test закрыт. Калибровка и выбор используют только периоды до test.
+xgb_direct_compact h 8 k 8 group -1 seconds 11.1
+xgb_direct_compact h 8 k 8 group 0 seconds 1.3
+xgb_direct_compact h 8 k 8 group 1 seconds 0.9
+xgb_direct_compact h 8 k 8 group 2 seconds 1.2
+xgb_direct_compact h 8 k 8 group 3 seconds 3.6
+xgb_direct_compact h 8 k 8 group 4 seconds 2.5
+xgb_direct_compact h 8 k 8 group 5 seconds 0.6
+xgb_direct_compact h 8 k 8 group 6 seconds 1.5
+
+
+Test закрыт. Калибровка и выбор используют только периоды до test.
+
+
+
+
+Победитель выбран до test: cat_k8 horizon_shrink50
+
+
+xgb_direct_compact h 1 k 1 group 0 seconds 59.2
+
+
+xgb_direct_compact h 1 k 8 group 0 seconds 4.6
+xgb_direct_compact h 1 k 8 group 1 seconds 7.6
+xgb_direct_compact h 1 k 8 group 2 seconds 14.6
+xgb_direct_compact h 1 k 8 group 3 seconds 3.9
+xgb_direct_compact h 1 k 8 group 4 seconds 11.1
+xgb_direct_compact h 1 k 8 group 5 seconds 4.7
+xgb_direct_compact h 1 k 8 group 6 seconds 7.9
+xgb_direct_compact h 1 k 8 group 7 seconds 11.7
+
+
+xgb_direct_compact h 2 k 1 group 0 seconds 28.0
+
+
+xgb_direct_compact h 2 k 8 group 0 seconds 2.4
+xgb_direct_compact h 2 k 8 group 1 seconds 3.9
+xgb_direct_compact h 2 k 8 group 2 seconds 7.6
+xgb_direct_compact h 2 k 8 group 3 seconds 1.9
+xgb_direct_compact h 2 k 8 group 4 seconds 5.6
+xgb_direct_compact h 2 k 8 group 5 seconds 2.3
+xgb_direct_compact h 2 k 8 group 6 seconds 4.0
+xgb_direct_compact h 2 k 8 group 7 seconds 6.0
+
+
+xgb_direct_compact h 3 k 1 group 0 seconds 24.8
+
+
+xgb_direct_compact h 3 k 8 group 0 seconds 2.1
+xgb_direct_compact h 3 k 8 group 1 seconds 3.4
+xgb_direct_compact h 3 k 8 group 2 seconds 6.6
+xgb_direct_compact h 3 k 8 group 3 seconds 1.6
+xgb_direct_compact h 3 k 8 group 4 seconds 4.8
+xgb_direct_compact h 3 k 8 group 5 seconds 2.0
+xgb_direct_compact h 3 k 8 group 6 seconds 3.5
+xgb_direct_compact h 3 k 8 group 7 seconds 5.5
+
+
+xgb_direct_compact h 4 k 1 group 0 seconds 12.4
+
+
+xgb_direct_compact h 4 k 8 group 0 seconds 0.9
+xgb_direct_compact h 4 k 8 group 1 seconds 1.5
+xgb_direct_compact h 4 k 8 group 2 seconds 3.0
+xgb_direct_compact h 4 k 8 group 3 seconds 0.6
+xgb_direct_compact h 4 k 8 group 4 seconds 2.2
+xgb_direct_compact h 4 k 8 group 5 seconds 0.8
+xgb_direct_compact h 4 k 8 group 6 seconds 1.5
+xgb_direct_compact h 4 k 8 group 7 seconds 2.5
+
+
+xgb_direct_compact h 5 k 1 group 0 seconds 11.4
+
+
+xgb_direct_compact h 5 k 8 group 0 seconds 0.8
+xgb_direct_compact h 5 k 8 group 1 seconds 1.3
+xgb_direct_compact h 5 k 8 group 2 seconds 2.8
+xgb_direct_compact h 5 k 8 group 3 seconds 0.5
+xgb_direct_compact h 5 k 8 group 4 seconds 2.1
+xgb_direct_compact h 5 k 8 group 5 seconds 0.7
+xgb_direct_compact h 5 k 8 group 6 seconds 1.4
+xgb_direct_compact h 5 k 8 group 7 seconds 2.3
+
+
+xgb_direct_compact h 6 k 1 group 0 seconds 11.7
+
+
+xgb_direct_compact h 6 k 8 group 0 seconds 0.9
+xgb_direct_compact h 6 k 8 group 1 seconds 1.4
+xgb_direct_compact h 6 k 8 group 2 seconds 3.0
+xgb_direct_compact h 6 k 8 group 3 seconds 0.5
+xgb_direct_compact h 6 k 8 group 4 seconds 2.2
+xgb_direct_compact h 6 k 8 group 5 seconds 0.7
+xgb_direct_compact h 6 k 8 group 6 seconds 1.5
+xgb_direct_compact h 6 k 8 group 7 seconds 2.4
+
+
+xgb_direct_compact h 7 k 1 group 0 seconds 16.1
+
+
+xgb_direct_compact h 7 k 8 group 0 seconds 1.2
+xgb_direct_compact h 7 k 8 group 1 seconds 2.1
+xgb_direct_compact h 7 k 8 group 2 seconds 4.2
+xgb_direct_compact h 7 k 8 group 3 seconds 0.9
+xgb_direct_compact h 7 k 8 group 4 seconds 3.0
+xgb_direct_compact h 7 k 8 group 5 seconds 1.2
+xgb_direct_compact h 7 k 8 group 6 seconds 2.1
+xgb_direct_compact h 7 k 8 group 7 seconds 3.3
+
+
+xgb_direct_compact h 8 k 1 group 0 seconds 11.9
+
+
+xgb_direct_compact h 8 k 8 group 0 seconds 0.9
+xgb_direct_compact h 8 k 8 group 1 seconds 1.4
+xgb_direct_compact h 8 k 8 group 2 seconds 3.1
+xgb_direct_compact h 8 k 8 group 3 seconds 0.6
+xgb_direct_compact h 8 k 8 group 4 seconds 2.3
+xgb_direct_compact h 8 k 8 group 5 seconds 0.8
+xgb_direct_compact h 8 k 8 group 6 seconds 1.5
+xgb_direct_compact h 8 k 8 group 7 seconds 2.4
+
+
+
+
+Независимая оценка test получена до переобучения на всей доступной размеченной истории. Этот test ранее изучался в проекте и не является новым слепым holdout. Коэффициенты, способ калибровки и вариант модели зафиксированы до test. Train включает бывшую val.
+
+
+Лучший по val: {'experiment': 'catboost_residual_tuned', 'directory': '/kaggle/working/cluster_experiment_4c5d9d1f0133736b', 'selection_score': 0.32764083213543627, 'winner': 'cat_k8', 'strategy': 'raw'}
+
+
+
+catboost_residual_tuned h 1 k 8 group 0 seconds 12.7
+catboost_residual_tuned h 1 k 8 group 1 seconds 12.1
+catboost_residual_tuned h 1 k 8 group 2 seconds 9.2
+catboost_residual_tuned h 1 k 8 group 3 seconds 22.2
+catboost_residual_tuned h 1 k 8 group 4 seconds 10.2
+catboost_residual_tuned h 1 k 8 group 5 seconds 14.1
+catboost_residual_tuned h 1 k 8 group 6 seconds 19.9
+catboost_residual_tuned h 1 k 8 group 7 seconds 26.6
+
+
+Train/test в таблице — прежние оценочные модели и прежние коэффициенты, до полного refit.
+catboost_residual_tuned h 2 k 8 group 0 seconds 9.9
+catboost_residual_tuned h 2 k 8 group 1 seconds 9.4
+catboost_residual_tuned h 2 k 8 group 2 seconds 7.1
+catboost_residual_tuned h 2 k 8 group 3 seconds 17.8
+catboost_residual_tuned h 2 k 8 group 4 seconds 8.0
+catboost_residual_tuned h 2 k 8 group 5 seconds 11.0
+catboost_residual_tuned h 2 k 8 group 6 seconds 15.4
+catboost_residual_tuned h 2 k 8 group 7 seconds 20.8
+
+
+Train/test в таблице — прежние оценочные модели и прежние коэффициенты, до полного refit.
+catboost_residual_tuned h 3 k 8 group 0 seconds 7.8
+catboost_residual_tuned h 3 k 8 group 1 seconds 7.3
+catboost_residual_tuned h 3 k 8 group 2 seconds 5.6
+catboost_residual_tuned h 3 k 8 group 3 seconds 13.7
+catboost_residual_tuned h 3 k 8 group 4 seconds 6.3
+catboost_residual_tuned h 3 k 8 group 5 seconds 8.5
+catboost_residual_tuned h 3 k 8 group 6 seconds 11.9
+catboost_residual_tuned h 3 k 8 group 7 seconds 15.8
+
+
+Train/test в таблице — прежние оценочные модели и прежние коэффициенты, до полного refit.
+catboost_residual_tuned h 4 k 8 group 0 seconds 2.3
+catboost_residual_tuned h 4 k 8 group 1 seconds 2.0
+catboost_residual_tuned h 4 k 8 group 2 seconds 1.6
+catboost_residual_tuned h 4 k 8 group 3 seconds 3.6
+catboost_residual_tuned h 4 k 8 group 4 seconds 1.8
+catboost_residual_tuned h 4 k 8 group 5 seconds 2.3
+catboost_residual_tuned h 4 k 8 group 6 seconds 3.2
+catboost_residual_tuned h 4 k 8 group 7 seconds 4.4
+
+
+Train/test в таблице — прежние оценочные модели и прежние коэффициенты, до полного refit.
+catboost_residual_tuned h 5 k 8 group 0 seconds 2.9
+catboost_residual_tuned h 5 k 8 group 1 seconds 2.6
+catboost_residual_tuned h 5 k 8 group 2 seconds 2.1
+catboost_residual_tuned h 5 k 8 group 3 seconds 5.1
+catboost_residual_tuned h 5 k 8 group 4 seconds 2.3
+catboost_residual_tuned h 5 k 8 group 5 seconds 3.1
+catboost_residual_tuned h 5 k 8 group 6 seconds 4.4
+catboost_residual_tuned h 5 k 8 group 7 seconds 5.9
+
+
+Train/test в таблице — прежние оценочные модели и прежние коэффициенты, до полного refit.
+catboost_residual_tuned h 6 k 8 group 0 seconds 1.3
+catboost_residual_tuned h 6 k 8 group 1 seconds 1.2
+catboost_residual_tuned h 6 k 8 group 2 seconds 1.0
+catboost_residual_tuned h 6 k 8 group 3 seconds 2.2
+catboost_residual_tuned h 6 k 8 group 4 seconds 1.1
+catboost_residual_tuned h 6 k 8 group 5 seconds 1.4
+catboost_residual_tuned h 6 k 8 group 6 seconds 2.0
+catboost_residual_tuned h 6 k 8 group 7 seconds 2.6
+
+
+Train/test в таблице — прежние оценочные модели и прежние коэффициенты, до полного refit.
+catboost_residual_tuned h 7 k 8 group 0 seconds 3.9
+catboost_residual_tuned h 7 k 8 group 1 seconds 3.8
+catboost_residual_tuned h 7 k 8 group 2 seconds 2.9
+catboost_residual_tuned h 7 k 8 group 3 seconds 6.8
+catboost_residual_tuned h 7 k 8 group 4 seconds 3.2
+catboost_residual_tuned h 7 k 8 group 5 seconds 4.4
+catboost_residual_tuned h 7 k 8 group 6 seconds 6.1
+catboost_residual_tuned h 7 k 8 group 7 seconds 8.3
+
+
+Train/test в таблице — прежние оценочные модели и прежние коэффициенты, до полного refit.
+catboost_residual_tuned h 8 k 8 group 0 seconds 3.7
+catboost_residual_tuned h 8 k 8 group 1 seconds 3.5
+catboost_residual_tuned h 8 k 8 group 2 seconds 2.8
+catboost_residual_tuned h 8 k 8 group 3 seconds 6.3
+catboost_residual_tuned h 8 k 8 group 4 seconds 3.0
+catboost_residual_tuned h 8 k 8 group 5 seconds 4.1
+catboost_residual_tuned h 8 k 8 group 6 seconds 5.7
+catboost_residual_tuned h 8 k 8 group 7 seconds 7.8
+
+
+Train/test в таблице — прежние оценочные модели и прежние коэффициенты, до полного refit.
+Сабмит: /kaggle/working/cluster_experiment_4c5d9d1f0133736b/submission.csv
+Независимая оценка test получена до переобучения базовых моделей и обновления коэффициентов на всей доступной OOF-истории.
+Независимые test-метрики получены до полного переобучения. Test ранее изучался; победитель выбирался по val.

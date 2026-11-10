@@ -27,3 +27,9 @@ AGENTS.md
 
 /stacking/bundles/rwb-*-server.zip
 /stacking/bundles/stack_assemble.zip
+
+# Local training checkpoints and interim exports for Matvey experiment 03.
+/artifacts/matvey/03/cache/
+/artifacts/matvey/03/models/
+/artifacts/matvey/03/interim_*
+/artifacts/matvey/03/submission.csv

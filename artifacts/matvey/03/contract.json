@@ -1,0 +1,7 @@
+{
+  "code": "bbfd6906baae6f66",
+  "baseline": "bc6b14b04336d41f",
+  "iterations": 1500,
+  "gpu": "0",
+  "catboost": "1.2.10"
+}

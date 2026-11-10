@@ -1,0 +1,10 @@
+{
+  "run_id": "bc6b14b04336d41f",
+  "spec": [
+    "recent75",
+    "peaks",
+    "MAE"
+  ],
+  "weekly_offset": 9085.59764595994,
+  "submission_offset": 7908.058283238411
+}

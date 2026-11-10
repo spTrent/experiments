@@ -7,7 +7,6 @@ wheels/
 
 .venv
 
-artifacts/
 models/ridges/
 ridge_by_route_horizon.zip
 .DS_Store
@@ -16,13 +15,15 @@ ridge_by_route_horizon.zip
 .idea/
 .ipynb_checkpoints/
 
-.venv
 AGENTS.md
 .python-version
 .venv-experiments/
 
-/matvey/results-00_baseline/
+/artifacts/matvey/results-00_baseline/
 /stacking/stack_oof/
 /stacking/stack_oof.zip
 /stacking/ridge_output/ridge_tuned_050f6cb497e6eed2adb518d3/
 /stacking/ridge_output/ridge_tuned_050f6cb497e6eed2adb518d3.zip
+
+/stacking/bundles/rwb-*-server.zip
+/stacking/bundles/stack_assemble.zip

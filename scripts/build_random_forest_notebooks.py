@@ -117,7 +117,7 @@ def build():
         notebook = nbformat.v4.new_notebook(cells=cells, metadata={'kernelspec': {'display_name': 'Python 3', 'language': 'python', 'name': 'python3'}, 'language_info': {'name': 'python'}})
         for index, cell in enumerate(notebook.cells):
             cell.id = f'rf-{variant}-{index:02d}'
-        nbformat.write(notebook, ROOT / f'random_forest_{variant}.ipynb')
+        nbformat.write(notebook, ROOT / f'notebooks/models/random_forest_{variant}.ipynb')
 
 
 if __name__ == '__main__':

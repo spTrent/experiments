@@ -1,0 +1,44 @@
+{
+  "winner": {
+    "kind": "gate",
+    "epochs": 50,
+    "columns": [
+      "five_starts__rf_direct",
+      "five_starts__rf_residual",
+      "five_starts__light_gbm_direct",
+      "five_starts__light_gbm_residual",
+      "five_starts__catboost_direct",
+      "five_starts__catboost_residual",
+      "five_starts__xgb_direct",
+      "five_starts__xgb_residual",
+      "five_starts__ridge_direct",
+      "five_starts__ridge_residual",
+      "five_starts__route_ridge",
+      "profile28"
+    ],
+    "route_variant": "fixed"
+  },
+  "metrics": {
+    "train": {
+      "rows": 168000,
+      "volume": 49801956919.0,
+      "absolute": 16350787967.216797,
+      "signed": 271055237.58203125,
+      "WAPE": 0.32831617427825993,
+      "relative_bias": 0.005442662384188776,
+      "score": 0.3337588366624487,
+      "WAPE + |Relative Bias|": 0.3337588366624487
+    },
+    "test": {
+      "rows": 112000,
+      "volume": 32398866187.0,
+      "absolute": 10806712529.310547,
+      "signed": -32340759.005859375,
+      "WAPE": 0.3335521825651641,
+      "relative_bias": -0.0009982065057213656,
+      "score": 0.33455038907088547,
+      "WAPE + |Relative Bias|": 0.33455038907088547
+    }
+  },
+  "note": "Независимая оценка test получена до переобучения на всей истории. Этот период ранее использовался в проекте."
+}

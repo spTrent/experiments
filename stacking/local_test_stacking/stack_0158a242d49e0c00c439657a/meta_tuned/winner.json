@@ -1,0 +1,19 @@
+{
+  "kind": "gate",
+  "epochs": 50,
+  "columns": [
+    "five_starts__rf_direct",
+    "five_starts__rf_residual",
+    "five_starts__light_gbm_direct",
+    "five_starts__light_gbm_residual",
+    "five_starts__catboost_direct",
+    "five_starts__catboost_residual",
+    "five_starts__xgb_direct",
+    "five_starts__xgb_residual",
+    "five_starts__ridge_direct",
+    "five_starts__ridge_residual",
+    "five_starts__route_ridge",
+    "profile28"
+  ],
+  "route_variant": "fixed"
+}

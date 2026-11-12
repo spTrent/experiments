@@ -38,3 +38,5 @@ AGENTS.md
 /best/outputs/
 /best/bundle/inference_cache/
 *.zip
+/stacking/blending/*.tar
+/stacking/blending/session6_exact/

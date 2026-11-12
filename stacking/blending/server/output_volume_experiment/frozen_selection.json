@@ -1,0 +1,9 @@
+{
+  "variants": [
+    "session6",
+    "coefficient_0.25",
+    "direct_1"
+  ],
+  "winner": "direct_1",
+  "selected_before_test": true
+}

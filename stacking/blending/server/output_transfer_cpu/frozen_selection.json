@@ -1,0 +1,9 @@
+{
+  "config": [
+    10,
+    0.25,
+    0.01
+  ],
+  "criterion": "mean daily score over two pretest folds",
+  "test_used_for_selection": false
+}

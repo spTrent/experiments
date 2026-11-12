@@ -1,0 +1,13 @@
+{
+  "cat_wins_days": 10,
+  "days": 14,
+  "mean_daily_delta": -0.0020930377773671904,
+  "exploratory_iid_interval_95": [
+    -0.0068057867947419574,
+    0.0026359734785264327
+  ],
+  "exploratory_circular_2day_interval_95": [
+    -0.00654457334270169,
+    0.0014544312305423363
+  ]
+}

@@ -1,0 +1,6 @@
+{
+  "chosen": "weekly_gpu@0.5",
+  "promoted": false,
+  "test_daily_gain": 1.766753887899597e-05,
+  "test_before_full_refit": true
+}

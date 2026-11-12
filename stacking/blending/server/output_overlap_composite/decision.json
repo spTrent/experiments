@@ -1,0 +1,12 @@
+{
+  "daily_gain": 0.00015181974491396133,
+  "daily_wins": {
+    "2025-09-27": 6,
+    "2025-10-04": 7,
+    "2025-10-11": 7,
+    "2025-10-18": 10
+  },
+  "eligible": true,
+  "clears_prior_threshold": true,
+  "test_before_full_refit": true
+}

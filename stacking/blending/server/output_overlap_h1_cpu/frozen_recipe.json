@@ -1,0 +1,5 @@
+{
+  "passed_validation": true,
+  "min_test_gain": 0.00015,
+  "test_used_for_tuning": false
+}

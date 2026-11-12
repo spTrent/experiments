@@ -1,0 +1,5 @@
+{
+  "weight": 0.0,
+  "criterion": "better on both validation weeks",
+  "test_used_for_weight_selection": false
+}

@@ -1,0 +1,4 @@
+{
+  "weight": 1.0,
+  "criterion": "mean daily score on pretest folds"
+}

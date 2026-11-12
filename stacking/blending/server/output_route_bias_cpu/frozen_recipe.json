@@ -1,0 +1,6 @@
+{
+  "strength": 0.25,
+  "max_change": 0.05,
+  "group": "route_id",
+  "test_used_for_selection": false
+}

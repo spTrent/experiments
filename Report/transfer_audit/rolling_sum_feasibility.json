@@ -1,0 +1,6 @@
+{
+  "routes": 1000,
+  "feasible_last48": 661,
+  "inconsistent_last48": 339,
+  "interpretation": "Existence of nonnegative half-hour flows whose adjacent sums equal observed hourly targets; diagnostic only"
+}

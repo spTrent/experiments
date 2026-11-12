@@ -1,0 +1,5 @@
+{
+  "chosen": "delta7@0.25",
+  "test_used_for_tuning": false,
+  "min_test_gain": 0.00015
+}

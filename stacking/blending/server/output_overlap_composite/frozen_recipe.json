@@ -1,0 +1,9 @@
+{
+  "h1": "delta7@0.25",
+  "long": {
+    "temporal_profile_gpu": "weekly_gpu@0.5",
+    "projected_mlp": "wide@0.35",
+    "phase_conv": "phase_wide@0.35"
+  },
+  "uses_previously_examined_test": true
+}
